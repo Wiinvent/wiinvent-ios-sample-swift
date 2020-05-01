@@ -1,0 +1,4 @@
+framework module WISDK {
+  header "WISDK-Swift.h"
+  requires objc
+}

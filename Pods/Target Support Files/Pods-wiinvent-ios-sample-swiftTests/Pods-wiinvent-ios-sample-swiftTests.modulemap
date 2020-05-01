@@ -1,0 +1,6 @@
+framework module Pods_wiinvent_ios_sample_swiftTests {
+  umbrella header "Pods-wiinvent-ios-sample-swiftTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
