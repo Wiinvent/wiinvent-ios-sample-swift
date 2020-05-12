@@ -14,9 +14,12 @@ import WebKit
 }
 @objc open class WISDK : ObjectiveC.NSObject {
   @objc public static var onConfigReady: ((WISDK.WIConfigData) -> ())?
+  @objc public static var onVoted: ((Swift.String, Swift.String, Swift.String?, Swift.String, Swift.Int) -> ())?
+  @objc public static var onUserPurchase: ((Swift.String, Swift.Int) -> ())?
   @objc public static func monitorAVPlayer(player: AVFoundation.AVPlayer?)
   @objc public static func unmonitorAVPlayer()
   @objc public static func addOverlaysToPlayerView(container: UIKit.UIView!, overlayData: WISDK.WIOverlayData!)
+  @objc public static func onUserPurchaseSuccess(userId: Swift.String, productId: Swift.String)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -56,7 +59,7 @@ import WebKit
 }
 @objc public class WIWebAction : ObjectiveC.NSObject {
   public enum TypeAction : Swift.String {
-    case LOAD_CONFIG_SUCCESS, OVERLAY_VISIBILITY_CHANGE, UNKNOWN
+    case LOAD_CONFIG_SUCCESS, OVERLAY_VISIBILITY_CHANGE, USER_VOTED, USER_PURCHASE, UNKNOWN
     public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
     public var rawValue: Swift.String {

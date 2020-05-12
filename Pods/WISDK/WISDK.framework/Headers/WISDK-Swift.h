@@ -282,9 +282,16 @@ SWIFT_CLASS("_TtC5WISDK5WISDK")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onConfigReady)(WIConfigData * _Nonnull);)
 + (void (^ _Nullable)(WIConfigData * _Nonnull))onConfigReady SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnConfigReady:(void (^ _Nullable)(WIConfigData * _Nonnull))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVoted)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSInteger);)
++ (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSInteger))onVoted SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnVoted:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSInteger))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onUserPurchase)(NSString * _Nonnull, NSInteger);)
++ (void (^ _Nullable)(NSString * _Nonnull, NSInteger))onUserPurchase SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnUserPurchase:(void (^ _Nullable)(NSString * _Nonnull, NSInteger))value;
 + (void)monitorAVPlayerWithPlayer:(AVPlayer * _Nullable)player;
 + (void)unmonitorAVPlayer;
 + (void)addOverlaysToPlayerViewWithContainer:(UIView * _Null_unspecified)container overlayData:(WIOverlayData * _Null_unspecified)overlayData;
++ (void)onUserPurchaseSuccessWithUserId:(NSString * _Nonnull)userId productId:(NSString * _Nonnull)productId;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -594,9 +601,16 @@ SWIFT_CLASS("_TtC5WISDK5WISDK")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onConfigReady)(WIConfigData * _Nonnull);)
 + (void (^ _Nullable)(WIConfigData * _Nonnull))onConfigReady SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnConfigReady:(void (^ _Nullable)(WIConfigData * _Nonnull))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVoted)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSInteger);)
++ (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSInteger))onVoted SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnVoted:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSInteger))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onUserPurchase)(NSString * _Nonnull, NSInteger);)
++ (void (^ _Nullable)(NSString * _Nonnull, NSInteger))onUserPurchase SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnUserPurchase:(void (^ _Nullable)(NSString * _Nonnull, NSInteger))value;
 + (void)monitorAVPlayerWithPlayer:(AVPlayer * _Nullable)player;
 + (void)unmonitorAVPlayer;
 + (void)addOverlaysToPlayerViewWithContainer:(UIView * _Null_unspecified)container overlayData:(WIOverlayData * _Null_unspecified)overlayData;
++ (void)onUserPurchaseSuccessWithUserId:(NSString * _Nonnull)userId productId:(NSString * _Nonnull)productId;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
