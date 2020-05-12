@@ -12,8 +12,8 @@ import AVKit
 
 class ViewController: UIViewController {
     
-    static let SAMPLE_CHANNEL_ID: String = "1"
-    static let SAMPLE_STREAM_ID: String = "1"
+    static let SAMPLE_CHANNEL_ID: String = "##"
+    static let SAMPLE_STREAM_ID: String = "##"
     static let SAMPLE_TOKEN: String = ""
     
     var player: AVPlayer?
@@ -44,7 +44,23 @@ class ViewController: UIViewController {
                 }
             }
         }
-        let overlayData = WIOverlayData(channelId: ViewController.SAMPLE_CHANNEL_ID, streamId: ViewController.SAMPLE_STREAM_ID, env: WIOverlayData.Environment.DEV, debug: true)
+        
+        WISDK.onVoted = { ( userId, channelId, streamId, entryId, numPredictSame) in
+            print("====onConfigReady: \(userId)")
+        }
+       
+        WISDK.onUserPurchase = { (userId, productId) in
+            print("====onConfigReady: \(userId)")
+        }
+        
+        let overlayData = WIOverlayData(channelId: ViewController.SAMPLE_CHANNEL_ID,
+                                        streamId: ViewController.SAMPLE_STREAM_ID,
+                                        //Optional
+                                        thirdPartyToken: "your token",
+                                        platform: nil,
+                                        env: WIOverlayData.Environment.DEV,
+                                        deviceType: WIOverlayData.DeviceType.PHONE,
+                                        debug: true)
         WISDK.addOverlaysToPlayerView(container: view, overlayData: overlayData)
         
     }
