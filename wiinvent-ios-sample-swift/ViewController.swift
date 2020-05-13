@@ -59,7 +59,7 @@ class ViewController: UIViewController {
                                                //Optional
                                                thirdPartyToken: "token",
                                                accountId: ViewController.SAMPLE_ACCOUNT_ID,
-                                               mappingType: WIOverlayData.MappingType.THIRDPARTY
+                                               mappingType: WIOverlayData.MappingType.THIRDPARTY,
                                                platform: nil,
                                                env: WIOverlayData.Environment.DEV,
                                                deviceType: WIOverlayData.DeviceType.PHONE,

@@ -26,7 +26,7 @@ import WebKit
 @objc public class WIOverlayData : ObjectiveC.NSObject {
   @objc public init(channelId: Swift.String?, streamId: Swift.String?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, debug: Swift.Bool = false)
   @objc public init(channelId: Swift.String?, streamId: Swift.String?, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, debug: Swift.Bool = false)
-  @objc public init(channelId: Swift.String?, streamId: Swift.String?, thirdPartyToken: Swift.String?, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, deviceType: WISDK.WIOverlayData.DeviceType = DeviceType.PHONE, debug: Swift.Bool = false)
+  @objc public init(channelId: Swift.String?, streamId: Swift.String?, thirdPartyToken: Swift.String?, accountId: Swift.Int, mappingType: WISDK.WIOverlayData.MappingType = MappingType.WI, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, deviceType: WISDK.WIOverlayData.DeviceType = DeviceType.PHONE, debug: Swift.Bool = false)
   @objc public enum DeviceType : Swift.Int, Swift.RawRepresentable {
     case PHONE, TV
     public typealias RawValue = Swift.String
@@ -42,6 +42,14 @@ import WebKit
       get
     }
     public init?(rawValue: WISDK.WIOverlayData.Environment.RawValue)
+  }
+  @objc public enum MappingType : Swift.Int, Swift.RawRepresentable {
+    case WI, THIRDPARTY
+    public typealias RawValue = Swift.String
+    public var rawValue: WISDK.WIOverlayData.MappingType.RawValue {
+      get
+    }
+    public init?(rawValue: WISDK.WIOverlayData.MappingType.RawValue)
   }
   @objc public class Platform : ObjectiveC.NSObject {
     @objc override dynamic public init()
@@ -103,6 +111,8 @@ extension WISDK.WIOverlayData.DeviceType : Swift.Equatable {}
 extension WISDK.WIOverlayData.DeviceType : Swift.Hashable {}
 extension WISDK.WIOverlayData.Environment : Swift.Equatable {}
 extension WISDK.WIOverlayData.Environment : Swift.Hashable {}
+extension WISDK.WIOverlayData.MappingType : Swift.Equatable {}
+extension WISDK.WIOverlayData.MappingType : Swift.Hashable {}
 extension WISDK.WIWebAction.TypeAction : Swift.Equatable {}
 extension WISDK.WIWebAction.TypeAction : Swift.Hashable {}
 extension WISDK.WIWebAction.TypeAction : Swift.RawRepresentable {}

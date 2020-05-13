@@ -229,13 +229,14 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 
 enum Environment : NSInteger;
 @class Platform;
+enum MappingType : NSInteger;
 enum DeviceType : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 @interface WIOverlayData : NSObject
 - (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId platform:(Platform * _Nullable)platform env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
@@ -249,6 +250,11 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentDEV = 0,
   EnvironmentSTAGING = 1,
   EnvironmentPRODUCTION = 2,
+};
+
+typedef SWIFT_ENUM(NSInteger, MappingType, open) {
+  MappingTypeWI = 0,
+  MappingTypeTHIRDPARTY = 1,
 };
 
 @class WKUserContentController;
@@ -548,13 +554,14 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 
 enum Environment : NSInteger;
 @class Platform;
+enum MappingType : NSInteger;
 enum DeviceType : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 @interface WIOverlayData : NSObject
 - (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId platform:(Platform * _Nullable)platform env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
@@ -568,6 +575,11 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentDEV = 0,
   EnvironmentSTAGING = 1,
   EnvironmentPRODUCTION = 2,
+};
+
+typedef SWIFT_ENUM(NSInteger, MappingType, open) {
+  MappingTypeWI = 0,
+  MappingTypeTHIRDPARTY = 1,
 };
 
 @class WKUserContentController;
