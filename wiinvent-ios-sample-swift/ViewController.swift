@@ -12,6 +12,7 @@ import AVKit
 
 class ViewController: UIViewController {
     
+    static let SAMPLE_ACCOUNT_ID: Int = 1
     static let SAMPLE_CHANNEL_ID: String = "##"
     static let SAMPLE_STREAM_ID: String = "##"
     static let SAMPLE_TOKEN: String = ""
@@ -53,14 +54,16 @@ class ViewController: UIViewController {
             print("====onConfigReady: \(userId)")
         }
         
-        let overlayData = WIOverlayData(channelId: ViewController.SAMPLE_CHANNEL_ID,
-                                        streamId: ViewController.SAMPLE_STREAM_ID,
-                                        //Optional
-                                        thirdPartyToken: "your token",
-                                        platform: nil,
-                                        env: WIOverlayData.Environment.DEV,
-                                        deviceType: WIOverlayData.DeviceType.PHONE,
-                                        debug: true)
+         let overlayData = WIOverlayData(channelId: ViewController.SAMPLE_CHANNEL_ID,
+                                               streamId: ViewController.SAMPLE_STREAM_ID,
+                                               //Optional
+                                               thirdPartyToken: "token",
+                                               accountId: ViewController.SAMPLE_ACCOUNT_ID,
+                                               mappingType: WIOverlayData.MappingType.THIRDPARTY
+                                               platform: nil,
+                                               env: WIOverlayData.Environment.DEV,
+                                               deviceType: WIOverlayData.DeviceType.PHONE,
+                                               debug: true)
         WISDK.addOverlaysToPlayerView(container: view, overlayData: overlayData)
         
     }
