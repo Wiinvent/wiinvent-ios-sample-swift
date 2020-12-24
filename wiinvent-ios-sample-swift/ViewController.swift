@@ -12,10 +12,10 @@ import AVKit
 
 class ViewController: UIViewController {
     
-    static let SAMPLE_ACCOUNT_ID: Int = 1
-    static let SAMPLE_CHANNEL_ID: String = "##"
-    static let SAMPLE_STREAM_ID: String = "##"
-    static let SAMPLE_TOKEN: String = ""
+    static let SAMPLE_ACCOUNT_ID: Int = 81
+    static let SAMPLE_CHANNEL_ID: String = "30"
+    static let SAMPLE_STREAM_ID: String = "90000"
+    static let SAMPLE_TOKEN: String = "1001"
     
     var player: AVPlayer?
     
@@ -46,9 +46,9 @@ class ViewController: UIViewController {
             }
         }
         
-        WISDK.onVoted = { ( userId, channelId, streamId, entryId, numPredictSame) in
-            print("====onConfigReady: \(userId)")
-        }
+//        WISDK.onVoted = { ( userId, channelId, streamId, entryId, numPredictSame) in
+//            print("====onConfigReady: \(userId)")
+//        }
        
         WISDK.onUserPurchase = { (userId, productId) in
             print("====onConfigReady: \(userId)")
@@ -57,7 +57,8 @@ class ViewController: UIViewController {
          let overlayData = WIOverlayData(channelId: ViewController.SAMPLE_CHANNEL_ID,
                                                streamId: ViewController.SAMPLE_STREAM_ID,
                                                //Optional
-                                               thirdPartyToken: "token",
+                                               thirdPartyToken: ViewController.SAMPLE_TOKEN,
+                                               contentType: WIOverlayData.ContentType.LIVESTREAM,
                                                accountId: ViewController.SAMPLE_ACCOUNT_ID,
                                                mappingType: WIOverlayData.MappingType.THIRDPARTY,
                                                platform: nil,
