@@ -8,6 +8,7 @@
 
 import UIKit
 import WISDK
+import PTVSDK
 import AVKit
 
 class ViewController: UIViewController {
@@ -21,20 +22,23 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
-        player = AVPlayer()
+        let frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 250)
+//        let frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
+        
+        let videoURL = URL(string: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3")
+        
+        player = AVPlayer(url: videoURL!)
         let avController = AVPlayerViewController()
         avController.player = player
         avController.showsPlaybackControls = true
-        avController.view.frame = view.frame
-
+        avController.view.frame = frame
+      
         view.addSubview(avController.view)
         addChild(avController)
-        player?.play()
-
-        WISDK.monitorAVPlayer(player: player)
         
+        WISDK.monitorAVPlayer(player: player)
+
         WISDK.onConfigReady = { configData in
             if let sources = configData.sources {
                 for source in sources {
@@ -45,15 +49,15 @@ class ViewController: UIViewController {
                 }
             }
         }
-        
+
 //        WISDK.onVoted = { ( userId, channelId, streamId, entryId, numPredictSame) in
 //            print("====onConfigReady: \(userId)")
 //        }
-       
+
         WISDK.onUserPurchase = { (userId, productId) in
             print("====onConfigReady: \(userId)")
         }
-        
+
          let overlayData = WIOverlayData(channelId: ViewController.SAMPLE_CHANNEL_ID,
                                                streamId: ViewController.SAMPLE_STREAM_ID,
                                                //Optional

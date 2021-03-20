@@ -55,8 +55,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10C0769E3B73E5AFC6C88A1BBF72D1C4 /* WISDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WISDK.h; path = WISDK.framework/Headers/WISDK.h; sourceTree = "<group>"; };
-		1AC81DBDBFB8C6DB1A6E15A7A17ED1E1 /* WISDK-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WISDK-Swift.h"; path = "WISDK.framework/Headers/WISDK-Swift.h"; sourceTree = "<group>"; };
 		1BDE36DF7F18B00394C02D705FE81E6F /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1DC7BC6A28C1D2D939B1FE13B6864696 /* Pods-wiinvent-ios-sample-swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wiinvent-ios-sample-swift-Info.plist"; sourceTree = "<group>"; };
 		25597DEB06B7494E7F94A0F9D7E46077 /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-umbrella.h"; sourceTree = "<group>"; };
@@ -74,6 +72,7 @@
 		509462E67976F9ACD6F008279DB57F8E /* Pods-wiinvent-ios-sample-swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-wiinvent-ios-sample-swift-dummy.m"; sourceTree = "<group>"; };
 		50CFE7493BD8437D5EB94650079F1A08 /* Pods-wiinvent-ios-sample-swiftTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-wiinvent-ios-sample-swiftTests-dummy.m"; sourceTree = "<group>"; };
 		50E93AF0D3C2D9634B1F6C59279BF7F5 /* Pods-wiinvent-ios-sample-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wiinvent-ios-sample-swift.debug.xcconfig"; sourceTree = "<group>"; };
+		52C9897136DE173E04ABEE0095B0DBB4 /* WISDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WISDK.xcconfig; sourceTree = "<group>"; };
 		5491BCFFD9C2FE8ED532589A9F9D081C /* Pods-wiinvent-ios-sample-swiftTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wiinvent-ios-sample-swiftTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5C14E40A4EE051FC31DCA2D4857A6C00 /* Pods_wiinvent_ios_sample_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_wiinvent_ios_sample_swift.framework; path = "Pods-wiinvent-ios-sample-swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBACCAC3A6CCD4FFE3ECCB2FACE64E5 /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests.modulemap"; sourceTree = "<group>"; };
@@ -83,13 +82,12 @@
 		90AE82C58E61072E2D5955D79BBC2BCC /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A546C444CF2AB262CAAE1EE897742E00 /* Pods-wiinvent-ios-sample-swift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-wiinvent-ios-sample-swift-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BBF4DCDAB7553F43400CBDCB7F9D33E3 /* WISDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WISDK.xcconfig; sourceTree = "<group>"; };
+		B9218A9807B7027EB46DF4E60CE55108 /* WISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WISDK.framework; sourceTree = "<group>"; };
 		C190F76C008868756233706DCA8FA087 /* Pods-wiinvent-ios-sample-swift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wiinvent-ios-sample-swift-acknowledgements.plist"; sourceTree = "<group>"; };
 		D9711736DEFB0BF39A2F666E75529F81 /* Pods-wiinvent-ios-sample-swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-wiinvent-ios-sample-swift.modulemap"; sourceTree = "<group>"; };
 		DC12EEDB57FAA68312F9660F279721D3 /* Pods-wiinvent-ios-sample-swiftTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-wiinvent-ios-sample-swiftTests.modulemap"; sourceTree = "<group>"; };
 		DD4F2DEE1299FBD2B2E6ABBD4C36F4AD /* Pods_wiinvent_ios_sample_swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_wiinvent_ios_sample_swiftTests.framework; path = "Pods-wiinvent-ios-sample-swiftTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3825B2779B3C798EC0E85D6FD3859B8 /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests.release.xcconfig"; sourceTree = "<group>"; };
-		EDCC3903B963E0E482C10FB6ED39DC97 /* WISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WISDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +151,16 @@
 			path = "Target Support Files/Pods-wiinvent-ios-sample-swiftTests";
 			sourceTree = "<group>";
 		};
+		16B119D9B429A1948855A0407C72D702 /* WISDK */ = {
+			isa = PBXGroup;
+			children = (
+				24507618006C10672909D40A7629E9FC /* Frameworks */,
+				BEE353AC6C59E56815C49CDCC7516AA6 /* Support Files */,
+			);
+			name = WISDK;
+			path = WISDK;
+			sourceTree = "<group>";
+		};
 		2033F2551CF328E5113A01FFF321BD58 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +169,14 @@
 				03C3F298A915A6E2D76E389BBDF038E7 /* Pods-wiinvent-ios-sample-swiftTests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		24507618006C10672909D40A7629E9FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9218A9807B7027EB46DF4E60CE55108 /* WISDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		28DED9085F1CFC1FC3F0AD47F8CD5F18 /* Products */ = {
@@ -190,6 +206,23 @@
 			path = "Target Support Files/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests";
 			sourceTree = "<group>";
 		};
+		9766087EE3F70A8B16E187178BC0D5C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16B119D9B429A1948855A0407C72D702 /* WISDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BEE353AC6C59E56815C49CDCC7516AA6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				52C9897136DE173E04ABEE0095B0DBB4 /* WISDK.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WISDK";
+			sourceTree = "<group>";
+		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,20 +231,12 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C1960FD715131EC614EAB96A22A0C0F3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EDCC3903B963E0E482C10FB6ED39DC97 /* WISDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				DAEDC6D72D8BCC4CDB1D6B3EAD73297E /* Pods */,
+				9766087EE3F70A8B16E187178BC0D5C8 /* Pods */,
 				28DED9085F1CFC1FC3F0AD47F8CD5F18 /* Products */,
 				2033F2551CF328E5113A01FFF321BD58 /* Targets Support Files */,
 			);
@@ -223,35 +248,6 @@
 				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DAEDC6D72D8BCC4CDB1D6B3EAD73297E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EBBB1127760E1B8242B26A6E4C3A6A0B /* WISDK */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		EBBB1127760E1B8242B26A6E4C3A6A0B /* WISDK */ = {
-			isa = PBXGroup;
-			children = (
-				10C0769E3B73E5AFC6C88A1BBF72D1C4 /* WISDK.h */,
-				1AC81DBDBFB8C6DB1A6E15A7A17ED1E1 /* WISDK-Swift.h */,
-				C1960FD715131EC614EAB96A22A0C0F3 /* Frameworks */,
-				EBCD350387F36BF7B7DBD10B4FB861A8 /* Support Files */,
-			);
-			name = WISDK;
-			path = WISDK;
-			sourceTree = "<group>";
-		};
-		EBCD350387F36BF7B7DBD10B4FB861A8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BBF4DCDAB7553F43400CBDCB7F9D33E3 /* WISDK.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/WISDK";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -558,7 +554,7 @@
 		};
 		6C3F9DEB18B5F61985EB000F4C32915F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBF4DCDAB7553F43400CBDCB7F9D33E3 /* WISDK.xcconfig */;
+			baseConfigurationReference = 52C9897136DE173E04ABEE0095B0DBB4 /* WISDK.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -812,7 +808,7 @@
 		};
 		ED835DBF1BD9CD4B61D60AD53B905291 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBF4DCDAB7553F43400CBDCB7F9D33E3 /* WISDK.xcconfig */;
+			baseConfigurationReference = 52C9897136DE173E04ABEE0095B0DBB4 /* WISDK.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

@@ -1,18 +1,18 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.2.4 effective-4.2 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
-// swift-module-flags: -target x86_64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name WISDK
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target x86_64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WISDK
 import AVKit
 import Foundation
 import JavaScriptCore
 import Swift
 import WebKit
-@objc @_hasMissingDesignatedInitializers public class WIStreamSource : ObjectiveC.NSObject {
+@_hasMissingDesignatedInitializers @objc public class WIStreamSource : ObjectiveC.NSObject {
   @objc final public let url: Foundation.URL?
   @objc final public let mineType: Swift.String?
   @objc deinit
   @objc override dynamic public init()
 }
-@objc @_inheritsConvenienceInitializers open class WISDK : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc open class WISDK : ObjectiveC.NSObject {
   @objc public static var onConfigReady: ((WISDK.WIConfigData) -> ())?
   @objc public static var onTimeout: (() -> ())?
   @objc public static var onError: (() -> ())?
@@ -21,8 +21,7 @@ import WebKit
   @objc public static var onUserPurchase: ((Swift.String, Swift.String) -> ())?
   @objc public static func monitorAVPlayer(player: AVFoundation.AVPlayer?)
   @objc public static func unmonitorAVPlayer()
-  @objc public static func addOverlaysToPlayerView(container: UIKit.UIView!, frame: CoreGraphics.CGRect, overlayData: WISDK.WIOverlayData!)
-  @objc public static func setFrame(frame: CoreGraphics.CGRect)
+  @objc public static func addOverlaysToPlayerView(container: UIKit.UIView!, overlayData: WISDK.WIOverlayData!)
   @objc public static func removeOverlays()
   @objc public static func onUserPurchaseSuccess(token: Swift.String, productId: Swift.String)
   @objc public static func onUserPurchaseError(errorCode: Swift.String)
@@ -30,10 +29,10 @@ import WebKit
   @objc override dynamic public init()
 }
 @objc public class WIOverlayData : ObjectiveC.NSObject {
-  @objc public init(channelId: Swift.String?, streamId: Swift.String?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, debug: Swift.Bool = false)
-  @objc public init(channelId: Swift.String?, streamId: Swift.String?, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, debug: Swift.Bool = false)
-  @objc public init(channelId: Swift.String?, streamId: Swift.String?, thirdPartyToken: Swift.String?, accountId: Swift.Int, mappingType: WISDK.WIOverlayData.MappingType = MappingType.WI, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, deviceType: WISDK.WIOverlayData.DeviceType = DeviceType.PHONE, debug: Swift.Bool = false)
-  @objc public init(channelId: Swift.String?, streamId: Swift.String?, thirdPartyToken: Swift.String?, accountId: Swift.Int, mappingType: WISDK.WIOverlayData.MappingType = MappingType.WI, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, deviceType: WISDK.WIOverlayData.DeviceType = DeviceType.PHONE, debug: Swift.Bool = false, timeoutSecond: Swift.Int = 0)
+  @objc public init(channelId: Swift.String?, streamId: Swift.String?, contentType: WISDK.WIOverlayData.ContentType, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, debug: Swift.Bool = false)
+  @objc public init(channelId: Swift.String?, streamId: Swift.String?, contentType: WISDK.WIOverlayData.ContentType, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, debug: Swift.Bool = false)
+  @objc public init(channelId: Swift.String?, streamId: Swift.String?, thirdPartyToken: Swift.String?, contentType: WISDK.WIOverlayData.ContentType, accountId: Swift.Int, mappingType: WISDK.WIOverlayData.MappingType = MappingType.WI, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, deviceType: WISDK.WIOverlayData.DeviceType = DeviceType.PHONE, debug: Swift.Bool = false)
+  @objc public init(channelId: Swift.String?, streamId: Swift.String?, thirdPartyToken: Swift.String?, contentType: WISDK.WIOverlayData.ContentType, accountId: Swift.Int, mappingType: WISDK.WIOverlayData.MappingType = MappingType.WI, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, deviceType: WISDK.WIOverlayData.DeviceType = DeviceType.PHONE, debug: Swift.Bool = false, timeoutSecond: Swift.Int = 0)
   @objc public enum DeviceType : Swift.Int, Swift.RawRepresentable {
     case PHONE, TV
     public typealias RawValue = Swift.String
@@ -61,6 +60,14 @@ import WebKit
   @objc @_hasMissingDesignatedInitializers public class Platform : ObjectiveC.NSObject {
     @objc deinit
     @objc override dynamic public init()
+  }
+  @objc public enum ContentType : Swift.Int, Swift.RawRepresentable {
+    case VOD, LIVESTREAM
+    public typealias RawValue = Swift.String
+    public var rawValue: WISDK.WIOverlayData.ContentType.RawValue {
+      get
+    }
+    public init?(rawValue: WISDK.WIOverlayData.ContentType.RawValue)
   }
   @objc deinit
   @objc override dynamic public init()
@@ -93,7 +100,7 @@ import WebKit
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class WIOverlayView : WISDK.PassthroughView, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate, WebKit.WKUIDelegate, UIKit.UIScrollViewDelegate {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class WIOverlayView : WISDK.PassthroughView, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate, WebKit.WKUIDelegate, UIKit.UIScrollViewDelegate {
   open var mWebView: WebKit.WKWebView!
   open var mWebViewError: Swift.Bool {
     get
@@ -103,15 +110,16 @@ import WebKit
     get
     set
   }
+  @objc public func scrollViewWillBeginZooming(_ scrollView: UIKit.UIScrollView, with view: UIKit.UIView?)
   public func injectJavascript(javascript: Swift.String)
   @objc open func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
-  @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
   @objc public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
   @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
   @objc public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: Swift.Error)
   @objc public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
   @objc public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
   @objc public func webViewDidClose(_ webView: WebKit.WKWebView)
+  public func clearAll()
   @objc deinit
 }
 extension WISDK.WIOverlayData.DeviceType : Swift.Equatable {}
@@ -120,6 +128,8 @@ extension WISDK.WIOverlayData.Environment : Swift.Equatable {}
 extension WISDK.WIOverlayData.Environment : Swift.Hashable {}
 extension WISDK.WIOverlayData.MappingType : Swift.Equatable {}
 extension WISDK.WIOverlayData.MappingType : Swift.Hashable {}
+extension WISDK.WIOverlayData.ContentType : Swift.Equatable {}
+extension WISDK.WIOverlayData.ContentType : Swift.Hashable {}
 extension WISDK.WIWebAction.TypeAction : Swift.Equatable {}
 extension WISDK.WIWebAction.TypeAction : Swift.Hashable {}
 extension WISDK.WIWebAction.TypeAction : Swift.RawRepresentable {}
