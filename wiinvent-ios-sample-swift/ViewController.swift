@@ -25,33 +25,7 @@ class ViewController: UIViewController {
 
         showToastFaded(message: "hello")
         
-//        initLandingPage();
-        
         initOverlay();
-    }
-    
-    func initLandingPage() {
-        let overlayData = WIOverlayData(type: WIOverlayData.OverlayType.PROFILE,
-                                        accountId: ViewController.SAMPLE_ACCOUNT_ID,
-                                        thirdPartyToken: nil,
-                                        env: WIOverlayData.Environment.PRODUCTION,
-                                        deviceType: WIOverlayData.DeviceType.PHONE
-                                        )
-        WISDK.addOverlaysToPlayerView(container: view, overlayData: overlayData);
-        
-        WISDK.onLogin = {
-            self.showToastFaded(message: "Login")
-        }
-        
-        WISDK.onProfileClose = {
-            self.showToastFaded(message: "-----close----")
-        }
-        
-        WISDK.onVideoDetail = { (videoId) in
-            self.showToastFaded(message: "-----onVideoDetail----" + videoId)
-            
-            
-        }
     }
     
     func initOverlay() {
@@ -78,16 +52,16 @@ class ViewController: UIViewController {
 
         WISDK.monitorAVPlayer(player: player)
 
-//        WISDK.onConfigReady = { configData in
-//            if let sources = configData.sources {
-//                for source in sources {
-//                    if let url = source.url, AVAsset(url: url).isPlayable {
-//                        print("====onConfigReady: \(url)")
-//                        self.player?.replaceCurrentItem(with: AVPlayerItem(url: url))
-//                    }
-//                }
-//            }
-//        }
+        WISDK.onConfigReady = { configData in
+            if let sources = configData.sources {
+                for source in sources {
+                    if let url = source.url, AVAsset(url: url).isPlayable {
+                        print("====onConfigReady: \(url)")
+                        self.player?.replaceCurrentItem(with: AVPlayerItem(url: url))
+                    }
+                }
+            }
+        }
     
         let overlayData = WIOverlayData(channelId: ViewController.SAMPLE_CHANNEL_ID,
                                         streamId: ViewController.SAMPLE_STREAM_ID,
@@ -103,17 +77,6 @@ class ViewController: UIViewController {
 
         WISDK.addOverlaysToPlayerView(container: containerView, overlayData: overlayData)
 
-//        WISDK.onUserPurchase
-//        WISDK.onVoted = { ( userId, channelId, streamId, entryId, numPredictSame) in
-//            print("====onConfigReady: \(userId)")
-//        }
-//
-        WISDK.onUserPurchase = { (userId, productId) in
-            self.showToastFaded(message: "====onConfigReady: \(userId)")
-            WISDK.removeOverlays();
-            self.dismiss(animated: true)
-        }
-        
         WISDK.onDisplayOverlay = {(isDisplay) in
             self.showToastFaded(message: "====isDisplay: \(isDisplay)")
         }
