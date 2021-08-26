@@ -2,8 +2,7 @@
 //  WISDK.h
 //  WISDK
 //
-//  Created by mcg-corp on 4/29/20.
-//  Copyright © 2020 wiinvent. All rights reserved.
+//  Created by Nam Co on 11/06/2021.
 //
 
 #import <Foundation/Foundation.h>

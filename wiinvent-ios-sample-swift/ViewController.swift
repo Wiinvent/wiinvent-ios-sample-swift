@@ -8,69 +8,143 @@
 
 import UIKit
 import WISDK
-import PTVSDK
 import AVKit
 
 class ViewController: UIViewController {
-    
-    static let SAMPLE_ACCOUNT_ID: Int = 81
-    static let SAMPLE_CHANNEL_ID: String = "30"
-    static let SAMPLE_STREAM_ID: String = "90000"
-    static let SAMPLE_TOKEN: String = "1001"
+
+    static let SAMPLE_ACCOUNT_ID: Int = 13
+    static let SAMPLE_CHANNEL_ID: String = "107578015"
+    static let SAMPLE_STREAM_ID: String = "957"
+    static let SAMPLE_TOKEN: String = "5001"
+    static let SAMPLE_VOD_URL: String = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4";
     
     var player: AVPlayer?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        showToastFaded(message: "hello")
         
-        let frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 250)
-//        let frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
+//        initLandingPage();
         
-        let videoURL = URL(string: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3")
+        initOverlay();
+    }
+    
+    func initLandingPage() {
+        let overlayData = WIOverlayData(type: WIOverlayData.OverlayType.PROFILE,
+                                        accountId: ViewController.SAMPLE_ACCOUNT_ID,
+                                        thirdPartyToken: nil,
+                                        env: WIOverlayData.Environment.PRODUCTION,
+                                        deviceType: WIOverlayData.DeviceType.PHONE
+                                        )
+        WISDK.addOverlaysToPlayerView(container: view, overlayData: overlayData);
         
-        player = AVPlayer(url: videoURL!)
+        WISDK.onLogin = {
+            self.showToastFaded(message: "Login")
+        }
+        
+        WISDK.onProfileClose = {
+            self.showToastFaded(message: "-----close----")
+        }
+        
+        WISDK.onVideoDetail = { (videoId) in
+            self.showToastFaded(message: "-----onVideoDetail----" + videoId)
+            
+            
+        }
+    }
+    
+    func initOverlay() {
+//        let containerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 250))
+        let containerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
+        containerView.backgroundColor = UIColor.blue
+        view.addSubview(containerView);
+        
+        player = AVPlayer(url: URL.init(string: ViewController.SAMPLE_VOD_URL)!)
         let avController = AVPlayerViewController()
         avController.player = player
         avController.showsPlaybackControls = true
-        avController.view.frame = frame
-      
-        view.addSubview(avController.view)
+        avController.view.translatesAutoresizingMaskIntoConstraints = false;
+    
+        containerView.addSubview(avController.view)
         addChild(avController)
         
+        NSLayoutConstraint.activate([
+            avController.view.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 0),
+            avController.view.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: 0),
+            avController.view.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 0),
+            avController.view.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: 0),
+             ])
+
         WISDK.monitorAVPlayer(player: player)
 
-        WISDK.onConfigReady = { configData in
-            if let sources = configData.sources {
-                for source in sources {
-                    if let url = source.url, AVAsset(url: url).isPlayable {
-                        print("====onConfigReady: \(url)")
-                        self.player?.replaceCurrentItem(with: AVPlayerItem(url: url))
-                    }
-                }
-            }
-        }
+//        WISDK.onConfigReady = { configData in
+//            if let sources = configData.sources {
+//                for source in sources {
+//                    if let url = source.url, AVAsset(url: url).isPlayable {
+//                        print("====onConfigReady: \(url)")
+//                        self.player?.replaceCurrentItem(with: AVPlayerItem(url: url))
+//                    }
+//                }
+//            }
+//        }
+    
+        let overlayData = WIOverlayData(channelId: ViewController.SAMPLE_CHANNEL_ID,
+                                        streamId: ViewController.SAMPLE_STREAM_ID,
+                                        //Optional
+                                        thirdPartyToken: nil,
+                                        contentType: WIOverlayData.ContentType.LIVESTREAM,
+                                        accountId: ViewController.SAMPLE_ACCOUNT_ID,
+                                        mappingType: WIOverlayData.MappingType.THIRDPARTY,
+                                        platform: nil,
+                                        env: WIOverlayData.Environment.PRODUCTION,
+                                        deviceType: WIOverlayData.DeviceType.PHONE,
+                                        debug: true)
 
+        WISDK.addOverlaysToPlayerView(container: containerView, overlayData: overlayData)
+
+//        WISDK.onUserPurchase
 //        WISDK.onVoted = { ( userId, channelId, streamId, entryId, numPredictSame) in
 //            print("====onConfigReady: \(userId)")
 //        }
-
+//
         WISDK.onUserPurchase = { (userId, productId) in
-            print("====onConfigReady: \(userId)")
+            self.showToastFaded(message: "====onConfigReady: \(userId)")
+            WISDK.removeOverlays();
+            self.dismiss(animated: true)
+        }
+        
+        WISDK.onDisplayOverlay = {(isDisplay) in
+            self.showToastFaded(message: "====isDisplay: \(isDisplay)")
         }
 
-         let overlayData = WIOverlayData(channelId: ViewController.SAMPLE_CHANNEL_ID,
-                                               streamId: ViewController.SAMPLE_STREAM_ID,
-                                               //Optional
-                                               thirdPartyToken: ViewController.SAMPLE_TOKEN,
-                                               contentType: WIOverlayData.ContentType.LIVESTREAM,
-                                               accountId: ViewController.SAMPLE_ACCOUNT_ID,
-                                               mappingType: WIOverlayData.MappingType.THIRDPARTY,
-                                               platform: nil,
-                                               env: WIOverlayData.Environment.DEV,
-                                               deviceType: WIOverlayData.DeviceType.PHONE,
-                                               debug: true)
-        WISDK.addOverlaysToPlayerView(container: view, overlayData: overlayData)
+
+//        WISDK.removeOverlays();
         
+        showToastFaded(message: "hello")
+    }
+    
+    func showToastFaded(message : String) {
+
+
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 125, y: self.view.frame.size.height-100, width: 250, height: 35))
+        toastLabel.numberOfLines = 0
+        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        toastLabel.textColor = UIColor.white
+        toastLabel.textAlignment = .center;
+        toastLabel.text = message
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 10;
+        toastLabel.clipsToBounds  =  true
+        toastLabel.sizeToFit()
+        toastLabel.frame = CGRect( x: toastLabel.frame.minX, y: toastLabel.frame.minY,width:   toastLabel.frame.width + 20, height: toastLabel.frame.height + 8)
+
+        self.view.addSubview(toastLabel)
+        UIView.animate(withDuration: 4.0, delay: 0.1, options: .curveEaseOut, animations: {
+            toastLabel.alpha = 0.0
+        }, completion: {(isCompleted) in
+            toastLabel.removeFromSuperview()
+        })
     }
 
 

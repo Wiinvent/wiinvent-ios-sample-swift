@@ -1,22 +1,23 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
-// swift-module-flags: -target x86_64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WISDK
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-module-flags: -target x86_64-apple-ios12.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WISDK
 import AVKit
 import Foundation
 import JavaScriptCore
 import Swift
+@_exported import WISDK
 import WebKit
-@_hasMissingDesignatedInitializers @objc public class WIStreamSource : ObjectiveC.NSObject {
-  @objc final public let url: Foundation.URL?
-  @objc final public let mineType: Swift.String?
-  @objc deinit
-  @objc override dynamic public init()
-}
 @_inheritsConvenienceInitializers @objc open class WISDK : ObjectiveC.NSObject {
   @objc public static var onConfigReady: ((WISDK.WIConfigData) -> ())?
   @objc public static var onTimeout: (() -> ())?
   @objc public static var onError: (() -> ())?
   @objc public static var onTokenExpire: (() -> ())?
+  @objc public static var onProfileClose: (() -> ())?
+  @objc public static var onLogin: (() -> ())?
+  @objc public static var onOverlayStart: (() -> ())?
+  @objc public static var onOverlayCompleted: (() -> ())?
+  @objc public static var onDisplayOverlay: ((Swift.Bool) -> ())?
+  @objc public static var onVideoDetail: ((Swift.String) -> ())?
   @objc public static var onVoted: ((Swift.String, Swift.String, Swift.String?, Swift.String, Swift.String?, Swift.String?, Swift.String?, Swift.Int) -> ())?
   @objc public static var onUserPurchase: ((Swift.String, Swift.String) -> ())?
   @objc public static func monitorAVPlayer(player: AVFoundation.AVPlayer?)
@@ -25,14 +26,35 @@ import WebKit
   @objc public static func removeOverlays()
   @objc public static func onUserPurchaseSuccess(token: Swift.String, productId: Swift.String)
   @objc public static func onUserPurchaseError(errorCode: Swift.String)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class WIStreamSource : ObjectiveC.NSObject {
+  @objc final public let url: Foundation.URL?
+  @objc final public let mineType: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class WIWebAction : ObjectiveC.NSObject {
+  public enum TypeAction : Swift.String {
+    case LOAD_CONFIG_SUCCESS, OVERLAY_VISIBILITY_CHANGE, USER_VOTED, USER_PURCHASE, TOKEN_EXPIRE, LOGIN, CLOSE_PROFILE_PAGE, DETAIL_VIDEO, OVELAY_DISPLAY, START_OVERLAY, OVERLAY_COMPLETED, UNKNOWN
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init(payload: Swift.String)
+  public func getType() -> WISDK.WIWebAction.TypeAction
+  @objc override dynamic public init()
+  @objc deinit
 }
 @objc public class WIOverlayData : ObjectiveC.NSObject {
   @objc public init(channelId: Swift.String?, streamId: Swift.String?, contentType: WISDK.WIOverlayData.ContentType, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, debug: Swift.Bool = false)
   @objc public init(channelId: Swift.String?, streamId: Swift.String?, contentType: WISDK.WIOverlayData.ContentType, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, debug: Swift.Bool = false)
   @objc public init(channelId: Swift.String?, streamId: Swift.String?, thirdPartyToken: Swift.String?, contentType: WISDK.WIOverlayData.ContentType, accountId: Swift.Int, mappingType: WISDK.WIOverlayData.MappingType = MappingType.WI, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, deviceType: WISDK.WIOverlayData.DeviceType = DeviceType.PHONE, debug: Swift.Bool = false)
   @objc public init(channelId: Swift.String?, streamId: Swift.String?, thirdPartyToken: Swift.String?, contentType: WISDK.WIOverlayData.ContentType, accountId: Swift.Int, mappingType: WISDK.WIOverlayData.MappingType = MappingType.WI, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, deviceType: WISDK.WIOverlayData.DeviceType = DeviceType.PHONE, debug: Swift.Bool = false, timeoutSecond: Swift.Int = 0)
+  @objc public init(type: WISDK.WIOverlayData.OverlayType, accountId: Swift.Int, thirdPartyToken: Swift.String?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, deviceType: WISDK.WIOverlayData.DeviceType = DeviceType.PHONE)
   @objc public enum DeviceType : Swift.Int, Swift.RawRepresentable {
     case PHONE, TV
     public typealias RawValue = Swift.String
@@ -58,8 +80,8 @@ import WebKit
     public init?(rawValue: WISDK.WIOverlayData.MappingType.RawValue)
   }
   @objc @_hasMissingDesignatedInitializers public class Platform : ObjectiveC.NSObject {
-    @objc deinit
     @objc override dynamic public init()
+    @objc deinit
   }
   @objc public enum ContentType : Swift.Int, Swift.RawRepresentable {
     case VOD, LIVESTREAM
@@ -69,29 +91,23 @@ import WebKit
     }
     public init?(rawValue: WISDK.WIOverlayData.ContentType.RawValue)
   }
-  @objc deinit
+  @objc public enum OverlayType : Swift.Int, Swift.RawRepresentable {
+    case PROFILE, OVERLAY
+    public typealias RawValue = Swift.String
+    public var rawValue: WISDK.WIOverlayData.OverlayType.RawValue {
+      get
+    }
+    public init?(rawValue: WISDK.WIOverlayData.OverlayType.RawValue)
+  }
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc public class WIConfigData : ObjectiveC.NSObject {
   @objc public var sources: [WISDK.WIStreamSource]?
   @objc final public let isVod: Swift.Bool
   public init(data: [Swift.String : Any]?)
-  @objc deinit
   @objc override dynamic public init()
-}
-@objc public class WIWebAction : ObjectiveC.NSObject {
-  public enum TypeAction : Swift.String {
-    case LOAD_CONFIG_SUCCESS, OVERLAY_VISIBILITY_CHANGE, USER_VOTED, USER_PURCHASE, TOKEN_EXPIRE, UNKNOWN
-    public typealias RawValue = Swift.String
-    public init?(rawValue: Swift.String)
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public init(payload: Swift.String)
-  public func getType() -> WISDK.WIWebAction.TypeAction
   @objc deinit
-  @objc override dynamic public init()
 }
 @objc @_inheritsConvenienceInitializers open class PassthroughView : UIKit.UIView {
   open var isUserGestureEnabled: Swift.Bool
@@ -102,6 +118,7 @@ import WebKit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class WIOverlayView : WISDK.PassthroughView, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate, WebKit.WKUIDelegate, UIKit.UIScrollViewDelegate {
   open var mWebView: WebKit.WKWebView!
+  open var currentOverlay: Swift.Int
   open var mWebViewError: Swift.Bool {
     get
     set
@@ -122,6 +139,9 @@ import WebKit
   public func clearAll()
   @objc deinit
 }
+extension WISDK.WIWebAction.TypeAction : Swift.Equatable {}
+extension WISDK.WIWebAction.TypeAction : Swift.Hashable {}
+extension WISDK.WIWebAction.TypeAction : Swift.RawRepresentable {}
 extension WISDK.WIOverlayData.DeviceType : Swift.Equatable {}
 extension WISDK.WIOverlayData.DeviceType : Swift.Hashable {}
 extension WISDK.WIOverlayData.Environment : Swift.Equatable {}
@@ -130,6 +150,5 @@ extension WISDK.WIOverlayData.MappingType : Swift.Equatable {}
 extension WISDK.WIOverlayData.MappingType : Swift.Hashable {}
 extension WISDK.WIOverlayData.ContentType : Swift.Equatable {}
 extension WISDK.WIOverlayData.ContentType : Swift.Hashable {}
-extension WISDK.WIWebAction.TypeAction : Swift.Equatable {}
-extension WISDK.WIWebAction.TypeAction : Swift.Hashable {}
-extension WISDK.WIWebAction.TypeAction : Swift.RawRepresentable {}
+extension WISDK.WIOverlayData.OverlayType : Swift.Equatable {}
+extension WISDK.WIOverlayData.OverlayType : Swift.Hashable {}

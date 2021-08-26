@@ -1,4 +1,11 @@
 framework module WISDK {
-  header "WISDK-Swift.h"
-  requires objc
+  umbrella header "WISDK.h"
+
+  export *
+  module * { export * }
+}
+
+module WISDK.Swift {
+    header "WISDK-Swift.h"
+    requires objc
 }
