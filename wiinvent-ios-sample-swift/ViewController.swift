@@ -65,18 +65,19 @@ class ViewController: UIViewController {
     
         let overlayData = WIOverlayData(channelId: ViewController.SAMPLE_CHANNEL_ID,
                                         streamId: ViewController.SAMPLE_STREAM_ID,
-                                        //Optional
-                                        thirdPartyToken: nil,
+                                        thirdPartyToken: "",
                                         contentType: WIOverlayData.ContentType.LIVESTREAM,
                                         accountId: ViewController.SAMPLE_ACCOUNT_ID,
-                                        mappingType: WIOverlayData.MappingType.THIRDPARTY,
                                         platform: nil,
-                                        env: WIOverlayData.Environment.PRODUCTION,
-                                        deviceType: WIOverlayData.DeviceType.PHONE,
-                                        debug: true)
+                                        env: WIOverlayData.Environment.PRODUCTION)
 
         WISDK.addOverlaysToPlayerView(container: containerView, overlayData: overlayData)
 
+        WISDK.onConfigReady = { (configData) in
+            //TODO: SDK ready, can be call ads request
+            self.showToastFaded(message: "onConfigReady")
+        }
+        
         WISDK.onDisplayOverlay = {(isDisplay) in
             self.showToastFaded(message: "====isDisplay: \(isDisplay)")
         }
