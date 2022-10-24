@@ -9092,287 +9092,287 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
       "offset": 314,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
       "offset": 342,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
       "offset": 370,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1555,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2213,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayManager.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1593,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayManager.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1641,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayManager.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1886,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 225,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 232,
       "length": 10,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 244,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 251,
       "length": 8,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 261,
       "length": 7,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 270,
       "length": 13,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 285,
       "length": 12,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 299,
       "length": 9,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 310,
       "length": 5,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 317,
       "length": 6,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
       "kind": "StringLiteral",
       "offset": 2088,
       "length": 12,
       "value": "\"campaignId\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 2102,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
       "kind": "StringLiteral",
       "offset": 2106,
       "length": 10,
       "value": "\"isLinear\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
       "kind": "BooleanLiteral",
       "offset": 2118,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIStreamSource.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIStreamSource.swift",
       "kind": "StringLiteral",
       "offset": 116,
       "length": 14,
       "value": "\"WISDK.WIStreamSource\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIWebAction.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIWebAction.swift",
       "kind": "StringLiteral",
       "offset": 364,
       "length": 11,
       "value": "\"WISDK.WIWebAction\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIAdsRequestData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdsRequestData.swift",
       "kind": "StringLiteral",
       "offset": 122,
       "length": 16,
       "value": "\"WISDK.WIAdsRequestData\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
       "offset": 1079,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
       "kind": "StringLiteral",
       "offset": 1224,
       "length": 7,
       "value": "\"1.6.4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
       "offset": 2671,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
       "offset": 6346,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
       "offset": 6353,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
       "offset": 6362,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
       "offset": 6371,
       "length": 10,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
       "kind": "StringLiteral",
       "offset": 7304,
       "length": 8,
       "value": "\"WISDK.Platform\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
       "offset": 7649,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
       "offset": 8297,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
       "kind": "StringLiteral",
       "offset": 829,
       "length": 13,
       "value": "\"WISDK.WIOverlayData\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIConfigData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIConfigData.swift",
       "kind": "StringLiteral",
       "offset": 118,
       "length": 12,
       "value": "\"WISDK.WIConfigData\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayView.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayView.swift",
       "kind": "BooleanLiteral",
       "offset": 1338,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayView.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayView.swift",
       "kind": "IntegerLiteral",
       "offset": 1896,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayView.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayView.swift",
       "kind": "BooleanLiteral",
       "offset": 1939,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayView.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayView.swift",
       "kind": "BooleanLiteral",
       "offset": 2115,
       "length": 5,
