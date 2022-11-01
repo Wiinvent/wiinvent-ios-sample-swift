@@ -26,21 +26,37 @@ class ViewController: UIViewController, WIAdsInStreamLoaderDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initExoPlayer()
-        initInstream()
-        initOverlay();
+//        initExoPlayer()
+//        initInstream()
+//        initOverlay();
+        initGame();
         
 //        initLandingPage();
         
     }
-    
+
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated);
 
-        let requestData = WIAdsRequestData(channelId: "11683", streamId: "13545")
-        WIAdsInStreamManager.shared().requestAds(requestData: requestData, player: player!, adContainer: containerView, viewController: self)
-
-        print("=======request instream ads")
+//        let requestData = WIAdsRequestData(channelId: "11683", streamId: "13545")
+//        WIAdsInStreamManager.shared().requestAds(requestData: requestData, player: player!, adContainer: containerView, viewController: self)
+//
+//        print("=======request instream ads")
+    }
+    
+    func initGame() {
+        containerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
+        containerView.backgroundColor = UIColor.blue
+        view.addSubview(containerView);
+        
+        let gameData = WIGameData(accountId: String(ViewController.SAMPLE_ACCOUNT_ID),
+                                  channelId: ViewController.SAMPLE_CHANNEL_ID,
+                                  streamId: ViewController.SAMPLE_STREAM_ID,
+                                  token: "5002",
+                                  env: WIGameData.Environment.SANDBOX)
+        
+        WIGameManager.shared().addGameView(container: containerView, data: gameData, gameDelegate: self)
     }
     
     func initExoPlayer() {
