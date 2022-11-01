@@ -12,6 +12,24 @@ import Swift
 import WebKit
 import _Concurrency
 import _StringProcessing
+@objc public protocol WIGameDelegate {
+  @objc func onDismiss()
+  @objc func onError()
+  @objc func onTimeout()
+}
+@objc public class WIGameWebAction : ObjectiveC.NSObject {
+  public enum TypeAction : Swift.String {
+    case USER_DISMISS, UNKNOWN
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init(payload: Swift.String)
+  public func getType() -> WISDK.WIGameWebAction.TypeAction
+  @objc deinit
+}
 @objc public protocol WIAdsInStreamLoaderDelegate {
   @objc func wiManagerRequestPlayContent()
   @objc func wiManagerRequestPauseContent()
@@ -93,6 +111,13 @@ import _StringProcessing
   @objc public func getErrorCode() -> Swift.Int
   @objc public func getErrorMessage() -> Swift.String
   @objc public func getEventType() -> WISDK.WIAdEvent.AdEventType
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class WIGameManager : ObjectiveC.NSObject {
+  public class func shared() -> WISDK.WIGameManager
+  @objc public func addGameView(container: UIKit.UIView!, data: WISDK.WIGameData!, gameDelegate: WISDK.WIGameDelegate)
+  @objc public func removeGameView()
+  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class WIStreamSource : ObjectiveC.NSObject {
@@ -188,6 +213,21 @@ import _StringProcessing
   @_Concurrency.MainActor(unsafe) public func clearAll()
   @objc deinit
 }
+@objc public class WIGameData : ObjectiveC.NSObject {
+  @objc public init(accountId: Swift.String?, channelId: Swift.String?, streamId: Swift.String?, token: Swift.String?, env: WISDK.WIGameData.Environment)
+  @objc public enum Environment : Swift.Int, Swift.RawRepresentable {
+    case SANDBOX, PRODUCTION
+    public typealias RawValue = Swift.String
+    public var rawValue: WISDK.WIGameData.Environment.RawValue {
+      get
+    }
+    public init?(rawValue: WISDK.WIGameData.Environment.RawValue)
+  }
+  @objc deinit
+}
+extension WISDK.WIGameWebAction.TypeAction : Swift.Equatable {}
+extension WISDK.WIGameWebAction.TypeAction : Swift.Hashable {}
+extension WISDK.WIGameWebAction.TypeAction : Swift.RawRepresentable {}
 extension WISDK.WIAdsInStreamManager.AdsEnvironment : Swift.Equatable {}
 extension WISDK.WIAdsInStreamManager.AdsEnvironment : Swift.Hashable {}
 extension WISDK.WIAdsInStreamManager.LevelLog : Swift.Equatable {}
@@ -203,3 +243,5 @@ extension WISDK.WIOverlayData.ContentType : Swift.Equatable {}
 extension WISDK.WIOverlayData.ContentType : Swift.Hashable {}
 extension WISDK.WIOverlayData.OverlayType : Swift.Equatable {}
 extension WISDK.WIOverlayData.OverlayType : Swift.Hashable {}
+extension WISDK.WIGameData.Environment : Swift.Equatable {}
+extension WISDK.WIGameData.Environment : Swift.Hashable {}

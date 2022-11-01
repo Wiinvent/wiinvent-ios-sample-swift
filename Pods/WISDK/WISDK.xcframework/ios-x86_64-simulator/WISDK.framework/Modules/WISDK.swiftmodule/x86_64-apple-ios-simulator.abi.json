@@ -15,6 +15,458 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "WIGameDelegate",
+        "printedName": "WIGameDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onDismiss",
+            "printedName": "onDismiss()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(pl)WIGameDelegate(im)onDismiss",
+            "mangledName": "$s5WISDK14WIGameDelegateP9onDismissyyF",
+            "moduleName": "WISDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : WISDK.WIGameDelegate>",
+            "sugared_genericSig": "<Self where Self : WISDK.WIGameDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onError",
+            "printedName": "onError()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(pl)WIGameDelegate(im)onError",
+            "mangledName": "$s5WISDK14WIGameDelegateP7onErroryyF",
+            "moduleName": "WISDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : WISDK.WIGameDelegate>",
+            "sugared_genericSig": "<Self where Self : WISDK.WIGameDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onTimeout",
+            "printedName": "onTimeout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(pl)WIGameDelegate(im)onTimeout",
+            "mangledName": "$s5WISDK14WIGameDelegateP9onTimeoutyyF",
+            "moduleName": "WISDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : WISDK.WIGameDelegate>",
+            "sugared_genericSig": "<Self where Self : WISDK.WIGameDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@WISDK@objc(pl)WIGameDelegate",
+        "mangledName": "$s5WISDK14WIGameDelegateP",
+        "moduleName": "WISDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WIGameWebAction",
+        "printedName": "WIGameWebAction",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "TypeAction",
+            "printedName": "TypeAction",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "USER_DISMISS",
+                "printedName": "USER_DISMISS",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(WISDK.WIGameWebAction.TypeAction.Type) -> WISDK.WIGameWebAction.TypeAction",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TypeAction",
+                        "printedName": "WISDK.WIGameWebAction.TypeAction",
+                        "usr": "s:5WISDK15WIGameWebActionC04TypeD0O"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "WISDK.WIGameWebAction.TypeAction.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TypeAction",
+                            "printedName": "WISDK.WIGameWebAction.TypeAction",
+                            "usr": "s:5WISDK15WIGameWebActionC04TypeD0O"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:5WISDK15WIGameWebActionC04TypeD0O12USER_DISMISSyA2EmF",
+                "mangledName": "$s5WISDK15WIGameWebActionC04TypeD0O12USER_DISMISSyA2EmF",
+                "moduleName": "WISDK"
+              },
+              {
+                "kind": "Var",
+                "name": "UNKNOWN",
+                "printedName": "UNKNOWN",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(WISDK.WIGameWebAction.TypeAction.Type) -> WISDK.WIGameWebAction.TypeAction",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TypeAction",
+                        "printedName": "WISDK.WIGameWebAction.TypeAction",
+                        "usr": "s:5WISDK15WIGameWebActionC04TypeD0O"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "WISDK.WIGameWebAction.TypeAction.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TypeAction",
+                            "printedName": "WISDK.WIGameWebAction.TypeAction",
+                            "usr": "s:5WISDK15WIGameWebActionC04TypeD0O"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:5WISDK15WIGameWebActionC04TypeD0O7UNKNOWNyA2EmF",
+                "mangledName": "$s5WISDK15WIGameWebActionC04TypeD0O7UNKNOWNyA2EmF",
+                "moduleName": "WISDK"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "WISDK.WIGameWebAction.TypeAction?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TypeAction",
+                        "printedName": "WISDK.WIGameWebAction.TypeAction",
+                        "usr": "s:5WISDK15WIGameWebActionC04TypeD0O"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:5WISDK15WIGameWebActionC04TypeD0O8rawValueAESgSS_tcfc",
+                "mangledName": "$s5WISDK15WIGameWebActionC04TypeD0O8rawValueAESgSS_tcfc",
+                "moduleName": "WISDK",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:5WISDK15WIGameWebActionC04TypeD0O8rawValueSSvp",
+                "mangledName": "$s5WISDK15WIGameWebActionC04TypeD0O8rawValueSSvp",
+                "moduleName": "WISDK",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:5WISDK15WIGameWebActionC04TypeD0O8rawValueSSvg",
+                    "mangledName": "$s5WISDK15WIGameWebActionC04TypeD0O8rawValueSSvg",
+                    "moduleName": "WISDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:5WISDK15WIGameWebActionC04TypeD0O",
+            "mangledName": "$s5WISDK15WIGameWebActionC04TypeD0O",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(payload:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WIGameWebAction",
+                "printedName": "WISDK.WIGameWebAction",
+                "usr": "c:@M@WISDK@objc(cs)WIGameWebAction"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5WISDK15WIGameWebActionC7payloadACSS_tcfc",
+            "mangledName": "$s5WISDK15WIGameWebActionC7payloadACSS_tcfc",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getType",
+            "printedName": "getType()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TypeAction",
+                "printedName": "WISDK.WIGameWebAction.TypeAction",
+                "usr": "s:5WISDK15WIGameWebActionC04TypeD0O"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5WISDK15WIGameWebActionC7getTypeAC0fD0OyF",
+            "mangledName": "$s5WISDK15WIGameWebActionC7getTypeAC0fD0OyF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WIGameWebAction",
+                "printedName": "WISDK.WIGameWebAction",
+                "usr": "c:@M@WISDK@objc(cs)WIGameWebAction"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@WISDK@objc(cs)WIGameWebAction(im)init",
+            "mangledName": "$s5WISDK15WIGameWebActionCACycfc",
+            "moduleName": "WISDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@WISDK@objc(cs)WIGameWebAction",
+        "mangledName": "$s5WISDK15WIGameWebActionC",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "GoogleInteractiveMediaAds",
         "printedName": "GoogleInteractiveMediaAds",
@@ -4873,6 +5325,220 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "WISDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WIGameManager",
+        "printedName": "WIGameManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "shared",
+            "printedName": "shared()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WIGameManager",
+                "printedName": "WISDK.WIGameManager",
+                "usr": "c:@M@WISDK@objc(cs)WIGameManager"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5WISDK13WIGameManagerC6sharedACyFZ",
+            "mangledName": "$s5WISDK13WIGameManagerC6sharedACyFZ",
+            "moduleName": "WISDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addGameView",
+            "printedName": "addGameView(container:data:gameDelegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "WISDK.WIGameData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WIGameData",
+                    "printedName": "WISDK.WIGameData",
+                    "usr": "c:@M@WISDK@objc(cs)WIGameData"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WIGameDelegate",
+                "printedName": "WISDK.WIGameDelegate",
+                "usr": "c:@M@WISDK@objc(pl)WIGameDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(cs)WIGameManager(im)addGameViewWithContainer:data:gameDelegate:",
+            "mangledName": "$s5WISDK13WIGameManagerC11addGameView9container4data12gameDelegateySo6UIViewCSg_AA0B4DataCSgAA0bJ0_ptF",
+            "moduleName": "WISDK",
+            "objc_name": "addGameViewWithContainer:data:gameDelegate:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeGameView",
+            "printedName": "removeGameView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(cs)WIGameManager(im)removeGameView",
+            "mangledName": "$s5WISDK13WIGameManagerC14removeGameViewyyF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WIGameManager",
+                "printedName": "WISDK.WIGameManager",
+                "usr": "c:@M@WISDK@objc(cs)WIGameManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@WISDK@objc(cs)WIGameManager(im)init",
+            "mangledName": "$s5WISDK13WIGameManagerCACycfc",
+            "moduleName": "WISDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@WISDK@objc(cs)WIGameManager",
+        "mangledName": "$s5WISDK13WIGameManagerC",
+        "moduleName": "WISDK",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "WebKit",
         "printedName": "WebKit",
         "declKind": "Import",
@@ -7901,6 +8567,23 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "WISDK"
+      },
+      {
+        "kind": "Import",
         "name": "JavaScriptCore",
         "printedName": "JavaScriptCore",
         "declKind": "Import",
@@ -8197,6 +8880,13 @@
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -9086,297 +9776,720 @@
             "mangledName": "$ss8SendableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WIGameData",
+        "printedName": "WIGameData",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(accountId:channelId:streamId:token:env:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WIGameData",
+                "printedName": "WISDK.WIGameData",
+                "usr": "c:@M@WISDK@objc(cs)WIGameData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "WISDK.WIGameData.Environment",
+                "usr": "s:5WISDK10WIGameDataC11EnvironmentO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@WISDK@objc(cs)WIGameData(im)initWithAccountId:channelId:streamId:token:env:",
+            "mangledName": "$s5WISDK10WIGameDataC9accountId07channelE006streamE05token3envACSSSg_A3iC11EnvironmentOtcfc",
+            "moduleName": "WISDK",
+            "objc_name": "initWithAccountId:channelId:streamId:token:env:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Environment",
+            "printedName": "Environment",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "SANDBOX",
+                "printedName": "SANDBOX",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(WISDK.WIGameData.Environment.Type) -> WISDK.WIGameData.Environment",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "WISDK.WIGameData.Environment",
+                        "usr": "s:5WISDK10WIGameDataC11EnvironmentO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "WISDK.WIGameData.Environment.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "WISDK.WIGameData.Environment",
+                            "usr": "s:5WISDK10WIGameDataC11EnvironmentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:5WISDK10WIGameDataC11EnvironmentO7SANDBOXyA2EmF",
+                "mangledName": "$s5WISDK10WIGameDataC11EnvironmentO7SANDBOXyA2EmF",
+                "moduleName": "WISDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "fixedbinaryorder": 0
+              },
+              {
+                "kind": "Var",
+                "name": "PRODUCTION",
+                "printedName": "PRODUCTION",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(WISDK.WIGameData.Environment.Type) -> WISDK.WIGameData.Environment",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "WISDK.WIGameData.Environment",
+                        "usr": "s:5WISDK10WIGameDataC11EnvironmentO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "WISDK.WIGameData.Environment.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "WISDK.WIGameData.Environment",
+                            "usr": "s:5WISDK10WIGameDataC11EnvironmentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:5WISDK10WIGameDataC11EnvironmentO10PRODUCTIONyA2EmF",
+                "mangledName": "$s5WISDK10WIGameDataC11EnvironmentO10PRODUCTIONyA2EmF",
+                "moduleName": "WISDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "fixedbinaryorder": 1
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:5WISDK10WIGameDataC11EnvironmentO8rawValueSSvp",
+                "mangledName": "$s5WISDK10WIGameDataC11EnvironmentO8rawValueSSvp",
+                "moduleName": "WISDK",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:5WISDK10WIGameDataC11EnvironmentO8rawValueSSvg",
+                    "mangledName": "$s5WISDK10WIGameDataC11EnvironmentO8rawValueSSvg",
+                    "moduleName": "WISDK",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "WISDK.WIGameData.Environment?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "WISDK.WIGameData.Environment",
+                        "usr": "s:5WISDK10WIGameDataC11EnvironmentO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:5WISDK10WIGameDataC11EnvironmentO8rawValueAESgSS_tcfc",
+                "mangledName": "$s5WISDK10WIGameDataC11EnvironmentO8rawValueAESgSS_tcfc",
+                "moduleName": "WISDK",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:5WISDK10WIGameDataC11EnvironmentO",
+            "mangledName": "$s5WISDK10WIGameDataC11EnvironmentO",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "enumRawTypeName": "Int",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WIGameData",
+                "printedName": "WISDK.WIGameData",
+                "usr": "c:@M@WISDK@objc(cs)WIGameData"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@WISDK@objc(cs)WIGameData(im)init",
+            "mangledName": "$s5WISDK10WIGameDataCACycfc",
+            "moduleName": "WISDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@WISDK@objc(cs)WIGameData",
+        "mangledName": "$s5WISDK10WIGameDataC",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/game\/WIGameWebAction.swift",
+      "kind": "StringLiteral",
+      "offset": 121,
+      "length": 15,
+      "value": "\"WISDK.WIGameWebAction\""
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
       "offset": 314,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
       "offset": 342,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
       "offset": 370,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1555,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2213,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayManager.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1593,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayManager.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1641,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayManager.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1886,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 225,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 232,
       "length": 10,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 244,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 251,
       "length": 8,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 261,
       "length": 7,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 270,
       "length": 13,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 285,
       "length": 12,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 299,
       "length": 9,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 310,
       "length": 5,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 317,
       "length": 6,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "StringLiteral",
       "offset": 2088,
       "length": 12,
       "value": "\"campaignId\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 2102,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "StringLiteral",
       "offset": 2106,
       "length": 10,
       "value": "\"isLinear\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdEvent.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "BooleanLiteral",
       "offset": 2118,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIStreamSource.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIStreamSource.swift",
       "kind": "StringLiteral",
       "offset": 116,
       "length": 14,
       "value": "\"WISDK.WIStreamSource\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIWebAction.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIWebAction.swift",
       "kind": "StringLiteral",
       "offset": 364,
       "length": 11,
       "value": "\"WISDK.WIWebAction\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIAdsRequestData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsRequestData.swift",
       "kind": "StringLiteral",
       "offset": 122,
       "length": 16,
       "value": "\"WISDK.WIAdsRequestData\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
       "offset": 1079,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "StringLiteral",
       "offset": 1224,
       "length": 7,
       "value": "\"1.6.4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
       "offset": 2671,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
       "offset": 6346,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
       "offset": 6353,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
       "offset": 6362,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
       "offset": 6371,
       "length": 10,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "StringLiteral",
       "offset": 7304,
       "length": 8,
       "value": "\"WISDK.Platform\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
       "offset": 7649,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
       "offset": 8297,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "StringLiteral",
       "offset": 829,
       "length": 13,
       "value": "\"WISDK.WIOverlayData\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIConfigData.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIConfigData.swift",
       "kind": "StringLiteral",
       "offset": 118,
       "length": 12,
       "value": "\"WISDK.WIConfigData\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayView.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayView.swift",
       "kind": "BooleanLiteral",
       "offset": 1338,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayView.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayView.swift",
       "kind": "IntegerLiteral",
       "offset": 1896,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayView.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayView.swift",
       "kind": "BooleanLiteral",
       "offset": 1939,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/WIOverlayView.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayView.swift",
       "kind": "BooleanLiteral",
       "offset": 2115,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/game\/WIGameData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2051,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/game\/WIGameData.swift",
+      "kind": "StringLiteral",
+      "offset": 116,
+      "length": 10,
+      "value": "\"WISDK.WIGameData\""
     }
   ]
 }

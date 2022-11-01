@@ -359,6 +359,43 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+enum Environment : NSInteger;
+
+SWIFT_CLASS("_TtC5WISDK10WIGameData")
+@interface WIGameData : NSObject
+- (nonnull instancetype)initWithAccountId:(NSString * _Nullable)accountId channelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId token:(NSString * _Nullable)token env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, Environment, open) {
+  EnvironmentSANDBOX = 0,
+  EnvironmentPRODUCTION = 1,
+};
+
+
+SWIFT_PROTOCOL("_TtP5WISDK14WIGameDelegate_")
+@protocol WIGameDelegate
+- (void)onDismiss;
+- (void)onError;
+- (void)onTimeout;
+@end
+
+
+SWIFT_CLASS("_TtC5WISDK13WIGameManager")
+@interface WIGameManager : NSObject
+- (void)addGameViewWithContainer:(UIView * _Null_unspecified)container data:(WIGameData * _Null_unspecified)data gameDelegate:(id <WIGameDelegate> _Nonnull)gameDelegate;
+- (void)removeGameView;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5WISDK15WIGameWebAction")
+@interface WIGameWebAction : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 enum ContentType : NSInteger;
 enum Environment : NSInteger;
 @class Platform;
