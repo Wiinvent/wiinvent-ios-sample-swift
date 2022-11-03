@@ -9861,14 +9861,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "WISDK.WIGameData.Environment",
-                "usr": "s:5WISDK10WIGameDataC11EnvironmentO"
+                "name": "GameEnv",
+                "printedName": "WISDK.WIGameData.GameEnv",
+                "usr": "s:5WISDK10WIGameDataC7GameEnvO"
               }
             ],
             "declKind": "Constructor",
             "usr": "c:@M@WISDK@objc(cs)WIGameData(im)initWithAccountId:channelId:streamId:token:env:",
-            "mangledName": "$s5WISDK10WIGameDataC9accountId07channelE006streamE05token3envACSSSg_A3iC11EnvironmentOtcfc",
+            "mangledName": "$s5WISDK10WIGameDataC9accountId07channelE006streamE05token3envACSSSg_A3iC7GameEnvOtcfc",
             "moduleName": "WISDK",
             "objc_name": "initWithAccountId:channelId:streamId:token:env:",
             "declAttributes": [
@@ -9879,8 +9879,8 @@
           },
           {
             "kind": "TypeDecl",
-            "name": "Environment",
-            "printedName": "Environment",
+            "name": "GameEnv",
+            "printedName": "GameEnv",
             "children": [
               {
                 "kind": "Var",
@@ -9890,24 +9890,24 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(WISDK.WIGameData.Environment.Type) -> WISDK.WIGameData.Environment",
+                    "printedName": "(WISDK.WIGameData.GameEnv.Type) -> WISDK.WIGameData.GameEnv",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Environment",
-                        "printedName": "WISDK.WIGameData.Environment",
-                        "usr": "s:5WISDK10WIGameDataC11EnvironmentO"
+                        "name": "GameEnv",
+                        "printedName": "WISDK.WIGameData.GameEnv",
+                        "usr": "s:5WISDK10WIGameDataC7GameEnvO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Metatype",
-                        "printedName": "WISDK.WIGameData.Environment.Type",
+                        "printedName": "WISDK.WIGameData.GameEnv.Type",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "Environment",
-                            "printedName": "WISDK.WIGameData.Environment",
-                            "usr": "s:5WISDK10WIGameDataC11EnvironmentO"
+                            "name": "GameEnv",
+                            "printedName": "WISDK.WIGameData.GameEnv",
+                            "usr": "s:5WISDK10WIGameDataC7GameEnvO"
                           }
                         ]
                       }
@@ -9915,8 +9915,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:5WISDK10WIGameDataC11EnvironmentO7SANDBOXyA2EmF",
-                "mangledName": "$s5WISDK10WIGameDataC11EnvironmentO7SANDBOXyA2EmF",
+                "usr": "s:5WISDK10WIGameDataC7GameEnvO7SANDBOXyA2EmF",
+                "mangledName": "$s5WISDK10WIGameDataC7GameEnvO7SANDBOXyA2EmF",
                 "moduleName": "WISDK",
                 "declAttributes": [
                   "ObjC"
@@ -9931,24 +9931,24 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(WISDK.WIGameData.Environment.Type) -> WISDK.WIGameData.Environment",
+                    "printedName": "(WISDK.WIGameData.GameEnv.Type) -> WISDK.WIGameData.GameEnv",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Environment",
-                        "printedName": "WISDK.WIGameData.Environment",
-                        "usr": "s:5WISDK10WIGameDataC11EnvironmentO"
+                        "name": "GameEnv",
+                        "printedName": "WISDK.WIGameData.GameEnv",
+                        "usr": "s:5WISDK10WIGameDataC7GameEnvO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Metatype",
-                        "printedName": "WISDK.WIGameData.Environment.Type",
+                        "printedName": "WISDK.WIGameData.GameEnv.Type",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "Environment",
-                            "printedName": "WISDK.WIGameData.Environment",
-                            "usr": "s:5WISDK10WIGameDataC11EnvironmentO"
+                            "name": "GameEnv",
+                            "printedName": "WISDK.WIGameData.GameEnv",
+                            "usr": "s:5WISDK10WIGameDataC7GameEnvO"
                           }
                         ]
                       }
@@ -9956,8 +9956,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:5WISDK10WIGameDataC11EnvironmentO10PRODUCTIONyA2EmF",
-                "mangledName": "$s5WISDK10WIGameDataC11EnvironmentO10PRODUCTIONyA2EmF",
+                "usr": "s:5WISDK10WIGameDataC7GameEnvO10PRODUCTIONyA2EmF",
+                "mangledName": "$s5WISDK10WIGameDataC7GameEnvO10PRODUCTIONyA2EmF",
                 "moduleName": "WISDK",
                 "declAttributes": [
                   "ObjC"
@@ -9977,8 +9977,8 @@
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:5WISDK10WIGameDataC11EnvironmentO8rawValueSSvp",
-                "mangledName": "$s5WISDK10WIGameDataC11EnvironmentO8rawValueSSvp",
+                "usr": "s:5WISDK10WIGameDataC7GameEnvO8rawValueSSvp",
+                "mangledName": "$s5WISDK10WIGameDataC7GameEnvO8rawValueSSvp",
                 "moduleName": "WISDK",
                 "declAttributes": [
                   "AccessControl"
@@ -9997,8 +9997,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:5WISDK10WIGameDataC11EnvironmentO8rawValueSSvg",
-                    "mangledName": "$s5WISDK10WIGameDataC11EnvironmentO8rawValueSSvg",
+                    "usr": "s:5WISDK10WIGameDataC7GameEnvO8rawValueSSvg",
+                    "mangledName": "$s5WISDK10WIGameDataC7GameEnvO8rawValueSSvg",
                     "moduleName": "WISDK",
                     "accessorKind": "get"
                   }
@@ -10012,13 +10012,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "WISDK.WIGameData.Environment?",
+                    "printedName": "WISDK.WIGameData.GameEnv?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Environment",
-                        "printedName": "WISDK.WIGameData.Environment",
-                        "usr": "s:5WISDK10WIGameDataC11EnvironmentO"
+                        "name": "GameEnv",
+                        "printedName": "WISDK.WIGameData.GameEnv",
+                        "usr": "s:5WISDK10WIGameDataC7GameEnvO"
                       }
                     ],
                     "usr": "s:Sq"
@@ -10031,8 +10031,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:5WISDK10WIGameDataC11EnvironmentO8rawValueAESgSS_tcfc",
-                "mangledName": "$s5WISDK10WIGameDataC11EnvironmentO8rawValueAESgSS_tcfc",
+                "usr": "s:5WISDK10WIGameDataC7GameEnvO8rawValueAESgSS_tcfc",
+                "mangledName": "$s5WISDK10WIGameDataC7GameEnvO8rawValueAESgSS_tcfc",
                 "moduleName": "WISDK",
                 "declAttributes": [
                   "AccessControl"
@@ -10041,8 +10041,8 @@
               }
             ],
             "declKind": "Enum",
-            "usr": "s:5WISDK10WIGameDataC11EnvironmentO",
-            "mangledName": "$s5WISDK10WIGameDataC11EnvironmentO",
+            "usr": "s:5WISDK10WIGameDataC7GameEnvO",
+            "mangledName": "$s5WISDK10WIGameDataC7GameEnvO",
             "moduleName": "WISDK",
             "declAttributes": [
               "AccessControl",
@@ -10480,7 +10480,7 @@
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/game\/WIGameData.swift",
       "kind": "IntegerLiteral",
-      "offset": 2051,
+      "offset": 2035,
       "length": 10,
       "value": "1"
     },

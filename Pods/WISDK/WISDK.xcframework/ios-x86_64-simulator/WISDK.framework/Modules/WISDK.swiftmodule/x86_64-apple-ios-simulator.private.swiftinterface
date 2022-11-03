@@ -214,14 +214,14 @@ import _StringProcessing
   @objc deinit
 }
 @objc public class WIGameData : ObjectiveC.NSObject {
-  @objc public init(accountId: Swift.String?, channelId: Swift.String?, streamId: Swift.String?, token: Swift.String?, env: WISDK.WIGameData.Environment)
-  @objc public enum Environment : Swift.Int, Swift.RawRepresentable {
+  @objc public init(accountId: Swift.String?, channelId: Swift.String?, streamId: Swift.String?, token: Swift.String?, env: WISDK.WIGameData.GameEnv)
+  @objc public enum GameEnv : Swift.Int, Swift.RawRepresentable {
     case SANDBOX, PRODUCTION
     public typealias RawValue = Swift.String
-    public var rawValue: WISDK.WIGameData.Environment.RawValue {
+    public var rawValue: WISDK.WIGameData.GameEnv.RawValue {
       get
     }
-    public init?(rawValue: WISDK.WIGameData.Environment.RawValue)
+    public init?(rawValue: WISDK.WIGameData.GameEnv.RawValue)
   }
   @objc deinit
 }
@@ -243,5 +243,5 @@ extension WISDK.WIOverlayData.ContentType : Swift.Equatable {}
 extension WISDK.WIOverlayData.ContentType : Swift.Hashable {}
 extension WISDK.WIOverlayData.OverlayType : Swift.Equatable {}
 extension WISDK.WIOverlayData.OverlayType : Swift.Hashable {}
-extension WISDK.WIGameData.Environment : Swift.Equatable {}
-extension WISDK.WIGameData.Environment : Swift.Hashable {}
+extension WISDK.WIGameData.GameEnv : Swift.Equatable {}
+extension WISDK.WIGameData.GameEnv : Swift.Hashable {}

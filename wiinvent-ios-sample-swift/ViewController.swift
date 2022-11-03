@@ -10,8 +10,8 @@ import UIKit
 import WISDK
 import AVKit
 
-class ViewController: UIViewController, WIAdsInStreamLoaderDelegate {
-
+class ViewController: UIViewController, WIAdsInStreamLoaderDelegate, WIGameDelegate {
+    
     static let SAMPLE_ACCOUNT_ID: Int = 14
     static let SAMPLE_CHANNEL_ID: String = "1"
     static let SAMPLE_STREAM_ID: String = "79"
@@ -54,7 +54,7 @@ class ViewController: UIViewController, WIAdsInStreamLoaderDelegate {
                                   channelId: ViewController.SAMPLE_CHANNEL_ID,
                                   streamId: ViewController.SAMPLE_STREAM_ID,
                                   token: "5002",
-                                  env: WIGameData.Environment.SANDBOX)
+                                  env: WIGameData.GameEnv.SANDBOX)
         
         WIGameManager.shared().addGameView(container: containerView, data: gameData, gameDelegate: self)
     }
@@ -206,6 +206,20 @@ class ViewController: UIViewController, WIAdsInStreamLoaderDelegate {
     }
     
     //MARK: End WIAdsInStreamLoaderDelegate
+    
+    //MARK: WIGameDelegate begin
+    func onDismiss() {
+        self.showToastFaded(message: "onDismiss")
+    }
+    
+    func onError() {
+        self.showToastFaded(message: "onError")
+    }
+    
+    func onTimeout() {
+        self.showToastFaded(message: "onTimeout")
+    }
+    //MARK: WIGameDelegate end
     
     func showToastFaded(message : String) {
         let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 125, y: self.view.frame.size.height-100, width: 250, height: 35))
