@@ -620,8 +620,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 12.0";
@@ -719,8 +719,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				73C01E0233A24A16CF5B64C8B5D2BAE5 /* AFError.swift in Sources */,
-				49AAD549186408D052BA429CEA6783CD /* Alamofire-dummy.m in Sources */,
 				15C6B6809343CFA80FFC4F012A3E2EB8 /* Alamofire.swift in Sources */,
+				49AAD549186408D052BA429CEA6783CD /* Alamofire-dummy.m in Sources */,
 				F5C42CD3C63FC4B2B4F2A8DBB618BB2A /* AlamofireExtended.swift in Sources */,
 				EEFD01D43F9B1BFA92CA64D9EBB34E5C /* AuthenticationInterceptor.swift in Sources */,
 				022BCEF316E327F6E1632D0D67692647 /* CachedResponseHandler.swift in Sources */,

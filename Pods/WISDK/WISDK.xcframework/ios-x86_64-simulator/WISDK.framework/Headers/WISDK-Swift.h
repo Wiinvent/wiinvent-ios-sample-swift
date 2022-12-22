@@ -256,6 +256,16 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+typedef SWIFT_ENUM(NSInteger, Environment, open) {
+  EnvironmentSANDBOX = 0,
+  EnvironmentPRODUCTION = 1,
+};
+
+typedef SWIFT_ENUM(NSInteger, LevelLog, open) {
+  LevelLogNODE = 0,
+  LevelLogBODY = 1,
+};
+
 @class UIEvent;
 @class NSCoder;
 
@@ -305,8 +315,6 @@ SWIFT_PROTOCOL("_TtP5WISDK27WIAdsInStreamLoaderDelegate_")
 - (void)onEventWithEvent:(WIAdEvent * _Nonnull)event;
 @end
 
-enum AdsEnvironment : NSInteger;
-enum LevelLog : NSInteger;
 @class WIAdsRequestData;
 @class AVPlayer;
 @class UIViewController;
@@ -321,7 +329,7 @@ SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
 @interface WIAdsInStreamManager : NSObject <IMAAdsLoaderDelegate, IMAAdsManagerDelegate>
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)initInstreamWithAccountId:(NSInteger)accountId env:(enum AdsEnvironment)env timeoutInSecond:(int64_t)timeoutInSecond logLevel:(enum LevelLog)logLevel SWIFT_METHOD_FAMILY(none);
+- (void)initInstreamWithAccountId:(NSInteger)accountId env:(enum Environment)env timeoutInSecond:(int64_t)timeoutInSecond logLevel:(enum LevelLog)logLevel SWIFT_METHOD_FAMILY(none);
 - (void)requestAdsWithRequestData:(WIAdsRequestData * _Nonnull)requestData player:(AVPlayer * _Nonnull)player adContainer:(UIView * _Nonnull)adContainer viewController:(UIViewController * _Nonnull)viewController;
 - (void)adsLoader:(IMAAdsLoader * _Nonnull)loader adsLoadedWithData:(IMAAdsLoadedData * _Nonnull)adsLoadedData;
 - (void)adsLoader:(IMAAdsLoader * _Nonnull)loader failedWithErrorData:(IMAAdLoadingErrorData * _Nonnull)adErrorData;
@@ -330,16 +338,6 @@ SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
 - (void)adsManagerDidRequestContentResume:(IMAAdsManager * _Nonnull)adsManager;
 - (void)adsManager:(IMAAdsManager * _Nonnull)adsManager didReceiveAdError:(IMAAdError * _Nonnull)error;
 @end
-
-typedef SWIFT_ENUM(NSInteger, AdsEnvironment, open) {
-  AdsEnvironmentSANDBOX = 0,
-  AdsEnvironmentPRODUCTION = 1,
-};
-
-typedef SWIFT_ENUM(NSInteger, LevelLog, open) {
-  LevelLogNODE = 0,
-  LevelLogBODY = 1,
-};
 
 
 SWIFT_CLASS("_TtC5WISDK16WIAdsRequestData")
@@ -359,19 +357,13 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-enum GameEnv : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK10WIGameData")
 @interface WIGameData : NSObject
-- (nonnull instancetype)initWithAccountId:(NSString * _Nullable)accountId channelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId token:(NSString * _Nullable)token env:(enum GameEnv)env OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAccountId:(NSString * _Nullable)accountId channelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId token:(NSString * _Nullable)token env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
-typedef SWIFT_ENUM(NSInteger, GameEnv, open) {
-  GameEnvSANDBOX = 0,
-  GameEnvPRODUCTION = 1,
-};
 
 
 SWIFT_PROTOCOL("_TtP5WISDK14WIGameDelegate_")
@@ -397,7 +389,6 @@ SWIFT_CLASS("_TtC5WISDK15WIGameWebAction")
 @end
 
 enum ContentType : NSInteger;
-enum Environment : NSInteger;
 @class Platform;
 enum OverlayType : NSInteger;
 
@@ -411,14 +402,6 @@ SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
-typedef SWIFT_ENUM(NSInteger, Environment, open) {
-  EnvironmentDEV = 0,
-  EnvironmentLOCAL = 1,
-  EnvironmentSTAGING = 2,
-  EnvironmentSANDBOX = 3,
-  EnvironmentPRODUCTION = 4,
-};
 
 typedef SWIFT_ENUM(NSInteger, ContentType, open) {
   ContentTypeVOD = 0,
@@ -527,6 +510,41 @@ SWIFT_CLASS("_TtC5WISDK14WIStreamSource")
 
 SWIFT_CLASS("_TtC5WISDK11WIWebAction")
 @interface WIWebAction : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC5WISDK15WIWelcomeAdData")
+@interface WIWelcomeAdData : NSObject
+- (nonnull instancetype)initWithAccountId:(NSString * _Nullable)accountId env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP5WISDK19WIWelcomeAdDelegate_")
+@protocol WIWelcomeAdDelegate
+- (void)onNoAds;
+- (void)onAdsWelcomeDismiss;
+- (void)onAdsWelcomeClickWithCampaignId:(int64_t)campaignId;
+- (void)onAdsWelcomeImpressionWithCampaignId:(int64_t)campaignId;
+- (void)onAdsWelcomeSkipWithCampaignId:(int64_t)campaignId;
+- (void)onAdsWelcomeError;
+- (void)onAdsWelcomeTimeout;
+@end
+
+
+SWIFT_CLASS("_TtC5WISDK18WIWelcomeAdManager")
+@interface WIWelcomeAdManager : NSObject
+- (void)requestAdsWithRequestData:(WIWelcomeAdData * _Nonnull)requestData container:(UIView * _Null_unspecified)container delegate:(id <WIWelcomeAdDelegate> _Nonnull)delegate timeoutInSecond:(int32_t)timeoutInSecond;
+- (void)remove;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5WISDK20WIWelcomeAdWebAction")
+@interface WIWelcomeAdWebAction : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

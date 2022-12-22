@@ -10,7 +10,7 @@ import UIKit
 import WISDK
 import AVKit
 
-class ViewController: UIViewController, WIAdsInStreamLoaderDelegate, WIGameDelegate {
+class ViewController: UIViewController, WIAdsInStreamLoaderDelegate, WIGameDelegate, WIWelcomeAdDelegate {
     
     static let SAMPLE_ACCOUNT_ID: Int = 14
     static let SAMPLE_CHANNEL_ID: String = "1"
@@ -29,7 +29,8 @@ class ViewController: UIViewController, WIAdsInStreamLoaderDelegate, WIGameDeleg
 //        initExoPlayer()
 //        initInstream()
 //        initOverlay();
-        initGame();
+//        initGame();
+        initWelcomeAd()
         
 //        initLandingPage();
         
@@ -45,6 +46,16 @@ class ViewController: UIViewController, WIAdsInStreamLoaderDelegate, WIGameDeleg
 //        print("=======request instream ads")
     }
     
+    func initWelcomeAd() {
+        containerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
+        containerView.backgroundColor = UIColor.blue
+        view.addSubview(containerView);
+        
+        let adData = WIWelcomeAdData(accountId: String(ViewController.SAMPLE_ACCOUNT_ID),
+                                     env: Environment.SANDBOX)
+        WIWelcomeAdManager.shared().requestAds(requestData: adData, container: containerView, delegate: self, timeoutInSecond: 5);
+    }
+    
     func initGame() {
         containerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
         containerView.backgroundColor = UIColor.blue
@@ -54,7 +65,7 @@ class ViewController: UIViewController, WIAdsInStreamLoaderDelegate, WIGameDeleg
                                   channelId: ViewController.SAMPLE_CHANNEL_ID,
                                   streamId: ViewController.SAMPLE_STREAM_ID,
                                   token: "5002",
-                                  env: WIGameData.GameEnv.SANDBOX)
+                                  env: Environment.SANDBOX)
         
         WIGameManager.shared().addGameView(container: containerView, data: gameData, gameDelegate: self)
     }
@@ -78,7 +89,7 @@ class ViewController: UIViewController, WIAdsInStreamLoaderDelegate, WIGameDeleg
     
     func initInstream() {
         //Begin khoi tao 1 lan trong toan ung dung
-        WIAdsInStreamManager.shared().initInstream(accountId: ViewController.SAMPLE_ACCOUNT_ID, env: WIAdsInStreamManager.AdsEnvironment.SANDBOX, timeoutInSecond: 10, logLevel: WIAdsInStreamManager.LevelLog.BODY)
+        WIAdsInStreamManager.shared().initInstream(accountId: ViewController.SAMPLE_ACCOUNT_ID, env: Environment.SANDBOX, timeoutInSecond: 10, logLevel: LevelLog.BODY)
         //End khoi tao 1 lan trong toan ung dung
         
         WIAdsInStreamManager.shared().loaderDelegate = self
@@ -88,7 +99,7 @@ class ViewController: UIViewController, WIAdsInStreamLoaderDelegate, WIGameDeleg
         let overlayData = WIOverlayData(type: WIOverlayData.OverlayType.PROFILE,
                                         accountId: ViewController.SAMPLE_ACCOUNT_ID,
                                         thirdPartyToken: nil,
-                                        env: WIOverlayData.Environment.LOCAL
+                                        env: Environment.SANDBOX
                                         )
         WIOverlayManager.addOverlaysToPlayerView(container: containerView, overlayData: overlayData);
         WIOverlayManager.onUserLogin = {
@@ -127,7 +138,7 @@ class ViewController: UIViewController, WIAdsInStreamLoaderDelegate, WIGameDeleg
                                         contentType: WIOverlayData.ContentType.LIVESTREAM,
                                         accountId: ViewController.SAMPLE_ACCOUNT_ID,
                                         platform: nil,
-                                        env: WIOverlayData.Environment.SANDBOX)
+                                        env: Environment.SANDBOX)
 
         WIOverlayManager.addOverlaysToPlayerView(container: containerView, overlayData: overlayData)
 
@@ -220,6 +231,39 @@ class ViewController: UIViewController, WIAdsInStreamLoaderDelegate, WIGameDeleg
         self.showToastFaded(message: "onTimeout")
     }
     //MARK: WIGameDelegate end
+    
+    //MARK: Begin WIWelcomeAdDelegate
+    func onAdsWelcomeDismiss() {
+        self.showToastFaded(message: "onAdsWelcomeDismiss")
+        
+        WIWelcomeAdManager.shared().remove()
+    }
+    
+    func onAdsWelcomeClick(campaignId: Int64) {
+        self.showToastFaded(message: "onAdsWelcomeClick")
+    }
+    
+    func onAdsWelcomeImpression(campaignId: Int64) {
+        self.showToastFaded(message: "onAdsWelcomeImpression")
+    }
+    
+    func onAdsWelcomeSkip(campaignId: Int64) {
+        self.showToastFaded(message: "onAdsWelcomeSkip")
+    }
+    
+    func onAdsWelcomeError() {
+        self.showToastFaded(message: "onAdsWelcomeError")
+    }
+    
+    func onAdsWelcomeTimeout() {
+        self.showToastFaded(message: "onAdsWelcomeError")
+    }
+    
+    func onNoAds() {
+        self.showToastFaded(message: "onNoAds")
+    }
+    
+    //Mark: End WIWelcomeAdDelegate
     
     func showToastFaded(message : String) {
         let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 125, y: self.view.frame.size.height-100, width: 250, height: 35))
