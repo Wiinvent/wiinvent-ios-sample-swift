@@ -54,6 +54,8 @@ class ViewController: UIViewController, WIAdsInStreamLoaderDelegate, WIGameDeleg
         let adData = WIWelcomeAdData(accountId: String(ViewController.SAMPLE_ACCOUNT_ID),
                                      env: Environment.SANDBOX)
         WIWelcomeAdManager.shared().requestAds(requestData: adData, container: containerView, delegate: self, timeoutInSecond: 5);
+        
+        print("-----request ads")
     }
     
     func initGame() {
