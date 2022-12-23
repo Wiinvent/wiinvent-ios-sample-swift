@@ -4,7 +4,7 @@ platform :ios, '11'
 target 'wiinvent-ios-sample-swift' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'WISDK', '1.7.9'
+  pod 'WISDK', '1.8.0'
 
   # Pods for wiinvent-ios-sample-swift
 

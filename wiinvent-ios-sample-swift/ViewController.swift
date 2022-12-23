@@ -52,7 +52,7 @@ class ViewController: UIViewController, WIAdsInStreamLoaderDelegate, WIGameDeleg
         view.addSubview(containerView);
         
         let adData = WIWelcomeAdData(accountId: String(ViewController.SAMPLE_ACCOUNT_ID),
-                                     env: Environment.SANDBOX)
+                                     env: WIEnvironment.SANDBOX)
         WIWelcomeAdManager.shared().requestAds(requestData: adData, container: containerView, delegate: self, timeoutInSecond: 5);
         
         print("-----request ads")
@@ -67,7 +67,7 @@ class ViewController: UIViewController, WIAdsInStreamLoaderDelegate, WIGameDeleg
                                   channelId: ViewController.SAMPLE_CHANNEL_ID,
                                   streamId: ViewController.SAMPLE_STREAM_ID,
                                   token: "5002",
-                                  env: Environment.SANDBOX)
+                                  env: WIEnvironment.SANDBOX)
         
         WIGameManager.shared().addGameView(container: containerView, data: gameData, gameDelegate: self)
     }
@@ -91,7 +91,7 @@ class ViewController: UIViewController, WIAdsInStreamLoaderDelegate, WIGameDeleg
     
     func initInstream() {
         //Begin khoi tao 1 lan trong toan ung dung
-        WIAdsInStreamManager.shared().initInstream(accountId: ViewController.SAMPLE_ACCOUNT_ID, env: Environment.SANDBOX, timeoutInSecond: 10, logLevel: LevelLog.BODY)
+        WIAdsInStreamManager.shared().initInstream(accountId: ViewController.SAMPLE_ACCOUNT_ID, env: WIEnvironment.SANDBOX, timeoutInSecond: 10, logLevel: WILevelLog.BODY)
         //End khoi tao 1 lan trong toan ung dung
         
         WIAdsInStreamManager.shared().loaderDelegate = self
@@ -101,7 +101,7 @@ class ViewController: UIViewController, WIAdsInStreamLoaderDelegate, WIGameDeleg
         let overlayData = WIOverlayData(type: WIOverlayData.OverlayType.PROFILE,
                                         accountId: ViewController.SAMPLE_ACCOUNT_ID,
                                         thirdPartyToken: nil,
-                                        env: Environment.SANDBOX
+                                        env: WIEnvironment.SANDBOX
                                         )
         WIOverlayManager.addOverlaysToPlayerView(container: containerView, overlayData: overlayData);
         WIOverlayManager.onUserLogin = {
@@ -140,7 +140,7 @@ class ViewController: UIViewController, WIAdsInStreamLoaderDelegate, WIGameDeleg
                                         contentType: WIOverlayData.ContentType.LIVESTREAM,
                                         accountId: ViewController.SAMPLE_ACCOUNT_ID,
                                         platform: nil,
-                                        env: Environment.SANDBOX)
+                                        env: WIEnvironment.SANDBOX)
 
         WIOverlayManager.addOverlaysToPlayerView(container: containerView, overlayData: overlayData)
 
