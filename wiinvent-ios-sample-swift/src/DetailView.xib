@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MWp-aX-QJK" userLabel="Detail View" customClass="DetailView" customModule="wiinvent_ios_sample_swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="yIB-Q3-qUo" userLabel="Video View">
+                    <rect key="frame" x="0.0" y="43" width="390" height="242"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <viewLayoutGuide key="safeArea" id="Lxm-WB-apv"/>
+                    <color key="backgroundColor" systemColor="labelColor"/>
+                </view>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="A8O-VF-c8k" userLabel="Video Controls">
+                    <rect key="frame" x="0.0" y="285" width="390" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <barButtonItem id="zjN-7P-rDg">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DMa-EG-oJM" userLabel="playHeadBtn">
+                                <rect key="frame" x="16" y="0.0" width="80" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playHeadBtnClicked:" destination="MWp-aX-QJK" eventType="touchUpInside" id="CIG-MM-PSU"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem id="7zx-ok-lLK">
+                            <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0:00" placeholder="dd" minimumFontSize="12" id="ASe-MD-Kxc" userLabel="playHeadTimeTxt">
+                                <rect key="frame" x="96" y="6.6666666666666679" width="36" height="31.000000000000004"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </barButtonItem>
+                        <barButtonItem id="Brl-V1-4uf">
+                            <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" id="ZMV-Wz-7Wf" userLabel="progressBar">
+                                <rect key="frame" x="132" y="5" width="175" height="34"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="playheadValueChanged:" destination="MWp-aX-QJK" eventType="valueChanged" id="6d2-f3-NG7"/>
+                                    <action selector="videoControlsTouchEnded:" destination="MWp-aX-QJK" eventType="touchUpOutside" id="RhO-SS-3KJ"/>
+                                    <action selector="videoControlsTouchEnded:" destination="MWp-aX-QJK" eventType="touchUpInside" id="wPC-9K-KWf"/>
+                                    <action selector="videoControlsTouchStarted:" destination="MWp-aX-QJK" eventType="touchDown" id="IjR-ik-ZG2"/>
+                                </connections>
+                            </slider>
+                        </barButtonItem>
+                        <barButtonItem id="GGX-R3-M98">
+                            <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0:00" textAlignment="center" minimumFontSize="12" id="rdw-aS-ujM" userLabel="durationTimeTxt">
+                                <rect key="frame" x="338" y="6.6666666666666679" width="36" height="31.000000000000004"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yMW-J2-1pu" userLabel="Console View">
+                    <rect key="frame" x="0.0" y="355" width="390" height="290"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="WKg-ku-ARM">
+                    <rect key="frame" x="16" y="670" width="62" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                    <connections>
+                        <action selector="backBtnClicked:" destination="MWp-aX-QJK" eventType="touchUpInside" id="i1e-yo-Y8o"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="eqc-kG-aes"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <connections>
+                <outlet property="backBtn" destination="WKg-ku-ARM" id="msS-fr-RWX"/>
+                <outlet property="consoleView" destination="yMW-J2-1pu" id="Jkf-ZA-tQV"/>
+                <outlet property="containerView" destination="yIB-Q3-qUo" id="l15-31-z1J"/>
+                <outlet property="durationTimeTxt" destination="rdw-aS-ujM" id="TlC-y6-WiS"/>
+                <outlet property="playHeadBtn" destination="DMa-EG-oJM" id="NQ4-c9-xuX"/>
+                <outlet property="playHeadTimeTxt" destination="ASe-MD-Kxc" id="Vn5-in-Fpc"/>
+                <outlet property="progressBar" destination="ZMV-Wz-7Wf" id="Q68-sM-4XM"/>
+                <outlet property="videoControls" destination="A8O-VF-c8k" id="mwF-9H-hKN"/>
+            </connections>
+            <point key="canvasLocation" x="64.615384615384613" y="-11.374407582938389"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
