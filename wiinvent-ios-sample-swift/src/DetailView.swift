@@ -176,8 +176,6 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
             return
         }
         
-        print("=====currentTime: \(currentTime)")
-        
         progressBar.value = Float(currentTime)
         playHeadTimeTxt.text =
         NSString(
@@ -213,13 +211,13 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
     
     func showContentPlayer() {
         contentPlayer!.play()
-        videoControls?.alpha = 0.9
+        videoControls?.alpha = 1.0
         isAdPlayback = false
     }
     
     func hideContentPlayer() {
         contentPlayer!.pause()
-        //        videoControls?.alpha = 0
+        videoControls?.alpha = 0
         isAdPlayback = true
     }
     
