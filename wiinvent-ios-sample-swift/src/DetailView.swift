@@ -223,7 +223,7 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
     
     //MARK: Begin WIAdsInStreamLoaderDelegate
     func wiManagerRequestPlayContent() {
-        print("=========wiManagerRequestPlayContent")
+        logMessage("=========wiManagerRequestPlayContent")
         
         showContentPlayer()
     }
