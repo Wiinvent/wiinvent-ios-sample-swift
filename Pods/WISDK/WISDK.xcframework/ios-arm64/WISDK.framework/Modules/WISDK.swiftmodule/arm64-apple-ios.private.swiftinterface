@@ -46,6 +46,7 @@ import _StringProcessing
   @objc func wiManagerRequestPauseContent()
   @objc func wiManagerRequestFailure()
   @objc func onEvent(event: WISDK.WIAdEvent)
+  @objc optional func mediaProgress(mediaTime: Foundation.TimeInterval, totalTime: Foundation.TimeInterval)
 }
 @objc public class WIWelcomeAdData : ObjectiveC.NSObject {
   @objc public init(accountId: Swift.String?, env: WISDK.WIEnvironment)
@@ -56,15 +57,19 @@ import _StringProcessing
   public class func shared() -> WISDK.WIAdsInStreamManager
   public var loaderDelegate: WISDK.WIAdsInStreamLoaderDelegate?
   public var pipController: AVKit.AVPictureInPictureController?
-  @objc public func initInstream(accountId: Swift.Int, env: WISDK.WIEnvironment, vastLoadTimeout: Swift.Float = 5, loadVideoTimeout: Foundation.TimeInterval = 5, logLevel: WISDK.WILevelLog = WILevelLog.NODE, enablePiP: Swift.Bool = false)
+  @objc public func initInstream(accountId: Swift.Int, env: WISDK.WIEnvironment, vastLoadTimeout: Swift.Float = 10, loadVideoTimeout: Foundation.TimeInterval = 10, bufferingVideoTimeout: Foundation.TimeInterval = 15, logLevel: WISDK.WILevelLog = WILevelLog.NODE, enablePiP: Swift.Bool = false)
   @objc public func requestAdsPiP(requestData: WISDK.WIAdsRequestData, player: AVFoundation.AVPlayer, adContainer: UIKit.UIView, viewController: UIKit.UIViewController, uiPanGestureRecognizer: UIKit.UIPanGestureRecognizer?, pipController: AVKit.AVPictureInPictureController?)
   @objc public func requestAds(requestData: WISDK.WIAdsRequestData, player: AVFoundation.AVPlayer, adContainer: UIKit.UIView, viewController: UIKit.UIViewController, uiPanGestureRecognizer: UIKit.UIPanGestureRecognizer?)
   @objc public func adsLoader(_ loader: GoogleInteractiveMediaAds.IMAAdsLoader, adsLoadedWith adsLoadedData: GoogleInteractiveMediaAds.IMAAdsLoadedData)
   @objc public func adsLoader(_ loader: GoogleInteractiveMediaAds.IMAAdsLoader, failedWith adErrorData: GoogleInteractiveMediaAds.IMAAdLoadingErrorData)
+  @objc public func adsManagerAdDidStartBuffering(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager)
+  @objc public func adsManagerAdPlaybackReady(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager)
+  @objc public func adsManager(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager, adDidProgressToTime mediaTime: Foundation.TimeInterval, totalTime: Foundation.TimeInterval)
   @objc public func adsManager(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager, didReceive event: GoogleInteractiveMediaAds.IMAAdEvent)
   @objc public func adsManagerDidRequestContentPause(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager)
   @objc public func adsManagerDidRequestContentResume(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager)
   @objc public func adsManager(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager, didReceive error: GoogleInteractiveMediaAds.IMAAdError)
+  @objc public func callPlayVideoTimeout()
   @objc public func contentComplete()
   @objc public func resume()
   @objc public func skip()
@@ -109,7 +114,7 @@ import _StringProcessing
 }
 @_inheritsConvenienceInitializers @objc open class WIAdEvent : ObjectiveC.NSObject {
   @objc public enum AdEventType : Swift.Int, Swift.RawRepresentable {
-    case REQUEST, START, IMPRESSION, CLICK, COMPLETE, SKIPPED, USER_AD_BLOCK, VOLUME_MUTED, VOLUME_ON, ERROR, UNKNOW
+    case REQUEST, START, IMPRESSION, CLICK, COMPLETE, SKIPPED, ALL_ADS_COMPLETED, USER_AD_BLOCK, VOLUME_MUTED, VOLUME_ON, ERROR, UNKNOW
     public typealias RawValue = Swift.String
     public var rawValue: WISDK.WIAdEvent.AdEventType.RawValue {
       get
@@ -264,7 +269,7 @@ import _StringProcessing
 }
 @objc @_inheritsConvenienceInitializers open class WIWelcomeAdManager : ObjectiveC.NSObject {
   public class func shared() -> WISDK.WIWelcomeAdManager
-  @objc public func requestAds(requestData: WISDK.WIWelcomeAdData, container: UIKit.UIView!, delegate: WISDK.WIWelcomeAdDelegate?, timeoutInSecond: Swift.Int = 5, levelLog: WISDK.WILevelLog = WILevelLog.NODE)
+  @objc public func requestAds(requestData: WISDK.WIWelcomeAdData, container: UIKit.UIView!, delegate: WISDK.WIWelcomeAdDelegate?, timeoutInSecond: Foundation.TimeInterval = 10, levelLog: WISDK.WILevelLog = WILevelLog.NODE)
   @objc public func remove()
   @objc override dynamic public init()
   @objc deinit

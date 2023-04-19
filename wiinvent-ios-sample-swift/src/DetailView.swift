@@ -240,6 +240,10 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
         showContentPlayer()
     }
     
+    public func mediaProgress(mediaTime: TimeInterval, totalTime: TimeInterval) {
+        print("============>WI mediaProgress mediaTime: \(mediaTime) - totalTime: \(totalTime) : \(totalTime - mediaTime)")
+    }
+    
     func onEvent(event: WISDK.WIAdEvent) {
         logMessage("==> onEvent: \(event.getTypeString()) - \(event.getCampaignId())")
     }

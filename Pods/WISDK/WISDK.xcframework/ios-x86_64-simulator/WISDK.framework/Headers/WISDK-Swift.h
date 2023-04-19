@@ -292,11 +292,12 @@ typedef SWIFT_ENUM(NSInteger, AdEventType, open) {
   AdEventTypeCLICK = 3,
   AdEventTypeCOMPLETE = 4,
   AdEventTypeSKIPPED = 5,
-  AdEventTypeUSER_AD_BLOCK = 6,
-  AdEventTypeVOLUME_MUTED = 7,
-  AdEventTypeVOLUME_ON = 8,
-  AdEventTypeERROR = 9,
-  AdEventTypeUNKNOW = 10,
+  AdEventTypeALL_ADS_COMPLETED = 6,
+  AdEventTypeUSER_AD_BLOCK = 7,
+  AdEventTypeVOLUME_MUTED = 8,
+  AdEventTypeVOLUME_ON = 9,
+  AdEventTypeERROR = 10,
+  AdEventTypeUNKNOW = 11,
 };
 
 
@@ -306,6 +307,8 @@ SWIFT_PROTOCOL("_TtP5WISDK27WIAdsInStreamLoaderDelegate_")
 - (void)wiManagerRequestPauseContent;
 - (void)wiManagerRequestFailure;
 - (void)onEventWithEvent:(WIAdEvent * _Nonnull)event;
+@optional
+- (void)mediaProgressWithMediaTime:(NSTimeInterval)mediaTime totalTime:(NSTimeInterval)totalTime;
 @end
 
 enum WIEnvironment : NSInteger;
@@ -324,15 +327,19 @@ enum WILevelLog : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
 @interface WIAdsInStreamManager : NSObject <AVPictureInPictureControllerDelegate, IMAAdsLoaderDelegate, IMAAdsManagerDelegate>
-- (void)initInstreamWithAccountId:(NSInteger)accountId env:(enum WIEnvironment)env vastLoadTimeout:(float)vastLoadTimeout loadVideoTimeout:(NSTimeInterval)loadVideoTimeout logLevel:(enum WILevelLog)logLevel enablePiP:(BOOL)enablePiP SWIFT_METHOD_FAMILY(none);
+- (void)initInstreamWithAccountId:(NSInteger)accountId env:(enum WIEnvironment)env vastLoadTimeout:(float)vastLoadTimeout loadVideoTimeout:(NSTimeInterval)loadVideoTimeout bufferingVideoTimeout:(NSTimeInterval)bufferingVideoTimeout logLevel:(enum WILevelLog)logLevel enablePiP:(BOOL)enablePiP SWIFT_METHOD_FAMILY(none);
 - (void)requestAdsPiPWithRequestData:(WIAdsRequestData * _Nonnull)requestData player:(AVPlayer * _Nonnull)player adContainer:(UIView * _Nonnull)adContainer viewController:(UIViewController * _Nonnull)viewController uiPanGestureRecognizer:(UIPanGestureRecognizer * _Nullable)uiPanGestureRecognizer pipController:(AVPictureInPictureController * _Nullable)pipController;
 - (void)requestAdsWithRequestData:(WIAdsRequestData * _Nonnull)requestData player:(AVPlayer * _Nonnull)player adContainer:(UIView * _Nonnull)adContainer viewController:(UIViewController * _Nonnull)viewController uiPanGestureRecognizer:(UIPanGestureRecognizer * _Nullable)uiPanGestureRecognizer;
 - (void)adsLoader:(IMAAdsLoader * _Nonnull)loader adsLoadedWithData:(IMAAdsLoadedData * _Nonnull)adsLoadedData;
 - (void)adsLoader:(IMAAdsLoader * _Nonnull)loader failedWithErrorData:(IMAAdLoadingErrorData * _Nonnull)adErrorData;
+- (void)adsManagerAdDidStartBuffering:(IMAAdsManager * _Nonnull)adsManager;
+- (void)adsManagerAdPlaybackReady:(IMAAdsManager * _Nonnull)adsManager;
+- (void)adsManager:(IMAAdsManager * _Nonnull)adsManager adDidProgressToTime:(NSTimeInterval)mediaTime totalTime:(NSTimeInterval)totalTime;
 - (void)adsManager:(IMAAdsManager * _Nonnull)adsManager didReceiveAdEvent:(IMAAdEvent * _Nonnull)event;
 - (void)adsManagerDidRequestContentPause:(IMAAdsManager * _Nonnull)adsManager;
 - (void)adsManagerDidRequestContentResume:(IMAAdsManager * _Nonnull)adsManager;
 - (void)adsManager:(IMAAdsManager * _Nonnull)adsManager didReceiveAdError:(IMAAdError * _Nonnull)error;
+- (void)callPlayVideoTimeout;
 - (void)contentComplete;
 - (void)resume;
 - (void)skip;
@@ -557,7 +564,7 @@ SWIFT_PROTOCOL("_TtP5WISDK19WIWelcomeAdDelegate_")
 
 SWIFT_CLASS("_TtC5WISDK18WIWelcomeAdManager")
 @interface WIWelcomeAdManager : NSObject
-- (void)requestAdsWithRequestData:(WIWelcomeAdData * _Nonnull)requestData container:(UIView * _Null_unspecified)container delegate:(id <WIWelcomeAdDelegate> _Nullable)delegate timeoutInSecond:(NSInteger)timeoutInSecond levelLog:(enum WILevelLog)levelLog;
+- (void)requestAdsWithRequestData:(WIWelcomeAdData * _Nonnull)requestData container:(UIView * _Null_unspecified)container delegate:(id <WIWelcomeAdDelegate> _Nullable)delegate timeoutInSecond:(NSTimeInterval)timeoutInSecond levelLog:(enum WILevelLog)levelLog;
 - (void)remove;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

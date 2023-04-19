@@ -821,6 +821,44 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mediaProgress",
+            "printedName": "mediaProgress(mediaTime:totalTime:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(pl)WIAdsInStreamLoaderDelegate(im)mediaProgressWithMediaTime:totalTime:",
+            "mangledName": "$s5WISDK27WIAdsInStreamLoaderDelegateP13mediaProgress0G4Time05totalI0ySd_SdtF",
+            "moduleName": "WISDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : WISDK.WIAdsInStreamLoaderDelegate>",
+            "sugared_genericSig": "<Self where Self : WISDK.WIAdsInStreamLoaderDelegate>",
+            "protocolReq": true,
+            "objc_name": "mediaProgressWithMediaTime:totalTime:",
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -1321,7 +1359,7 @@
           {
             "kind": "Function",
             "name": "initInstream",
-            "printedName": "initInstream(accountId:env:vastLoadTimeout:loadVideoTimeout:logLevel:enablePiP:)",
+            "printedName": "initInstream(accountId:env:vastLoadTimeout:loadVideoTimeout:bufferingVideoTimeout:logLevel:enablePiP:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1356,6 +1394,13 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "WILevelLog",
                 "printedName": "WISDK.WILevelLog",
                 "hasDefaultArg": true,
@@ -1370,10 +1415,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)initInstreamWithAccountId:env:vastLoadTimeout:loadVideoTimeout:logLevel:enablePiP:",
-            "mangledName": "$s5WISDK20WIAdsInStreamManagerC12initInstream9accountId3env15vastLoadTimeout09loadVideoM08logLevel9enablePiPySi_AA13WIEnvironmentOSfSdAA10WILevelLogOSbtF",
+            "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)initInstreamWithAccountId:env:vastLoadTimeout:loadVideoTimeout:bufferingVideoTimeout:logLevel:enablePiP:",
+            "mangledName": "$s5WISDK20WIAdsInStreamManagerC12initInstream9accountId3env15vastLoadTimeout09loadVideoM009bufferingoM08logLevel9enablePiPySi_AA13WIEnvironmentOSfS2dAA10WILevelLogOSbtF",
             "moduleName": "WISDK",
-            "objc_name": "initInstreamWithAccountId:env:vastLoadTimeout:loadVideoTimeout:logLevel:enablePiP:",
+            "objc_name": "initInstreamWithAccountId:env:vastLoadTimeout:loadVideoTimeout:bufferingVideoTimeout:logLevel:enablePiP:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -1585,6 +1630,103 @@
           },
           {
             "kind": "Function",
+            "name": "adsManagerAdDidStartBuffering",
+            "printedName": "adsManagerAdDidStartBuffering(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMAAdsManager",
+                "printedName": "GoogleInteractiveMediaAds.IMAAdsManager",
+                "usr": "c:objc(cs)IMAAdsManager"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)adsManagerAdDidStartBuffering:",
+            "mangledName": "$s5WISDK20WIAdsInStreamManagerC03adsE19AdDidStartBufferingyySo06IMAAdsE0CF",
+            "moduleName": "WISDK",
+            "objc_name": "adsManagerAdDidStartBuffering:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adsManagerAdPlaybackReady",
+            "printedName": "adsManagerAdPlaybackReady(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMAAdsManager",
+                "printedName": "GoogleInteractiveMediaAds.IMAAdsManager",
+                "usr": "c:objc(cs)IMAAdsManager"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)adsManagerAdPlaybackReady:",
+            "mangledName": "$s5WISDK20WIAdsInStreamManagerC03adsE15AdPlaybackReadyyySo06IMAAdsE0CF",
+            "moduleName": "WISDK",
+            "objc_name": "adsManagerAdPlaybackReady:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adsManager",
+            "printedName": "adsManager(_:adDidProgressToTime:totalTime:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMAAdsManager",
+                "printedName": "GoogleInteractiveMediaAds.IMAAdsManager",
+                "usr": "c:objc(cs)IMAAdsManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)adsManager:adDidProgressToTime:totalTime:",
+            "mangledName": "$s5WISDK20WIAdsInStreamManagerC03adsE0_19adDidProgressToTime05totalK0ySo06IMAAdsE0C_S2dtF",
+            "moduleName": "WISDK",
+            "objc_name": "adsManager:adDidProgressToTime:totalTime:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "adsManager",
             "printedName": "adsManager(_:didReceive:)",
             "children": [
@@ -1613,8 +1755,7 @@
             "objc_name": "adsManager:didReceiveAdEvent:",
             "declAttributes": [
               "ObjC",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1705,6 +1846,27 @@
             "declAttributes": [
               "ObjC",
               "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "callPlayVideoTimeout",
+            "printedName": "callPlayVideoTimeout()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)callPlayVideoTimeout",
+            "mangledName": "$s5WISDK20WIAdsInStreamManagerC20callPlayVideoTimeoutyyF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -5251,6 +5413,47 @@
               },
               {
                 "kind": "Var",
+                "name": "ALL_ADS_COMPLETED",
+                "printedName": "ALL_ADS_COMPLETED",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(WISDK.WIAdEvent.AdEventType.Type) -> WISDK.WIAdEvent.AdEventType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdEventType",
+                        "printedName": "WISDK.WIAdEvent.AdEventType",
+                        "usr": "s:5WISDK9WIAdEventC02AdC4TypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "WISDK.WIAdEvent.AdEventType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AdEventType",
+                            "printedName": "WISDK.WIAdEvent.AdEventType",
+                            "usr": "s:5WISDK9WIAdEventC02AdC4TypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:5WISDK9WIAdEventC02AdC4TypeO17ALL_ADS_COMPLETEDyA2EmF",
+                "mangledName": "$s5WISDK9WIAdEventC02AdC4TypeO17ALL_ADS_COMPLETEDyA2EmF",
+                "moduleName": "WISDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "fixedbinaryorder": 6
+              },
+              {
+                "kind": "Var",
                 "name": "USER_AD_BLOCK",
                 "printedName": "USER_AD_BLOCK",
                 "children": [
@@ -5288,7 +5491,7 @@
                 "declAttributes": [
                   "ObjC"
                 ],
-                "fixedbinaryorder": 6
+                "fixedbinaryorder": 7
               },
               {
                 "kind": "Var",
@@ -5329,7 +5532,7 @@
                 "declAttributes": [
                   "ObjC"
                 ],
-                "fixedbinaryorder": 7
+                "fixedbinaryorder": 8
               },
               {
                 "kind": "Var",
@@ -5370,7 +5573,7 @@
                 "declAttributes": [
                   "ObjC"
                 ],
-                "fixedbinaryorder": 8
+                "fixedbinaryorder": 9
               },
               {
                 "kind": "Var",
@@ -5411,7 +5614,7 @@
                 "declAttributes": [
                   "ObjC"
                 ],
-                "fixedbinaryorder": 9
+                "fixedbinaryorder": 10
               },
               {
                 "kind": "Var",
@@ -5452,7 +5655,7 @@
                 "declAttributes": [
                   "ObjC"
                 ],
-                "fixedbinaryorder": 10
+                "fixedbinaryorder": 11
               },
               {
                 "kind": "Var",
@@ -11478,10 +11681,10 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
+                "name": "Double",
+                "printedName": "Swift.Double",
                 "hasDefaultArg": true,
-                "usr": "s:Si"
+                "usr": "s:Sd"
               },
               {
                 "kind": "TypeNominal",
@@ -11493,7 +11696,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@WISDK@objc(cs)WIWelcomeAdManager(im)requestAdsWithRequestData:container:delegate:timeoutInSecond:levelLog:",
-            "mangledName": "$s5WISDK18WIWelcomeAdManagerC10requestAds0E4Data9container8delegate15timeoutInSecond8levelLogyAA0bcG0C_So6UIViewCSgAA0bC8Delegate_pSgSiAA07WILevelN0OtF",
+            "mangledName": "$s5WISDK18WIWelcomeAdManagerC10requestAds0E4Data9container8delegate15timeoutInSecond8levelLogyAA0bcG0C_So6UIViewCSgAA0bC8Delegate_pSgSdAA07WILevelN0OtF",
             "moduleName": "WISDK",
             "objc_name": "requestAdsWithRequestData:container:delegate:timeoutInSecond:levelLog:",
             "declAttributes": [
@@ -11678,21 +11881,28 @@
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1459,
-      "length": 1,
-      "value": "5"
+      "offset": 1518,
+      "length": 2,
+      "value": "10"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1495,
-      "length": 1,
-      "value": "5"
+      "offset": 1555,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1597,
+      "length": 2,
+      "value": "15"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1556,
+      "offset": 1659,
       "length": 5,
       "value": "false"
     },
@@ -11763,62 +11973,69 @@
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 270,
-      "length": 13,
+      "length": 17,
       "value": "6"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 285,
-      "length": 12,
+      "offset": 289,
+      "length": 13,
       "value": "7"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 299,
-      "length": 9,
+      "offset": 304,
+      "length": 12,
       "value": "8"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 310,
-      "length": 5,
+      "offset": 318,
+      "length": 9,
       "value": "9"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 317,
-      "length": 6,
+      "offset": 329,
+      "length": 5,
       "value": "10"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 336,
+      "length": 6,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2088,
+      "offset": 2267,
       "length": 12,
       "value": "\"campaignId\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2102,
+      "offset": 2281,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2106,
+      "offset": 2285,
       "length": 10,
       "value": "\"isLinear\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "BooleanLiteral",
-      "offset": 2118,
+      "offset": 2297,
       "length": 4,
       "value": "true"
     },
@@ -11915,15 +12132,8 @@
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 399,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 432,
+      "offset": 414,
       "length": 1,
       "value": "5"
     },
@@ -11993,16 +12203,16 @@
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 727,
-      "length": 1,
-      "value": "5"
+      "offset": 736,
+      "length": 2,
+      "value": "10"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7841,
-      "length": 1,
-      "value": "5"
+      "offset": 7880,
+      "length": 2,
+      "value": "10"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WIMd5.swift",
