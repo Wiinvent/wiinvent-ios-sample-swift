@@ -42,6 +42,8 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
     var contentRateContext: UInt8 = 1
     var contentDurationContext: UInt8 = 2
     
+    var skipButton: WiAdsSkipButton?
+    
     func initView(vc: ViewController) {
         viewController = vc
         
@@ -62,7 +64,7 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
             
 //            self.contentPlayer?.play()
             
-            WIAdsInStreamManager.shared().initInstream(accountId: 4, env: WIEnvironment.PRODUCTION, vastLoadTimeout: 10, loadVideoTimeout: 5, logLevel: WILevelLog.BODY)
+            WIAdsInStreamManager.shared().initInstream(accountId: 14, env: WIEnvironment.SANDBOX, vastLoadTimeout: 5, loadVideoTimeout: 5, logLevel: WILevelLog.BODY, enablePiP: false, skipDuration: 5)
             
             // Make the request only once the view has been instantiated.
             let tapped = UIPanGestureRecognizer(target: self, action: #selector(self.panGesture(_:)))
@@ -238,6 +240,28 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
         logMessage("==> wiManagerRequestFailure")
         
         showContentPlayer()
+    }
+    
+    func wiShowSkipButton(duration: Int) {
+        skipButton = Tv360SkipAdsButton()
+        skipButton?.startCountdown(duration: duration)
+        skipButton?.addTarget(self, action: #selector(onCLickSkipButton), for: .touchUpInside)
+        skipButton?.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(skipButton!)
+        self.bringSubviewToFront(skipButton!)
+        
+        skipButton?.rightAnchor.constraint(equalTo: containerView.rightAnchor).isActive = true
+        skipButton?.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -50).isActive = true
+    }
+    
+    @objc func onCLickSkipButton(sender: UIButton!) {
+        print("=========> onCLickSkipButton")
+        WIAdsInStreamManager.shared().discardAdBreak()
+        skipButton?.remove()
+    }
+    
+    func wiRemoveSkipButton() {
+        skipButton?.remove()
     }
     
     public func mediaProgress(mediaTime: TimeInterval, totalTime: TimeInterval) {

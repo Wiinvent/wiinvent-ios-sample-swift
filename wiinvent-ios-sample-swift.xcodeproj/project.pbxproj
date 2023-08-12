@@ -21,6 +21,7 @@
 		DB614FC82459B7190037BE40 /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = DB614FC62459B7190037BE40 /* Pods */; };
 		DB614FC92459B7190037BE40 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = DB614FC72459B7190037BE40 /* Podfile */; };
 		DC44A40829C46F1600610DC3 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC44A40729C46F1500610DC3 /* DetailView.xib */; };
+		DC5656D72A87E83000A4AC00 /* Tv360SkipAdsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5656D62A87E83000A4AC00 /* Tv360SkipAdsButton.swift */; };
 		DCDDE16729D499B100A8CFE3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDDE16629D499B100A8CFE3 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		DB614FC62459B7190037BE40 /* Pods */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pods; sourceTree = SOURCE_ROOT; };
 		DB614FC72459B7190037BE40 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DC44A40729C46F1500610DC3 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		DC5656D62A87E83000A4AC00 /* Tv360SkipAdsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tv360SkipAdsButton.swift; sourceTree = "<group>"; };
 		DCDDE16629D499B100A8CFE3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		EB750FBC5F6C2C6E153B7E26 /* Pods-wiinvent-ios-sample-swiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wiinvent-ios-sample-swiftTests.debug.xcconfig"; path = "Target Support Files/Pods-wiinvent-ios-sample-swiftTests/Pods-wiinvent-ios-sample-swiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,6 +176,7 @@
 			children = (
 				DC44A40729C46F1500610DC3 /* DetailView.xib */,
 				DCDDE16629D499B100A8CFE3 /* DetailView.swift */,
+				DC5656D62A87E83000A4AC00 /* Tv360SkipAdsButton.swift */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 			files = (
 				DB614F9B245966FC0037BE40 /* ViewController.swift in Sources */,
 				DB614F97245966FC0037BE40 /* AppDelegate.swift in Sources */,
+				DC5656D72A87E83000A4AC00 /* Tv360SkipAdsButton.swift in Sources */,
 				DCDDE16729D499B100A8CFE3 /* DetailView.swift in Sources */,
 				DB614F99245966FC0037BE40 /* SceneDelegate.swift in Sources */,
 			);
