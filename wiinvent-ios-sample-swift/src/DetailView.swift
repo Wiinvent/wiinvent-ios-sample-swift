@@ -10,6 +10,7 @@ import UIKit
 import WISDK
 import AVKit
 import MediaPlayer
+import GoogleInteractiveMediaAds
 
 class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGestureRecognizerDelegate {
     
@@ -64,13 +65,20 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
             
 //            self.contentPlayer?.play()
             
+            //add friendly Obstruction View
+            var friendlyObstructionList: [IMAFriendlyObstruction] = []
+            if skipButton != nil {
+                let skipButtonObstruction = IMAFriendlyObstruction(view: skipButton!, purpose: IMAFriendlyObstructionPurpose.mediaControls, detailedReason: "Skip Button")
+                friendlyObstructionList.append(skipButtonObstruction)
+            }
+            
             WIAdsInStreamManager.shared().initInstream(accountId: 14, env: WIEnvironment.SANDBOX, vastLoadTimeout: 5, loadVideoTimeout: 5, logLevel: WILevelLog.NODE, enablePiP: false, skipDuration: 5)
             
             // Make the request only once the view has been instantiated.
             let tapped = UIPanGestureRecognizer(target: self, action: #selector(self.panGesture(_:)))
             tapped.delegate = self
-            let requestData = WIAdsRequestData(channelId: "998989", streamId: "933934")
-            WIAdsInStreamManager.shared().requestAds(requestData: requestData, player: self.contentPlayer!, adContainer: self.containerView, viewController: self.viewController!, uiPanGestureRecognizer: tapped)
+            let requestData = WIAdsRequestData(channelId: "998989", streamId: "667788")
+            WIAdsInStreamManager.shared().requestAds(requestData: requestData, player: self.contentPlayer!, adContainer: self.containerView, viewController: self.viewController!, uiPanGestureRecognizer: tapped, friendlyObstructionList: friendlyObstructionList)
         }
         else {
             // the view was removed from its superview
@@ -82,6 +90,16 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
     }
     
     func setUpInStreamAds(vc: ViewController) {
+        skipButton = Tv360SkipAdsButton()
+//        skipButton?.isHidden = true //Only for test, remove it when run production
+        skipButton?.addTarget(self, action: #selector(onCLickSkipButton), for: .touchUpInside)
+        skipButton?.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(skipButton!)
+        self.bringSubviewToFront(skipButton!)
+        
+        skipButton?.rightAnchor.constraint(equalTo: containerView.rightAnchor).isActive = true
+        skipButton?.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -50).isActive = true
+        
         WIAdsInStreamManager.shared().loaderDelegate = self
     }
     
@@ -243,25 +261,17 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
     }
     
     func wiShowSkipButton(duration: Int) {
-        skipButton = Tv360SkipAdsButton()
         skipButton?.startCountdown(duration: duration)
-        skipButton?.addTarget(self, action: #selector(onCLickSkipButton), for: .touchUpInside)
-        skipButton?.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(skipButton!)
-        self.bringSubviewToFront(skipButton!)
-        
-        skipButton?.rightAnchor.constraint(equalTo: containerView.rightAnchor).isActive = true
-        skipButton?.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -50).isActive = true
     }
     
     @objc func onCLickSkipButton(sender: UIButton!) {
         print("=========> onCLickSkipButton")
         WIAdsInStreamManager.shared().discardAdBreak()
-        skipButton?.remove()
+        skipButton?.hide()
     }
     
     func wiRemoveSkipButton() {
-        skipButton?.remove()
+        skipButton?.hide()
     }
     
     public func mediaProgress(mediaTime: TimeInterval, totalTime: TimeInterval) {

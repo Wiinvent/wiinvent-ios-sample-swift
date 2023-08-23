@@ -1489,7 +1489,7 @@
           {
             "kind": "Function",
             "name": "requestAdsPiP",
-            "printedName": "requestAdsPiP(requestData:player:adContainer:viewController:uiPanGestureRecognizer:pipController:)",
+            "printedName": "requestAdsPiP(requestData:player:adContainer:viewController:uiPanGestureRecognizer:pipController:friendlyObstructionList:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1547,13 +1547,36 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[GoogleInteractiveMediaAds.IMAFriendlyObstruction]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[GoogleInteractiveMediaAds.IMAFriendlyObstruction]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IMAFriendlyObstruction",
+                        "printedName": "GoogleInteractiveMediaAds.IMAFriendlyObstruction",
+                        "usr": "c:objc(cs)IMAFriendlyObstruction"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)requestAdsPiPWithRequestData:player:adContainer:viewController:uiPanGestureRecognizer:pipController:",
-            "mangledName": "$s5WISDK20WIAdsInStreamManagerC13requestAdsPiP0F4Data6player11adContainer14viewController22uiPanGestureRecognizer03pipN0yAA0b7RequestI0C_So8AVPlayerCSo6UIViewCSo0vN0CSo05UIPanqR0CSgSo09AVPicturec7PictureN0CSgtF",
+            "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)requestAdsPiPWithRequestData:player:adContainer:viewController:uiPanGestureRecognizer:pipController:friendlyObstructionList:",
+            "mangledName": "$s5WISDK20WIAdsInStreamManagerC13requestAdsPiP0F4Data6player11adContainer14viewController22uiPanGestureRecognizer03pipN023friendlyObstructionListyAA0b7RequestI0C_So8AVPlayerCSo6UIViewCSo0yN0CSo05UIPanqR0CSgSo09AVPicturec7PictureN0CSgSaySo011IMAFriendlyU0CGSgtF",
             "moduleName": "WISDK",
-            "objc_name": "requestAdsPiPWithRequestData:player:adContainer:viewController:uiPanGestureRecognizer:pipController:",
+            "objc_name": "requestAdsPiPWithRequestData:player:adContainer:viewController:uiPanGestureRecognizer:pipController:friendlyObstructionList:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -1563,7 +1586,7 @@
           {
             "kind": "Function",
             "name": "requestAds",
-            "printedName": "requestAds(requestData:player:adContainer:viewController:uiPanGestureRecognizer:)",
+            "printedName": "requestAds(requestData:player:adContainer:viewController:uiPanGestureRecognizer:friendlyObstructionList:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1607,13 +1630,36 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[GoogleInteractiveMediaAds.IMAFriendlyObstruction]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[GoogleInteractiveMediaAds.IMAFriendlyObstruction]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IMAFriendlyObstruction",
+                        "printedName": "GoogleInteractiveMediaAds.IMAFriendlyObstruction",
+                        "usr": "c:objc(cs)IMAFriendlyObstruction"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)requestAdsWithRequestData:player:adContainer:viewController:uiPanGestureRecognizer:",
-            "mangledName": "$s5WISDK20WIAdsInStreamManagerC10requestAds0F4Data6player11adContainer14viewController22uiPanGestureRecognizeryAA0b7RequestH0C_So8AVPlayerCSo6UIViewCSo0tM0CSo05UIPanpQ0CSgtF",
+            "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)requestAdsWithRequestData:player:adContainer:viewController:uiPanGestureRecognizer:friendlyObstructionList:",
+            "mangledName": "$s5WISDK20WIAdsInStreamManagerC10requestAds0F4Data6player11adContainer14viewController22uiPanGestureRecognizer23friendlyObstructionListyAA0b7RequestH0C_So8AVPlayerCSo6UIViewCSo0wM0CSo05UIPanpQ0CSgSaySo011IMAFriendlyS0CGSgtF",
             "moduleName": "WISDK",
-            "objc_name": "requestAdsWithRequestData:player:adContainer:viewController:uiPanGestureRecognizer:",
+            "objc_name": "requestAdsWithRequestData:player:adContainer:viewController:uiPanGestureRecognizer:friendlyObstructionList:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -5149,8 +5195,8 @@
           },
           {
             "kind": "Function",
-            "name": "remove",
-            "printedName": "remove()",
+            "name": "hide",
+            "printedName": "hide()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5159,13 +5205,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@WISDK@objc(cs)WiAdsSkipButton(im)remove",
-            "mangledName": "$s5WISDK15WiAdsSkipButtonC6removeyyF",
+            "usr": "c:@M@WISDK@objc(cs)WiAdsSkipButton(im)hide",
+            "mangledName": "$s5WISDK15WiAdsSkipButtonC4hideyyF",
             "moduleName": "WISDK",
             "declAttributes": [
               "Custom",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -12548,343 +12595,357 @@
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4127,
+      "offset": 4322,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4132,
+      "offset": 4327,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5230,
+      "offset": 5688,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5235,
+      "offset": 5693,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 5492,
+      "offset": 5950,
       "length": 28,
       "value": "\"https:\/\/pubads.wiinvent.tv\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 5585,
+      "offset": 6043,
       "length": 32,
       "value": "\"https:\/\/dev-pubads.wiinvent.tv\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 5765,
+      "offset": 6223,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 5811,
+      "offset": 6269,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 6051,
+      "offset": 6509,
       "length": 174,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 6061,
+      "offset": 6519,
       "length": 1,
       "value": "\"\/v1\/adserving\/instr\/campaign\/1.0\/vmap?sid=\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 6129,
+      "offset": 6587,
       "length": 4,
       "value": "\"-1\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 6134,
+      "offset": 6592,
       "length": 1,
       "value": "\"&cid=\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 6166,
+      "offset": 6624,
       "length": 4,
       "value": "\"-1\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 6171,
+      "offset": 6629,
       "length": 1,
       "value": "\"&p=IOS&d=\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 6191,
+      "offset": 6649,
       "length": 1,
       "value": "\"&t=\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 6208,
+      "offset": 6666,
       "length": 4,
       "value": "\"-1\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 6213,
+      "offset": 6671,
       "length": 1,
       "value": "\"&si=\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 6224,
+      "offset": 6682,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6359,
+      "offset": 6817,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 6384,
+      "offset": 6842,
       "length": 42,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 6396,
+      "offset": 6854,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 6407,
+      "offset": 6865,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 6418,
+      "offset": 6876,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 6425,
+      "offset": 6883,
       "length": 8,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 6449,
+      "offset": 6907,
       "length": 18,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 6457,
+      "offset": 6915,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 6466,
+      "offset": 6924,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 6548,
+      "offset": 7006,
       "length": 38,
       "value": "\"abcdefghijklmnopqrstuvwxyz1234567890\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6615,
+      "offset": 7073,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7162,
+      "offset": 7620,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 7495,
+      "offset": 7953,
       "length": 61,
       "value": "\"====> WI adsLoader: \""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 7549,
+      "offset": 8007,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 7555,
+      "offset": 8013,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 8389,
+      "offset": 8847,
       "length": 43,
       "value": "\"============>WI adsManagerAdPlaybackReady\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 9168,
-      "length": 101,
+      "offset": 9626,
+      "length": 148,
       "value": "\"============>WI event type: \""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 9246,
+      "offset": 9704,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 9268,
+      "offset": 9726,
+      "length": 1,
+      "value": "\" - \""
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9773,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 9566,
+      "offset": 10071,
       "length": 10,
       "value": "\"isLinear\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9609,
+      "offset": 10114,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 9646,
+      "offset": 10151,
       "length": 12,
       "value": "\"campaignId\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 9687,
+      "offset": 10192,
       "length": 4,
       "value": "\"-1\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 9723,
+      "offset": 10228,
       "length": 12,
       "value": "\"typeString\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10483,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 11426,
+      "offset": 11991,
       "length": 43,
       "value": "\"====> WI adsManagerDidRequestContentPause\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 11821,
+      "offset": 12386,
       "length": 44,
       "value": "\"====> WI adsManagerDidRequestContentResume\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 12176,
+      "offset": 12741,
       "length": 48,
       "value": "\"====> WI adsManager: \""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 12217,
+      "offset": 12782,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 12223,
+      "offset": 12788,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 13063,
+      "offset": 13626,
       "length": 29,
       "value": "\"====> WI play video timeout\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 13258,
+      "offset": 13821,
       "length": 32,
       "value": "\"=====> WI call contentComplete\""
     },
@@ -13149,57 +13210,78 @@
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WiAdsSkipButton.swift",
+      "kind": "BooleanLiteral",
+      "offset": 848,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WiAdsSkipButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 897,
+      "offset": 921,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WiAdsSkipButton.swift",
       "kind": "BooleanLiteral",
-      "offset": 954,
+      "offset": 978,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WiAdsSkipButton.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1036,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WiAdsSkipButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 1143,
+      "offset": 1225,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WiAdsSkipButton.swift",
       "kind": "BooleanLiteral",
-      "offset": 1217,
+      "offset": 1299,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WiAdsSkipButton.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1642,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WiAdsSkipButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 1541,
+      "offset": 1720,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WiAdsSkipButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 1579,
+      "offset": 1758,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WiAdsSkipButton.swift",
       "kind": "BooleanLiteral",
-      "offset": 1769,
+      "offset": 1948,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WiAdsSkipButton.swift",
       "kind": "StringLiteral",
-      "offset": 1791,
+      "offset": 1970,
       "length": 10,
       "value": "\"Bỏ qua\""
     },
