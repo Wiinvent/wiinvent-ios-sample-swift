@@ -7,6 +7,7 @@ import Alamofire
 import Foundation
 import GoogleInteractiveMediaAds
 import JavaScriptCore
+import MediaPlayer
 import Swift
 import UIKit
 @_exported import WISDK
@@ -59,7 +60,7 @@ import _StringProcessing
   public class func shared() -> WISDK.WIAdsInStreamManager
   public var loaderDelegate: (any WISDK.WIAdsInStreamLoaderDelegate)?
   public var pipController: AVKit.AVPictureInPictureController?
-  @objc public func initInstream(accountId: Swift.Int, env: WISDK.WIEnvironment, vastLoadTimeout: Swift.Float = 10, loadVideoTimeout: Foundation.TimeInterval = 10, bufferingVideoTimeout: Foundation.TimeInterval = 15, logLevel: WISDK.WILevelLog = WILevelLog.NODE, enablePiP: Swift.Bool = false, skipDuration: Swift.Int = 5)
+  @objc public func initInstream(accountId: Swift.Int, env: WISDK.WIEnvironment, vastLoadTimeout: Swift.Float = 10, loadVideoTimeout: Foundation.TimeInterval = 10, bufferingVideoTimeout: Foundation.TimeInterval = 15, logLevel: WISDK.WILevelLog = WILevelLog.NODE, enablePiP: Swift.Bool = false, skipDuration: Swift.Int = 6, alwaysCustomSkip: Swift.Bool = true)
   @objc public func requestAdsPiP(requestData: WISDK.WIAdsRequestData, player: AVFoundation.AVPlayer, adContainer: UIKit.UIView, viewController: UIKit.UIViewController, uiPanGestureRecognizer: UIKit.UIPanGestureRecognizer?, pipController: AVKit.AVPictureInPictureController?, friendlyObstructionList: [GoogleInteractiveMediaAds.IMAFriendlyObstruction]? = nil)
   @objc public func requestAds(requestData: WISDK.WIAdsRequestData, player: AVFoundation.AVPlayer, adContainer: UIKit.UIView, viewController: UIKit.UIViewController, uiPanGestureRecognizer: UIKit.UIPanGestureRecognizer?, friendlyObstructionList: [GoogleInteractiveMediaAds.IMAFriendlyObstruction]? = nil)
   @objc public func adsLoader(_ loader: GoogleInteractiveMediaAds.IMAAdsLoader, adsLoadedWith adsLoadedData: GoogleInteractiveMediaAds.IMAAdsLoadedData)
@@ -79,6 +80,20 @@ import _StringProcessing
   @objc public func destroy()
   @objc override dynamic public init()
   @objc deinit
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public class var isPhone: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public class var isPad: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public class var isTV: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public class var isCarPlay: Swift.Bool {
+    get
+  }
 }
 @_inheritsConvenienceInitializers @objc public class WIOverlayManager : ObjectiveC.NSObject {
   @objc public static var onConfigReady: ((_ configData: WISDK.WIConfigData) -> ())?
@@ -279,10 +294,18 @@ import _StringProcessing
   @objc public init(accountId: Swift.String?, channelId: Swift.String?, streamId: Swift.String?, token: Swift.String?, env: WISDK.WIEnvironment)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers open class WIWelcomeAdManager : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers open class WIWelcomeAdManager : ObjectiveC.NSObject, WISDK.WIWelcomeAdDelegate {
   public class func shared() -> WISDK.WIWelcomeAdManager
-  @objc public func requestAds(requestData: WISDK.WIWelcomeAdData, container: UIKit.UIView!, delegate: (any WISDK.WIWelcomeAdDelegate)?, timeoutInSecond: Foundation.TimeInterval = 10, levelLog: WISDK.WILevelLog = WILevelLog.NODE)
+  @objc public func requestAds(requestData: WISDK.WIWelcomeAdData, container: UIKit.UIView!, viewController: UIKit.UIViewController, delegate: (any WISDK.WIWelcomeAdDelegate)?, timeoutInSecond: Foundation.TimeInterval = 10, levelLog: WISDK.WILevelLog = WILevelLog.NODE, friendlyObstructionList: [GoogleInteractiveMediaAds.IMAFriendlyObstruction]? = nil)
   @objc public func remove()
+  @objc public func onDisplayAds()
+  @objc public func onNoAds()
+  @objc public func onAdsWelcomeDismiss()
+  @objc public func onAdsWelcomeClick(clickThroughType: WISDK.WIClickThroughType, contentId: Swift.String, campaignId: Swift.Int64)
+  @objc public func onAdsWelcomeImpression(campaignId: Swift.Int64)
+  @objc public func onAdsWelcomeSkip(campaignId: Swift.Int64)
+  @objc public func onAdsWelcomeError()
+  @objc public func onAdsWelcomeTimeout()
   @objc override dynamic public init()
   @objc deinit
 }

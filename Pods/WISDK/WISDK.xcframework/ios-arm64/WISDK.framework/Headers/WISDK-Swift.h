@@ -299,6 +299,7 @@ SWIFT_CLASS("_TtC5WISDK15PassthroughView")
 @end
 
 
+
 @class NSString;
 enum AdEventType : NSInteger;
 
@@ -361,7 +362,7 @@ enum WILevelLog : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
 @interface WIAdsInStreamManager : NSObject <AVPictureInPictureControllerDelegate, IMAAdsLoaderDelegate, IMAAdsManagerDelegate>
-- (void)initInstreamWithAccountId:(NSInteger)accountId env:(enum WIEnvironment)env vastLoadTimeout:(float)vastLoadTimeout loadVideoTimeout:(NSTimeInterval)loadVideoTimeout bufferingVideoTimeout:(NSTimeInterval)bufferingVideoTimeout logLevel:(enum WILevelLog)logLevel enablePiP:(BOOL)enablePiP skipDuration:(NSInteger)skipDuration SWIFT_METHOD_FAMILY(none);
+- (void)initInstreamWithAccountId:(NSInteger)accountId env:(enum WIEnvironment)env vastLoadTimeout:(float)vastLoadTimeout loadVideoTimeout:(NSTimeInterval)loadVideoTimeout bufferingVideoTimeout:(NSTimeInterval)bufferingVideoTimeout logLevel:(enum WILevelLog)logLevel enablePiP:(BOOL)enablePiP skipDuration:(NSInteger)skipDuration alwaysCustomSkip:(BOOL)alwaysCustomSkip SWIFT_METHOD_FAMILY(none);
 - (void)requestAdsPiPWithRequestData:(WIAdsRequestData * _Nonnull)requestData player:(AVPlayer * _Nonnull)player adContainer:(UIView * _Nonnull)adContainer viewController:(UIViewController * _Nonnull)viewController uiPanGestureRecognizer:(UIPanGestureRecognizer * _Nullable)uiPanGestureRecognizer pipController:(AVPictureInPictureController * _Nullable)pipController friendlyObstructionList:(NSArray<IMAFriendlyObstruction *> * _Nullable)friendlyObstructionList;
 - (void)requestAdsWithRequestData:(WIAdsRequestData * _Nonnull)requestData player:(AVPlayer * _Nonnull)player adContainer:(UIView * _Nonnull)adContainer viewController:(UIViewController * _Nonnull)viewController uiPanGestureRecognizer:(UIPanGestureRecognizer * _Nullable)uiPanGestureRecognizer friendlyObstructionList:(NSArray<IMAFriendlyObstruction *> * _Nullable)friendlyObstructionList;
 - (void)adsLoader:(IMAAdsLoader * _Nonnull)loader adsLoadedWithData:(IMAAdsLoadedData * _Nonnull)adsLoadedData;
@@ -598,9 +599,17 @@ SWIFT_PROTOCOL("_TtP5WISDK19WIWelcomeAdDelegate_")
 
 
 SWIFT_CLASS("_TtC5WISDK18WIWelcomeAdManager")
-@interface WIWelcomeAdManager : NSObject
-- (void)requestAdsWithRequestData:(WIWelcomeAdData * _Nonnull)requestData container:(UIView * _Null_unspecified)container delegate:(id <WIWelcomeAdDelegate> _Nullable)delegate timeoutInSecond:(NSTimeInterval)timeoutInSecond levelLog:(enum WILevelLog)levelLog;
+@interface WIWelcomeAdManager : NSObject <WIWelcomeAdDelegate>
+- (void)requestAdsWithRequestData:(WIWelcomeAdData * _Nonnull)requestData container:(UIView * _Null_unspecified)container viewController:(UIViewController * _Nonnull)viewController delegate:(id <WIWelcomeAdDelegate> _Nullable)delegate timeoutInSecond:(NSTimeInterval)timeoutInSecond levelLog:(enum WILevelLog)levelLog friendlyObstructionList:(NSArray<IMAFriendlyObstruction *> * _Nullable)friendlyObstructionList;
 - (void)remove;
+- (void)onDisplayAds;
+- (void)onNoAds;
+- (void)onAdsWelcomeDismiss;
+- (void)onAdsWelcomeClickWithClickThroughType:(enum WIClickThroughType)clickThroughType contentId:(NSString * _Nonnull)contentId campaignId:(int64_t)campaignId;
+- (void)onAdsWelcomeImpressionWithCampaignId:(int64_t)campaignId;
+- (void)onAdsWelcomeSkipWithCampaignId:(int64_t)campaignId;
+- (void)onAdsWelcomeError;
+- (void)onAdsWelcomeTimeout;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
