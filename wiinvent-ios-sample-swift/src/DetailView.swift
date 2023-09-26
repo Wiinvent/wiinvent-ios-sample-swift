@@ -65,7 +65,7 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
             
 //            self.contentPlayer?.play()
             
-            //add friendly Obstruction View
+            //add friendly Obstruction View --> Phan nay quan trong, can khai bao het cac layer phu len tren player.
             var friendlyObstructionList: [IMAFriendlyObstruction] = []
             if skipButton != nil {
                 let skipButtonObstruction = IMAFriendlyObstruction(view: skipButton!, purpose: IMAFriendlyObstructionPurpose.mediaControls, detailedReason: "Skip Button")
@@ -77,7 +77,7 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
             // Make the request only once the view has been instantiated.
             let tapped = UIPanGestureRecognizer(target: self, action: #selector(self.panGesture(_:)))
             tapped.delegate = self
-            let requestData = WIAdsRequestData(channelId: "998989", streamId: "999999")
+            let requestData = WIAdsRequestData(channelId: "998989", streamId: "999991")
             WIAdsInStreamManager.shared().requestAds(requestData: requestData, player: self.contentPlayer!, adContainer: self.containerView, viewController: self.viewController!, uiPanGestureRecognizer: tapped, friendlyObstructionList: friendlyObstructionList)
         }
         else {
