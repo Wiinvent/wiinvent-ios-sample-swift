@@ -54,6 +54,29 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
         
         setUpContentPlayer()
         setUpInStreamAds(vc: vc)
+        
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(forName: UIApplication.didBecomeActiveNotification,
+                                               object: nil,
+                                               queue: OperationQueue.main) { [weak self] notification in
+            guard let self = self else { return }
+            self.didBecom(active: notification)
+        }
+        
+        notificationCenter.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.willResignActiveNotification, object: nil)
+    }
+    
+    @objc private func didBecom(active notification: Notification){
+        print("==> didBecom active")
+        
+        skipButton?.resume()
+        WIAdsInStreamManager.shared().resume()
+    }
+    
+    @objc func appMovedToBackground() {
+        print("==> didBecom appMovedToBackground")
+    
+        skipButton?.pause()
     }
     
     override func didMoveToSuperview() {

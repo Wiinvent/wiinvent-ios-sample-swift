@@ -129,6 +129,8 @@ extension UIKit.UIDevice {
   @objc @_Concurrency.MainActor(unsafe) public func startCountdown(duration: Swift.Int = 5)
   @objc @_Concurrency.MainActor(unsafe) public func hide()
   @_Concurrency.MainActor(unsafe) open func skipUi()
+  @objc @_Concurrency.MainActor(unsafe) public func pause()
+  @objc @_Concurrency.MainActor(unsafe) public func resume()
   @objc deinit
 }
 @objc public enum WIEnvironment : Swift.Int, Swift.RawRepresentable {

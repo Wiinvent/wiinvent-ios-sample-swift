@@ -628,6 +628,8 @@ SWIFT_CLASS("_TtC5WISDK15WiAdsSkipButton")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)startCountdownWithDuration:(NSInteger)duration;
 - (void)hide;
+- (void)pause;
+- (void)resume;
 @end
 
 #endif
