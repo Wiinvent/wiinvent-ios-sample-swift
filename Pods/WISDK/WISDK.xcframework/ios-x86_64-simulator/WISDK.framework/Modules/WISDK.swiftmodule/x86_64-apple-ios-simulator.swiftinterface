@@ -60,7 +60,7 @@ import _StringProcessing
   public class func shared() -> WISDK.WIAdsInStreamManager
   public var loaderDelegate: (any WISDK.WIAdsInStreamLoaderDelegate)?
   public var pipController: AVKit.AVPictureInPictureController?
-  @objc public func initInstream(accountId: Swift.Int, env: WISDK.WIEnvironment, vastLoadTimeout: Swift.Float = 10, loadVideoTimeout: Foundation.TimeInterval = 10, bufferingVideoTimeout: Foundation.TimeInterval = 15, logLevel: WISDK.WILevelLog = WILevelLog.NODE, enablePiP: Swift.Bool = false, skipDuration: Swift.Int = 6, alwaysCustomSkip: Swift.Bool = true)
+  @objc public func initInstream(accountId: Swift.Int, env: WISDK.WIEnvironment, vastLoadTimeout: Swift.Float = 10, loadVideoTimeout: Foundation.TimeInterval = 10, bufferingVideoTimeout: Foundation.TimeInterval = 10, bitrate: Swift.Int = 2500, logLevel: WISDK.WILevelLog = WILevelLog.NODE, enablePiP: Swift.Bool = false, skipDuration: Swift.Int = 6, alwaysCustomSkip: Swift.Bool = true)
   @objc public func requestAdsPiP(requestData: WISDK.WIAdsRequestData, player: AVFoundation.AVPlayer, adContainer: UIKit.UIView, viewController: UIKit.UIViewController, uiPanGestureRecognizer: UIKit.UIPanGestureRecognizer?, pipController: AVKit.AVPictureInPictureController?, friendlyObstructionList: [GoogleInteractiveMediaAds.IMAFriendlyObstruction]? = nil)
   @objc public func requestAds(requestData: WISDK.WIAdsRequestData, player: AVFoundation.AVPlayer, adContainer: UIKit.UIView, viewController: UIKit.UIViewController, uiPanGestureRecognizer: UIKit.UIPanGestureRecognizer?, friendlyObstructionList: [GoogleInteractiveMediaAds.IMAFriendlyObstruction]? = nil)
   @objc public func addFriendlyObstruction(friendlyObstructionList: [GoogleInteractiveMediaAds.IMAFriendlyObstruction]? = nil)
@@ -69,12 +69,13 @@ import _StringProcessing
   @objc public func adsManagerAdPlaybackReady(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager)
   @objc public func adsManager(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager, adDidProgressToTime mediaTime: Foundation.TimeInterval, totalTime: Foundation.TimeInterval)
   @objc public func adsManager(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager, didReceive event: GoogleInteractiveMediaAds.IMAAdEvent)
+  @objc public func delayShowSkipCallBack()
   @objc public func adsManagerDidRequestContentPause(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager)
   @objc public func adsManagerDidRequestContentResume(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager)
   @objc public func adsManager(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager, didReceive error: GoogleInteractiveMediaAds.IMAAdError)
-  @objc public func goToBackground()
-  @objc public func callPlayVideoTimeout()
+  @objc public func bufferingTimeoutCallBack()
   @objc public func contentComplete()
+  @objc public func movedToBackground()
   @objc public func resume()
   @objc public func skip()
   @objc public func discardAdBreak()

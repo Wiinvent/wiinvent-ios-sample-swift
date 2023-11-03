@@ -362,7 +362,7 @@ enum WILevelLog : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
 @interface WIAdsInStreamManager : NSObject <AVPictureInPictureControllerDelegate, IMAAdsLoaderDelegate, IMAAdsManagerDelegate>
-- (void)initInstreamWithAccountId:(NSInteger)accountId env:(enum WIEnvironment)env vastLoadTimeout:(float)vastLoadTimeout loadVideoTimeout:(NSTimeInterval)loadVideoTimeout bufferingVideoTimeout:(NSTimeInterval)bufferingVideoTimeout logLevel:(enum WILevelLog)logLevel enablePiP:(BOOL)enablePiP skipDuration:(NSInteger)skipDuration alwaysCustomSkip:(BOOL)alwaysCustomSkip SWIFT_METHOD_FAMILY(none);
+- (void)initInstreamWithAccountId:(NSInteger)accountId env:(enum WIEnvironment)env vastLoadTimeout:(float)vastLoadTimeout loadVideoTimeout:(NSTimeInterval)loadVideoTimeout bufferingVideoTimeout:(NSTimeInterval)bufferingVideoTimeout bitrate:(NSInteger)bitrate logLevel:(enum WILevelLog)logLevel enablePiP:(BOOL)enablePiP skipDuration:(NSInteger)skipDuration alwaysCustomSkip:(BOOL)alwaysCustomSkip SWIFT_METHOD_FAMILY(none);
 - (void)requestAdsPiPWithRequestData:(WIAdsRequestData * _Nonnull)requestData player:(AVPlayer * _Nonnull)player adContainer:(UIView * _Nonnull)adContainer viewController:(UIViewController * _Nonnull)viewController uiPanGestureRecognizer:(UIPanGestureRecognizer * _Nullable)uiPanGestureRecognizer pipController:(AVPictureInPictureController * _Nullable)pipController friendlyObstructionList:(NSArray<IMAFriendlyObstruction *> * _Nullable)friendlyObstructionList;
 - (void)requestAdsWithRequestData:(WIAdsRequestData * _Nonnull)requestData player:(AVPlayer * _Nonnull)player adContainer:(UIView * _Nonnull)adContainer viewController:(UIViewController * _Nonnull)viewController uiPanGestureRecognizer:(UIPanGestureRecognizer * _Nullable)uiPanGestureRecognizer friendlyObstructionList:(NSArray<IMAFriendlyObstruction *> * _Nullable)friendlyObstructionList;
 - (void)addFriendlyObstructionWithFriendlyObstructionList:(NSArray<IMAFriendlyObstruction *> * _Nullable)friendlyObstructionList;
@@ -371,12 +371,13 @@ SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
 - (void)adsManagerAdPlaybackReady:(IMAAdsManager * _Nonnull)adsManager;
 - (void)adsManager:(IMAAdsManager * _Nonnull)adsManager adDidProgressToTime:(NSTimeInterval)mediaTime totalTime:(NSTimeInterval)totalTime;
 - (void)adsManager:(IMAAdsManager * _Nonnull)adsManager didReceiveAdEvent:(IMAAdEvent * _Nonnull)event;
+- (void)delayShowSkipCallBack;
 - (void)adsManagerDidRequestContentPause:(IMAAdsManager * _Nonnull)adsManager;
 - (void)adsManagerDidRequestContentResume:(IMAAdsManager * _Nonnull)adsManager;
 - (void)adsManager:(IMAAdsManager * _Nonnull)adsManager didReceiveAdError:(IMAAdError * _Nonnull)error;
-- (void)goToBackground;
-- (void)callPlayVideoTimeout;
+- (void)bufferingTimeoutCallBack;
 - (void)contentComplete;
+- (void)movedToBackground;
 - (void)resume;
 - (void)skip;
 - (void)discardAdBreak;

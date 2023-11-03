@@ -15,6 +15,7 @@ import GoogleInteractiveMediaAds
 class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGestureRecognizerDelegate {
     
     static let SAMPLE_VOD_URL: String = "http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8";
+    static let SAMPLE_LIVE_URL: String = "https://live.vfantasy.net/channel/BBCLIFE/playlist.m3u8"
     
     private weak var viewController: ViewController?
     @IBOutlet weak var backBtn: UIButton!
@@ -75,8 +76,10 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
     
     @objc func appMovedToBackground() {
         print("==> didBecom appMovedToBackground")
-    
+        
         skipButton?.pause()
+        WIAdsInStreamManager.shared().movedToBackground()
+    
     }
     
     override func didMoveToSuperview() {
@@ -95,12 +98,12 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
                 friendlyObstructionList.append(skipButtonObstruction)
             }
             
-            WIAdsInStreamManager.shared().initInstream(accountId: 14, env: WIEnvironment.SANDBOX, vastLoadTimeout: 5, loadVideoTimeout: 5, logLevel: WILevelLog.NODE, enablePiP: false, skipDuration: 5)
+            WIAdsInStreamManager.shared().initInstream(accountId: 14, env: WIEnvironment.SANDBOX, vastLoadTimeout: 5, loadVideoTimeout: 5, bufferingVideoTimeout: 5, bitrate: 2000, logLevel: WILevelLog.NODE, enablePiP: false, skipDuration: 5)
             
             // Make the request only once the view has been instantiated.
             let tapped = UIPanGestureRecognizer(target: self, action: #selector(self.panGesture(_:)))
             tapped.delegate = self
-            let requestData = WIAdsRequestData(channelId: "998989", streamId: "667788")
+            let requestData = WIAdsRequestData(channelId: "998989", streamId: "999999")
             WIAdsInStreamManager.shared().requestAds(requestData: requestData, player: self.contentPlayer!, adContainer: self.containerView, viewController: self.viewController!, uiPanGestureRecognizer: tapped, friendlyObstructionList: friendlyObstructionList)
         }
         else {
@@ -128,7 +131,7 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
     
     func setUpContentPlayer() {
         // Set up CGRects for resizing the video and controls on rotate.
-        let contentURL = URL(string: DetailView.SAMPLE_VOD_URL)
+        let contentURL = URL(string: DetailView.SAMPLE_LIVE_URL)
         self.contentPlayer = AVPlayer(url: contentURL!)
 //        self.contentPlayer?.allowsExternalPlayback = false
         guard let contentPlayer = self.contentPlayer else { return }
