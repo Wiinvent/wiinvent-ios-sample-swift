@@ -368,6 +368,7 @@ SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
 - (void)addFriendlyObstructionWithFriendlyObstructionList:(NSArray<IMAFriendlyObstruction *> * _Nullable)friendlyObstructionList;
 - (void)adsLoader:(IMAAdsLoader * _Nonnull)loader adsLoadedWithData:(IMAAdsLoadedData * _Nonnull)adsLoadedData;
 - (void)adsLoader:(IMAAdsLoader * _Nonnull)loader failedWithErrorData:(IMAAdLoadingErrorData * _Nonnull)adErrorData;
+- (void)adsManagerAdDidStartBuffering:(IMAAdsManager * _Nonnull)adsManager;
 - (void)adsManagerAdPlaybackReady:(IMAAdsManager * _Nonnull)adsManager;
 - (void)adsManager:(IMAAdsManager * _Nonnull)adsManager adDidProgressToTime:(NSTimeInterval)mediaTime totalTime:(NSTimeInterval)totalTime;
 - (void)adsManager:(IMAAdsManager * _Nonnull)adsManager didReceiveAdEvent:(IMAAdEvent * _Nonnull)event;
@@ -413,6 +414,7 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 typedef SWIFT_ENUM(NSInteger, WIEnvironment, open) {
   WIEnvironmentSANDBOX = 0,
   WIEnvironmentPRODUCTION = 1,
+  WIEnvironmentVIETTEL_PRODUCTION = 2,
 };
 
 

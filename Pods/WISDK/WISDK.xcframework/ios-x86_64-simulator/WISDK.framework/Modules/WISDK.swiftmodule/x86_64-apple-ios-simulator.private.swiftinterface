@@ -66,6 +66,7 @@ import _StringProcessing
   @objc public func addFriendlyObstruction(friendlyObstructionList: [GoogleInteractiveMediaAds.IMAFriendlyObstruction]? = nil)
   @objc public func adsLoader(_ loader: GoogleInteractiveMediaAds.IMAAdsLoader, adsLoadedWith adsLoadedData: GoogleInteractiveMediaAds.IMAAdsLoadedData)
   @objc public func adsLoader(_ loader: GoogleInteractiveMediaAds.IMAAdsLoader, failedWith adErrorData: GoogleInteractiveMediaAds.IMAAdLoadingErrorData)
+  @objc public func adsManagerAdDidStartBuffering(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager)
   @objc public func adsManagerAdPlaybackReady(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager)
   @objc public func adsManager(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager, adDidProgressToTime mediaTime: Foundation.TimeInterval, totalTime: Foundation.TimeInterval)
   @objc public func adsManager(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager, didReceive event: GoogleInteractiveMediaAds.IMAAdEvent)
@@ -136,12 +137,19 @@ extension UIKit.UIDevice {
   @objc deinit
 }
 @objc public enum WIEnvironment : Swift.Int, Swift.RawRepresentable {
-  case SANDBOX, PRODUCTION
+  case SANDBOX, PRODUCTION, VIETTEL_PRODUCTION
   public typealias RawValue = Swift.String
   public var rawValue: WISDK.WIEnvironment.RawValue {
     get
   }
   public init?(rawValue: WISDK.WIEnvironment.RawValue)
+}
+@_hasMissingDesignatedInitializers open class CryptoUtil {
+  public class func shared() -> WISDK.CryptoUtil
+  public func genErrorLogSign(tenantId: Swift.String, campaignId: Swift.String, mixId: Swift.String) -> Swift.String
+  public func genSkipSign(campaignId: Swift.String, deviceId: Swift.String, mixId: Swift.String) -> Swift.String
+  public func genInstreamSign(streamId: Swift.String, deviceId: Swift.String, tenantId: Swift.String) -> Swift.String
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc open class WIAdEvent : ObjectiveC.NSObject {
   @objc public enum AdEventType : Swift.Int, Swift.RawRepresentable {
@@ -178,6 +186,7 @@ extension UIKit.UIDevice {
   public func getWelcomeNextTime() -> Swift.Int32
   public func setWelcomeNextTime(time: Swift.Int32)
   public func removeWelcomeNextTime()
+  public func currentTimeInMilliSeconds() -> Swift.Int
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class WIStreamSource : ObjectiveC.NSObject {
@@ -196,6 +205,12 @@ extension UIKit.UIDevice {
   }
   public init(payload: Swift.String)
   public func getType() -> WISDK.WIWebAction.TypeAction
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class LogFactory {
+  public class func shared() -> WISDK.LogFactory
+  public func writeErrorLog(env: WISDK.WIEnvironment, tenantId: Swift.String, campaignId: Swift.String, errorMessage: Swift.String, errorCode: Swift.Int, bitrate: Swift.Int, vastMediaBitrate: Swift.Int, vastSkippable: Swift.Bool, mixId: Swift.String, type: Swift.String, startTime: Swift.Int)
+  public func writeSkipLog(env: WISDK.WIEnvironment, tenantId: Swift.String, campaignId: Swift.String, mixId: Swift.String, vastCampaignId: Swift.String, vastNameId: Swift.String, streamId: Swift.String, type: Swift.String)
   @objc deinit
 }
 @objc public class WIAdsRequestData : ObjectiveC.NSObject {
@@ -296,6 +311,14 @@ extension UIKit.UIDevice {
 }
 @objc public class WIGameData : ObjectiveC.NSObject {
   @objc public init(accountId: Swift.String?, channelId: Swift.String?, streamId: Swift.String?, token: Swift.String?, env: WISDK.WIEnvironment)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class WIDomainFactory {
+  public class func shared() -> WISDK.WIDomainFactory
+  public func getGameUrl(env: WISDK.WIEnvironment) -> Swift.String
+  public func getOverlayUrl(type: WISDK.WIOverlayData.OverlayType, env: WISDK.WIEnvironment) -> Swift.String
+  public func welcomeWebViewUrl(domainUrl: Swift.String?, env: WISDK.WIEnvironment) -> Swift.String
+  public func getDomain(env: WISDK.WIEnvironment) -> Swift.String
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers open class WIWelcomeAdManager : ObjectiveC.NSObject, WISDK.WIWelcomeAdDelegate {
