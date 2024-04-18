@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_wiinvent_ios_sample_swift_wiinvent_ios_sample_swiftUITests : NSObject
-@end
-@implementation PodsDummy_Pods_wiinvent_ios_sample_swift_wiinvent_ios_sample_swiftUITests
-@end
