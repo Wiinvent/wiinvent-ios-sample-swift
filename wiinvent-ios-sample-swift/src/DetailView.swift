@@ -103,7 +103,21 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
             // Make the request only once the view has been instantiated.
             let tapped = UIPanGestureRecognizer(target: self, action: #selector(self.panGesture(_:)))
             tapped.delegate = self
-            let requestData = WIAdsRequestData(channelId: "998989", streamId: "999999")
+            
+            
+            let requestData = WIAdsRequestData(
+                channelId: "998989",
+                streamId: "2222",
+                transId: "1111",
+                contentType: WIContentType.TV,
+                title: "Titlephim1",
+                category: "Category1,Category2",
+                keyword: "keyword1,keyword2",
+                age: 0,
+                gender: WIGender.NONE,
+                uid20: ""
+            )
+            
             WIAdsInStreamManager.shared().requestAds(requestData: requestData, player: self.contentPlayer!, adContainer: self.containerView, viewController: self.viewController!, uiPanGestureRecognizer: tapped, friendlyObstructionList: friendlyObstructionList)
         }
         else {

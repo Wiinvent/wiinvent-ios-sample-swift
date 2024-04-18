@@ -33,6 +33,7 @@ class ViewController: UIViewController, WIWelcomeAdDelegate {
     
     var instreamBtn: UIButton!
     var welcomeBtn: UIButton!
+    var bannerBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +52,13 @@ class ViewController: UIViewController, WIWelcomeAdDelegate {
         view.addSubview(welcomeBtn)
         view.bringSubviewToFront(welcomeBtn)
         
+        bannerBtn = UIButton(frame: CGRect(x: 100, y: 300, width: 200, height: 50))
+        bannerBtn.backgroundColor = .red
+        bannerBtn.setTitle("3rd Banner", for: .normal)
+        bannerBtn.addTarget(self, action: #selector(thirdPartyBannerAction), for: .touchUpInside)
+        view.addSubview(bannerBtn)
+        view.bringSubviewToFront(bannerBtn)
+        
     }
 
     @objc func instreamAction(sender: UIButton!) {
@@ -67,15 +75,20 @@ class ViewController: UIViewController, WIWelcomeAdDelegate {
     }
     
     func initWelcomeAd() {
-        let adData = WIWelcomeAdData(accountId: String(14), domainUrl: "", env: WIEnvironment.SANDBOX)
+        let adData = WIWelcomeAdData(accountId: String(14), transId: "123123123", age: 0, gender: WIGender.NONE, uid20: "", domainUrl: "", env: WIEnvironment.SANDBOX)
         // add friendly Obstruction View
-        var friendlyObstructionList: [IMAFriendlyObstruction] = []
+        let friendlyObstructionList: [IMAFriendlyObstruction] = []
         
-        WIWelcomeAdManager.shared().requestAds(requestData: adData, container: view, viewController: self, delegate: self, timeoutInSecond: 5, levelLog: WILevelLog.NODE, friendlyObstructionList: friendlyObstructionList);
+        WIWelcomeAdManager.shared().requestAds(requestData: adData, container: view, viewController: self, delegate: self, vastLoadTimeout: 5, loadVideoTimeout: 5, bufferingVideoTimeout: 5, bitrate: 2501, skipDuration: 9, levelLog: WILevelLog.NODE, friendlyObstructionList: friendlyObstructionList);
 
         print("-----request ads")
     }
     
+    @objc func thirdPartyBannerAction(sender: UIButton!) {
+        print("===> thirdPartyBannerAction")
+        let vc = BannerSampleViewController.instantiate()
+        present(vc, animated: true)
+    }
     
     func onDisplayAds() {
         print("-----onDisplayAds")

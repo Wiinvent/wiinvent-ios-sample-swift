@@ -1,9 +1,10 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WISDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name WISDK
 import AVKit
+import AdSupport
 import Alamofire
+import AppTrackingTransparency
 import Foundation
 import GoogleInteractiveMediaAds
 import JavaScriptCore
@@ -14,6 +15,7 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc public protocol WIWelcomeAdDelegate {
   @objc func onDisplayAds()
   @objc func onNoAds()
@@ -24,10 +26,21 @@ import _StringProcessing
   @objc func onAdsWelcomeError()
   @objc func onAdsWelcomeTimeout()
 }
+@objc public protocol WI3rdBannerAdDelegate {
+  @objc func wi3rdBannerAdManager(_ manager: WISDK.WI3rdBannerAdManager, hasNoAdsAt containerView: UIKit.UIView?)
+  @objc func wi3rdBannerAdManager(_ manager: WISDK.WI3rdBannerAdManager, at containerView: UIKit.UIView?, changeRatio ratio: CoreFoundation.CGFloat)
+  @objc func wi3rdBannerAdManager(_ manager: WISDK.WI3rdBannerAdManager, click url: Swift.String)
+}
 @objc public protocol WIGameDelegate {
   @objc func onDismiss()
   @objc func onError()
   @objc func onTimeout()
+}
+@objc open class WI3rdBannerAdManager : ObjectiveC.NSObject {
+  public init(delegate: any WISDK.WI3rdBannerAdDelegate, levelLog: WISDK.WILevelLog = .NODE)
+  @objc public func requestAds(requestData: WISDK.WI3rdBannerAdData, containerView: UIKit.UIView?, timeoutInSecond: Foundation.TimeInterval = 10)
+  @objc public func destroy()
+  @objc deinit
 }
 @objc public class WIGameWebAction : ObjectiveC.NSObject {
   public enum TypeAction : Swift.String {
@@ -52,8 +65,8 @@ import _StringProcessing
   @objc optional func mediaProgress(mediaTime: Foundation.TimeInterval, totalTime: Foundation.TimeInterval)
 }
 @objc public class WIWelcomeAdData : ObjectiveC.NSObject {
-  @objc public init(accountId: Swift.String?, env: WISDK.WIEnvironment)
-  @objc public init(accountId: Swift.String?, domainUrl: Swift.String?, env: WISDK.WIEnvironment)
+  @objc public init(accountId: Swift.String?, transId: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, uid20: Swift.String, env: WISDK.WIEnvironment)
+  @objc public init(accountId: Swift.String?, transId: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, uid20: Swift.String, domainUrl: Swift.String?, env: WISDK.WIEnvironment)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class WIAdsInStreamManager : ObjectiveC.NSObject, GoogleInteractiveMediaAds.IMAAdsLoaderDelegate, GoogleInteractiveMediaAds.IMAAdsManagerDelegate, AVKit.AVPictureInPictureControllerDelegate {
@@ -83,20 +96,6 @@ import _StringProcessing
   @objc public func destroy()
   @objc override dynamic public init()
   @objc deinit
-}
-extension UIKit.UIDevice {
-  @_Concurrency.MainActor(unsafe) public class var isPhone: Swift.Bool {
-    get
-  }
-  @_Concurrency.MainActor(unsafe) public class var isPad: Swift.Bool {
-    get
-  }
-  @_Concurrency.MainActor(unsafe) public class var isTV: Swift.Bool {
-    get
-  }
-  @_Concurrency.MainActor(unsafe) public class var isCarPlay: Swift.Bool {
-    get
-  }
 }
 @_inheritsConvenienceInitializers @objc public class WIOverlayManager : ObjectiveC.NSObject {
   @objc public static var onConfigReady: ((_ configData: WISDK.WIConfigData) -> ())?
@@ -151,6 +150,14 @@ extension UIKit.UIDevice {
   public func genInstreamSign(streamId: Swift.String, deviceId: Swift.String, tenantId: Swift.String) -> Swift.String
   @objc deinit
 }
+@objc public enum WI3rdBannerAdSize : Swift.Int, Swift.RawRepresentable {
+  case BANNER, LARGE_BANNER, RECTANGLE
+  public typealias RawValue = Swift.String
+  public var rawValue: WISDK.WI3rdBannerAdSize.RawValue {
+    get
+  }
+  public init?(rawValue: WISDK.WI3rdBannerAdSize.RawValue)
+}
 @_inheritsConvenienceInitializers @objc open class WIAdEvent : ObjectiveC.NSObject {
   @objc public enum AdEventType : Swift.Int, Swift.RawRepresentable {
     case REQUEST, START, IMPRESSION, CLICK, COMPLETE, SKIPPED, TAPPED, ALL_ADS_COMPLETED, USER_AD_BLOCK, VOLUME_MUTED, VOLUME_ON, ERROR, UNKNOW
@@ -170,6 +177,10 @@ extension UIKit.UIDevice {
   @objc public func getErrorCode() -> Swift.Int
   @objc public func getErrorMessage() -> Swift.String
   @objc public func getEventType() -> WISDK.WIAdEvent.AdEventType
+  @objc deinit
+}
+@objc public class WI3rdBannerAdData : ObjectiveC.NSObject {
+  @objc public init(accountId: Swift.String? = nil, env: WISDK.WIEnvironment, channelId: Swift.String? = nil, streamId: Swift.String? = nil, transId: Swift.String?, contentType: WISDK.WIContentType, title: Swift.String?, category: Swift.String?, keyword: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, adSize: WISDK.WI3rdBannerAdSize, uid20: Swift.String?)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers open class WIGameManager : ObjectiveC.NSObject {
@@ -214,25 +225,17 @@ extension UIKit.UIDevice {
   @objc deinit
 }
 @objc public class WIAdsRequestData : ObjectiveC.NSObject {
-  @objc public init(channelId: Swift.String? = nil, streamId: Swift.String? = nil)
+  @objc public init(channelId: Swift.String? = nil, streamId: Swift.String? = nil, transId: Swift.String?, contentType: WISDK.WIContentType, title: Swift.String?, category: Swift.String?, keyword: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, uid20: Swift.String)
   @objc deinit
 }
 @objc public class WIOverlayData : ObjectiveC.NSObject {
-  @objc public init(channelId: Swift.String?, streamId: Swift.String?, contentType: WISDK.WIOverlayData.ContentType, env: WISDK.WIEnvironment = WIEnvironment.PRODUCTION)
-  @objc public init(channelId: Swift.String?, streamId: Swift.String?, contentType: WISDK.WIOverlayData.ContentType, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIEnvironment = WIEnvironment.PRODUCTION)
-  @objc public init(channelId: Swift.String?, streamId: Swift.String?, thirdPartyToken: Swift.String?, contentType: WISDK.WIOverlayData.ContentType, accountId: Swift.Int, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIEnvironment = WIEnvironment.PRODUCTION)
-  @objc public init(channelId: Swift.String?, streamId: Swift.String?, thirdPartyToken: Swift.String?, contentType: WISDK.WIOverlayData.ContentType, accountId: Swift.Int, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIEnvironment = WIEnvironment.PRODUCTION, timeoutSecond: Swift.Int = 0)
+  @objc public init(channelId: Swift.String?, streamId: Swift.String?, contentType: WISDK.WIContentType, env: WISDK.WIEnvironment = .PRODUCTION)
+  @objc public init(channelId: Swift.String?, streamId: Swift.String?, contentType: WISDK.WIContentType, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIEnvironment = .PRODUCTION)
+  @objc public init(channelId: Swift.String?, streamId: Swift.String?, thirdPartyToken: Swift.String?, contentType: WISDK.WIContentType, accountId: Swift.Int, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIEnvironment = .PRODUCTION)
+  @objc public init(channelId: Swift.String?, streamId: Swift.String?, thirdPartyToken: Swift.String?, contentType: WISDK.WIContentType, accountId: Swift.Int, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIEnvironment = .PRODUCTION, timeoutSecond: Swift.Int = 0)
   @objc public init(type: WISDK.WIOverlayData.OverlayType, accountId: Swift.Int, thirdPartyToken: Swift.String?, env: WISDK.WIEnvironment = WIEnvironment.PRODUCTION)
   @objc @_hasMissingDesignatedInitializers public class Platform : ObjectiveC.NSObject {
     @objc deinit
-  }
-  @objc public enum ContentType : Swift.Int, Swift.RawRepresentable {
-    case VOD, LIVESTREAM
-    public typealias RawValue = Swift.String
-    public var rawValue: WISDK.WIOverlayData.ContentType.RawValue {
-      get
-    }
-    public init?(rawValue: WISDK.WIOverlayData.ContentType.RawValue)
   }
   @objc public enum OverlayType : Swift.Int, Swift.RawRepresentable {
     case PROFILE, OVERLAY
@@ -244,11 +247,27 @@ extension UIKit.UIDevice {
   }
   @objc deinit
 }
+@objc public enum WIContentType : Swift.Int, Swift.RawRepresentable {
+  case FILM, VIDEO, TV
+  public typealias RawValue = Swift.String
+  public var rawValue: WISDK.WIContentType.RawValue {
+    get
+  }
+  public init?(rawValue: WISDK.WIContentType.RawValue)
+}
 @objc public class WIConfigData : ObjectiveC.NSObject {
   @objc public var sources: [WISDK.WIStreamSource]?
   @objc final public let isVod: Swift.Bool
   public init(data: [Swift.String : Any]?)
   @objc deinit
+}
+@objc public enum WIGender : Swift.Int, Swift.RawRepresentable {
+  case MALE, FEMALE, OTHER, NONE
+  public typealias RawValue = Swift.String
+  public var rawValue: WISDK.WIGender.RawValue {
+    get
+  }
+  public init?(rawValue: WISDK.WIGender.RawValue)
 }
 @objc public enum WILevelLog : Swift.Int, Swift.RawRepresentable {
   case NODE, BODY
@@ -323,7 +342,7 @@ extension UIKit.UIDevice {
 }
 @objc @_inheritsConvenienceInitializers open class WIWelcomeAdManager : ObjectiveC.NSObject, WISDK.WIWelcomeAdDelegate {
   public class func shared() -> WISDK.WIWelcomeAdManager
-  @objc public func requestAds(requestData: WISDK.WIWelcomeAdData, container: UIKit.UIView!, viewController: UIKit.UIViewController, delegate: (any WISDK.WIWelcomeAdDelegate)?, timeoutInSecond: Foundation.TimeInterval = 10, levelLog: WISDK.WILevelLog = WILevelLog.NODE, friendlyObstructionList: [GoogleInteractiveMediaAds.IMAFriendlyObstruction]? = nil)
+  @objc public func requestAds(requestData: WISDK.WIWelcomeAdData, container: UIKit.UIView!, viewController: UIKit.UIViewController, delegate: (any WISDK.WIWelcomeAdDelegate)?, vastLoadTimeout: Swift.Float = 10, loadVideoTimeout: Foundation.TimeInterval = 10, bufferingVideoTimeout: Foundation.TimeInterval = 10, bitrate: Swift.Int = 2500, skipDuration: Swift.Int = 6, levelLog: WISDK.WILevelLog = WILevelLog.NODE, friendlyObstructionList: [GoogleInteractiveMediaAds.IMAFriendlyObstruction]? = nil)
   @objc public func remove()
   @objc public func onDisplayAds()
   @objc public func onNoAds()
@@ -341,15 +360,19 @@ extension WISDK.WIGameWebAction.TypeAction : Swift.Hashable {}
 extension WISDK.WIGameWebAction.TypeAction : Swift.RawRepresentable {}
 extension WISDK.WIEnvironment : Swift.Equatable {}
 extension WISDK.WIEnvironment : Swift.Hashable {}
+extension WISDK.WI3rdBannerAdSize : Swift.Equatable {}
+extension WISDK.WI3rdBannerAdSize : Swift.Hashable {}
 extension WISDK.WIAdEvent.AdEventType : Swift.Equatable {}
 extension WISDK.WIAdEvent.AdEventType : Swift.Hashable {}
 extension WISDK.WIWebAction.TypeAction : Swift.Equatable {}
 extension WISDK.WIWebAction.TypeAction : Swift.Hashable {}
 extension WISDK.WIWebAction.TypeAction : Swift.RawRepresentable {}
-extension WISDK.WIOverlayData.ContentType : Swift.Equatable {}
-extension WISDK.WIOverlayData.ContentType : Swift.Hashable {}
 extension WISDK.WIOverlayData.OverlayType : Swift.Equatable {}
 extension WISDK.WIOverlayData.OverlayType : Swift.Hashable {}
+extension WISDK.WIContentType : Swift.Equatable {}
+extension WISDK.WIContentType : Swift.Hashable {}
+extension WISDK.WIGender : Swift.Equatable {}
+extension WISDK.WIGender : Swift.Hashable {}
 extension WISDK.WILevelLog : Swift.Equatable {}
 extension WISDK.WILevelLog : Swift.Hashable {}
 extension WISDK.WIWelcomeAdWebAction.TypeAction : Swift.Equatable {}

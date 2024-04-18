@@ -23,6 +23,9 @@
 		DC44A40829C46F1600610DC3 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC44A40729C46F1500610DC3 /* DetailView.xib */; };
 		DC5656D72A87E83000A4AC00 /* Tv360SkipAdsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5656D62A87E83000A4AC00 /* Tv360SkipAdsButton.swift */; };
 		DCDDE16729D499B100A8CFE3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDDE16629D499B100A8CFE3 /* DetailView.swift */; };
+		DCFB8F762BD12F9E001E367C /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFB8F752BD12F9E001E367C /* StoryboardInstantiable.swift */; };
+		DCFB8F792BD13014001E367C /* BannerSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFB8F772BD13014001E367C /* BannerSampleViewController.swift */; };
+		DCFB8F7A2BD13014001E367C /* BannerSampleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFB8F782BD13014001E367C /* BannerSampleViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		DC44A40729C46F1500610DC3 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 		DC5656D62A87E83000A4AC00 /* Tv360SkipAdsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tv360SkipAdsButton.swift; sourceTree = "<group>"; };
 		DCDDE16629D499B100A8CFE3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		DCFB8F752BD12F9E001E367C /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		DCFB8F772BD13014001E367C /* BannerSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerSampleViewController.swift; sourceTree = "<group>"; };
+		DCFB8F782BD13014001E367C /* BannerSampleViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BannerSampleViewController.storyboard; sourceTree = "<group>"; };
 		EB750FBC5F6C2C6E153B7E26 /* Pods-wiinvent-ios-sample-swiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wiinvent-ios-sample-swiftTests.debug.xcconfig"; path = "Target Support Files/Pods-wiinvent-ios-sample-swiftTests/Pods-wiinvent-ios-sample-swiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,11 +180,30 @@
 		DC44A40029C467E100610DC3 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				DCFB8F742BD12F18001E367C /* base */,
+				DCFB8F672BD12A25001E367C /* banner */,
 				DC44A40729C46F1500610DC3 /* DetailView.xib */,
 				DCDDE16629D499B100A8CFE3 /* DetailView.swift */,
 				DC5656D62A87E83000A4AC00 /* Tv360SkipAdsButton.swift */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		DCFB8F672BD12A25001E367C /* banner */ = {
+			isa = PBXGroup;
+			children = (
+				DCFB8F782BD13014001E367C /* BannerSampleViewController.storyboard */,
+				DCFB8F772BD13014001E367C /* BannerSampleViewController.swift */,
+			);
+			path = banner;
+			sourceTree = "<group>";
+		};
+		DCFB8F742BD12F18001E367C /* base */ = {
+			isa = PBXGroup;
+			children = (
+				DCFB8F752BD12F9E001E367C /* StoryboardInstantiable.swift */,
+			);
+			path = base;
 			sourceTree = "<group>";
 		};
 		FEEB44D3E1FD6DA4BD56E7BD /* Frameworks */ = {
@@ -302,6 +327,7 @@
 			files = (
 				DB614FC92459B7190037BE40 /* Podfile in Resources */,
 				DB614FA3245966FE0037BE40 /* LaunchScreen.storyboard in Resources */,
+				DCFB8F7A2BD13014001E367C /* BannerSampleViewController.storyboard in Resources */,
 				DB614FA0245966FE0037BE40 /* Assets.xcassets in Resources */,
 				DC44A40829C46F1600610DC3 /* DetailView.xib in Resources */,
 				DB614FC82459B7190037BE40 /* Pods in Resources */,
@@ -436,7 +462,9 @@
 				DB614F9B245966FC0037BE40 /* ViewController.swift in Sources */,
 				DB614F97245966FC0037BE40 /* AppDelegate.swift in Sources */,
 				DC5656D72A87E83000A4AC00 /* Tv360SkipAdsButton.swift in Sources */,
+				DCFB8F792BD13014001E367C /* BannerSampleViewController.swift in Sources */,
 				DCDDE16729D499B100A8CFE3 /* DetailView.swift in Sources */,
+				DCFB8F762BD12F9E001E367C /* StoryboardInstantiable.swift in Sources */,
 				DB614F99245966FC0037BE40 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,10 +571,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -598,7 +626,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -617,7 +645,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MH7WQV7K5L;
 				INFOPLIST_FILE = "wiinvent-ios-sample-swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -639,7 +667,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MH7WQV7K5L;
 				INFOPLIST_FILE = "wiinvent-ios-sample-swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
