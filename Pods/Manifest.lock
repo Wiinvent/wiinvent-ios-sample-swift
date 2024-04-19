@@ -1,12 +1,12 @@
 PODS:
-  - Alamofire (5.9.1)
+  - Alamofire (5.8.1)
   - GoogleAds-IMA-iOS-SDK (3.18.5)
-  - WISDK (1.10.15):
-    - Alamofire
+  - WISDK (1.10.16):
+    - Alamofire (~> 5.8.1)
     - GoogleAds-IMA-iOS-SDK (~> 3.18.4)
 
 DEPENDENCIES:
-  - WISDK (= 1.10.15)
+  - WISDK (= 1.10.16)
 
 SPEC REPOS:
   trunk:
@@ -15,10 +15,10 @@ SPEC REPOS:
     - WISDK
 
 SPEC CHECKSUMS:
-  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
   GoogleAds-IMA-iOS-SDK: 7dbef0755db43698f2f6a3a7ac51a88571945399
-  WISDK: 28907d09c3ca6f855a13606c98f9646d18e0972a
+  WISDK: 1e11b68c99c1edce37cfe22316a24e36f01a373e
 
-PODFILE CHECKSUM: b45b800a400c6fb60e15537634d5409e5e9db1ac
+PODFILE CHECKSUM: 89440f3865d8dd6f60e51c3e370937565e4fc378
 
 COCOAPODS: 1.15.2
