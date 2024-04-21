@@ -75,7 +75,13 @@ class ViewController: UIViewController, WIWelcomeAdDelegate {
     }
     
     func initWelcomeAd() {
-        let adData = WIWelcomeAdData(accountId: String(14), transId: "123123123", age: 0, gender: WIGender.NONE, uid20: "", domainUrl: "", env: WIEnvironment.SANDBOX)
+        let adData = WIWelcomeAdData(accountId: String(14), 
+                                     transId: "123123123", //mã giao dịch tạo từ server đối tác - client liên hệ server để biết thêm thông tin
+                                     age: 0, // tuổi , nếu không có thì để 0
+                                     gender: WIGender.NONE, //giới tính nếu không có thì set NONE
+                                     uid20: "", // unified id 2.0, nếu không có thì set ""
+                                     domainUrl: "", // config banner đọc từ phía server đối tác
+                                     env: WIEnvironment.SANDBOX)
         // add friendly Obstruction View
         let friendlyObstructionList: [IMAFriendlyObstruction] = []
         

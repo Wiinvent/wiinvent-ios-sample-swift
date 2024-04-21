@@ -5,7 +5,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface IMAVersion : NSObject
 /** Major version. */
 @property(nonatomic) NSInteger majorVersion;
-/** Minor version. */
+/** Minor version. */\
 @property(nonatomic) NSInteger minorVersion;
 /** Patch version. */
 @property(nonatomic) NSInteger patchVersion;

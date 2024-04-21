@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
  * provide content tracking if your content player of choice is an AVPlayer
  * or its subclass.
  */
-@interface IMAAVPlayerContentPlayhead : NSObject <IMAContentPlayhead>
+@interface IMAAVPlayerContentPlayhead : NSObject<IMAContentPlayhead>
 
 /**
  * The player to track.

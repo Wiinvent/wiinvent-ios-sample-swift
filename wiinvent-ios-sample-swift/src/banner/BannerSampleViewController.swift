@@ -41,7 +41,7 @@ final class BannerSampleViewController: UIViewController, StoryboardInstantiable
     private func loadBannerAd() {
         loadFirstBannerAd()
         loadSecondBannerAd()
-        loadThirdBannerAd()
+//        loadThirdBannerAd()
     }
     
     private func loadFirstBannerAd() {
@@ -49,20 +49,20 @@ final class BannerSampleViewController: UIViewController, StoryboardInstantiable
             requestData: .init(
                 accountId: String(14),
                 env: .SANDBOX,
-                channelId: "998989",
-                streamId: "8080",
-                transId: "1111",
-                contentType: WIContentType.FILM,
-                title: "Title phim 1",
-                category: "Category 1,Category 2",
-                keyword: "keyword1,keyword2",
-                age: 30,
-                gender: WIGender.MALE,
-                adSize: .BANNER,
-                uid20: ""
+                channelId: "998989,33333", //danh sách id của category & cách nhau bằng dấu ,
+                streamId: "8080", // id nội dung
+                transId: "1111", //mã giao dịch tạo từ server đối tác - client liên hệ server để biết thêm thông tin
+                contentType: WIContentType.FILM, //content type FIRM | TV | VIDEO
+                title: "Title phim 1", // tiêu đề nội dung
+                category: "Category 1,Category 2", // danh sach tiêu đề của category & cách nhau bằng dấu ,
+                keyword: "keyword1,keyword2", //từ khoá nếu có | để "" nếu ko có
+                age: 30, // tuổi , nếu không có thì để 0
+                gender: WIGender.MALE, //giới tính nếu không có thì set NONE
+                adSize: .BANNER, //các loại banner
+                uid20: "" // unified id 2.0, nếu không có thì set ""
             ),
             containerView: firstBannerAdView,
-            timeoutInSecond: 10
+            timeoutInSecond: 10 //timeout load
         )
     }
     

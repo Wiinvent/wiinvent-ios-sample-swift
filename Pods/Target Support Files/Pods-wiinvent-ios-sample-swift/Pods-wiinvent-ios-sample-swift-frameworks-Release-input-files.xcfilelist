@@ -1,4 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-wiinvent-ios-sample-swift/Pods-wiinvent-ios-sample-swift-frameworks.sh
-${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/GoogleInteractiveMediaAds
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/WISDK/WISDK.framework/WISDK

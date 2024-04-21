@@ -7,6 +7,7 @@
  * customized by the publisher during ad playback.
  */
 
+
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -16,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Different UI elements that can be customized.
  */
-typedef NS_ENUM(NSInteger, IMAUiElementType) {
+typedef NS_ENUM(NSInteger, IMAUiElementType){
   /**
    * Ad attribution UI element.
    */

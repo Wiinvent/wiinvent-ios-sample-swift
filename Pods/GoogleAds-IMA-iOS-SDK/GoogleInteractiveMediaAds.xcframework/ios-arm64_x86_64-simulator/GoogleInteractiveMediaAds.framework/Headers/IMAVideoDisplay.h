@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Delegate object that receives state change callbacks from IMAVideoDisplay.
  */
-@protocol IMAVideoDisplayDelegate <NSObject>
+@protocol IMAVideoDisplayDelegate<NSObject>
 
 /**
  * Informs the SDK that the ad has loaded.

@@ -15,7 +15,7 @@ import GoogleInteractiveMediaAds
 class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGestureRecognizerDelegate {
     
     static let SAMPLE_VOD_URL: String = "http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8";
-    static let SAMPLE_LIVE_URL: String = "https://live.vfantasy.net/channel/BBCLIFE/playlist.m3u8"
+    static let SAMPLE_LIVE_URL: String = "http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8"
     
     private weak var viewController: ViewController?
     @IBOutlet weak var backBtn: UIButton!
@@ -98,7 +98,7 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
                 friendlyObstructionList.append(skipButtonObstruction)
             }
             
-            WIAdsInStreamManager.shared().initInstream(accountId: 14, env: WIEnvironment.SANDBOX, vastLoadTimeout: 5, loadVideoTimeout: 5, bufferingVideoTimeout: 5, bitrate: 2000, logLevel: WILevelLog.NODE, enablePiP: false, skipDuration: 5)
+            WIAdsInStreamManager.shared().initInstream(accountId: 14, env: WIEnvironment.SANDBOX, vastLoadTimeout: 5, loadVideoTimeout: 5, bufferingVideoTimeout: 5, bitrate: 2000, logLevel: WILevelLog.NODE, enablePiP: false, skipDuration: 6)
             
             // Make the request only once the view has been instantiated.
             let tapped = UIPanGestureRecognizer(target: self, action: #selector(self.panGesture(_:)))
@@ -106,16 +106,16 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
             
             
             let requestData = WIAdsRequestData(
-                channelId: "998989",
-                streamId: "2222",
-                transId: "1111",
-                contentType: WIContentType.TV,
-                title: "Titlephim1",
-                category: "Category1,Category2",
-                keyword: "keyword1,keyword2",
-                age: 0,
-                gender: WIGender.NONE,
-                uid20: ""
+                channelId: "998989,343434", //danh sách id của category & cách nhau bằng dấu ,
+                streamId: "2222", // id nội dung
+                transId: "1111", //mã giao dịch tạo từ server đối tác - client liên hệ server để biết thêm thông tin
+                contentType: WIContentType.FILM, //content type FIRM | TV | VIDEO
+                title: "Title phim 1", // tiêu đề nội dung
+                category: "Category1,Category2", // danh sach tiêu đề của category & cách nhau bằng dấu ,
+                keyword: "keyword1,keyword2", //từ khoá nếu có | để "" nếu ko có
+                age: 0, // tuổi , nếu không có thì để 0
+                gender: WIGender.NONE, //giới tính nếu không có thì set NONE
+                uid20: "" // unified id 2.0, nếu không có thì set ""
             )
             
             WIAdsInStreamManager.shared().requestAds(requestData: requestData, player: self.contentPlayer!, adContainer: self.containerView, viewController: self.viewController!, uiPanGestureRecognizer: tapped, friendlyObstructionList: friendlyObstructionList)

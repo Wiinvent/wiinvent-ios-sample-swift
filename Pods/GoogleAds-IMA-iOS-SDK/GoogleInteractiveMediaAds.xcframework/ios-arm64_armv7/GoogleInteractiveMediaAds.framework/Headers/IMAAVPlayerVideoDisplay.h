@@ -35,7 +35,7 @@ extern NSString *const kIMASubtitleTTML;
 /**
  * A callback protocol for IMAAVPlayerVideoDisplayDelegate.
  */
-@protocol IMAAVPlayerVideoDisplayDelegate <NSObject>
+@protocol IMAAVPlayerVideoDisplayDelegate<NSObject>
 
 @optional
 

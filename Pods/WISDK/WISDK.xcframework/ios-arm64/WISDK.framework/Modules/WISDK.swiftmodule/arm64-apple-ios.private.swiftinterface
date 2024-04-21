@@ -3,7 +3,6 @@
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name WISDK
 import AVKit
 import AdSupport
-import Alamofire
 import AppTrackingTransparency
 import Foundation
 import GoogleInteractiveMediaAds
@@ -143,13 +142,6 @@ import _SwiftConcurrencyShims
   }
   public init?(rawValue: WISDK.WIEnvironment.RawValue)
 }
-@_hasMissingDesignatedInitializers open class CryptoUtil {
-  public class func shared() -> WISDK.CryptoUtil
-  public func genErrorLogSign(tenantId: Swift.String, campaignId: Swift.String, mixId: Swift.String) -> Swift.String
-  public func genSkipSign(campaignId: Swift.String, deviceId: Swift.String, mixId: Swift.String) -> Swift.String
-  public func genInstreamSign(streamId: Swift.String, deviceId: Swift.String, tenantId: Swift.String) -> Swift.String
-  @objc deinit
-}
 @objc public enum WI3rdBannerAdSize : Swift.Int, Swift.RawRepresentable {
   case BANNER, LARGE_BANNER, RECTANGLE
   public typealias RawValue = Swift.String
@@ -216,12 +208,6 @@ import _SwiftConcurrencyShims
   }
   public init(payload: Swift.String)
   public func getType() -> WISDK.WIWebAction.TypeAction
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers open class LogFactory {
-  public class func shared() -> WISDK.LogFactory
-  public func writeErrorLog(env: WISDK.WIEnvironment, tenantId: Swift.String, campaignId: Swift.String, errorMessage: Swift.String, errorCode: Swift.Int, bitrate: Swift.Int, vastMediaBitrate: Swift.Int, vastSkippable: Swift.Bool, mixId: Swift.String, type: Swift.String, startTime: Swift.Int)
-  public func writeSkipLog(env: WISDK.WIEnvironment, tenantId: Swift.String, campaignId: Swift.String, mixId: Swift.String, vastCampaignId: Swift.String, vastNameId: Swift.String, streamId: Swift.String, type: Swift.String)
   @objc deinit
 }
 @objc public class WIAdsRequestData : ObjectiveC.NSObject {

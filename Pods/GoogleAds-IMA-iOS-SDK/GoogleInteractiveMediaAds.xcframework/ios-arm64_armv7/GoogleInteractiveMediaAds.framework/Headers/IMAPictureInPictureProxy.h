@@ -26,8 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
  * Picture in Picture</a> for more details.
  */
 #if TARGET_OS_IOS || (TARGET_OS_TV && __TV_OS_VERSION_MAX_ALLOWED >= 140000)
-@interface IMAPictureInPictureProxy
-    : NSProxy <AVPictureInPictureControllerDelegate, AVPlayerViewControllerDelegate>
+@interface IMAPictureInPictureProxy : NSProxy <AVPictureInPictureControllerDelegate,
+                                               AVPlayerViewControllerDelegate>
 #else
 @interface IMAPictureInPictureProxy : NSObject
 #endif

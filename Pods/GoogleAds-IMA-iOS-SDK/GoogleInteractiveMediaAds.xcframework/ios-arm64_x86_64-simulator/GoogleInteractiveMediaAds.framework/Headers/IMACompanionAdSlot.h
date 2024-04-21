@@ -24,7 +24,7 @@ extern const NSInteger kIMAFluidSize;
 /**
  * Delegate to receive events from the companion ad slot.
  */
-@protocol IMACompanionDelegate <NSObject>
+@protocol IMACompanionDelegate<NSObject>
 
 @optional
 

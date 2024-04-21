@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Different event types sent by the IMAAdsManager to its delegate.
  */
-typedef NS_ENUM(NSInteger, IMAAdEventType) {
+typedef NS_ENUM(NSInteger, IMAAdEventType){
   /**
    * Ad break ready.
    */

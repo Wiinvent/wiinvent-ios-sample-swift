@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Groups various properties of the ad player.
  */
-@protocol IMAAdPlaybackInfo <NSObject>
+@protocol IMAAdPlaybackInfo<NSObject>
 
 /**
  * The current media time of the ad, or 0 if no ad loaded.

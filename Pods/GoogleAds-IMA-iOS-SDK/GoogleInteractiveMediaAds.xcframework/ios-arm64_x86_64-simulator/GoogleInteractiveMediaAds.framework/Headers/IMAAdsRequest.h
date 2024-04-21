@@ -60,6 +60,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic) BOOL adWillPlayMuted;
 
+
 /**
  * Specifies whether the player intends to continuously play the content videos one after
  * another similar to TV broadcast. Not calling this function leaves the setting as unknown.

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Possible error types while loading or playing ads.
  */
-typedef NS_ENUM(NSInteger, IMAErrorType) {
+typedef NS_ENUM(NSInteger, IMAErrorType){
   /**
    * An unexpected error occurred while loading or playing the ads.
    * This may mean that the SDK wasn't loaded properly.
@@ -37,7 +37,7 @@ typedef NS_ENUM(NSInteger, IMAErrorType) {
 /**
  * Possible error codes raised while loading or playing ads.
  */
-typedef NS_ENUM(NSInteger, IMAErrorCode) {
+typedef NS_ENUM(NSInteger, IMAErrorCode){
   /**
    * The ad response was not recognized as a valid VAST ad.
    */
@@ -107,8 +107,7 @@ typedef NS_ENUM(NSInteger, IMAErrorCode) {
    */
   kIMAError_ADSLOT_NOT_VISIBLE = 1008,
   /**
-   * A VAST response containing a single <code>&lt;VAST&gt;</code> tag with no
-   * child tags.
+   * Empty VAST response.
    */
   kIMAError_VAST_EMPTY_RESPONSE = 1009,
   /**
