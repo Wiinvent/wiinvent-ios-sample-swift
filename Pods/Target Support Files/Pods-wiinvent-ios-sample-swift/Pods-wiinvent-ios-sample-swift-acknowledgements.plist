@@ -25,6 +25,16 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>Copyright 2023 Aiactiv, Inc. All rights reserved.\n</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>TokenGenerator</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>Copyright (C) 2022 by Wiinvent TV, Inc</string>
 			<key>License</key>
 			<string>Copyright</string>

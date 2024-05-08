@@ -1,0 +1,11 @@
+framework module TokenGenerator {
+  umbrella header "TokenGenerator.h"
+  export *
+
+  module * { export * }
+}
+
+module TokenGenerator.Swift {
+  header "TokenGenerator-Swift.h"
+  requires objc
+}

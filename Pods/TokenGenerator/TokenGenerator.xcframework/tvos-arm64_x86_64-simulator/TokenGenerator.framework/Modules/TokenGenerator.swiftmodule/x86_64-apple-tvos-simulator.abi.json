@@ -1,0 +1,976 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TokenGenerator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TokenGenerator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TokenGenerator"
+      },
+      {
+        "kind": "Import",
+        "name": "AdSupport",
+        "printedName": "AdSupport",
+        "declKind": "Import",
+        "moduleName": "TokenGenerator"
+      },
+      {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "TokenGenerator"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InformationGenAiToken",
+        "printedName": "InformationGenAiToken",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "userAgent",
+            "printedName": "userAgent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14TokenGenerator016InformationGenAiA0V9userAgentSSSgvp",
+            "mangledName": "$s14TokenGenerator016InformationGenAiA0V9userAgentSSSgvp",
+            "moduleName": "TokenGenerator",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14TokenGenerator016InformationGenAiA0V9userAgentSSSgvg",
+                "mangledName": "$s14TokenGenerator016InformationGenAiA0V9userAgentSSSgvg",
+                "moduleName": "TokenGenerator",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14TokenGenerator016InformationGenAiA0V9userAgentSSSgvs",
+                "mangledName": "$s14TokenGenerator016InformationGenAiA0V9userAgentSSSgvs",
+                "moduleName": "TokenGenerator",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14TokenGenerator016InformationGenAiA0V9userAgentSSSgvM",
+                "mangledName": "$s14TokenGenerator016InformationGenAiA0V9userAgentSSSgvM",
+                "moduleName": "TokenGenerator",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deviceId",
+            "printedName": "deviceId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14TokenGenerator016InformationGenAiA0V8deviceIdSSSgvp",
+            "mangledName": "$s14TokenGenerator016InformationGenAiA0V8deviceIdSSSgvp",
+            "moduleName": "TokenGenerator",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14TokenGenerator016InformationGenAiA0V8deviceIdSSSgvg",
+                "mangledName": "$s14TokenGenerator016InformationGenAiA0V8deviceIdSSSgvg",
+                "moduleName": "TokenGenerator",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14TokenGenerator016InformationGenAiA0V8deviceIdSSSgvs",
+                "mangledName": "$s14TokenGenerator016InformationGenAiA0V8deviceIdSSSgvs",
+                "moduleName": "TokenGenerator",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14TokenGenerator016InformationGenAiA0V8deviceIdSSSgvM",
+                "mangledName": "$s14TokenGenerator016InformationGenAiA0V8deviceIdSSSgvM",
+                "moduleName": "TokenGenerator",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "advertiserId",
+            "printedName": "advertiserId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14TokenGenerator016InformationGenAiA0V12advertiserIdSSSgvp",
+            "mangledName": "$s14TokenGenerator016InformationGenAiA0V12advertiserIdSSSgvp",
+            "moduleName": "TokenGenerator",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14TokenGenerator016InformationGenAiA0V12advertiserIdSSSgvg",
+                "mangledName": "$s14TokenGenerator016InformationGenAiA0V12advertiserIdSSSgvg",
+                "moduleName": "TokenGenerator",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14TokenGenerator016InformationGenAiA0V12advertiserIdSSSgvs",
+                "mangledName": "$s14TokenGenerator016InformationGenAiA0V12advertiserIdSSSgvs",
+                "moduleName": "TokenGenerator",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14TokenGenerator016InformationGenAiA0V12advertiserIdSSSgvM",
+                "mangledName": "$s14TokenGenerator016InformationGenAiA0V12advertiserIdSSSgvM",
+                "moduleName": "TokenGenerator",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vendorName",
+            "printedName": "vendorName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14TokenGenerator016InformationGenAiA0V10vendorNameSSSgvp",
+            "mangledName": "$s14TokenGenerator016InformationGenAiA0V10vendorNameSSSgvp",
+            "moduleName": "TokenGenerator",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14TokenGenerator016InformationGenAiA0V10vendorNameSSSgvg",
+                "mangledName": "$s14TokenGenerator016InformationGenAiA0V10vendorNameSSSgvg",
+                "moduleName": "TokenGenerator",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14TokenGenerator016InformationGenAiA0V10vendorNameSSSgvs",
+                "mangledName": "$s14TokenGenerator016InformationGenAiA0V10vendorNameSSSgvs",
+                "moduleName": "TokenGenerator",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14TokenGenerator016InformationGenAiA0V10vendorNameSSSgvM",
+                "mangledName": "$s14TokenGenerator016InformationGenAiA0V10vendorNameSSSgvM",
+                "moduleName": "TokenGenerator",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InformationGenAiToken",
+                "printedName": "TokenGenerator.InformationGenAiToken",
+                "usr": "s:14TokenGenerator016InformationGenAiA0V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14TokenGenerator016InformationGenAiA0V4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14TokenGenerator016InformationGenAiA0V4fromACs7Decoder_p_tKcfc",
+            "moduleName": "TokenGenerator",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14TokenGenerator016InformationGenAiA0V6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s14TokenGenerator016InformationGenAiA0V6encode2toys7Encoder_p_tKF",
+            "moduleName": "TokenGenerator",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14TokenGenerator016InformationGenAiA0V",
+        "mangledName": "$s14TokenGenerator016InformationGenAiA0V",
+        "moduleName": "TokenGenerator",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TokenGenerator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SystemConfiguration",
+        "printedName": "SystemConfiguration",
+        "declKind": "Import",
+        "moduleName": "TokenGenerator"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TokenGenerator"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TokenGenerator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TokenGenerator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AiTokenGenerator",
+        "printedName": "AiTokenGenerator",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "genToken",
+            "printedName": "genToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14TokenGenerator02AiaB0C03genA0SSyFZ",
+            "mangledName": "$s14TokenGenerator02AiaB0C03genA0SSyFZ",
+            "moduleName": "TokenGenerator",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AiTokenGenerator",
+                "printedName": "TokenGenerator.AiTokenGenerator",
+                "usr": "c:@M@TokenGenerator@objc(cs)AiTokenGenerator"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TokenGenerator@objc(cs)AiTokenGenerator(im)init",
+            "mangledName": "$s14TokenGenerator02AiaB0CACycfc",
+            "moduleName": "TokenGenerator",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TokenGenerator@objc(cs)AiTokenGenerator",
+        "mangledName": "$s14TokenGenerator02AiaB0C",
+        "moduleName": "TokenGenerator",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/VendorSystem.swift",
+      "kind": "StringLiteral",
+      "offset": 453,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/VendorSystem.swift",
+      "kind": "StringLiteral",
+      "offset": 512,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/VendorSystem.swift",
+      "kind": "StringLiteral",
+      "offset": 572,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/VendorSystem.swift",
+      "kind": "StringLiteral",
+      "offset": 631,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/VendorSystem.swift",
+      "kind": "StringLiteral",
+      "offset": 765,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/VendorSystem.swift",
+      "kind": "StringLiteral",
+      "offset": 833,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/VendorSystem.swift",
+      "kind": "IntegerLiteral",
+      "offset": 913,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/VendorSystem.swift",
+      "kind": "IntegerLiteral",
+      "offset": 924,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/VendorSystem.swift",
+      "kind": "FloatLiteral",
+      "offset": 934,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/VendorSystem.swift",
+      "kind": "StringLiteral",
+      "offset": 994,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/InformationGenAiToken.swift",
+      "kind": "StringLiteral",
+      "offset": 437,
+      "length": 4,
+      "value": "\"ua\""
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/InformationGenAiToken.swift",
+      "kind": "StringLiteral",
+      "offset": 466,
+      "length": 3,
+      "value": "\"d\""
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/InformationGenAiToken.swift",
+      "kind": "StringLiteral",
+      "offset": 498,
+      "length": 3,
+      "value": "\"a\""
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/InformationGenAiToken.swift",
+      "kind": "StringLiteral",
+      "offset": 528,
+      "length": 3,
+      "value": "\"v\""
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/InformationGenAiToken.swift",
+      "kind": "StringLiteral",
+      "offset": 437,
+      "length": 4,
+      "value": "\"ua\""
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/InformationGenAiToken.swift",
+      "kind": "StringLiteral",
+      "offset": 466,
+      "length": 3,
+      "value": "\"d\""
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/InformationGenAiToken.swift",
+      "kind": "StringLiteral",
+      "offset": 498,
+      "length": 3,
+      "value": "\"a\""
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/InformationGenAiToken.swift",
+      "kind": "StringLiteral",
+      "offset": 528,
+      "length": 3,
+      "value": "\"v\""
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/AppleUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 413,
+      "length": 7,
+      "value": "\"Apple\""
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/AppleUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 545,
+      "length": 6,
+      "value": "\"tvos\""
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/AppleUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 1837,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/AppleUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2206,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/AppleUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2230,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/AppleUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2250,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/AppleUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2297,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/AppleUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2340,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/AppleUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2368,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/AppleUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9438,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/AppleUtils.swift",
+      "kind": "Array",
+      "offset": 9634,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/CodingExtension.swift",
+      "kind": "Array",
+      "offset": 296,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/AiTokenGenerator.swift",
+      "kind": "StringLiteral",
+      "offset": 611,
+      "length": 46,
+      "value": "\"encrypto fail: \""
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/AiTokenGenerator.swift",
+      "kind": "StringLiteral",
+      "offset": 656,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/AiTokenGenerator.swift",
+      "kind": "StringLiteral",
+      "offset": 693,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yenphan\/Documents\/SDKGenAiToken\/TokenGenerator\/TokenGenerator\/AiTokenGenerator.swift",
+      "kind": "StringLiteral",
+      "offset": 992,
+      "length": 2,
+      "value": "\"\""
+    }
+  ]
+}

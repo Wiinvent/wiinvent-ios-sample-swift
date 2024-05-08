@@ -6,6 +6,10 @@ This application makes use of the following third party libraries:
 Copyright 2015 Google, Inc. All rights reserved.
 
 
+## TokenGenerator
+
+Copyright 2023 Aiactiv, Inc. All rights reserved.\n
+
 ## WISDK
 
 Copyright (C) 2022 by Wiinvent TV, Inc
