@@ -107,10 +107,10 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
             
             let requestData = WIAdsRequestData(
                 channelId: "998989,343434", //danh sách id của category & cách nhau bằng dấu ,
-                streamId: "2222", // id nội dung
+                streamId: "999999", // id nội dung
                 transId: "1111", //mã giao dịch tạo từ server đối tác - client liên hệ server để biết thêm thông tin
                 contentType: WIContentType.FILM, //content type FIRM | TV | VIDEO
-                title: "Title phim 1", // tiêu đề nội dung
+                title: "Highlights Áo vs Thổ Nhĩ Kỳ | Giao Hữu Quốc Tế 2024", // tiêu đề nội dung
                 category: "Category1,Category2", // danh sach tiêu đề của category & cách nhau bằng dấu ,
                 keyword: "keyword1,keyword2", //từ khoá nếu có | để "" nếu ko có
                 age: 0, // tuổi , nếu không có thì để 0
