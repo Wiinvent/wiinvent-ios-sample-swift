@@ -16955,7 +16955,7 @@
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 21100,
+      "offset": 21096,
       "length": 1,
       "value": "6"
     },
@@ -17326,7 +17326,7 @@
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17583,
+      "offset": 17579,
       "length": 1,
       "value": "7"
     },

@@ -98,7 +98,7 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
                 friendlyObstructionList.append(skipButtonObstruction)
             }
             
-            WIAdsInStreamManager.shared().initInstream(accountId: 14, env: WIEnvironment.SANDBOX, vastLoadTimeout: 5, loadVideoTimeout: 5, bufferingVideoTimeout: 5, bitrate: 2000, logLevel: WILevelLog.NODE, enablePiP: false, skipDuration: 6)
+            WIAdsInStreamManager.shared().initInstream(accountId: 4, env: WIEnvironment.PRODUCTION, vastLoadTimeout: 5, loadVideoTimeout: 5, bufferingVideoTimeout: 5, bitrate: 2000, logLevel: WILevelLog.NODE, enablePiP: false, skipDuration: 6)
             
             // Make the request only once the view has been instantiated.
             let tapped = UIPanGestureRecognizer(target: self, action: #selector(self.panGesture(_:)))
