@@ -484,6 +484,7 @@ typedef SWIFT_ENUM(NSInteger, WIEnvironment, open) {
   WIEnvironmentSANDBOX = 0,
   WIEnvironmentPRODUCTION = 1,
   WIEnvironmentVIETTEL_PRODUCTION = 2,
+  WIEnvironmentWIINVENT_PRODUCTION = 3,
 };
 
 

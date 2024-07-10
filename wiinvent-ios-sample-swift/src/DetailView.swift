@@ -98,7 +98,7 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
                 friendlyObstructionList.append(skipButtonObstruction)
             }
             
-            WIAdsInStreamManager.shared().initInstream(accountId: 4, env: WIEnvironment.PRODUCTION, vastLoadTimeout: 5, loadVideoTimeout: 5, bufferingVideoTimeout: 5, bitrate: 2000, logLevel: WILevelLog.NODE, enablePiP: false, skipDuration: 6)
+            WIAdsInStreamManager.shared().initInstream(accountId: 4, env: WIEnvironment.PRODUCTION, vastLoadTimeout: 5, loadVideoTimeout: 5, bufferingVideoTimeout: 5, bitrate: 2000, logLevel: WILevelLog.BODY, enablePiP: false, skipDuration: 6)
             
             // Make the request only once the view has been instantiated.
             let tapped = UIPanGestureRecognizer(target: self, action: #selector(self.panGesture(_:)))
@@ -107,7 +107,7 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
             
             let requestData = WIAdsRequestData(
                 channelId: "998989,343434", //danh sách id của category & cách nhau bằng dấu ,
-                streamId: "2024", // id nội dung
+                streamId: "111233", // id nội dung
                 transId: "1111", //mã giao dịch tạo từ server đối tác - client liên hệ server để biết thêm thông tin
                 contentType: WIContentType.FILM, //content type FIRM | TV | VIDEO
                 title: "Highlights Áo vs Thổ Nhĩ Kỳ | Giao Hữu Quốc Tế 2024", // tiêu đề nội dung

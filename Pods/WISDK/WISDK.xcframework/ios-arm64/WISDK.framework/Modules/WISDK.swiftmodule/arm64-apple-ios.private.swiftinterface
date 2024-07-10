@@ -136,7 +136,7 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc public enum WIEnvironment : Swift.Int, Swift.RawRepresentable {
-  case SANDBOX, PRODUCTION, VIETTEL_PRODUCTION
+  case SANDBOX, PRODUCTION, VIETTEL_PRODUCTION, WIINVENT_PRODUCTION
   public typealias RawValue = Swift.String
   public var rawValue: WISDK.WIEnvironment.RawValue {
     get

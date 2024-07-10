@@ -6088,6 +6088,47 @@
           },
           {
             "kind": "Var",
+            "name": "WIINVENT_PRODUCTION",
+            "printedName": "WIINVENT_PRODUCTION",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WISDK.WIEnvironment.Type) -> WISDK.WIEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WIEnvironment",
+                    "printedName": "WISDK.WIEnvironment",
+                    "usr": "c:@M@WISDK@E@WIEnvironment"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WISDK.WIEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WIEnvironment",
+                        "printedName": "WISDK.WIEnvironment",
+                        "usr": "c:@M@WISDK@E@WIEnvironment"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@WISDK@E@WIEnvironment@WIEnvironmentWIINVENT_PRODUCTION",
+            "mangledName": "$s5WISDK13WIEnvironmentO19WIINVENT_PRODUCTIONyA2CmF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
             "name": "rawValue",
             "printedName": "rawValue",
             "children": [
@@ -16318,21 +16359,21 @@
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2123,
+      "offset": 2122,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2164,
+      "offset": 2163,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2226,
+      "offset": 2225,
       "length": 5,
       "value": "false"
     },
@@ -16440,6 +16481,13 @@
       "offset": 185,
       "length": 18,
       "value": "2"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WIEnvironment.swift",
+      "kind": "IntegerLiteral",
+      "offset": 205,
+      "length": 19,
+      "value": "3"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
