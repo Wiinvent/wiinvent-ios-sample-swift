@@ -65,8 +65,8 @@ import _SwiftConcurrencyShims
   @objc optional func mediaProgress(mediaTime: Foundation.TimeInterval, totalTime: Foundation.TimeInterval)
 }
 @objc public class WIWelcomeAdData : ObjectiveC.NSObject {
-  @objc public init(accountId: Swift.String?, transId: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, uid20: Swift.String, env: WISDK.WIEnvironment)
-  @objc public init(accountId: Swift.String?, transId: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, uid20: Swift.String, domainUrl: Swift.String?, env: WISDK.WIEnvironment)
+  @objc public init(accountId: Swift.String?, transId: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, uid20: Swift.String, env: WISDK.WIEnvironment, segments: Swift.String)
+  @objc public init(accountId: Swift.String?, transId: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, uid20: Swift.String, domainUrl: Swift.String?, env: WISDK.WIEnvironment, segments: Swift.String)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class WIAdsInStreamManager : ObjectiveC.NSObject, GoogleInteractiveMediaAds.IMAAdsLoaderDelegate, GoogleInteractiveMediaAds.IMAAdsManagerDelegate, AVKit.AVPictureInPictureControllerDelegate {
@@ -173,7 +173,7 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc public class WI3rdBannerAdData : ObjectiveC.NSObject {
-  @objc public init(accountId: Swift.String? = nil, env: WISDK.WIEnvironment, channelId: Swift.String? = nil, streamId: Swift.String? = nil, transId: Swift.String?, contentType: WISDK.WIContentType, title: Swift.String?, category: Swift.String?, keyword: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, adSize: WISDK.WI3rdBannerAdSize, uid20: Swift.String?)
+  @objc public init(accountId: Swift.String? = nil, env: WISDK.WIEnvironment, channelId: Swift.String? = nil, streamId: Swift.String? = nil, transId: Swift.String?, contentType: WISDK.WIContentType, title: Swift.String?, category: Swift.String?, keyword: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, adSize: WISDK.WI3rdBannerAdSize, uid20: Swift.String?, segments: Swift.String?)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers open class WIGameManager : ObjectiveC.NSObject {
@@ -212,7 +212,7 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc public class WIAdsRequestData : ObjectiveC.NSObject {
-  @objc public init(channelId: Swift.String? = nil, streamId: Swift.String? = nil, transId: Swift.String?, contentType: WISDK.WIContentType, title: Swift.String?, category: Swift.String?, keyword: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, uid20: Swift.String)
+  @objc public init(channelId: Swift.String? = nil, streamId: Swift.String? = nil, transId: Swift.String?, contentType: WISDK.WIContentType, title: Swift.String?, category: Swift.String?, keyword: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, uid20: Swift.String, segments: Swift.String)
   @objc deinit
 }
 @objc public class WIOverlayData : ObjectiveC.NSObject {

@@ -1336,7 +1336,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(accountId:transId:age:gender:uid20:env:)",
+            "printedName": "init(accountId:transId:age:gender:uid20:env:segments:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1395,13 +1395,19 @@
                 "name": "WIEnvironment",
                 "printedName": "WISDK.WIEnvironment",
                 "usr": "c:@M@WISDK@E@WIEnvironment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@WISDK@objc(cs)WIWelcomeAdData(im)initWithAccountId:transId:age:gender:uid20:env:",
-            "mangledName": "$s5WISDK15WIWelcomeAdDataC9accountId05transF03age6gender5uid203envACSSSg_AJSiAA8WIGenderOSSAA13WIEnvironmentOtcfc",
+            "usr": "c:@M@WISDK@objc(cs)WIWelcomeAdData(im)initWithAccountId:transId:age:gender:uid20:env:segments:",
+            "mangledName": "$s5WISDK15WIWelcomeAdDataC9accountId05transF03age6gender5uid203env8segmentsACSSSg_AKSiAA8WIGenderOSSAA13WIEnvironmentOSStcfc",
             "moduleName": "WISDK",
-            "objc_name": "initWithAccountId:transId:age:gender:uid20:env:",
+            "objc_name": "initWithAccountId:transId:age:gender:uid20:env:segments:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -1411,7 +1417,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(accountId:transId:age:gender:uid20:domainUrl:env:)",
+            "printedName": "init(accountId:transId:age:gender:uid20:domainUrl:env:segments:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1484,13 +1490,19 @@
                 "name": "WIEnvironment",
                 "printedName": "WISDK.WIEnvironment",
                 "usr": "c:@M@WISDK@E@WIEnvironment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@WISDK@objc(cs)WIWelcomeAdData(im)initWithAccountId:transId:age:gender:uid20:domainUrl:env:",
-            "mangledName": "$s5WISDK15WIWelcomeAdDataC9accountId05transF03age6gender5uid209domainUrl3envACSSSg_AKSiAA8WIGenderOSSAkA13WIEnvironmentOtcfc",
+            "usr": "c:@M@WISDK@objc(cs)WIWelcomeAdData(im)initWithAccountId:transId:age:gender:uid20:domainUrl:env:segments:",
+            "mangledName": "$s5WISDK15WIWelcomeAdDataC9accountId05transF03age6gender5uid209domainUrl3env8segmentsACSSSg_ALSiAA8WIGenderOSSAlA13WIEnvironmentOSStcfc",
             "moduleName": "WISDK",
-            "objc_name": "initWithAccountId:transId:age:gender:uid20:domainUrl:env:",
+            "objc_name": "initWithAccountId:transId:age:gender:uid20:domainUrl:env:segments:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -7550,7 +7562,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(accountId:env:channelId:streamId:transId:contentType:title:category:keyword:age:gender:adSize:uid20:)",
+            "printedName": "init(accountId:env:channelId:streamId:transId:contentType:title:category:keyword:age:gender:adSize:uid20:segments:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7702,13 +7714,27 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@WISDK@objc(cs)WI3rdBannerAdData(im)initWithAccountId:env:channelId:streamId:transId:contentType:title:category:keyword:age:gender:adSize:uid20:",
-            "mangledName": "$s5WISDK17WI3rdBannerAdDataC9accountId3env07channelG006streamG005transG011contentType5title8category7keyword3age6gender6adSize5uid20ACSSSg_AA13WIEnvironmentOA3qA09WIContentM0OA3QSiAA8WIGenderOAA0bcdT0OAQtcfc",
+            "usr": "c:@M@WISDK@objc(cs)WI3rdBannerAdData(im)initWithAccountId:env:channelId:streamId:transId:contentType:title:category:keyword:age:gender:adSize:uid20:segments:",
+            "mangledName": "$s5WISDK17WI3rdBannerAdDataC9accountId3env07channelG006streamG005transG011contentType5title8category7keyword3age6gender6adSize5uid208segmentsACSSSg_AA13WIEnvironmentOA3rA09WIContentM0OA3RSiAA8WIGenderOAA0bcdT0OA2Rtcfc",
             "moduleName": "WISDK",
-            "objc_name": "initWithAccountId:env:channelId:streamId:transId:contentType:title:category:keyword:age:gender:adSize:uid20:",
+            "objc_name": "initWithAccountId:env:channelId:streamId:transId:contentType:title:category:keyword:age:gender:adSize:uid20:segments:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -9410,7 +9436,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(channelId:streamId:transId:contentType:title:category:keyword:age:gender:uid20:)",
+            "printedName": "init(channelId:streamId:transId:contentType:title:category:keyword:age:gender:uid20:segments:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9527,13 +9553,19 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@WISDK@objc(cs)WIAdsRequestData(im)initWithChannelId:streamId:transId:contentType:title:category:keyword:age:gender:uid20:",
-            "mangledName": "$s5WISDK16WIAdsRequestDataC9channelId06streamF005transF011contentType5title8category7keyword3age6gender5uid20ACSSSg_A2nA09WIContentJ0OA3NSiAA8WIGenderOSStcfc",
+            "usr": "c:@M@WISDK@objc(cs)WIAdsRequestData(im)initWithChannelId:streamId:transId:contentType:title:category:keyword:age:gender:uid20:segments:",
+            "mangledName": "$s5WISDK16WIAdsRequestDataC9channelId06streamF005transF011contentType5title8category7keyword3age6gender5uid208segmentsACSSSg_A2oA09WIContentJ0OA3OSiAA8WIGenderOS2Stcfc",
             "moduleName": "WISDK",
-            "objc_name": "initWithChannelId:streamId:transId:contentType:title:category:keyword:age:gender:uid20:",
+            "objc_name": "initWithChannelId:streamId:transId:contentType:title:category:keyword:age:gender:uid20:segments:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -14658,7 +14690,7 @@
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3779,
+      "offset": 3887,
       "length": 2,
       "value": "10"
     },
@@ -17465,91 +17497,91 @@
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6957,
+      "offset": 7065,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8200,
+      "offset": 8308,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8237,
+      "offset": 8345,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8279,
+      "offset": 8387,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8298,
+      "offset": 8406,
       "length": 4,
       "value": "2500"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8324,
+      "offset": 8432,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9920,
+      "offset": 10028,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9957,
+      "offset": 10065,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9999,
+      "offset": 10107,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 10018,
+      "offset": 10126,
       "length": 4,
       "value": "2500"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 10044,
+      "offset": 10152,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11636,
+      "offset": 11744,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11668,
+      "offset": 11776,
       "length": 1,
       "value": "6"
     },

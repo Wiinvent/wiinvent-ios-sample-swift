@@ -81,7 +81,7 @@ class ViewController: UIViewController, WIWelcomeAdDelegate {
                                      gender: WIGender.NONE, //giới tính nếu không có thì set NONE
                                      uid20: "", // unified id 2.0, nếu không có thì set ""
                                      domainUrl: "", // config banner đọc từ phía server đối tác
-                                     env: WIEnvironment.SANDBOX)
+                                     env: WIEnvironment.SANDBOX, segments: "123,123,123") //cac segment id cach nhau = dau ,
         // add friendly Obstruction View
         let friendlyObstructionList: [IMAFriendlyObstruction] = []
         

@@ -98,7 +98,7 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
                 friendlyObstructionList.append(skipButtonObstruction)
             }
             
-            WIAdsInStreamManager.shared().initInstream(accountId: 4, env: WIEnvironment.PRODUCTION, vastLoadTimeout: 5, loadVideoTimeout: 5, bufferingVideoTimeout: 5, bitrate: 2000, logLevel: WILevelLog.BODY, enablePiP: false, skipDuration: 6)
+            WIAdsInStreamManager.shared().initInstream(accountId: 14, env: WIEnvironment.SANDBOX, vastLoadTimeout: 5, loadVideoTimeout: 5, bufferingVideoTimeout: 5, bitrate: 2000, logLevel: WILevelLog.BODY, enablePiP: false, skipDuration: 6)
             
             // Make the request only once the view has been instantiated.
             let tapped = UIPanGestureRecognizer(target: self, action: #selector(self.panGesture(_:)))
@@ -115,7 +115,8 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
                 keyword: "keyword1,keyword2", //từ khoá nếu có | để "" nếu ko có
                 age: 0, // tuổi , nếu không có thì để 0
                 gender: WIGender.NONE, //giới tính nếu không có thì set NONE
-                uid20: "" // unified id 2.0, nếu không có thì set ""
+                uid20: "", // unified id 2.0, nếu không có thì set ""
+                segments: "123,123,123" //cac segment id cach nhau = dau ,
             )
             
             WIAdsInStreamManager.shared().requestAds(requestData: requestData, player: self.contentPlayer!, adContainer: self.containerView, viewController: self.viewController!, uiPanGestureRecognizer: tapped, friendlyObstructionList: friendlyObstructionList)

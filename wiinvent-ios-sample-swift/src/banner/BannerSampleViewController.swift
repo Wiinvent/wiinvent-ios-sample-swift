@@ -59,7 +59,8 @@ final class BannerSampleViewController: UIViewController, StoryboardInstantiable
                 age: 30, // tuổi , nếu không có thì để 0
                 gender: WIGender.MALE, //giới tính nếu không có thì set NONE
                 adSize: .BANNER, //các loại banner
-                uid20: "" // unified id 2.0, nếu không có thì set ""
+                uid20: "", // unified id 2.0, nếu không có thì set ""
+                segments: "123,123,123" //cac segment id cach nhau = dau ,
             ),
             containerView: firstBannerAdView,
             timeoutInSecond: 10 //timeout load
@@ -81,7 +82,8 @@ final class BannerSampleViewController: UIViewController, StoryboardInstantiable
                 age: 30,
                 gender: WIGender.MALE,
                 adSize: .LARGE_BANNER,
-                uid20: ""
+                uid20: "",
+                segments: "123,123,123" //cac segment id cach nhau = dau ,
             ),
             containerView: secondBannerAdView,
             timeoutInSecond: 10
@@ -103,7 +105,8 @@ final class BannerSampleViewController: UIViewController, StoryboardInstantiable
                 age: 30,
                 gender: WIGender.MALE,
                 adSize: .RECTANGLE,
-                uid20: ""
+                uid20: "",
+                segments: "123,123,123" //cac segment id cach nhau = dau ,
             ),
             containerView: thirdBannerAdView,
             timeoutInSecond: 10
