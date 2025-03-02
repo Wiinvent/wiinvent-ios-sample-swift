@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "WISDK",
+    "printedName": "WISDK",
     "children": [
       {
         "kind": "Import",
@@ -251,6 +251,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -405,6 +421,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -504,6 +536,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -672,6 +720,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -901,6 +963,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -1025,6 +1101,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1302,6 +1392,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1549,6 +1655,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2685,6 +2805,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -5582,6 +5716,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -5680,6 +5828,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -5721,6 +5870,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Required"
@@ -5744,6 +5894,7 @@
             "moduleName": "WISDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -5773,6 +5924,7 @@
             "moduleName": "WISDK",
             "objc_name": "startCountdownWithDuration:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -5795,6 +5947,7 @@
             "mangledName": "$s5WISDK15WiAdsSkipButtonC4hideyyF",
             "moduleName": "WISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -5818,6 +5971,7 @@
             "moduleName": "WISDK",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -5839,6 +5993,7 @@
             "mangledName": "$s5WISDK15WiAdsSkipButtonC5pauseyyF",
             "moduleName": "WISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -5861,6 +6016,7 @@
             "mangledName": "$s5WISDK15WiAdsSkipButtonC6resumeyyF",
             "moduleName": "WISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -5874,6 +6030,7 @@
         "moduleName": "WISDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -5888,6 +6045,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -6227,6 +6398,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -6508,6 +6693,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -7187,6 +7386,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -7498,6 +7711,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -7783,6 +8010,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -7995,6 +8236,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -8221,7 +8476,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -8411,6 +8682,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -9202,6 +9487,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -9326,6 +9625,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -9612,6 +9925,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -10165,6 +10492,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -10390,6 +10731,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -10466,6 +10821,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -10741,6 +11110,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -11085,6 +11468,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -11418,6 +11815,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -11637,6 +12048,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -11964,6 +12389,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -12088,6 +12527,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -12437,6 +12890,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -12566,8 +13033,9 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -12679,6 +13147,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -12713,6 +13182,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -12754,6 +13224,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -12766,6 +13237,7 @@
         "moduleName": "WISDK",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -12778,6 +13250,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -12840,13 +13326,6 @@
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -12881,8 +13360,9 @@
             "moduleName": "WISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -12984,8 +13464,9 @@
             "moduleName": "WISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -13071,8 +13552,9 @@
             "moduleName": "WISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -13158,8 +13640,9 @@
             "moduleName": "WISDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
             "hasStorage": true,
@@ -13265,6 +13748,7 @@
             "objc_name": "scrollViewWillBeginZooming:withView:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -13293,6 +13777,7 @@
             "mangledName": "$s5WISDK13WIOverlayViewC16injectJavascript10javascriptySS_tF",
             "moduleName": "WISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -13328,6 +13813,7 @@
             "objc_name": "userContentController:didReceiveScriptMessage:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -13372,6 +13858,7 @@
             "objc_name": "webView:didStartProvisionalNavigation:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -13416,6 +13903,7 @@
             "objc_name": "webView:didFinishNavigation:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -13465,6 +13953,7 @@
             "objc_name": "webView:didFailNavigation:withError:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -13539,6 +14028,7 @@
             "objc_name": "webView:didReceiveAuthenticationChallenge:completionHandler:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -13595,6 +14085,7 @@
             "objc_name": "webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -13625,6 +14116,7 @@
             "objc_name": "webViewDidClose:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -13646,6 +14138,7 @@
             "mangledName": "$s5WISDK13WIOverlayViewC8clearAllyyF",
             "moduleName": "WISDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -13658,6 +14151,7 @@
         "mangledName": "$s5WISDK13WIOverlayViewC",
         "moduleName": "WISDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -13672,6 +14166,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -13734,13 +14242,6 @@
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -13884,6 +14385,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -14109,7 +14624,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -14575,6 +15106,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -14660,2961 +15205,2884 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdManager.swift",
       "kind": "IntegerLiteral",
       "offset": 149,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdManager.swift",
       "kind": "Array",
       "offset": 310,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdManager.swift",
       "kind": "IntegerLiteral",
       "offset": 680,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdManager.swift",
-      "kind": "StringLiteral",
-      "offset": 47,
-      "length": 20,
-      "value": "\"WISDK.WI3rdBannerAdManager\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdManager.swift",
       "kind": "IntegerLiteral",
       "offset": 3887,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/game\/WIGameWebAction.swift",
-      "kind": "StringLiteral",
-      "offset": 121,
-      "length": 15,
-      "value": "\"WISDK.WIGameWebAction\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 256,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "IntegerLiteral",
       "offset": 348,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 634,
       "length": 9,
       "value": "\"iPod5,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 690,
       "length": 29,
       "value": "\"iPod touch (5th generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 737,
       "length": 9,
       "value": "\"iPod7,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 793,
       "length": 29,
       "value": "\"iPod touch (6th generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 840,
       "length": 9,
       "value": "\"iPod9,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 896,
       "length": 29,
       "value": "\"iPod touch (7th generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 943,
       "length": 11,
       "value": "\"iPhone3,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 956,
       "length": 11,
       "value": "\"iPhone3,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 969,
       "length": 11,
       "value": "\"iPhone3,3\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 999,
       "length": 10,
       "value": "\"iPhone 4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1027,
       "length": 11,
       "value": "\"iPhone4,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1083,
       "length": 11,
       "value": "\"iPhone 4s\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1112,
       "length": 11,
       "value": "\"iPhone5,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1125,
       "length": 11,
       "value": "\"iPhone5,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1168,
       "length": 10,
       "value": "\"iPhone 5\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1196,
       "length": 11,
       "value": "\"iPhone5,3\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1209,
       "length": 11,
       "value": "\"iPhone5,4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1252,
       "length": 11,
       "value": "\"iPhone 5c\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1281,
       "length": 11,
       "value": "\"iPhone6,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1294,
       "length": 11,
       "value": "\"iPhone6,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1337,
       "length": 11,
       "value": "\"iPhone 5s\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1366,
       "length": 11,
       "value": "\"iPhone7,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1422,
       "length": 10,
       "value": "\"iPhone 6\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1450,
       "length": 11,
       "value": "\"iPhone7,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1506,
       "length": 15,
       "value": "\"iPhone 6 Plus\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1539,
       "length": 11,
       "value": "\"iPhone8,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1595,
       "length": 11,
       "value": "\"iPhone 6s\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1624,
       "length": 11,
       "value": "\"iPhone8,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1680,
       "length": 16,
       "value": "\"iPhone 6s Plus\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1714,
       "length": 11,
       "value": "\"iPhone9,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1727,
       "length": 11,
       "value": "\"iPhone9,3\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1770,
       "length": 10,
       "value": "\"iPhone 7\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1798,
       "length": 11,
       "value": "\"iPhone9,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1811,
       "length": 11,
       "value": "\"iPhone9,4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1854,
       "length": 15,
       "value": "\"iPhone 7 Plus\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1887,
       "length": 12,
       "value": "\"iPhone10,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1901,
       "length": 12,
       "value": "\"iPhone10,4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1943,
       "length": 10,
       "value": "\"iPhone 8\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1971,
       "length": 12,
       "value": "\"iPhone10,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 1985,
       "length": 12,
       "value": "\"iPhone10,5\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2027,
       "length": 15,
       "value": "\"iPhone 8 Plus\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2060,
       "length": 12,
       "value": "\"iPhone10,3\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2074,
       "length": 12,
       "value": "\"iPhone10,6\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2116,
       "length": 10,
       "value": "\"iPhone X\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2144,
       "length": 12,
       "value": "\"iPhone11,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2200,
       "length": 11,
       "value": "\"iPhone XS\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2229,
       "length": 12,
       "value": "\"iPhone11,4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2243,
       "length": 12,
       "value": "\"iPhone11,6\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2285,
       "length": 15,
       "value": "\"iPhone XS Max\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2318,
       "length": 12,
       "value": "\"iPhone11,8\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2374,
       "length": 11,
       "value": "\"iPhone XR\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2403,
       "length": 12,
       "value": "\"iPhone12,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2459,
       "length": 11,
       "value": "\"iPhone 11\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2488,
       "length": 12,
       "value": "\"iPhone12,3\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2544,
       "length": 15,
       "value": "\"iPhone 11 Pro\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2577,
       "length": 12,
       "value": "\"iPhone12,5\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2633,
       "length": 19,
       "value": "\"iPhone 11 Pro Max\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2670,
       "length": 12,
       "value": "\"iPhone13,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2726,
       "length": 16,
       "value": "\"iPhone 12 mini\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2760,
       "length": 12,
       "value": "\"iPhone13,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2816,
       "length": 11,
       "value": "\"iPhone 12\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2845,
       "length": 12,
       "value": "\"iPhone13,3\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2901,
       "length": 15,
       "value": "\"iPhone 12 Pro\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2934,
       "length": 12,
       "value": "\"iPhone13,4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 2990,
       "length": 19,
       "value": "\"iPhone 12 Pro Max\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3027,
       "length": 12,
       "value": "\"iPhone14,4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3083,
       "length": 16,
       "value": "\"iPhone 13 mini\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3117,
       "length": 12,
       "value": "\"iPhone14,5\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3173,
       "length": 11,
       "value": "\"iPhone 13\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3202,
       "length": 12,
       "value": "\"iPhone14,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3258,
       "length": 15,
       "value": "\"iPhone 13 Pro\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3291,
       "length": 12,
       "value": "\"iPhone14,3\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3347,
       "length": 19,
       "value": "\"iPhone 13 Pro Max\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3384,
       "length": 12,
       "value": "\"iPhone14,7\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3440,
       "length": 11,
       "value": "\"iPhone 14\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3469,
       "length": 12,
       "value": "\"iPhone14,8\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3525,
       "length": 16,
       "value": "\"iPhone 14 Plus\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3559,
       "length": 12,
       "value": "\"iPhone15,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3615,
       "length": 15,
       "value": "\"iPhone 14 Pro\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3648,
       "length": 12,
       "value": "\"iPhone15,3\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3704,
       "length": 19,
       "value": "\"iPhone 14 Pro Max\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3741,
       "length": 12,
       "value": "\"iPhone15,4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3797,
       "length": 11,
       "value": "\"iPhone 15\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3826,
       "length": 12,
       "value": "\"iPhone15,5\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3882,
       "length": 16,
       "value": "\"iPhone 15 Plus\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3916,
       "length": 12,
       "value": "\"iPhone16,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 3972,
       "length": 15,
       "value": "\"iPhone 15 Pro\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4005,
       "length": 12,
       "value": "\"iPhone16,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4061,
       "length": 19,
       "value": "\"iPhone 15 Pro Max\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4098,
       "length": 11,
       "value": "\"iPhone8,4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4154,
       "length": 11,
       "value": "\"iPhone SE\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4183,
       "length": 12,
       "value": "\"iPhone12,8\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4239,
       "length": 28,
       "value": "\"iPhone SE (2nd generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4285,
       "length": 12,
       "value": "\"iPhone14,6\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4341,
       "length": 28,
       "value": "\"iPhone SE (3rd generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4387,
       "length": 9,
       "value": "\"iPad2,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4398,
       "length": 9,
       "value": "\"iPad2,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4409,
       "length": 9,
       "value": "\"iPad2,3\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4420,
       "length": 9,
       "value": "\"iPad2,4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4443,
       "length": 8,
       "value": "\"iPad 2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4469,
       "length": 9,
       "value": "\"iPad3,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4480,
       "length": 9,
       "value": "\"iPad3,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4491,
       "length": 9,
       "value": "\"iPad3,3\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4525,
       "length": 23,
       "value": "\"iPad (3rd generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4566,
       "length": 9,
       "value": "\"iPad3,4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4577,
       "length": 9,
       "value": "\"iPad3,5\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4588,
       "length": 9,
       "value": "\"iPad3,6\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4622,
       "length": 23,
       "value": "\"iPad (4th generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4663,
       "length": 10,
       "value": "\"iPad6,11\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4675,
       "length": 10,
       "value": "\"iPad6,12\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4719,
       "length": 23,
       "value": "\"iPad (5th generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4760,
       "length": 9,
       "value": "\"iPad7,5\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4771,
       "length": 9,
       "value": "\"iPad7,6\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4816,
       "length": 23,
       "value": "\"iPad (6th generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4857,
       "length": 10,
       "value": "\"iPad7,11\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4869,
       "length": 10,
       "value": "\"iPad7,12\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4913,
       "length": 23,
       "value": "\"iPad (7th generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4954,
       "length": 10,
       "value": "\"iPad11,6\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 4966,
       "length": 10,
       "value": "\"iPad11,7\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5010,
       "length": 23,
       "value": "\"iPad (8th generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5051,
       "length": 10,
       "value": "\"iPad12,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5063,
       "length": 10,
       "value": "\"iPad12,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5107,
       "length": 23,
       "value": "\"iPad (9th generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5148,
       "length": 11,
       "value": "\"iPad13,18\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5161,
       "length": 11,
       "value": "\"iPad13,19\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5204,
       "length": 24,
       "value": "\"iPad (10th generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5246,
       "length": 9,
       "value": "\"iPad4,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5257,
       "length": 9,
       "value": "\"iPad4,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5268,
       "length": 9,
       "value": "\"iPad4,3\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5302,
       "length": 10,
       "value": "\"iPad Air\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5330,
       "length": 9,
       "value": "\"iPad5,3\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5341,
       "length": 9,
       "value": "\"iPad5,4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5386,
       "length": 12,
       "value": "\"iPad Air 2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5416,
       "length": 10,
       "value": "\"iPad11,3\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5428,
       "length": 10,
       "value": "\"iPad11,4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5472,
       "length": 27,
       "value": "\"iPad Air (3rd generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5517,
       "length": 10,
       "value": "\"iPad13,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5529,
       "length": 10,
       "value": "\"iPad13,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5573,
       "length": 27,
       "value": "\"iPad Air (4th generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5618,
       "length": 11,
       "value": "\"iPad13,16\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5631,
       "length": 11,
       "value": "\"iPad13,17\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5674,
       "length": 27,
       "value": "\"iPad Air (5th generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5719,
       "length": 9,
       "value": "\"iPad2,5\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5730,
       "length": 9,
       "value": "\"iPad2,6\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5741,
       "length": 9,
       "value": "\"iPad2,7\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5775,
       "length": 11,
       "value": "\"iPad mini\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5804,
       "length": 9,
       "value": "\"iPad4,4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5815,
       "length": 9,
       "value": "\"iPad4,5\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5826,
       "length": 9,
       "value": "\"iPad4,6\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5860,
       "length": 13,
       "value": "\"iPad mini 2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5891,
       "length": 9,
       "value": "\"iPad4,7\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5902,
       "length": 9,
       "value": "\"iPad4,8\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5913,
       "length": 9,
       "value": "\"iPad4,9\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5947,
       "length": 13,
       "value": "\"iPad mini 3\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5978,
       "length": 9,
       "value": "\"iPad5,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 5989,
       "length": 9,
       "value": "\"iPad5,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6034,
       "length": 13,
       "value": "\"iPad mini 4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6065,
       "length": 10,
       "value": "\"iPad11,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6077,
       "length": 10,
       "value": "\"iPad11,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6121,
       "length": 28,
       "value": "\"iPad mini (5th generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6167,
       "length": 10,
       "value": "\"iPad14,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6179,
       "length": 10,
       "value": "\"iPad14,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6223,
       "length": 28,
       "value": "\"iPad mini (6th generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6269,
       "length": 9,
       "value": "\"iPad6,3\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6280,
       "length": 9,
       "value": "\"iPad6,4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6325,
       "length": 21,
       "value": "\"iPad Pro (9.7-inch)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6364,
       "length": 9,
       "value": "\"iPad7,3\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6375,
       "length": 9,
       "value": "\"iPad7,4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6420,
       "length": 22,
       "value": "\"iPad Pro (10.5-inch)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6460,
       "length": 9,
       "value": "\"iPad8,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6471,
       "length": 9,
       "value": "\"iPad8,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6482,
       "length": 9,
       "value": "\"iPad8,3\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6493,
       "length": 9,
       "value": "\"iPad8,4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6516,
       "length": 37,
       "value": "\"iPad Pro (11-inch) (1st generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6571,
       "length": 9,
       "value": "\"iPad8,9\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6582,
       "length": 10,
       "value": "\"iPad8,10\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6627,
       "length": 37,
       "value": "\"iPad Pro (11-inch) (2nd generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6682,
       "length": 10,
       "value": "\"iPad13,4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6694,
       "length": 10,
       "value": "\"iPad13,5\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6706,
       "length": 10,
       "value": "\"iPad13,6\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6718,
       "length": 10,
       "value": "\"iPad13,7\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6738,
       "length": 37,
       "value": "\"iPad Pro (11-inch) (3rd generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6793,
       "length": 10,
       "value": "\"iPad14,3\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6805,
       "length": 10,
       "value": "\"iPad14,4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6849,
       "length": 37,
       "value": "\"iPad Pro (11-inch) (4th generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6904,
       "length": 9,
       "value": "\"iPad6,7\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6915,
       "length": 9,
       "value": "\"iPad6,8\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 6960,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (1st generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7017,
       "length": 9,
       "value": "\"iPad7,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7028,
       "length": 9,
       "value": "\"iPad7,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7073,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (2nd generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7130,
       "length": 9,
       "value": "\"iPad8,5\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7141,
       "length": 9,
       "value": "\"iPad8,6\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7152,
       "length": 9,
       "value": "\"iPad8,7\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7163,
       "length": 9,
       "value": "\"iPad8,8\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7186,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (3rd generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7243,
       "length": 10,
       "value": "\"iPad8,11\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7255,
       "length": 10,
       "value": "\"iPad8,12\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7299,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (4th generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7356,
       "length": 10,
       "value": "\"iPad13,8\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7368,
       "length": 10,
       "value": "\"iPad13,9\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7380,
       "length": 11,
       "value": "\"iPad13,10\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7393,
       "length": 11,
       "value": "\"iPad13,11\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7412,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (5th generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7469,
       "length": 10,
       "value": "\"iPad14,5\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7481,
       "length": 10,
       "value": "\"iPad14,6\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7525,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (6th generation)\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7582,
       "length": 12,
       "value": "\"AppleTV5,3\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7638,
       "length": 10,
       "value": "\"Apple TV\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7666,
       "length": 12,
       "value": "\"AppleTV6,2\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7722,
       "length": 13,
       "value": "\"Apple TV 4K\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7753,
       "length": 19,
       "value": "\"AudioAccessory1,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7809,
       "length": 9,
       "value": "\"HomePod\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7836,
       "length": 19,
       "value": "\"AudioAccessory5,1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7892,
       "length": 14,
       "value": "\"HomePod mini\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7924,
       "length": 6,
       "value": "\"i386\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7932,
       "length": 8,
       "value": "\"x86_64\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7942,
       "length": 7,
       "value": "\"arm64\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 7980,
       "length": 104,
       "value": "\"Simulator \""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 8043,
       "length": 28,
       "value": "\"SIMULATOR_MODEL_IDENTIFIER\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 8076,
       "length": 5,
       "value": "\"iOS\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
       "kind": "StringLiteral",
       "offset": 8083,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdData.swift",
-      "kind": "StringLiteral",
-      "offset": 134,
-      "length": 15,
-      "value": "\"WISDK.WIWelcomeAdData\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
       "offset": 357,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
       "offset": 385,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
       "offset": 413,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1536,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1591,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1634,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1667,
       "length": 4,
       "value": "2500"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1706,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
       "offset": 1782,
       "length": 3,
       "value": "\"0\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
       "offset": 1823,
       "length": 4,
       "value": "\"-1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
       "offset": 1869,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
       "offset": 1909,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
       "offset": 1944,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1995,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
       "offset": 2041,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2080,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2122,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
       "offset": 2163,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
       "offset": 2225,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2400,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2437,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2479,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2498,
       "length": 4,
       "value": "2500"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
       "offset": 2562,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2589,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
       "offset": 2617,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIOverlayManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1601,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIOverlayManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1649,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIOverlayManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1894,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WiAdsSkipButton.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WiAdsSkipButton.swift",
       "kind": "IntegerLiteral",
       "offset": 210,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WiAdsSkipButton.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WiAdsSkipButton.swift",
       "kind": "BooleanLiteral",
       "offset": 236,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WiAdsSkipButton.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WiAdsSkipButton.swift",
       "kind": "IntegerLiteral",
       "offset": 951,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WIEnvironment.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WIEnvironment.swift",
       "kind": "IntegerLiteral",
       "offset": 173,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WIEnvironment.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WIEnvironment.swift",
       "kind": "IntegerLiteral",
       "offset": 185,
       "length": 18,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WIEnvironment.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WIEnvironment.swift",
       "kind": "IntegerLiteral",
       "offset": 205,
       "length": 19,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "StringLiteral",
-      "offset": 817,
+      "offset": 899,
       "length": 5,
       "value": "\"IOS\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "Array",
-      "offset": 1107,
+      "offset": 1189,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1163,
+      "offset": 1245,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1312,
+      "offset": 1394,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1421,
+      "offset": 1503,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1575,
+      "offset": 1657,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1622,
+      "offset": 1704,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1671,
-      "length": 5,
-      "value": "false"
+      "offset": 1753,
+      "length": 4,
+      "value": "true"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "StringLiteral",
-      "offset": 1925,
+      "offset": 2006,
       "length": 7,
       "value": "\"Check\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2091,
+      "offset": 2172,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2127,
+      "offset": 2208,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2350,
+      "offset": 2431,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2355,
+      "offset": 2436,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "FloatLiteral",
-      "offset": 2424,
+      "offset": 2505,
       "length": 3,
       "value": "0.6"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2465,
+      "offset": 2546,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2514,
+      "offset": 2595,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2524,
+      "offset": 2605,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2536,
+      "offset": 2617,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2547,
+      "offset": 2628,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2676,
+      "offset": 2757,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2898,
+      "offset": 2979,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2992,
+      "offset": 3073,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3107,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3151,
+      "offset": 3266,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5934,
+      "offset": 6106,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdSize.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdSize.swift",
       "kind": "IntegerLiteral",
       "offset": 97,
       "length": 12,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdSize.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdSize.swift",
       "kind": "IntegerLiteral",
       "offset": 111,
       "length": 9,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 225,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 232,
       "length": 10,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 244,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 251,
       "length": 8,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 261,
       "length": 7,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 270,
       "length": 6,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 278,
       "length": 17,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 297,
       "length": 13,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 312,
       "length": 12,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 326,
       "length": 9,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 337,
       "length": 5,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 344,
       "length": 6,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "StringLiteral",
       "offset": 2391,
       "length": 12,
       "value": "\"campaignId\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 2405,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "StringLiteral",
       "offset": 2409,
       "length": 10,
       "value": "\"isLinear\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "BooleanLiteral",
       "offset": 2421,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdData.swift",
-      "kind": "StringLiteral",
-      "offset": 38,
-      "length": 17,
-      "value": "\"WISDK.WI3rdBannerAdData\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdSource.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdSource.swift",
       "kind": "StringLiteral",
       "offset": 50,
       "length": 5,
       "value": "\"SDK\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdSource.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdSource.swift",
       "kind": "StringLiteral",
       "offset": 71,
       "length": 5,
       "value": "\"IMG\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdSource.swift",
-      "kind": "StringLiteral",
-      "offset": 50,
-      "length": 5,
-      "value": "\"SDK\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdSource.swift",
-      "kind": "StringLiteral",
-      "offset": 71,
-      "length": 5,
-      "value": "\"IMG\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIStreamSource.swift",
-      "kind": "StringLiteral",
-      "offset": 116,
-      "length": 14,
-      "value": "\"WISDK.WIStreamSource\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIWebAction.swift",
-      "kind": "StringLiteral",
-      "offset": 364,
-      "length": 11,
-      "value": "\"WISDK.WIWebAction\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/LogFactory.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/LogFactory.swift",
       "kind": "StringLiteral",
       "offset": 142,
       "length": 10,
       "value": "\"INSTREAM\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/LogFactory.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/LogFactory.swift",
       "kind": "StringLiteral",
       "offset": 178,
       "length": 9,
       "value": "\"WELCOME\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 421,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 446,
       "length": 4,
       "value": "2500"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 484,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "BooleanLiteral",
       "offset": 885,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 981,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "BooleanLiteral",
       "offset": 1007,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "BooleanLiteral",
       "offset": 1083,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "StringLiteral",
       "offset": 1165,
       "length": 4,
       "value": "\"-1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "StringLiteral",
       "offset": 1211,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "StringLiteral",
       "offset": 1251,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "StringLiteral",
       "offset": 1286,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "BooleanLiteral",
       "offset": 1330,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 1369,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "BooleanLiteral",
       "offset": 1500,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 1579,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 1582,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "StringLiteral",
       "offset": 1768,
       "length": 7,
       "value": "\"Check\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 5894,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 5931,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 5973,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 5992,
       "length": 4,
       "value": "2500"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 6018,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 21096,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsRequestData.swift",
-      "kind": "StringLiteral",
-      "offset": 117,
-      "length": 16,
-      "value": "\"WISDK.WIAdsRequestData\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WIAdTrackingManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WIAdTrackingManager.swift",
       "kind": "BooleanLiteral",
       "offset": 203,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/network\/WiAPIManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/network\/WiAPIManager.swift",
       "kind": "StringLiteral",
       "offset": 138,
       "length": 5,
       "value": "\"get\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/network\/WiAPIManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/network\/WiAPIManager.swift",
       "kind": "StringLiteral",
       "offset": 160,
       "length": 6,
       "value": "\"post\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/network\/WiAPIManager.swift",
-      "kind": "StringLiteral",
-      "offset": 138,
-      "length": 5,
-      "value": "\"get\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/network\/WiAPIManager.swift",
-      "kind": "StringLiteral",
-      "offset": 160,
-      "length": 6,
-      "value": "\"post\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdImageView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdImageView.swift",
       "kind": "StringLiteral",
       "offset": 824,
       "length": 7,
       "value": "\"Check\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdImageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1453,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdImageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1457,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
       "offset": 1133,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "StringLiteral",
       "offset": 1270,
       "length": 7,
       "value": "\"1.6.4\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
       "offset": 2689,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
-      "kind": "StringLiteral",
-      "offset": 5639,
-      "length": 8,
-      "value": "\"WISDK.Platform\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
       "offset": 6654,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
-      "kind": "StringLiteral",
-      "offset": 881,
-      "length": 13,
-      "value": "\"WISDK.WIOverlayData\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WIContentType.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WIContentType.swift",
       "kind": "IntegerLiteral",
       "offset": 170,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WIContentType.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WIContentType.swift",
       "kind": "IntegerLiteral",
       "offset": 177,
       "length": 2,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIConfigData.swift",
-      "kind": "StringLiteral",
-      "offset": 118,
-      "length": 12,
-      "value": "\"WISDK.WIConfigData\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WIGender.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WIGender.swift",
       "kind": "IntegerLiteral",
       "offset": 159,
       "length": 6,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WIGender.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WIGender.swift",
       "kind": "IntegerLiteral",
       "offset": 167,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WIGender.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WIGender.swift",
       "kind": "IntegerLiteral",
       "offset": 174,
       "length": 4,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WILevelLog.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WILevelLog.swift",
       "kind": "IntegerLiteral",
       "offset": 163,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdWebAction.swift",
-      "kind": "StringLiteral",
-      "offset": 124,
-      "length": 20,
-      "value": "\"WISDK.WIWelcomeAdWebAction\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIBannerWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIBannerWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 420,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
       "kind": "StringLiteral",
       "offset": 614,
       "length": 5,
       "value": "\"IOS\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
       "kind": "Array",
       "offset": 904,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
       "kind": "BooleanLiteral",
       "offset": 960,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
       "kind": "BooleanLiteral",
       "offset": 1109,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
       "kind": "BooleanLiteral",
       "offset": 1218,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
       "kind": "BooleanLiteral",
       "offset": 1372,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
       "kind": "BooleanLiteral",
       "offset": 1419,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
       "kind": "StringLiteral",
       "offset": 1645,
       "length": 7,
       "value": "\"Check\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/WIClickThroughType.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2268,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2272,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/pojo\/WIClickThroughType.swift",
       "kind": "IntegerLiteral",
       "offset": 179,
       "length": 3,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/WIClickThroughType.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/pojo\/WIClickThroughType.swift",
       "kind": "IntegerLiteral",
       "offset": 184,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/WIClickThroughType.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/pojo\/WIClickThroughType.swift",
       "kind": "IntegerLiteral",
       "offset": 190,
       "length": 4,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 419,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 444,
       "length": 4,
       "value": "2500"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 482,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "BooleanLiteral",
       "offset": 842,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 938,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "BooleanLiteral",
       "offset": 964,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "BooleanLiteral",
       "offset": 1040,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "StringLiteral",
       "offset": 1122,
       "length": 4,
       "value": "\"-1\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "StringLiteral",
       "offset": 1168,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "StringLiteral",
       "offset": 1208,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "StringLiteral",
       "offset": 1243,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "BooleanLiteral",
       "offset": 1287,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 1326,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "BooleanLiteral",
       "offset": 1457,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 1851,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 1888,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 1930,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 1949,
       "length": 4,
       "value": "2500"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 1975,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 17579,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIOverlayView.swift",
       "kind": "BooleanLiteral",
       "offset": 1394,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIOverlayView.swift",
       "kind": "IntegerLiteral",
       "offset": 1952,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIOverlayView.swift",
       "kind": "BooleanLiteral",
       "offset": 1995,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayView.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIOverlayView.swift",
       "kind": "BooleanLiteral",
       "offset": 2171,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/game\/WIGameData.swift",
-      "kind": "StringLiteral",
-      "offset": 116,
-      "length": 10,
-      "value": "\"WISDK.WIGameData\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
       "offset": 605,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "BooleanLiteral",
       "offset": 639,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1064,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1101,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1143,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1162,
       "length": 4,
       "value": "2500"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1188,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7065,
+      "offset": 6920,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8308,
+      "offset": 8163,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8345,
+      "offset": 8200,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8387,
+      "offset": 8242,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8406,
+      "offset": 8261,
       "length": 4,
       "value": "2500"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8432,
+      "offset": 8287,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 10028,
+      "offset": 9883,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 10065,
+      "offset": 9920,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 10107,
+      "offset": 9962,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 10126,
+      "offset": 9981,
       "length": 4,
       "value": "2500"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 10152,
+      "offset": 10007,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11744,
+      "offset": 11599,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11776,
+      "offset": 11631,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WIMd5.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WIMd5.swift",
       "kind": "IntegerLiteral",
       "offset": 3944,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WIMd5.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WIMd5.swift",
       "kind": "IntegerLiteral",
       "offset": 4716,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WIMd5.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WIMd5.swift",
       "kind": "Array",
       "offset": 4972,
       "length": 455,
       "value": "[7, 12, 17, 22, 7, 12, 17, 22, 7, 12, 17, 22, 7, 12, 17, 22, 5, 9, 14, 20, 5, 9, 14, 20, 5, 9, 14, 20, 5, 9, 14, 20, 4, 11, 16, 23, 4, 11, 16, 23, 4, 11, 16, 23, 4, 11, 16, 23, 6, 10, 15, 21, 6, 10, 15, 21, 6, 10, 15, 21, 6, 10, 15, 21]"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WIMd5.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WIMd5.swift",
       "kind": "Array",
       "offset": 5549,
       "length": 1832,
       "value": "[0xd76aa478, 0xe8c7b756, 0x242070db, 0xc1bdceee, 0xf57c0faf, 0x4787c62a, 0xa8304613, 0xfd469501, 0x698098d8, 0x8b44f7af, 0xffff5bb1, 0x895cd7be, 0x6b901122, 0xfd987193, 0xa679438e, 0x49b40821, 0xf61e2562, 0xc040b340, 0x265e5a51, 0xe9b6c7aa, 0xd62f105d, 0x02441453, 0xd8a1e681, 0xe7d3fbc8, 0x21e1cde6, 0xc33707d6, 0xf4d50d87, 0x455a14ed, 0xa9e3e905, 0xfcefa3f8, 0x676f02d9, 0x8d2a4c8a, 0xfffa3942, 0x8771f681, 0x6d9d6122, 0xfde5380c, 0xa4beea44, 0x4bdecfa9, 0xf6bb4b60, 0xbebfbc70, 0x289b7ec6, 0xeaa127fa, 0xd4ef3085, 0x4881d05, 0xd9d4d039, 0xe6db99e5, 0x1fa27cf8, 0xc4ac5665, 0xf4292244, 0x432aff97, 0xab9423a7, 0xfc93a039, 0x655b59c3, 0x8f0ccc92, 0xffeff47d, 0x85845dd1, 0x6fa87e4f, 0xfe2ce6e0, 0xa3014314, 0x4e0811a1, 0xf7537e82, 0xbd3af235, 0x2ad7d2bb, 0xeb86d391]"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WIMd5.swift",
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WIMd5.swift",
       "kind": "Array",
       "offset": 7437,
       "length": 48,
