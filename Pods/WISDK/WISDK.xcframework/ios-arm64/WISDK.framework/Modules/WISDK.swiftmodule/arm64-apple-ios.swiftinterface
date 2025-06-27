@@ -5,6 +5,7 @@
 import AVKit
 import AdSupport
 import AppTrackingTransparency
+import BitmovinPlayer
 import Foundation
 import GoogleInteractiveMediaAds
 import JavaScriptCore
@@ -77,6 +78,7 @@ import _SwiftConcurrencyShims
   @objc public func initInstream(accountId: Swift.Int, env: WISDK.WIEnvironment, vastLoadTimeout: Swift.Float = 10, loadVideoTimeout: Foundation.TimeInterval = 10, bufferingVideoTimeout: Foundation.TimeInterval = 10, bitrate: Swift.Int = 2500, logLevel: WISDK.WILevelLog = WILevelLog.NODE, enablePiP: Swift.Bool = false, skipDuration: Swift.Int = 6, alwaysCustomSkip: Swift.Bool = true)
   @objc public func requestAdsPiP(requestData: WISDK.WIAdsRequestData, player: AVFoundation.AVPlayer, adContainer: UIKit.UIView, viewController: UIKit.UIViewController, uiPanGestureRecognizer: UIKit.UIPanGestureRecognizer?, pipController: AVKit.AVPictureInPictureController?, friendlyObstructionList: [GoogleInteractiveMediaAds.IMAFriendlyObstruction]? = nil)
   @objc public func requestAds(requestData: WISDK.WIAdsRequestData, player: AVFoundation.AVPlayer, adContainer: UIKit.UIView, viewController: UIKit.UIViewController, uiPanGestureRecognizer: UIKit.UIPanGestureRecognizer?, friendlyObstructionList: [GoogleInteractiveMediaAds.IMAFriendlyObstruction]? = nil)
+  @objc public func requestAdsForBitmovin(requestData: WISDK.WIAdsRequestData, player: any BitmovinPlayer.Player, adContainer: UIKit.UIView, viewController: UIKit.UIViewController, uiPanGestureRecognizer: UIKit.UIPanGestureRecognizer?, friendlyObstructionList: [GoogleInteractiveMediaAds.IMAFriendlyObstruction]? = nil)
   @objc public func addFriendlyObstruction(friendlyObstructionList: [GoogleInteractiveMediaAds.IMAFriendlyObstruction]? = nil)
   @objc public func adsLoader(_ loader: GoogleInteractiveMediaAds.IMAAdsLoader, adsLoadedWith adsLoadedData: GoogleInteractiveMediaAds.IMAAdsLoadedData)
   @objc public func adsLoader(_ loader: GoogleInteractiveMediaAds.IMAAdsLoader, failedWith adErrorData: GoogleInteractiveMediaAds.IMAAdLoadingErrorData)
@@ -236,7 +238,7 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc public enum WIContentType : Swift.Int, Swift.RawRepresentable {
-  case FILM, VIDEO, TV
+  case FILM, VIDEO, TV, SHORT_VIDEO
   public typealias RawValue = Swift.String
   public var rawValue: WISDK.WIContentType.RawValue {
     get

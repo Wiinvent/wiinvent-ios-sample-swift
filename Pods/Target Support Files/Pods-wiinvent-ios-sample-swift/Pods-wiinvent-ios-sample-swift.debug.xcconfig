@@ -1,13 +1,13 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/GoogleAds-IMA-iOS-SDK" "${PODS_ROOT}/TokenGenerator" "${PODS_ROOT}/WISDK" "${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAds-IMA-iOS-SDK" "${PODS_XCFRAMEWORKS_BUILD_DIR}/TokenGenerator" "${PODS_XCFRAMEWORKS_BUILD_DIR}/WISDK"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/BitmovinPlayer" "${PODS_ROOT}/GoogleAds-IMA-iOS-SDK" "${PODS_ROOT}/TokenGenerator" "${PODS_ROOT}/WISDK" "${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayer" "${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAds-IMA-iOS-SDK" "${PODS_XCFRAMEWORKS_BUILD_DIR}/TokenGenerator" "${PODS_XCFRAMEWORKS_BUILD_DIR}/WISDK"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) /usr/lib/swift '@executable_path/Frameworks' '@loader_path/Frameworks'
 LIBRARY_SEARCH_PATHS = $(inherited) "${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" /usr/lib/swift
 ONLY_ACTIVE_ARCH = NO
-OTHER_LDFLAGS = $(inherited) -framework "AVFoundation" -framework "AdSupport" -framework "AudioToolbox" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreMedia" -framework "GoogleInteractiveMediaAds" -framework "MessageUI" -framework "QuartzCore" -framework "SystemConfiguration" -framework "TokenGenerator" -framework "UIKit" -framework "WISDK" -framework "WebKit" -weak_framework "WebKit"
-OTHER_MODULE_VERIFIER_FLAGS = $(inherited) "-F${PODS_CONFIGURATION_BUILD_DIR}/GoogleAds-IMA-iOS-SDK" "-F${PODS_CONFIGURATION_BUILD_DIR}/TokenGenerator" "-F${PODS_CONFIGURATION_BUILD_DIR}/WISDK"
+OTHER_LDFLAGS = $(inherited) -framework "AVFoundation" -framework "AVKit" -framework "AdSupport" -framework "AudioToolbox" -framework "BitmovinPlayer" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreMedia" -framework "Foundation" -framework "GoogleInteractiveMediaAds" -framework "MessageUI" -framework "QuartzCore" -framework "SystemConfiguration" -framework "TokenGenerator" -framework "UIKit" -framework "WISDK" -framework "WebKit" -weak_framework "WebKit"
+OTHER_MODULE_VERIFIER_FLAGS = $(inherited) "-F${PODS_CONFIGURATION_BUILD_DIR}/BitmovinPlayer" "-F${PODS_CONFIGURATION_BUILD_DIR}/GoogleAds-IMA-iOS-SDK" "-F${PODS_CONFIGURATION_BUILD_DIR}/TokenGenerator" "-F${PODS_CONFIGURATION_BUILD_DIR}/WISDK"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

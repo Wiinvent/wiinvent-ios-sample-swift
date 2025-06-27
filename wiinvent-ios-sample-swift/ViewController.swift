@@ -32,6 +32,7 @@ extension NibInstantiatable where Self: UIView {
 class ViewController: UIViewController, WIWelcomeAdDelegate {
     
     var instreamBtn: UIButton!
+    var bitmovinInstreamBtn: UIButton!
     var welcomeBtn: UIButton!
     var bannerBtn: UIButton!
     
@@ -59,11 +60,26 @@ class ViewController: UIViewController, WIWelcomeAdDelegate {
         view.addSubview(bannerBtn)
         view.bringSubviewToFront(bannerBtn)
         
+        bitmovinInstreamBtn = UIButton(frame: CGRect(x: 100, y: 400, width: 200, height: 50))
+        bitmovinInstreamBtn.backgroundColor = .red
+        bitmovinInstreamBtn.setTitle("Bitmovin Instream Detail", for: .normal)
+        bitmovinInstreamBtn.addTarget(self, action: #selector(bitmovinInstreamAction), for: .touchUpInside)
+        view.addSubview(bitmovinInstreamBtn)
+        view.bringSubviewToFront(bitmovinInstreamBtn)
+        
     }
 
     @objc func instreamAction(sender: UIButton!) {
         print("Button tapped")
         let detailView: DetailView = DetailView.fromNib();
+        //        detailView.viewController = self;
+        detailView.initView(vc: self);
+        view.addSubview(detailView)
+    }
+    
+    @objc func bitmovinInstreamAction(sender: UIButton!) {
+        print("Button tapped")
+        let detailView: BitmovinDetailView = BitmovinDetailView.fromNib();
         //        detailView.viewController = self;
         detailView.initView(vc: self);
         view.addSubview(detailView)

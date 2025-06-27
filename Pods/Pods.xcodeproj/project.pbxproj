@@ -14,8 +14,8 @@
 				555BDE8B0FBD825C589D6B21E3E2A3C9 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				AF19D636CF8CC108EA05102F6BC2A433 /* PBXTargetDependency */,
-				B3D0B73F997A7D0EF21D123BBFB0FD6F /* PBXTargetDependency */,
+				4430E61F4CF5944A6EC6B1E75D12B03C /* PBXTargetDependency */,
+				1324CE87576A6A3AF95A995CE0A33667 /* PBXTargetDependency */,
 			);
 			name = WISDK;
 		};
@@ -28,6 +28,16 @@
 			dependencies = (
 			);
 			name = "GoogleAds-IMA-iOS-SDK";
+		};
+		95DD103C503D8F16FD27F000FA761AAB /* BitmovinPlayer */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6DDE75C57ADF38E00F3D90A93937B77E /* Build configuration list for PBXAggregateTarget "BitmovinPlayer" */;
+			buildPhases = (
+				62CFF88D9C11AD871591A281B9BBD188 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = BitmovinPlayer;
 		};
 		BE5EB3E8EA9D09AAF63DEF788E6D1A2B /* TokenGenerator */ = {
 			isa = PBXAggregateTarget;
@@ -42,130 +52,156 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		23F20948A540C0EF25F151BD30885BB1 /* Pods-wiinvent-ios-sample-swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 402BABD67CC9C21CD62753476090D01C /* Pods-wiinvent-ios-sample-swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		353F03C32D2786C70330BF5799EF62CB /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 25597DEB06B7494E7F94A0F9D7E46077 /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4FBBCA6BB0F150D4059D39EF248B585A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		507972B528FD62F673E52B2934AA6CE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		22D2680D5AB8FDF5C66E436A8DF0521E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		2A9D4047ABFABAB8882C5859B05161DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		50B8A5DA1EAB16C5B1CC982C6B99D8A1 /* Pods-wiinvent-ios-sample-swiftTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CFE7493BD8437D5EB94650079F1A08 /* Pods-wiinvent-ios-sample-swiftTests-dummy.m */; };
 		62A17F800CFCC5B26A872E4F05BFBA19 /* Pods-wiinvent-ios-sample-swiftTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D87138B27A0BE0E37D17F9572BB18E8 /* Pods-wiinvent-ios-sample-swiftTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8859FBC9BC6C407D7455E241C3DBE432 /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 379C08E6591908F92DF05C824279BE9F /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-dummy.m */; };
+		76849E65C335489F4A0F1BAEB1955BF7 /* Pods-wiinvent-ios-sample-swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 509462E67976F9ACD6F008279DB57F8E /* Pods-wiinvent-ios-sample-swift-dummy.m */; };
+		79807E4B9CF1E146C30AFEDB39C900E2 /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 379C08E6591908F92DF05C824279BE9F /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-dummy.m */; };
+		90A0C50818C3ED7E64F1F04052D46A75 /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 25597DEB06B7494E7F94A0F9D7E46077 /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A302958FBA2931E393344CD20882100C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		AD0933A6BF1D49CCF949C233F6C31142 /* Pods-wiinvent-ios-sample-swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 509462E67976F9ACD6F008279DB57F8E /* Pods-wiinvent-ios-sample-swift-dummy.m */; };
+		CED4C060AEC321054AD48A16731B41C7 /* Pods-wiinvent-ios-sample-swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 402BABD67CC9C21CD62753476090D01C /* Pods-wiinvent-ios-sample-swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1C1410971202BEA86295CB68B41B2350 /* PBXContainerItemProxy */ = {
+		0B3ADA89357B6C04E197BD9FC0C6067B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 441276C70FB6198F69397818925D3A3D;
+			remoteInfo = WISDK;
+		};
+		163A31B574D2C18463EAB79BB215F83D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7362DAB47E2EFA5452F30DD7E9830B56;
+			remoteInfo = "GoogleAds-IMA-iOS-SDK";
+		};
+		3367196DE066F9141246AB552E34EC78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7362DAB47E2EFA5452F30DD7E9830B56;
+			remoteInfo = "GoogleAds-IMA-iOS-SDK";
+		};
+		672308523AE395D900EB148FD98846AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BE5EB3E8EA9D09AAF63DEF788E6D1A2B;
 			remoteInfo = TokenGenerator;
 		};
-		213D22E2B130F650ED73C5F5A7DC8DC2 /* PBXContainerItemProxy */ = {
+		806ED2D4BCA5205218034BC9827DE23C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1A80741C63669BA498D15C0490123BA8;
 			remoteInfo = "Pods-wiinvent-ios-sample-swift";
 		};
-		32BC2CFAF629BE543A71553CD42FD2B4 /* PBXContainerItemProxy */ = {
+		820D3DA53F4DEBAE10675397F7DE7195 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BE5EB3E8EA9D09AAF63DEF788E6D1A2B;
 			remoteInfo = TokenGenerator;
 		};
-		42AD6C0CA334E5D5BAD207ECD8974183 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 441276C70FB6198F69397818925D3A3D;
-			remoteInfo = WISDK;
-		};
-		803FD99551818E5A536D7BC57D317C47 /* PBXContainerItemProxy */ = {
+		92ADBEB7F143B8C21DB6F24747B0E6A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7362DAB47E2EFA5452F30DD7E9830B56;
 			remoteInfo = "GoogleAds-IMA-iOS-SDK";
 		};
-		8E9BABA222E38030272A447FA8A16CC6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7362DAB47E2EFA5452F30DD7E9830B56;
-			remoteInfo = "GoogleAds-IMA-iOS-SDK";
-		};
-		9C0D96DAB1F0EB963003016AF369ABD2 /* PBXContainerItemProxy */ = {
+		A7052B7C770A9E2D401BD6FB43D8BA81 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 441276C70FB6198F69397818925D3A3D;
 			remoteInfo = WISDK;
 		};
-		AA5628B536B2732C79E62254A296496B /* PBXContainerItemProxy */ = {
+		A88D4EFF83A410C5FC24998709214C89 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BE5EB3E8EA9D09AAF63DEF788E6D1A2B;
 			remoteInfo = TokenGenerator;
 		};
-		AD2A3117645AF889F45D6114C8B809C7 /* PBXContainerItemProxy */ = {
+		C58A15617931773A3CBFADBB64786433 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7362DAB47E2EFA5452F30DD7E9830B56;
-			remoteInfo = "GoogleAds-IMA-iOS-SDK";
+			remoteGlobalIDString = 95DD103C503D8F16FD27F000FA761AAB;
+			remoteInfo = BitmovinPlayer;
+		};
+		CC79668329521B166127940649EF2D90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95DD103C503D8F16FD27F000FA761AAB;
+			remoteInfo = BitmovinPlayer;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0014412FF32D2C20B295F5C578C4652D /* BitmovinPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BitmovinPlayer.release.xcconfig; sourceTree = "<group>"; };
+		133BFB207DC1A7B53F7C20F4B97182ED /* BitmovinPlayer-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "BitmovinPlayer-xcframeworks.sh"; sourceTree = "<group>"; };
+		1569D3F2DAC1189F51982EE19CD9DE0B /* BitmovinPlayer.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = BitmovinPlayer.xcframework; sourceTree = "<group>"; };
 		1BDE36DF7F18B00394C02D705FE81E6F /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1DC7BC6A28C1D2D939B1FE13B6864696 /* Pods-wiinvent-ios-sample-swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wiinvent-ios-sample-swift-Info.plist"; sourceTree = "<group>"; };
+		23C6D90C1B980D200B67824829DB3C88 /* GoogleAds-IMA-iOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GoogleAds-IMA-iOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		25597DEB06B7494E7F94A0F9D7E46077 /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-umbrella.h"; sourceTree = "<group>"; };
 		25D300CBC8954065D639956CC1E93DE1 /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-Info.plist"; sourceTree = "<group>"; };
+		2880DE31AA7B730B070FF9E4E8B0659E /* GoogleAds-IMA-iOS-SDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "GoogleAds-IMA-iOS-SDK-xcframeworks.sh"; sourceTree = "<group>"; };
 		2A3C4A4EF14151054A3B4D33CC9708F6 /* Pods-wiinvent-ios-sample-swiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wiinvent-ios-sample-swiftTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2E172D73E33CA194605C1A6985C328B5 /* GoogleAds-IMA-iOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GoogleAds-IMA-iOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		2F3579CFB720EA231F23E4409AA0C6C7 /* Pods-wiinvent-ios-sample-swiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wiinvent-ios-sample-swiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		34DF076875D87228B0E9606A774D496C /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests"; path = Pods_wiinvent_ios_sample_swift_wiinvent_ios_sample_swiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		379C08E6591908F92DF05C824279BE9F /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-dummy.m"; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3A2D78D8CE3A68806D21272F45AA6647 /* Pods-wiinvent-ios-sample-swift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-wiinvent-ios-sample-swift-frameworks.sh"; sourceTree = "<group>"; };
+		3F75A54175F774D2931D91056D9EE767 /* TokenGenerator-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "TokenGenerator-xcframeworks.sh"; sourceTree = "<group>"; };
 		402BABD67CC9C21CD62753476090D01C /* Pods-wiinvent-ios-sample-swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-wiinvent-ios-sample-swift-umbrella.h"; sourceTree = "<group>"; };
-		469C1097423525DB51019A7A68D23CFA /* TokenGenerator-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "TokenGenerator-xcframeworks.sh"; sourceTree = "<group>"; };
 		471A3C8F1F195097030B4F760EE81931 /* Pods-wiinvent-ios-sample-swiftTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wiinvent-ios-sample-swiftTests-Info.plist"; sourceTree = "<group>"; };
 		494418276AE40510B0E60728D0734687 /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-frameworks.sh"; sourceTree = "<group>"; };
 		4AE376BBB48EB68CB00330473D5FF7EA /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4B7507110613B058483F30F232EB689D /* WISDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = WISDK.xcframework; sourceTree = "<group>"; };
 		509462E67976F9ACD6F008279DB57F8E /* Pods-wiinvent-ios-sample-swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-wiinvent-ios-sample-swift-dummy.m"; sourceTree = "<group>"; };
 		50CFE7493BD8437D5EB94650079F1A08 /* Pods-wiinvent-ios-sample-swiftTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-wiinvent-ios-sample-swiftTests-dummy.m"; sourceTree = "<group>"; };
 		50E93AF0D3C2D9634B1F6C59279BF7F5 /* Pods-wiinvent-ios-sample-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wiinvent-ios-sample-swift.debug.xcconfig"; sourceTree = "<group>"; };
-		54855490604A3EEA9206E7FDA44590A3 /* WISDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = WISDK.xcframework; sourceTree = "<group>"; };
+		51E18DE9681E5A1ACCA8637A75C41452 /* WISDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WISDK.debug.xcconfig; sourceTree = "<group>"; };
 		5491BCFFD9C2FE8ED532589A9F9D081C /* Pods-wiinvent-ios-sample-swiftTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wiinvent-ios-sample-swiftTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		582D1B08292E5B4F88E6FBF060B1AAD1 /* GoogleInteractiveMediaAds.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleInteractiveMediaAds.xcframework; sourceTree = "<group>"; };
 		5C14E40A4EE051FC31DCA2D4857A6C00 /* Pods-wiinvent-ios-sample-swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-wiinvent-ios-sample-swift"; path = Pods_wiinvent_ios_sample_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBACCAC3A6CCD4FFE3ECCB2FACE64E5 /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests.modulemap"; sourceTree = "<group>"; };
 		5DC91F7D937B928FECF764A25FC1D174 /* Pods-wiinvent-ios-sample-swiftTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-wiinvent-ios-sample-swiftTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		65A86031389F36C23A876459A5F30CBA /* WISDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "WISDK-xcframeworks.sh"; sourceTree = "<group>"; };
 		65BFE8B4BEB66E6081E6C2995947D7C7 /* Pods-wiinvent-ios-sample-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wiinvent-ios-sample-swift.release.xcconfig"; sourceTree = "<group>"; };
-		67CB0013EE8ABA3442B8F50EFAFE1DBD /* TokenGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TokenGenerator.release.xcconfig; sourceTree = "<group>"; };
-		68A2A57727E7EA1558C41C622DAF7710 /* TokenGenerator.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = TokenGenerator.xcframework; sourceTree = "<group>"; };
-		6DA00AF599376EEB0F1A203E089CC3E2 /* GoogleAds-IMA-iOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GoogleAds-IMA-iOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
-		8CC9BC3EED160B1CAA6B2FDD573BA50B /* TokenGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TokenGenerator.debug.xcconfig; sourceTree = "<group>"; };
-		8D491600056083E24144A0F9DFD892DA /* WISDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WISDK.release.xcconfig; sourceTree = "<group>"; };
+		701C406F3582618C47E9EEE8A5F0F12C /* TokenGenerator.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = TokenGenerator.xcframework; sourceTree = "<group>"; };
 		8D87138B27A0BE0E37D17F9572BB18E8 /* Pods-wiinvent-ios-sample-swiftTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-wiinvent-ios-sample-swiftTests-umbrella.h"; sourceTree = "<group>"; };
+		8F01C9DC2A096BCCF011BE6B203FA3CC /* GoogleAds-IMA-iOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GoogleAds-IMA-iOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		90AE82C58E61072E2D5955D79BBC2BCC /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		948FE42CBDB4733B394AB9D2235D52D5 /* WISDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WISDK.release.xcconfig; sourceTree = "<group>"; };
+		94B0F46FF377F5DCB105554BA7368922 /* WISDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "WISDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		9B8B15407C775D9CF2C603DDD98661A7 /* BitmovinPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BitmovinPlayer.debug.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A546C444CF2AB262CAAE1EE897742E00 /* Pods-wiinvent-ios-sample-swift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-wiinvent-ios-sample-swift-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BFD5CCD8A2892C11519FBA7B910F2B5B /* TokenGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TokenGenerator.debug.xcconfig; sourceTree = "<group>"; };
+		C0E5CBC31C75D9AFB88C7FE7754A8148 /* GoogleInteractiveMediaAds.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleInteractiveMediaAds.xcframework; sourceTree = "<group>"; };
 		C190F76C008868756233706DCA8FA087 /* Pods-wiinvent-ios-sample-swift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wiinvent-ios-sample-swift-acknowledgements.plist"; sourceTree = "<group>"; };
-		D6BB48E9456A7FE72D6ED06CFCB448B5 /* GoogleAds-IMA-iOS-SDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "GoogleAds-IMA-iOS-SDK-xcframeworks.sh"; sourceTree = "<group>"; };
 		D9711736DEFB0BF39A2F666E75529F81 /* Pods-wiinvent-ios-sample-swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-wiinvent-ios-sample-swift.modulemap"; sourceTree = "<group>"; };
 		DC12EEDB57FAA68312F9660F279721D3 /* Pods-wiinvent-ios-sample-swiftTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-wiinvent-ios-sample-swiftTests.modulemap"; sourceTree = "<group>"; };
 		DD4F2DEE1299FBD2B2E6ABBD4C36F4AD /* Pods-wiinvent-ios-sample-swiftTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-wiinvent-ios-sample-swiftTests"; path = Pods_wiinvent_ios_sample_swiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3825B2779B3C798EC0E85D6FD3859B8 /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests.release.xcconfig"; sourceTree = "<group>"; };
-		FDC42F14AC3D6E11D233C1579E6039B7 /* WISDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WISDK.debug.xcconfig; sourceTree = "<group>"; };
+		FFB4CDCB1289C3084ECB2EED03CAA708 /* TokenGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TokenGenerator.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2C10BA6507BEEC2DDDBB4583E06B94D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D2680D5AB8FDF5C66E436A8DF0521E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A73708F783A24F456312C6C1FEBCF50 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -174,19 +210,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A7C9D8AEA8F991917869E7B23AC039BA /* Frameworks */ = {
+		DC826AFA1C980E8E579028DD13A29D17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				507972B528FD62F673E52B2934AA6CE7 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EF8411A98B692D184974C7ADEC1F5BDA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4FBBCA6BB0F150D4059D39EF248B585A /* Foundation.framework in Frameworks */,
+				2A9D4047ABFABAB8882C5859B05161DB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +238,14 @@
 			path = "Target Support Files/Pods-wiinvent-ios-sample-swift";
 			sourceTree = "<group>";
 		};
+		0380FF1762283A2D681906394C36459D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0E5CBC31C75D9AFB88C7FE7754A8148 /* GoogleInteractiveMediaAds.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		03C3F298A915A6E2D76E389BBDF038E7 /* Pods-wiinvent-ios-sample-swiftTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +262,17 @@
 			path = "Target Support Files/Pods-wiinvent-ios-sample-swiftTests";
 			sourceTree = "<group>";
 		};
+		1B9C836D3AF315455C31F26F8DEDE7F9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2880DE31AA7B730B070FF9E4E8B0659E /* GoogleAds-IMA-iOS-SDK-xcframeworks.sh */,
+				23C6D90C1B980D200B67824829DB3C88 /* GoogleAds-IMA-iOS-SDK.debug.xcconfig */,
+				8F01C9DC2A096BCCF011BE6B203FA3CC /* GoogleAds-IMA-iOS-SDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleAds-IMA-iOS-SDK";
+			sourceTree = "<group>";
+		};
 		2033F2551CF328E5113A01FFF321BD58 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,22 +283,25 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3C876219B914C0547997EBA5F18C73BC /* TokenGenerator */ = {
+		3BF1FFE474B03247C4C3AA6286C7F02C /* BitmovinPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				88A38D022739242C01648745CFE6FE7D /* Frameworks */,
-				DB96C7CD5EA265ADE7ACC4CC3AD8FEDA /* Support Files */,
+				7C6416CBC9D4B1B2C2D7BDA24855C84F /* Frameworks */,
+				CEDB96FBF2A29B13E7876F125D891A02 /* Support Files */,
 			);
-			name = TokenGenerator;
-			path = TokenGenerator;
+			name = BitmovinPlayer;
+			path = BitmovinPlayer;
 			sourceTree = "<group>";
 		};
-		4797D6044978E3D5434F7E09E37979B0 /* Frameworks */ = {
+		4CD5E4614BE09F9EE76F80DF544206A7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				582D1B08292E5B4F88E6FBF060B1AAD1 /* GoogleInteractiveMediaAds.xcframework */,
+				3BF1FFE474B03247C4C3AA6286C7F02C /* BitmovinPlayer */,
+				CDE91503C5F589AE407B1023CED32F75 /* GoogleAds-IMA-iOS-SDK */,
+				54DC5543746D0A65A99FBEFADD839C99 /* TokenGenerator */,
+				C38DAC35ADABD6700D6ECFB786A842E2 /* WISDK */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		4FFC9911A53255D37A1185C9B2D63251 /* Products */ = {
@@ -264,15 +314,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6C4E1584A01AA75C7CB2E4E5B2297E27 /* Support Files */ = {
+		54DC5543746D0A65A99FBEFADD839C99 /* TokenGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				D6BB48E9456A7FE72D6ED06CFCB448B5 /* GoogleAds-IMA-iOS-SDK-xcframeworks.sh */,
-				6DA00AF599376EEB0F1A203E089CC3E2 /* GoogleAds-IMA-iOS-SDK.debug.xcconfig */,
-				2E172D73E33CA194605C1A6985C328B5 /* GoogleAds-IMA-iOS-SDK.release.xcconfig */,
+				E6751C9B735424192CF3A277445BF9A4 /* Frameworks */,
+				B346D5850621511DD2C1EFDC7AD7A95F /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/GoogleAds-IMA-iOS-SDK";
+			name = TokenGenerator;
+			path = TokenGenerator;
+			sourceTree = "<group>";
+		};
+		7C6416CBC9D4B1B2C2D7BDA24855C84F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1569D3F2DAC1189F51982EE19CD9DE0B /* BitmovinPlayer.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		85791A0867791C5DD9DFB7C364CD8D57 /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests */ = {
@@ -292,40 +349,65 @@
 			path = "Target Support Files/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests";
 			sourceTree = "<group>";
 		};
-		85AA43919A6C57D77BB04520B2E4F950 /* Frameworks */ = {
+		960FC6575DF218FB7F6D45A39FD0FE43 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				54855490604A3EEA9206E7FDA44590A3 /* WISDK.xcframework */,
+				94B0F46FF377F5DCB105554BA7368922 /* WISDK-xcframeworks.sh */,
+				51E18DE9681E5A1ACCA8637A75C41452 /* WISDK.debug.xcconfig */,
+				948FE42CBDB4733B394AB9D2235D52D5 /* WISDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WISDK";
+			sourceTree = "<group>";
+		};
+		B346D5850621511DD2C1EFDC7AD7A95F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F75A54175F774D2931D91056D9EE767 /* TokenGenerator-xcframeworks.sh */,
+				BFD5CCD8A2892C11519FBA7B910F2B5B /* TokenGenerator.debug.xcconfig */,
+				FFB4CDCB1289C3084ECB2EED03CAA708 /* TokenGenerator.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TokenGenerator";
+			sourceTree = "<group>";
+		};
+		B7F6DDC15AB5101654BA6558DF89EE36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B7507110613B058483F30F232EB689D /* WISDK.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		88A38D022739242C01648745CFE6FE7D /* Frameworks */ = {
+		C38DAC35ADABD6700D6ECFB786A842E2 /* WISDK */ = {
 			isa = PBXGroup;
 			children = (
-				68A2A57727E7EA1558C41C622DAF7710 /* TokenGenerator.xcframework */,
+				B7F6DDC15AB5101654BA6558DF89EE36 /* Frameworks */,
+				960FC6575DF218FB7F6D45A39FD0FE43 /* Support Files */,
 			);
-			name = Frameworks;
+			name = WISDK;
+			path = WISDK;
 			sourceTree = "<group>";
 		};
-		95E1473D20CA3C05EC87150FA705F212 /* GoogleAds-IMA-iOS-SDK */ = {
+		CDE91503C5F589AE407B1023CED32F75 /* GoogleAds-IMA-iOS-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				4797D6044978E3D5434F7E09E37979B0 /* Frameworks */,
-				6C4E1584A01AA75C7CB2E4E5B2297E27 /* Support Files */,
+				0380FF1762283A2D681906394C36459D /* Frameworks */,
+				1B9C836D3AF315455C31F26F8DEDE7F9 /* Support Files */,
 			);
 			name = "GoogleAds-IMA-iOS-SDK";
 			path = "GoogleAds-IMA-iOS-SDK";
 			sourceTree = "<group>";
 		};
-		9CC586116DE762CC7B336B9B6DA00472 /* WISDK */ = {
+		CEDB96FBF2A29B13E7876F125D891A02 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				85AA43919A6C57D77BB04520B2E4F950 /* Frameworks */,
-				E5EEEBE161736CAE2AC29DA5A875D48A /* Support Files */,
+				133BFB207DC1A7B53F7C20F4B97182ED /* BitmovinPlayer-xcframeworks.sh */,
+				9B8B15407C775D9CF2C603DDD98661A7 /* BitmovinPlayer.debug.xcconfig */,
+				0014412FF32D2C20B295F5C578C4652D /* BitmovinPlayer.release.xcconfig */,
 			);
-			name = WISDK;
-			path = WISDK;
+			name = "Support Files";
+			path = "../Target Support Files/BitmovinPlayer";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -333,7 +415,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				F3AFA83DF06AD78BAEEA9367D9D2868B /* Pods */,
+				4CD5E4614BE09F9EE76F80DF544206A7 /* Pods */,
 				4FFC9911A53255D37A1185C9B2D63251 /* Products */,
 				2033F2551CF328E5113A01FFF321BD58 /* Targets Support Files */,
 			);
@@ -347,17 +429,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DB96C7CD5EA265ADE7ACC4CC3AD8FEDA /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				469C1097423525DB51019A7A68D23CFA /* TokenGenerator-xcframeworks.sh */,
-				8CC9BC3EED160B1CAA6B2FDD573BA50B /* TokenGenerator.debug.xcconfig */,
-				67CB0013EE8ABA3442B8F50EFAFE1DBD /* TokenGenerator.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TokenGenerator";
-			sourceTree = "<group>";
-		};
 		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,43 +437,30 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		E5EEEBE161736CAE2AC29DA5A875D48A /* Support Files */ = {
+		E6751C9B735424192CF3A277445BF9A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				65A86031389F36C23A876459A5F30CBA /* WISDK-xcframeworks.sh */,
-				FDC42F14AC3D6E11D233C1579E6039B7 /* WISDK.debug.xcconfig */,
-				8D491600056083E24144A0F9DFD892DA /* WISDK.release.xcconfig */,
+				701C406F3582618C47E9EEE8A5F0F12C /* TokenGenerator.xcframework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/WISDK";
-			sourceTree = "<group>";
-		};
-		F3AFA83DF06AD78BAEEA9367D9D2868B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				95E1473D20CA3C05EC87150FA705F212 /* GoogleAds-IMA-iOS-SDK */,
-				3C876219B914C0547997EBA5F18C73BC /* TokenGenerator */,
-				9CC586116DE762CC7B336B9B6DA00472 /* WISDK */,
-			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3C0E399A9518B8B69A86E80FCD71B4C6 /* Headers */ = {
+		6F2F184F9C18EFFDBD25D77BAE2BB18B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				353F03C32D2786C70330BF5799EF62CB /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-umbrella.h in Headers */,
+				90A0C50818C3ED7E64F1F04052D46A75 /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C875BEB4B63331B17AA07DFA92E6355D /* Headers */ = {
+		A1F5B2ED179AB0BE4FB45FCA9116F294 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23F20948A540C0EF25F151BD30885BB1 /* Pods-wiinvent-ios-sample-swift-umbrella.h in Headers */,
+				CED4C060AEC321054AD48A16731B41C7 /* Pods-wiinvent-ios-sample-swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,19 +477,20 @@
 /* Begin PBXNativeTarget section */
 		1A80741C63669BA498D15C0490123BA8 /* Pods-wiinvent-ios-sample-swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 10CD534BE686DBCF9DEC940EDFAC6D9D /* Build configuration list for PBXNativeTarget "Pods-wiinvent-ios-sample-swift" */;
+			buildConfigurationList = 10A8C0448F785B4D0DBE5871906B4766 /* Build configuration list for PBXNativeTarget "Pods-wiinvent-ios-sample-swift" */;
 			buildPhases = (
-				C875BEB4B63331B17AA07DFA92E6355D /* Headers */,
-				4D39353F019CAF42EE95BD4DB29D45E2 /* Sources */,
-				A7C9D8AEA8F991917869E7B23AC039BA /* Frameworks */,
-				3DB585603764BCB1373D11C9E1413F7E /* Resources */,
+				A1F5B2ED179AB0BE4FB45FCA9116F294 /* Headers */,
+				C1BB218255194F88C96B1E360D0DB69D /* Sources */,
+				DC826AFA1C980E8E579028DD13A29D17 /* Frameworks */,
+				2E63B03A9CBAD419FE7E964F4489CC1E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1688D4FD98320D162059CC81A958DDEC /* PBXTargetDependency */,
-				78FD2439738DB6971D4FC6F4CA3EC84B /* PBXTargetDependency */,
-				DE153D0D120323E793A6FC3C2FEB414D /* PBXTargetDependency */,
+				AA21030DE0A827D6477BD286BFDF4980 /* PBXTargetDependency */,
+				CCAF95F50D7783DB653B2BC398829258 /* PBXTargetDependency */,
+				6B661DA8D080EA9C64C617930C6AD685 /* PBXTargetDependency */,
+				CA952533F0D4C1F416BEF46F6E2204E9 /* PBXTargetDependency */,
 			);
 			name = "Pods-wiinvent-ios-sample-swift";
 			productName = Pods_wiinvent_ios_sample_swift;
@@ -440,19 +499,20 @@
 		};
 		677E7C41455D25E6DFD781D8935868FE /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A208C6FA42EDF18DAFED3BAFEA03413A /* Build configuration list for PBXNativeTarget "Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests" */;
+			buildConfigurationList = 899387F03F2C75C275035536BF6D73C6 /* Build configuration list for PBXNativeTarget "Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests" */;
 			buildPhases = (
-				3C0E399A9518B8B69A86E80FCD71B4C6 /* Headers */,
-				6636EEBC576C2A2AF33D2CD5D60D2FB7 /* Sources */,
-				EF8411A98B692D184974C7ADEC1F5BDA /* Frameworks */,
-				B1B126FA0B89A396AF5F23D01A6E9F02 /* Resources */,
+				6F2F184F9C18EFFDBD25D77BAE2BB18B /* Headers */,
+				98CB311CBACA47D46387A006F2C4112B /* Sources */,
+				2C10BA6507BEEC2DDDBB4583E06B94D0 /* Frameworks */,
+				A73D1991C3EFF4EB1C3B6F3DD14E80A1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B59C1FC6F60F20E83420C68ABF674BBB /* PBXTargetDependency */,
-				EEC128F5698D4662E5F594AC8374FE0F /* PBXTargetDependency */,
-				D0F977B1E667A8E442EB75C3BF475B88 /* PBXTargetDependency */,
+				E1DAA3F44E7914A1347F27768A7EE8F5 /* PBXTargetDependency */,
+				B5F5A89C3785E32762A8820D126E3411 /* PBXTargetDependency */,
+				5BC7D3B45FA084F3C5EF4B43943FEDAD /* PBXTargetDependency */,
+				771319BE00C31285845A9F1F774E4C76 /* PBXTargetDependency */,
 			);
 			name = "Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests";
 			productName = Pods_wiinvent_ios_sample_swift_wiinvent_ios_sample_swiftUITests;
@@ -471,7 +531,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				F24C4774609F916C7B8A32092CDC990F /* PBXTargetDependency */,
+				A0D26AF01D8CFB9C8C7BB6C0BEF8754A /* PBXTargetDependency */,
 			);
 			name = "Pods-wiinvent-ios-sample-swiftTests";
 			productName = Pods_wiinvent_ios_sample_swiftTests;
@@ -502,6 +562,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				95DD103C503D8F16FD27F000FA761AAB /* BitmovinPlayer */,
 				7362DAB47E2EFA5452F30DD7E9830B56 /* GoogleAds-IMA-iOS-SDK */,
 				1A80741C63669BA498D15C0490123BA8 /* Pods-wiinvent-ios-sample-swift */,
 				677E7C41455D25E6DFD781D8935868FE /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests */,
@@ -513,7 +574,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3DB585603764BCB1373D11C9E1413F7E /* Resources */ = {
+		2E63B03A9CBAD419FE7E964F4489CC1E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -527,7 +588,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1B126FA0B89A396AF5F23D01A6E9F02 /* Resources */ = {
+		A73D1991C3EFF4EB1C3B6F3DD14E80A1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -571,6 +632,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/WISDK/WISDK-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		62CFF88D9C11AD871591A281B9BBD188 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/BitmovinPlayer/BitmovinPlayer-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/BitmovinPlayer/BitmovinPlayer-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/BitmovinPlayer/BitmovinPlayer-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E0AB7C70594ED37A187ED4FD2EC648F3 /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -591,19 +669,11 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4D39353F019CAF42EE95BD4DB29D45E2 /* Sources */ = {
+		98CB311CBACA47D46387A006F2C4112B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD0933A6BF1D49CCF949C233F6C31142 /* Pods-wiinvent-ios-sample-swift-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6636EEBC576C2A2AF33D2CD5D60D2FB7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8859FBC9BC6C407D7455E241C3DBE432 /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-dummy.m in Sources */,
+				79807E4B9CF1E146C30AFEDB39C900E2 /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,418 +685,87 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C1BB218255194F88C96B1E360D0DB69D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76849E65C335489F4A0F1BAEB1955BF7 /* Pods-wiinvent-ios-sample-swift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1688D4FD98320D162059CC81A958DDEC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "GoogleAds-IMA-iOS-SDK";
-			target = 7362DAB47E2EFA5452F30DD7E9830B56 /* GoogleAds-IMA-iOS-SDK */;
-			targetProxy = 8E9BABA222E38030272A447FA8A16CC6 /* PBXContainerItemProxy */;
-		};
-		78FD2439738DB6971D4FC6F4CA3EC84B /* PBXTargetDependency */ = {
+		1324CE87576A6A3AF95A995CE0A33667 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TokenGenerator;
 			target = BE5EB3E8EA9D09AAF63DEF788E6D1A2B /* TokenGenerator */;
-			targetProxy = 1C1410971202BEA86295CB68B41B2350 /* PBXContainerItemProxy */;
+			targetProxy = 672308523AE395D900EB148FD98846AB /* PBXContainerItemProxy */;
 		};
-		AF19D636CF8CC108EA05102F6BC2A433 /* PBXTargetDependency */ = {
+		4430E61F4CF5944A6EC6B1E75D12B03C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GoogleAds-IMA-iOS-SDK";
 			target = 7362DAB47E2EFA5452F30DD7E9830B56 /* GoogleAds-IMA-iOS-SDK */;
-			targetProxy = AD2A3117645AF889F45D6114C8B809C7 /* PBXContainerItemProxy */;
+			targetProxy = 3367196DE066F9141246AB552E34EC78 /* PBXContainerItemProxy */;
 		};
-		B3D0B73F997A7D0EF21D123BBFB0FD6F /* PBXTargetDependency */ = {
+		5BC7D3B45FA084F3C5EF4B43943FEDAD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TokenGenerator;
 			target = BE5EB3E8EA9D09AAF63DEF788E6D1A2B /* TokenGenerator */;
-			targetProxy = AA5628B536B2732C79E62254A296496B /* PBXContainerItemProxy */;
+			targetProxy = A88D4EFF83A410C5FC24998709214C89 /* PBXContainerItemProxy */;
 		};
-		B59C1FC6F60F20E83420C68ABF674BBB /* PBXTargetDependency */ = {
+		6B661DA8D080EA9C64C617930C6AD685 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "GoogleAds-IMA-iOS-SDK";
-			target = 7362DAB47E2EFA5452F30DD7E9830B56 /* GoogleAds-IMA-iOS-SDK */;
-			targetProxy = 803FD99551818E5A536D7BC57D317C47 /* PBXContainerItemProxy */;
+			name = TokenGenerator;
+			target = BE5EB3E8EA9D09AAF63DEF788E6D1A2B /* TokenGenerator */;
+			targetProxy = 820D3DA53F4DEBAE10675397F7DE7195 /* PBXContainerItemProxy */;
 		};
-		D0F977B1E667A8E442EB75C3BF475B88 /* PBXTargetDependency */ = {
+		771319BE00C31285845A9F1F774E4C76 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WISDK;
 			target = 441276C70FB6198F69397818925D3A3D /* WISDK */;
-			targetProxy = 9C0D96DAB1F0EB963003016AF369ABD2 /* PBXContainerItemProxy */;
+			targetProxy = A7052B7C770A9E2D401BD6FB43D8BA81 /* PBXContainerItemProxy */;
 		};
-		DE153D0D120323E793A6FC3C2FEB414D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WISDK;
-			target = 441276C70FB6198F69397818925D3A3D /* WISDK */;
-			targetProxy = 42AD6C0CA334E5D5BAD207ECD8974183 /* PBXContainerItemProxy */;
-		};
-		EEC128F5698D4662E5F594AC8374FE0F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TokenGenerator;
-			target = BE5EB3E8EA9D09AAF63DEF788E6D1A2B /* TokenGenerator */;
-			targetProxy = 32BC2CFAF629BE543A71553CD42FD2B4 /* PBXContainerItemProxy */;
-		};
-		F24C4774609F916C7B8A32092CDC990F /* PBXTargetDependency */ = {
+		A0D26AF01D8CFB9C8C7BB6C0BEF8754A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-wiinvent-ios-sample-swift";
 			target = 1A80741C63669BA498D15C0490123BA8 /* Pods-wiinvent-ios-sample-swift */;
-			targetProxy = 213D22E2B130F650ED73C5F5A7DC8DC2 /* PBXContainerItemProxy */;
+			targetProxy = 806ED2D4BCA5205218034BC9827DE23C /* PBXContainerItemProxy */;
+		};
+		AA21030DE0A827D6477BD286BFDF4980 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BitmovinPlayer;
+			target = 95DD103C503D8F16FD27F000FA761AAB /* BitmovinPlayer */;
+			targetProxy = CC79668329521B166127940649EF2D90 /* PBXContainerItemProxy */;
+		};
+		B5F5A89C3785E32762A8820D126E3411 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GoogleAds-IMA-iOS-SDK";
+			target = 7362DAB47E2EFA5452F30DD7E9830B56 /* GoogleAds-IMA-iOS-SDK */;
+			targetProxy = 163A31B574D2C18463EAB79BB215F83D /* PBXContainerItemProxy */;
+		};
+		CA952533F0D4C1F416BEF46F6E2204E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WISDK;
+			target = 441276C70FB6198F69397818925D3A3D /* WISDK */;
+			targetProxy = 0B3ADA89357B6C04E197BD9FC0C6067B /* PBXContainerItemProxy */;
+		};
+		CCAF95F50D7783DB653B2BC398829258 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GoogleAds-IMA-iOS-SDK";
+			target = 7362DAB47E2EFA5452F30DD7E9830B56 /* GoogleAds-IMA-iOS-SDK */;
+			targetProxy = 92ADBEB7F143B8C21DB6F24747B0E6A4 /* PBXContainerItemProxy */;
+		};
+		E1DAA3F44E7914A1347F27768A7EE8F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BitmovinPlayer;
+			target = 95DD103C503D8F16FD27F000FA761AAB /* BitmovinPlayer */;
+			targetProxy = C58A15617931773A3CBFADBB64786433 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2480874CE2500D9500D72992944F67C1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CC9BC3EED160B1CAA6B2FDD573BA50B /* TokenGenerator.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4B5AC88F2740A2C4A93F069A9308BC88 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3825B2779B3C798EC0E85D6FD3859B8 /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests.modulemap";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6E57DA032E7A7DFB82B9BF57ECFFE6FC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50E93AF0D3C2D9634B1F6C59279BF7F5 /* Pods-wiinvent-ios-sample-swift.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-wiinvent-ios-sample-swift/Pods-wiinvent-ios-sample-swift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-wiinvent-ios-sample-swift/Pods-wiinvent-ios-sample-swift.modulemap";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		708A3EDA867E623E003E42319F854C70 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67CB0013EE8ABA3442B8F50EFAFE1DBD /* TokenGenerator.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		93697F94139C8DA4A5564BE81A2A0E6B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A3C4A4EF14151054A3B4D33CC9708F6 /* Pods-wiinvent-ios-sample-swiftTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-wiinvent-ios-sample-swiftTests/Pods-wiinvent-ios-sample-swiftTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-wiinvent-ios-sample-swiftTests/Pods-wiinvent-ios-sample-swiftTests.modulemap";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A045240D255F4B1AF8B2A0230C748310 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65BFE8B4BEB66E6081E6C2995947D7C7 /* Pods-wiinvent-ios-sample-swift.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-wiinvent-ios-sample-swift/Pods-wiinvent-ios-sample-swift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-wiinvent-ios-sample-swift/Pods-wiinvent-ios-sample-swift.modulemap";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A37A1F22FBD07C05548B32F613B55517 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DA00AF599376EEB0F1A203E089CC3E2 /* GoogleAds-IMA-iOS-SDK.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		B5621481A8EBEA84496E16EFB175257A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E172D73E33CA194605C1A6985C328B5 /* GoogleAds-IMA-iOS-SDK.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		B85541FC886AA869922FEF57FC3CFEC4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		BCADCF77690298DA3EAA3D1C9A83727A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D491600056083E24144A0F9DFD892DA /* WISDK.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		D18316F9FD5D8A64626B97809C97C168 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDC42F14AC3D6E11D233C1579E6039B7 /* WISDK.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		F194CA23C5FD26E18419CDDD7B410DB1 /* Debug */ = {
+		10BD71CD69507B58DCE08E4BF5C0E278 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1079,7 +818,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12;
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1092,7 +831,234 @@
 			};
 			name = Debug;
 		};
-		F3C1F2FEBDFA1D7066371983EBE1357D /* Release */ = {
+		1DF6686AA72AE4C98EB1E8BD52AA92DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3825B2779B3C798EC0E85D6FD3859B8 /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2480874CE2500D9500D72992944F67C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFD5CCD8A2892C11519FBA7B910F2B5B /* TokenGenerator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		280CBEAB0354DDBC341510E41B3F1D36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		31BB39F8EB5A3E4FE4B0657D573A7154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BDE36DF7F18B00394C02D705FE81E6F /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		40D2D4B944FB877DFA5BAB9055ECD69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50E93AF0D3C2D9634B1F6C59279BF7F5 /* Pods-wiinvent-ios-sample-swift.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-wiinvent-ios-sample-swift/Pods-wiinvent-ios-sample-swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-wiinvent-ios-sample-swift/Pods-wiinvent-ios-sample-swift.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		410BACCBD23B598D7E79E64C4799AD75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0014412FF32D2C20B295F5C578C4652D /* BitmovinPlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57701B77B993A2B6595A739536CD233C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2F3579CFB720EA231F23E4409AA0C6C7 /* Pods-wiinvent-ios-sample-swiftTests.release.xcconfig */;
 			buildSettings = {
@@ -1111,7 +1077,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-wiinvent-ios-sample-swiftTests/Pods-wiinvent-ios-sample-swiftTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12;
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1134,9 +1100,30 @@
 			};
 			name = Release;
 		};
-		FD0968F2BDC90ACE40D097249C6A9302 /* Debug */ = {
+		708A3EDA867E623E003E42319F854C70 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BDE36DF7F18B00394C02D705FE81E6F /* Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests.debug.xcconfig */;
+			baseConfigurationReference = FFB4CDCB1289C3084ECB2EED03CAA708 /* TokenGenerator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		906CB51DBC5988109E74137EACF8C8D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65BFE8B4BEB66E6081E6C2995947D7C7 /* Pods-wiinvent-ios-sample-swift.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
@@ -1151,16 +1138,119 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-wiinvent-ios-sample-swift/Pods-wiinvent-ios-sample-swift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12;
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-wiinvent-ios-sample-swift/Pods-wiinvent-ios-sample-swift.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A37A1F22FBD07C05548B32F613B55517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23C6D90C1B980D200B67824829DB3C88 /* GoogleAds-IMA-iOS-SDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3A1D70739EA56251FAE020772CFD529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B8B15407C775D9CF2C603DDD98661A7 /* BitmovinPlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5621481A8EBEA84496E16EFB175257A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F01C9DC2A096BCCF011BE6B203FA3CC /* GoogleAds-IMA-iOS-SDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B84D74A2CA75109294EEA62FF4AB993B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A3C4A4EF14151054A3B4D33CC9708F6 /* Pods-wiinvent-ios-sample-swiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-wiinvent-ios-sample-swiftTests/Pods-wiinvent-ios-sample-swiftTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-wiinvent-ios-sample-swiftTests/Pods-wiinvent-ios-sample-swiftTests.modulemap";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -1175,14 +1265,55 @@
 			};
 			name = Debug;
 		};
+		BCADCF77690298DA3EAA3D1C9A83727A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 948FE42CBDB4733B394AB9D2235D52D5 /* WISDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D18316F9FD5D8A64626B97809C97C168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51E18DE9681E5A1ACCA8637A75C41452 /* WISDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		10CD534BE686DBCF9DEC940EDFAC6D9D /* Build configuration list for PBXNativeTarget "Pods-wiinvent-ios-sample-swift" */ = {
+		10A8C0448F785B4D0DBE5871906B4766 /* Build configuration list for PBXNativeTarget "Pods-wiinvent-ios-sample-swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E57DA032E7A7DFB82B9BF57ECFFE6FC /* Debug */,
-				A045240D255F4B1AF8B2A0230C748310 /* Release */,
+				40D2D4B944FB877DFA5BAB9055ECD69F /* Debug */,
+				906CB51DBC5988109E74137EACF8C8D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1208,8 +1339,8 @@
 		3B9BD018AEE8C2AAB50F5DC581F122D3 /* Build configuration list for PBXNativeTarget "Pods-wiinvent-ios-sample-swiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				93697F94139C8DA4A5564BE81A2A0E6B /* Debug */,
-				F3C1F2FEBDFA1D7066371983EBE1357D /* Release */,
+				B84D74A2CA75109294EEA62FF4AB993B /* Debug */,
+				57701B77B993A2B6595A739536CD233C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1217,17 +1348,26 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F194CA23C5FD26E18419CDDD7B410DB1 /* Debug */,
-				B85541FC886AA869922FEF57FC3CFEC4 /* Release */,
+				10BD71CD69507B58DCE08E4BF5C0E278 /* Debug */,
+				280CBEAB0354DDBC341510E41B3F1D36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A208C6FA42EDF18DAFED3BAFEA03413A /* Build configuration list for PBXNativeTarget "Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests" */ = {
+		6DDE75C57ADF38E00F3D90A93937B77E /* Build configuration list for PBXAggregateTarget "BitmovinPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD0968F2BDC90ACE40D097249C6A9302 /* Debug */,
-				4B5AC88F2740A2C4A93F069A9308BC88 /* Release */,
+				A3A1D70739EA56251FAE020772CFD529 /* Debug */,
+				410BACCBD23B598D7E79E64C4799AD75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		899387F03F2C75C275035536BF6D73C6 /* Build configuration list for PBXNativeTarget "Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31BB39F8EB5A3E4FE4B0657D573A7154 /* Debug */,
+				1DF6686AA72AE4C98EB1E8BD52AA92DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

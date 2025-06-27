@@ -14,6 +14,16 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>Please find terms and conditions [here](https://bitmovin.com/terms/).</string>
+			<key>License</key>
+			<string>Commercial</string>
+			<key>Title</key>
+			<string>BitmovinPlayer</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>Copyright 2015 Google, Inc. All rights reserved.
 </string>
 			<key>License</key>

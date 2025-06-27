@@ -1,6 +1,10 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## BitmovinPlayer
+
+Please find terms and conditions [here](https://bitmovin.com/terms/).
+
 ## GoogleAds-IMA-iOS-SDK
 
 Copyright 2015 Google, Inc. All rights reserved.

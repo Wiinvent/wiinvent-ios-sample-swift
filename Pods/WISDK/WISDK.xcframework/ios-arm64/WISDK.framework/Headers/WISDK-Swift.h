@@ -420,6 +420,7 @@ enum WILevelLog : NSInteger;
 @class UIPanGestureRecognizer;
 @class AVPictureInPictureController;
 @class IMAFriendlyObstruction;
+@protocol BMPPlayer;
 @class IMAAdsLoader;
 @class IMAAdsLoadedData;
 @class IMAAdLoadingErrorData;
@@ -432,6 +433,7 @@ SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
 - (void)initInstreamWithAccountId:(NSInteger)accountId env:(enum WIEnvironment)env vastLoadTimeout:(float)vastLoadTimeout loadVideoTimeout:(NSTimeInterval)loadVideoTimeout bufferingVideoTimeout:(NSTimeInterval)bufferingVideoTimeout bitrate:(NSInteger)bitrate logLevel:(enum WILevelLog)logLevel enablePiP:(BOOL)enablePiP skipDuration:(NSInteger)skipDuration alwaysCustomSkip:(BOOL)alwaysCustomSkip SWIFT_METHOD_FAMILY(none);
 - (void)requestAdsPiPWithRequestData:(WIAdsRequestData * _Nonnull)requestData player:(AVPlayer * _Nonnull)player adContainer:(UIView * _Nonnull)adContainer viewController:(UIViewController * _Nonnull)viewController uiPanGestureRecognizer:(UIPanGestureRecognizer * _Nullable)uiPanGestureRecognizer pipController:(AVPictureInPictureController * _Nullable)pipController friendlyObstructionList:(NSArray<IMAFriendlyObstruction *> * _Nullable)friendlyObstructionList;
 - (void)requestAdsWithRequestData:(WIAdsRequestData * _Nonnull)requestData player:(AVPlayer * _Nonnull)player adContainer:(UIView * _Nonnull)adContainer viewController:(UIViewController * _Nonnull)viewController uiPanGestureRecognizer:(UIPanGestureRecognizer * _Nullable)uiPanGestureRecognizer friendlyObstructionList:(NSArray<IMAFriendlyObstruction *> * _Nullable)friendlyObstructionList;
+- (void)requestAdsForBitmovinWithRequestData:(WIAdsRequestData * _Nonnull)requestData player:(id <BMPPlayer> _Nonnull)player adContainer:(UIView * _Nonnull)adContainer viewController:(UIViewController * _Nonnull)viewController uiPanGestureRecognizer:(UIPanGestureRecognizer * _Nullable)uiPanGestureRecognizer friendlyObstructionList:(NSArray<IMAFriendlyObstruction *> * _Nullable)friendlyObstructionList;
 - (void)addFriendlyObstructionWithFriendlyObstructionList:(NSArray<IMAFriendlyObstruction *> * _Nullable)friendlyObstructionList;
 - (void)adsLoader:(IMAAdsLoader * _Nonnull)loader adsLoadedWithData:(IMAAdsLoadedData * _Nonnull)adsLoadedData;
 - (void)adsLoader:(IMAAdsLoader * _Nonnull)loader failedWithErrorData:(IMAAdLoadingErrorData * _Nonnull)adErrorData;
@@ -482,6 +484,7 @@ typedef SWIFT_ENUM(NSInteger, WIContentType, open) {
   WIContentTypeFILM = 0,
   WIContentTypeVIDEO = 1,
   WIContentTypeTV = 2,
+  WIContentTypeSHORT_VIDEO = 3,
 };
 
 typedef SWIFT_ENUM(NSInteger, WIEnvironment, open) {

@@ -14,8 +14,8 @@ import GoogleInteractiveMediaAds
 
 class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGestureRecognizerDelegate {
     
-    static let SAMPLE_VOD_URL: String = "http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8";
-    static let SAMPLE_LIVE_URL: String = "http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8"
+//    static let SAMPLE_VOD_URL: String = "http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8";
+    static let SAMPLE_LIVE_URL: String = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
     
     private weak var viewController: ViewController?
     @IBOutlet weak var backBtn: UIButton!
@@ -107,7 +107,7 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
             
             let requestData = WIAdsRequestData(
                 channelId: "998989,343434", //danh sách id của category & cách nhau bằng dấu ,
-                streamId: "111233", // id nội dung
+                streamId: "911", // id nội dung
                 transId: "1111", //mã giao dịch tạo từ server đối tác - client liên hệ server để biết thêm thông tin
                 contentType: WIContentType.FILM, //content type FIRM | TV | VIDEO
                 title: "Highlights Áo vs Thổ Nhĩ Kỳ | Giao Hữu Quốc Tế 2024", // tiêu đề nội dung
