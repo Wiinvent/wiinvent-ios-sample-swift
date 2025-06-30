@@ -107,7 +107,7 @@ class BitmovinDetailView: UIView, NibInstantiatable {
             friendlyObstructionList.append(skipButtonObstruction)
         }
         
-        WIAdsInStreamManager.shared().requestAdsForBitmovin(requestData: requestData, player: self.player, adContainer: self.containerView, viewController: self.viewController!, uiPanGestureRecognizer: tapped, friendlyObstructionList: friendlyObstructionList)
+        WIAdsInStreamManager.shared().requestAds(requestData: requestData, player: self.player, adContainer: self.containerView, viewController: self.viewController!, uiPanGestureRecognizer: tapped, friendlyObstructionList: friendlyObstructionList)
         
         WIAdsInStreamManager.shared().addFriendlyObstruction(friendlyObstructionList: friendlyObstructionList)
     }
