@@ -427,7 +427,7 @@ enum WILevelLog : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
 @interface WIAdsInStreamManager : NSObject <AVPictureInPictureControllerDelegate, IMAAdsLoaderDelegate, IMAAdsManagerDelegate>
-- (void)initInstreamWithAccountId:(NSInteger)accountId env:(enum WIEnvironment)env vastLoadTimeout:(float)vastLoadTimeout loadVideoTimeout:(NSTimeInterval)loadVideoTimeout bufferingVideoTimeout:(NSTimeInterval)bufferingVideoTimeout bitrate:(NSInteger)bitrate logLevel:(enum WILevelLog)logLevel enablePiP:(BOOL)enablePiP skipDuration:(NSInteger)skipDuration alwaysCustomSkip:(BOOL)alwaysCustomSkip SWIFT_METHOD_FAMILY(none);
+- (void)initInstreamWithAccountId:(NSInteger)accountId env:(enum WIEnvironment)env vastLoadTimeout:(float)vastLoadTimeout loadVideoTimeout:(NSTimeInterval)loadVideoTimeout bufferingVideoTimeout:(NSTimeInterval)bufferingVideoTimeout bitrate:(NSInteger)bitrate logLevel:(enum WILevelLog)logLevel enablePiP:(BOOL)enablePiP skipDuration:(NSInteger)skipDuration SWIFT_METHOD_FAMILY(none);
 - (void)requestAdsWithRequestData:(WIAdsRequestData * _Nonnull)requestData player:(id _Nonnull)player adContainer:(UIView * _Nonnull)adContainer viewController:(UIViewController * _Nonnull)viewController uiPanGestureRecognizer:(UIPanGestureRecognizer * _Nullable)uiPanGestureRecognizer friendlyObstructionList:(NSArray<IMAFriendlyObstruction *> * _Nullable)friendlyObstructionList;
 - (void)addFriendlyObstructionWithFriendlyObstructionList:(NSArray<IMAFriendlyObstruction *> * _Nullable)friendlyObstructionList;
 - (void)adsLoader:(IMAAdsLoader * _Nonnull)loader adsLoadedWithData:(IMAAdsLoadedData * _Nonnull)adsLoadedData;

@@ -82,7 +82,7 @@ class BitmovinDetailView: UIView, NibInstantiatable {
     }
     
     private func setupIMA() {
-        WIAdsInStreamManager.shared().initInstream(accountId: 14, env: WIEnvironment.SANDBOX, vastLoadTimeout: 5, loadVideoTimeout: 15, bufferingVideoTimeout: 5, bitrate: 2000, logLevel: WILevelLog.BODY, enablePiP: false, skipDuration: 6, alwaysCustomSkip: true)
+        WIAdsInStreamManager.shared().initInstream(accountId: 14, env: WIEnvironment.SANDBOX, vastLoadTimeout: 5, loadVideoTimeout: 15, bufferingVideoTimeout: 5, bitrate: 2000, logLevel: WILevelLog.BODY, enablePiP: false, skipDuration: 6)
         WIAdsInStreamManager.shared().loaderDelegate = self
         
         let tapped = UIPanGestureRecognizer(target: self, action: #selector(self.panGesture(_:)))

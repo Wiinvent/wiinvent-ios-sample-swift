@@ -2,13 +2,13 @@ PODS:
   - BitmovinPlayer (3.36.0)
   - GoogleAds-IMA-iOS-SDK (3.18.4)
   - TokenGenerator (1.0)
-  - WISDK (1.21.3):
+  - WISDK (1.21.4):
     - GoogleAds-IMA-iOS-SDK (= 3.18.4)
     - TokenGenerator
 
 DEPENDENCIES:
   - BitmovinPlayer (= 3.36.0)
-  - WISDK (= 1.21.3)
+  - WISDK (= 1.21.4)
 
 SPEC REPOS:
   https://github.com/bitmovin/cocoapod-specs.git:
@@ -22,8 +22,8 @@ SPEC CHECKSUMS:
   BitmovinPlayer: 9eb681e3e05db252244743c7973ab6a882d5eecd
   GoogleAds-IMA-iOS-SDK: b01284e3bf3d64ba948de6692ffda531452c3713
   TokenGenerator: 1209719fb570221b14ac0a5031f8d275a64c7d42
-  WISDK: 1769029cb20dedf5a6d45fe4ee34c726e68bf752
+  WISDK: 9c54989461dc7deacf88155347acfc88996acfc6
 
-PODFILE CHECKSUM: f24e0c9f8123937f7d43c9e565bce2185f2e89f2
+PODFILE CHECKSUM: 1ca8de44d8c84635d7f1c9f7d6de489c5aae75ff
 
 COCOAPODS: 1.16.2
