@@ -29,7 +29,7 @@ extension NibInstantiatable where Self: UIView {
     }
 }
 
-class ViewController: UIViewController, WIWelcomeAdDelegate {
+class ViewController: UIViewController {
     
     var instreamBtn: UIButton!
     var bitmovinInstreamBtn: UIButton!
@@ -91,13 +91,16 @@ class ViewController: UIViewController, WIWelcomeAdDelegate {
     }
     
     func initWelcomeAd() {
-        let adData = WIWelcomeAdData(accountId: String(14), 
+        //int quang cao welcome
+        
+        let adData = WIWelcomeAdData(accountId: String(14),
                                      transId: "123123123", //mã giao dịch tạo từ server đối tác - client liên hệ server để biết thêm thông tin
                                      age: 0, // tuổi , nếu không có thì để 0
                                      gender: WIGender.NONE, //giới tính nếu không có thì set NONE
                                      uid20: "", // unified id 2.0, nếu không có thì set ""
                                      domainUrl: "", // config banner đọc từ phía server đối tác
-                                     env: WIEnvironment.SANDBOX, segments: "123,123,123") //cac segment id cach nhau = dau ,
+                                     env: WIEnvironment.SANDBOX, //Moi truong PRODUCTION | SANDBOX
+                                     segments: "123,123,123") //cac segment id cach nhau = dau ,
         // add friendly Obstruction View
         let friendlyObstructionList: [IMAFriendlyObstruction] = []
         
@@ -112,6 +115,30 @@ class ViewController: UIViewController, WIWelcomeAdDelegate {
         present(vc, animated: true)
     }
     
+    func showToastFaded(message : String) {
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 125, y: self.view.frame.size.height-100, width: 250, height: 35))
+        toastLabel.numberOfLines = 0
+        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        toastLabel.textColor = UIColor.white
+        toastLabel.textAlignment = .center;
+        toastLabel.text = message
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 10;
+        toastLabel.clipsToBounds  =  true
+        toastLabel.sizeToFit()
+        toastLabel.frame = CGRect( x: toastLabel.frame.minX, y: toastLabel.frame.minY,width:   toastLabel.frame.width + 20, height: toastLabel.frame.height + 8)
+        
+        self.view.addSubview(toastLabel)
+        UIView.animate(withDuration: 4.0, delay: 0.1, options: .curveEaseOut, animations: {
+            toastLabel.alpha = 0.0
+        }, completion: {(isCompleted) in
+            toastLabel.removeFromSuperview()
+        })
+    }
+
+}
+
+extension ViewController: WIWelcomeAdDelegate {
     func onDisplayAds() {
         print("-----onDisplayAds")
     }
@@ -146,27 +173,4 @@ class ViewController: UIViewController, WIWelcomeAdDelegate {
     func onAdsWelcomeTimeout() {
         print("-----onAdsWelcomeTimeout")
     }
-    
-    func showToastFaded(message : String) {
-        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 125, y: self.view.frame.size.height-100, width: 250, height: 35))
-        toastLabel.numberOfLines = 0
-        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
-        toastLabel.textColor = UIColor.white
-        toastLabel.textAlignment = .center;
-        toastLabel.text = message
-        toastLabel.alpha = 1.0
-        toastLabel.layer.cornerRadius = 10;
-        toastLabel.clipsToBounds  =  true
-        toastLabel.sizeToFit()
-        toastLabel.frame = CGRect( x: toastLabel.frame.minX, y: toastLabel.frame.minY,width:   toastLabel.frame.width + 20, height: toastLabel.frame.height + 8)
-        
-        self.view.addSubview(toastLabel)
-        UIView.animate(withDuration: 4.0, delay: 0.1, options: .curveEaseOut, animations: {
-            toastLabel.alpha = 0.0
-        }, completion: {(isCompleted) in
-            toastLabel.removeFromSuperview()
-        })
-    }
-
 }
-
