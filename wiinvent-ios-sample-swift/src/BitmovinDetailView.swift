@@ -89,7 +89,7 @@ class BitmovinDetailView: UIView, NibInstantiatable {
         tapped.delegate = self
         let requestData = WIAdsRequestData(
             channelId: "998989,998989",
-            streamId: "911",
+            streamId: "4444",
             transId: "1111",
             contentType: WIContentType.FILM,
             title: "Sao nhập ngũ 2024 - Tập 16,,$# - Những chiến binh Thành Đồng - Vì sa", //"Highlights Áo vs Thổ Nhĩ Kỳ | Giao Hữu Quốc Tế 2024",
