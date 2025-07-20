@@ -1,5 +1,5 @@
 
-### Version 1.10.6
+### Version 1.21.4
 Change log: hỗ trợ thêm 2 quảng cáo liên tiếp & welcome chạy vast tag
 
 #### 1. SDK
