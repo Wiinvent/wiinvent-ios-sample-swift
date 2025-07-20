@@ -101,10 +101,21 @@ class ViewController: UIViewController {
                                      domainUrl: "", // config banner đọc từ phía server đối tác
                                      env: WIEnvironment.SANDBOX, //Moi truong PRODUCTION | SANDBOX
                                      segments: "123,123,123") //cac segment id cach nhau = dau ,
+        
         // add friendly Obstruction View
         let friendlyObstructionList: [IMAFriendlyObstruction] = []
         
-        WIWelcomeAdManager.shared().requestAds(requestData: adData, container: view, viewController: self, delegate: self, vastLoadTimeout: 5, loadVideoTimeout: 5, bufferingVideoTimeout: 5, bitrate: 2501, skipDuration: 9, levelLog: WILevelLog.NODE, friendlyObstructionList: friendlyObstructionList);
+        WIWelcomeAdManager.shared().requestAds(requestData: adData,
+                                               container: view,
+                                               viewController: self,
+                                               delegate: self,
+                                               vastLoadTimeout: 5, //timeout tải vast tag (config tu backend giông instream)
+                                               loadVideoTimeout: 5, // timeout tải video của quang cao (config tu backend giông instream)
+                                               bufferingVideoTimeout: 5, //timeout buffer (config tu backend giông instream)
+                                               bitrate: 2501, // max bitrate (config tu backend giông instream)
+                                               skipDuration: 9, //Thoi gian bo qua quang cao (config dc tu phia backend)
+                                               levelLog: WILevelLog.NODE,
+                                               friendlyObstructionList: friendlyObstructionList);
 
         print("-----request ads")
     }
