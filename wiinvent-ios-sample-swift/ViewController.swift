@@ -93,27 +93,27 @@ class ViewController: UIViewController {
     func initWelcomeAd() {
         //int quang cao welcome
         
-        let adData = WIWelcomeAdData(accountId: String(14),
+        let adData = WIWelcomeAdData(accountId: String(14), // accountId giống với instream, phụ thuộc vào môi trường (prod|sandbox) có thể khác nhau (lấy config từ backend)
                                      transId: "123123123", //mã giao dịch tạo từ server đối tác - client liên hệ server để biết thêm thông tin
                                      age: 0, // tuổi , nếu không có thì để 0
                                      gender: WIGender.NONE, //giới tính nếu không có thì set NONE
                                      uid20: "", // unified id 2.0, nếu không có thì set ""
                                      domainUrl: "", // config banner đọc từ phía server đối tác
-                                     env: WIEnvironment.SANDBOX, //Moi truong PRODUCTION | SANDBOX
+                                     env: WIEnvironment.SANDBOX, //Moi truong PRODUCTION | SANDBOX, giong instream
                                      segments: "123,123,123") //cac segment id cach nhau = dau ,
         
-        // add friendly Obstruction View
+        // add friendly Obstruction View - có view nào đè lên view quảng cáo này thì cần phải khai báo
         let friendlyObstructionList: [IMAFriendlyObstruction] = []
         
         WIWelcomeAdManager.shared().requestAds(requestData: adData,
                                                container: view,
                                                viewController: self,
                                                delegate: self,
-                                               vastLoadTimeout: 5, //timeout tải vast tag (config tu backend giông instream)
-                                               loadVideoTimeout: 5, // timeout tải video của quang cao (config tu backend giông instream)
-                                               bufferingVideoTimeout: 5, //timeout buffer (config tu backend giông instream)
-                                               bitrate: 2501, // max bitrate (config tu backend giông instream)
-                                               skipDuration: 9, //Thoi gian bo qua quang cao (config dc tu phia backend)
+                                               vastLoadTimeout: 5, // load vast timeout (lấy config từ backend), giong instream
+                                               loadVideoTimeout: 5, // load media timeout (lấy config từ backend), giong instream
+                                               bufferingVideoTimeout: 5, // buffer media timeout (lấy config từ backend), giong instream
+                                               bitrate: 2000, // max bitrate (lấy config từ backend), giong instream
+                                               skipDuration: 8, // thời gian bo qua quang cao welcome (config dc tu phia backend)
                                                levelLog: WILevelLog.NODE,
                                                friendlyObstructionList: friendlyObstructionList);
 
