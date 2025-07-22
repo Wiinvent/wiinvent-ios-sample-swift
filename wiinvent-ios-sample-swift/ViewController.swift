@@ -78,11 +78,11 @@ class ViewController: UIViewController {
     }
     
     @objc func bitmovinInstreamAction(sender: UIButton!) {
-        print("Button tapped")
-        let detailView: BitmovinDetailView = BitmovinDetailView.fromNib();
-        //        detailView.viewController = self;
-        detailView.initView(vc: self);
-        view.addSubview(detailView)
+//        print("Button tapped")
+//        let detailView: BitmovinDetailView = BitmovinDetailView.fromNib();
+//        //        detailView.viewController = self;
+//        detailView.initView(vc: self);
+//        view.addSubview(detailView)
     }
     
     @objc func welcomeAction(sender: UIButton!) {

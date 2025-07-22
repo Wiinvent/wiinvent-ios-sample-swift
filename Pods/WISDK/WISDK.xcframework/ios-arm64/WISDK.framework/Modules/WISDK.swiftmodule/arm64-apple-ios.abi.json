@@ -1745,13 +1745,6 @@
         "moduleName": "WISDK"
       },
       {
-        "kind": "Import",
-        "name": "BitmovinPlayer",
-        "printedName": "BitmovinPlayer",
-        "declKind": "Import",
-        "moduleName": "WISDK"
-      },
-      {
         "kind": "TypeDecl",
         "name": "WIAdsInStreamManager",
         "printedName": "WIAdsInStreamManager",
@@ -2700,7 +2693,8 @@
         "moduleName": "WISDK",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "inheritsConvenienceInitializers": true,
@@ -12893,30 +12887,6 @@
       },
       {
         "kind": "Import",
-        "name": "BitmovinPlayer",
-        "printedName": "BitmovinPlayer",
-        "declKind": "Import",
-        "moduleName": "WISDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "GoogleInteractiveMediaAds",
-        "printedName": "GoogleInteractiveMediaAds",
-        "declKind": "Import",
-        "moduleName": "WISDK"
-      },
-      {
-        "kind": "Import",
-        "name": "BitmovinPlayer",
-        "printedName": "BitmovinPlayer",
-        "declKind": "Import",
-        "moduleName": "WISDK"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -16771,175 +16741,175 @@
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 379,
+      "offset": 381,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 407,
+      "offset": 409,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 435,
+      "offset": 437,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1641,
+      "offset": 1645,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1684,
+      "offset": 1688,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1717,
+      "offset": 1721,
       "length": 4,
       "value": "2500"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1756,
+      "offset": 1760,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 1832,
+      "offset": 1836,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 1873,
+      "offset": 1877,
       "length": 4,
       "value": "\"-1\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 1919,
+      "offset": 1923,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 1959,
+      "offset": 1963,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 1994,
+      "offset": 1998,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2045,
+      "offset": 2049,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2091,
+      "offset": 2095,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2130,
+      "offset": 2134,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2172,
+      "offset": 2176,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2213,
+      "offset": 2217,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2275,
+      "offset": 2279,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2390,
+      "offset": 2394,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2501,
+      "offset": 2505,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2538,
+      "offset": 2542,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2580,
+      "offset": 2584,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2599,
+      "offset": 2603,
       "length": 4,
       "value": "2500"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2663,
+      "offset": 2667,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2690,
+      "offset": 2694,
       "length": 1,
       "value": "6"
     },
@@ -17712,13 +17682,6 @@
       "offset": 190,
       "length": 4,
       "value": "3"
-    },
-    {
-      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/bitmovin\/BitmovinContentPlayhead.swift",
-      "kind": "IntegerLiteral",
-      "offset": 412,
-      "length": 1,
-      "value": "0"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",

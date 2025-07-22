@@ -6,8 +6,8 @@ platform :ios, '13'
 target 'wiinvent-ios-sample-swift' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'WISDK', '1.21.4'
-  pod 'BitmovinPlayer', '3.36.0'
+  pod 'WISDK', '1.21.5'
+#  pod 'BitmovinPlayer', '3.36.0'
 
   # Pods for wiinvent-ios-sample-swift
 

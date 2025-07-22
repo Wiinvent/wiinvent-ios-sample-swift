@@ -1,5 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-frameworks.sh
-${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayer/BitmovinPlayer.framework/BitmovinPlayer
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/GoogleInteractiveMediaAds
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/TokenGenerator/TokenGenerator.framework/TokenGenerator
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/WISDK/WISDK.framework/WISDK
