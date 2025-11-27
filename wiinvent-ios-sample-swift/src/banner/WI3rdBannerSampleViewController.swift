@@ -24,7 +24,8 @@ final class WI3rdBannerSampleViewController: UIViewController, StoryboardInstant
     
     var kTestingChannelId = "998989";
     var kTestingStreamId = "999999";
-    var kTestingPositionId = "homepage1";
+    //var kTestingPositionId = "homepage1";
+    var kTestingPositionId = ""; // pause_banner
     
     private lazy var isPlaying = false {
         didSet {
@@ -110,7 +111,8 @@ final class WI3rdBannerSampleViewController: UIViewController, StoryboardInstant
                 adSize: .LARGE_BANNER,
                 uid20: "",
                 segments: "123,123,123",
-                position: kTestingPositionId,
+                //position: kTestingPositionId,
+                position: "homepage1",
                 bannerType: .display
             ),
             containerView: largeAdView,
@@ -135,7 +137,8 @@ final class WI3rdBannerSampleViewController: UIViewController, StoryboardInstant
                 adSize: .MEDIUM_BANNER,
                 uid20: "",
                 segments: "123,123,123",
-                position: kTestingPositionId,
+                //position: kTestingPositionId,
+                position: "subpage1",
                 bannerType: .display
             ),
             containerView: mediumAdView,
@@ -160,7 +163,8 @@ final class WI3rdBannerSampleViewController: UIViewController, StoryboardInstant
                 adSize: .PAUSE_BANNER,
                 uid20: "",
                 segments: "123,123,123",
-                position: kTestingPositionId,
+                //position: kTestingPositionId,
+                position: "",
                 bannerType: .overlay
             ),
             containerView: overlayAdView,
