@@ -410,6 +410,139 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "wi3rdBannerAdManager",
+            "printedName": "wi3rdBannerAdManager(_:hasNoAdAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WI3rdBannerAdManager",
+                "printedName": "WISDK.WI3rdBannerAdManager",
+                "usr": "c:@M@WISDK@objc(cs)WI3rdBannerAdManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(pl)WI3rdBannerAdDelegate(im)wi3rdBannerAdManager:hasNoAdAt:",
+            "mangledName": "$s5WISDK21WI3rdBannerAdDelegateP05wi3rdcD7Manager_05hasNoD2AtyAA0bcdG0C_So6UIViewCSgtF",
+            "moduleName": "WISDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : WISDK.WI3rdBannerAdDelegate>",
+            "sugared_genericSig": "<Self where Self : WISDK.WI3rdBannerAdDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "wi3rdBannerAdManager",
+            "printedName": "wi3rdBannerAdManager(_:skipAdAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WI3rdBannerAdManager",
+                "printedName": "WISDK.WI3rdBannerAdManager",
+                "usr": "c:@M@WISDK@objc(cs)WI3rdBannerAdManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(pl)WI3rdBannerAdDelegate(im)wi3rdBannerAdManager:skipAdAt:",
+            "mangledName": "$s5WISDK21WI3rdBannerAdDelegateP05wi3rdcD7Manager_04skipD2AtyAA0bcdG0C_So6UIViewCSgtF",
+            "moduleName": "WISDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : WISDK.WI3rdBannerAdDelegate>",
+            "sugared_genericSig": "<Self where Self : WISDK.WI3rdBannerAdDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "wi3rdBannerAdManager",
+            "printedName": "wi3rdBannerAdManager(_:pauseBannerVisibleAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WI3rdBannerAdManager",
+                "printedName": "WISDK.WI3rdBannerAdManager",
+                "usr": "c:@M@WISDK@objc(cs)WI3rdBannerAdManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(pl)WI3rdBannerAdDelegate(im)wi3rdBannerAdManager:pauseBannerVisibleAt:",
+            "mangledName": "$s5WISDK21WI3rdBannerAdDelegateP05wi3rdcD7Manager_05pauseC9VisibleAtSbAA0bcdG0C_So6UIViewCSgtF",
+            "moduleName": "WISDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : WISDK.WI3rdBannerAdDelegate>",
+            "sugared_genericSig": "<Self where Self : WISDK.WI3rdBannerAdDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -556,6 +689,13 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WISDK"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -680,6 +820,27 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "destroyPauseBanner",
+            "printedName": "destroyPauseBanner()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(cs)WI3rdBannerAdManager(im)destroyPauseBanner",
+            "mangledName": "$s5WISDK20WI3rdBannerAdManagerC012destroyPauseC0yyF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -720,6 +881,13 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "WILoggable",
+            "printedName": "WILoggable",
+            "usr": "s:5WISDK10WILoggableP",
+            "mangledName": "$s5WISDK10WILoggableP"
+          },
           {
             "kind": "Conformance",
             "name": "Copyable",
@@ -782,6 +950,238 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WISDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WI3rdBannerAdBannerType",
+        "printedName": "WI3rdBannerAdBannerType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "display",
+            "printedName": "display",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WISDK.WI3rdBannerAdBannerType.Type) -> WISDK.WI3rdBannerAdBannerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WI3rdBannerAdBannerType",
+                    "printedName": "WISDK.WI3rdBannerAdBannerType",
+                    "usr": "c:@M@WISDK@E@WI3rdBannerAdBannerType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WISDK.WI3rdBannerAdBannerType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WI3rdBannerAdBannerType",
+                        "printedName": "WISDK.WI3rdBannerAdBannerType",
+                        "usr": "c:@M@WISDK@E@WI3rdBannerAdBannerType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@WISDK@E@WI3rdBannerAdBannerType@WI3rdBannerAdBannerTypeDisplay",
+            "mangledName": "$s5WISDK013WI3rdBannerAdC4TypeO7displayyA2CmF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "overlay",
+            "printedName": "overlay",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WISDK.WI3rdBannerAdBannerType.Type) -> WISDK.WI3rdBannerAdBannerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WI3rdBannerAdBannerType",
+                    "printedName": "WISDK.WI3rdBannerAdBannerType",
+                    "usr": "c:@M@WISDK@E@WI3rdBannerAdBannerType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WISDK.WI3rdBannerAdBannerType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WI3rdBannerAdBannerType",
+                        "printedName": "WISDK.WI3rdBannerAdBannerType",
+                        "usr": "c:@M@WISDK@E@WI3rdBannerAdBannerType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@WISDK@E@WI3rdBannerAdBannerType@WI3rdBannerAdBannerTypeOverlay",
+            "mangledName": "$s5WISDK013WI3rdBannerAdC4TypeO7overlayyA2CmF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5WISDK013WI3rdBannerAdC4TypeO8rawValueSSvp",
+            "mangledName": "$s5WISDK013WI3rdBannerAdC4TypeO8rawValueSSvp",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5WISDK013WI3rdBannerAdC4TypeO8rawValueSSvg",
+                "mangledName": "$s5WISDK013WI3rdBannerAdC4TypeO8rawValueSSvg",
+                "moduleName": "WISDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WISDK.WI3rdBannerAdBannerType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WI3rdBannerAdBannerType",
+                    "printedName": "WISDK.WI3rdBannerAdBannerType",
+                    "usr": "c:@M@WISDK@E@WI3rdBannerAdBannerType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5WISDK013WI3rdBannerAdC4TypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s5WISDK013WI3rdBannerAdC4TypeO8rawValueACSgSS_tcfc",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@WISDK@E@WI3rdBannerAdBannerType",
+        "mangledName": "$s5WISDK013WI3rdBannerAdC4TypeO",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
           }
         ]
       },
@@ -2781,6 +3181,13 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "WISDK"
       },
@@ -6029,6 +6436,235 @@
         "moduleName": "WISDK"
       },
       {
+        "kind": "TypeDecl",
+        "name": "WILoggable",
+        "printedName": "WILoggable",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5WISDK10WILoggablePAAE3log_5erroryypd_s5Error_pSgtF",
+            "mangledName": "$s5WISDK10WILoggablePAAE3log_5erroryypd_s5Error_pSgtF",
+            "moduleName": "WISDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : WISDK.WILoggable>",
+            "sugared_genericSig": "<Self where Self : WISDK.WILoggable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:5WISDK10WILoggableP",
+        "mangledName": "$s5WISDK10WILoggableP",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WILogger",
+        "printedName": "WILogger",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WILogger",
+                "printedName": "WISDK.WILogger",
+                "usr": "s:5WISDK8WILoggerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5WISDK8WILoggerC6sharedACvpZ",
+            "mangledName": "$s5WISDK8WILoggerC6sharedACvpZ",
+            "moduleName": "WISDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WILogger",
+                    "printedName": "WISDK.WILogger",
+                    "usr": "s:5WISDK8WILoggerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5WISDK8WILoggerC6sharedACvgZ",
+                "mangledName": "$s5WISDK8WILoggerC6sharedACvgZ",
+                "moduleName": "WISDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "relay",
+            "printedName": "relay",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WINoRelayObservable",
+                "printedName": "WISDK.WINoRelayObservable<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:5WISDK19WINoRelayObservableC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5WISDK8WILoggerC5relayAA19WINoRelayObservableCySSGvp",
+            "mangledName": "$s5WISDK8WILoggerC5relayAA19WINoRelayObservableCySSGvp",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WINoRelayObservable",
+                    "printedName": "WISDK.WINoRelayObservable<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:5WISDK19WINoRelayObservableC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5WISDK8WILoggerC5relayAA19WINoRelayObservableCySSGvg",
+                "mangledName": "$s5WISDK8WILoggerC5relayAA19WINoRelayObservableCySSGvg",
+                "moduleName": "WISDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5WISDK8WILoggerC",
+        "mangledName": "$s5WISDK8WILoggerC",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -6503,6 +7139,129 @@
               "ObjC"
             ],
             "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "MINI_BANNER",
+            "printedName": "MINI_BANNER",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WISDK.WI3rdBannerAdSize.Type) -> WISDK.WI3rdBannerAdSize",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WI3rdBannerAdSize",
+                    "printedName": "WISDK.WI3rdBannerAdSize",
+                    "usr": "c:@M@WISDK@E@WI3rdBannerAdSize"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WISDK.WI3rdBannerAdSize.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WI3rdBannerAdSize",
+                        "printedName": "WISDK.WI3rdBannerAdSize",
+                        "usr": "c:@M@WISDK@E@WI3rdBannerAdSize"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@WISDK@E@WI3rdBannerAdSize@WI3rdBannerAdSizeMINI_BANNER",
+            "mangledName": "$s5WISDK17WI3rdBannerAdSizeO11MINI_BANNERyA2CmF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "MEDIUM_BANNER",
+            "printedName": "MEDIUM_BANNER",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WISDK.WI3rdBannerAdSize.Type) -> WISDK.WI3rdBannerAdSize",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WI3rdBannerAdSize",
+                    "printedName": "WISDK.WI3rdBannerAdSize",
+                    "usr": "c:@M@WISDK@E@WI3rdBannerAdSize"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WISDK.WI3rdBannerAdSize.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WI3rdBannerAdSize",
+                        "printedName": "WISDK.WI3rdBannerAdSize",
+                        "usr": "c:@M@WISDK@E@WI3rdBannerAdSize"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@WISDK@E@WI3rdBannerAdSize@WI3rdBannerAdSizeMEDIUM_BANNER",
+            "mangledName": "$s5WISDK17WI3rdBannerAdSizeO13MEDIUM_BANNERyA2CmF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "PAUSE_BANNER",
+            "printedName": "PAUSE_BANNER",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WISDK.WI3rdBannerAdSize.Type) -> WISDK.WI3rdBannerAdSize",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WI3rdBannerAdSize",
+                    "printedName": "WISDK.WI3rdBannerAdSize",
+                    "usr": "c:@M@WISDK@E@WI3rdBannerAdSize"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WISDK.WI3rdBannerAdSize.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WI3rdBannerAdSize",
+                        "printedName": "WISDK.WI3rdBannerAdSize",
+                        "usr": "c:@M@WISDK@E@WI3rdBannerAdSize"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@WISDK@E@WI3rdBannerAdSize@WI3rdBannerAdSizePAUSE_BANNER",
+            "mangledName": "$s5WISDK17WI3rdBannerAdSizeO12PAUSE_BANNERyA2CmF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
           },
           {
             "kind": "Var",
@@ -7686,7 +8445,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(accountId:env:channelId:streamId:transId:contentType:title:category:keyword:age:gender:adSize:uid20:segments:)",
+            "printedName": "init(accountId:env:channelId:streamId:transId:contentType:title:category:keyword:age:gender:adSize:uid20:segments:position:bannerType:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7852,13 +8611,33 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WI3rdBannerAdBannerType",
+                "printedName": "WISDK.WI3rdBannerAdBannerType",
+                "usr": "c:@M@WISDK@E@WI3rdBannerAdBannerType"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@WISDK@objc(cs)WI3rdBannerAdData(im)initWithAccountId:env:channelId:streamId:transId:contentType:title:category:keyword:age:gender:adSize:uid20:segments:",
-            "mangledName": "$s5WISDK17WI3rdBannerAdDataC9accountId3env07channelG006streamG005transG011contentType5title8category7keyword3age6gender6adSize5uid208segmentsACSSSg_AA13WIEnvironmentOA3rA09WIContentM0OA3RSiAA8WIGenderOAA0bcdT0OA2Rtcfc",
+            "usr": "c:@M@WISDK@objc(cs)WI3rdBannerAdData(im)initWithAccountId:env:channelId:streamId:transId:contentType:title:category:keyword:age:gender:adSize:uid20:segments:position:bannerType:",
+            "mangledName": "$s5WISDK17WI3rdBannerAdDataC9accountId3env07channelG006streamG005transG011contentType5title8category7keyword3age6gender6adSize5uid208segments8position06bannerM0ACSSSg_AA13WIEnvironmentOA3tA09WIContentM0OA3TSiAA8WIGenderOAA0bcdT0OA3tA0bcdcM0Otcfc",
             "moduleName": "WISDK",
-            "objc_name": "initWithAccountId:env:channelId:streamId:transId:contentType:title:category:keyword:age:gender:adSize:uid20:segments:",
+            "objc_name": "initWithAccountId:env:channelId:streamId:transId:contentType:title:category:keyword:age:gender:adSize:uid20:segments:position:bannerType:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -15122,6 +15901,120 @@
         "moduleName": "WISDK"
       },
       {
+        "kind": "TypeDecl",
+        "name": "WINoRelayObservable",
+        "printedName": "WINoRelayObservable",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "observer",
+            "printedName": "observer(on:observerBlock:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "AnyObject"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5WISDK19WINoRelayObservableC8observer2on0E5BlockyyXl_yxctF",
+            "mangledName": "$s5WISDK19WINoRelayObservableC8observer2on0E5BlockyyXl_yxctF",
+            "moduleName": "WISDK",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Value>",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "remove",
+            "printedName": "remove(observer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "AnyObject"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5WISDK19WINoRelayObservableC6remove8observeryyXl_tF",
+            "mangledName": "$s5WISDK19WINoRelayObservableC6remove8observeryyXl_tF",
+            "moduleName": "WISDK",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Value>",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5WISDK19WINoRelayObservableC",
+        "mangledName": "$s5WISDK19WINoRelayObservableC",
+        "moduleName": "WISDK",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Value>",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WISDK"
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -15145,30 +16038,51 @@
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 149,
+      "offset": 161,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdManager.swift",
       "kind": "Array",
-      "offset": 310,
+      "offset": 322,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 680,
+      "offset": 381,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 436,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 805,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3887,
+      "offset": 5454,
       "length": 2,
       "value": "10"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdBannerType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 99,
+      "length": 7,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/Extension\/UIDevice+Model.swift",
@@ -16956,6 +17870,13 @@
       "value": "5"
     },
     {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WILoggable.swift",
+      "kind": "StringLiteral",
+      "offset": 1477,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WIEnvironment.swift",
       "kind": "IntegerLiteral",
       "offset": 173,
@@ -17164,6 +18085,27 @@
       "offset": 111,
       "length": 9,
       "value": "2"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdSize.swift",
+      "kind": "IntegerLiteral",
+      "offset": 130,
+      "length": 11,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdSize.swift",
+      "kind": "IntegerLiteral",
+      "offset": 143,
+      "length": 13,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdSize.swift",
+      "kind": "IntegerLiteral",
+      "offset": 158,
+      "length": 12,
+      "value": "5"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
@@ -17490,21 +18432,21 @@
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdImageView.swift",
       "kind": "StringLiteral",
-      "offset": 824,
+      "offset": 907,
       "length": 7,
       "value": "\"Check\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdImageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1453,
+      "offset": 1536,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdImageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1457,
+      "offset": 1540,
       "length": 1,
       "value": "1"
     },
@@ -17595,70 +18537,63 @@
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
       "kind": "StringLiteral",
-      "offset": 614,
-      "length": 5,
-      "value": "\"IOS\""
+      "offset": 710,
+      "length": 14,
+      "value": "\"adSdkHandler\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
       "kind": "Array",
-      "offset": 904,
+      "offset": 1197,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 960,
+      "offset": 1253,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1109,
+      "offset": 1402,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1218,
+      "offset": 1511,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1372,
+      "offset": 1665,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1419,
+      "offset": 1712,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
-      "kind": "StringLiteral",
-      "offset": 1645,
-      "length": 7,
-      "value": "\"Check\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2268,
+      "offset": 2563,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/View\/WI3rdBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2272,
+      "offset": 2567,
       "length": 1,
       "value": "1"
     },
@@ -17990,6 +18925,13 @@
       "offset": 11631,
       "length": 1,
       "value": "6"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WINoRelayObservable.swift",
+      "kind": "Array",
+      "offset": 205,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WIMd5.swift",

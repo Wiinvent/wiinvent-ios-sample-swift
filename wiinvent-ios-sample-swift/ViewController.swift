@@ -122,8 +122,13 @@ class ViewController: UIViewController {
     
     @objc func thirdPartyBannerAction(sender: UIButton!) {
         print("===> thirdPartyBannerAction")
-        let vc = BannerSampleViewController.instantiate()
-        present(vc, animated: true)
+        if #available(iOS 13.0, *) {
+            let vc = WI3rdBannerSampleViewController.instantiate()
+            present(vc, animated: true)
+        } else {
+            // Fallback on earlier versions
+        }
+        
     }
     
     func showToastFaded(message : String) {

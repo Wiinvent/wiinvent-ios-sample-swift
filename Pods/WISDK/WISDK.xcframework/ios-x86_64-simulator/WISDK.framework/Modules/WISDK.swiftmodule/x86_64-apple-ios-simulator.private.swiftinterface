@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name WISDK
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name WISDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVKit
 import AdSupport
@@ -31,17 +31,29 @@ import _SwiftConcurrencyShims
   @objc func wi3rdBannerAdManager(_ manager: WISDK.WI3rdBannerAdManager, hasNoAdsAt containerView: UIKit.UIView?)
   @objc func wi3rdBannerAdManager(_ manager: WISDK.WI3rdBannerAdManager, at containerView: UIKit.UIView?, changeRatio ratio: CoreFoundation.CGFloat)
   @objc func wi3rdBannerAdManager(_ manager: WISDK.WI3rdBannerAdManager, click url: Swift.String)
+  @objc func wi3rdBannerAdManager(_ manager: WISDK.WI3rdBannerAdManager, hasNoAdAt containerView: UIKit.UIView?)
+  @objc func wi3rdBannerAdManager(_ manager: WISDK.WI3rdBannerAdManager, skipAdAt containerView: UIKit.UIView?)
+  @objc func wi3rdBannerAdManager(_ manager: WISDK.WI3rdBannerAdManager, pauseBannerVisibleAt containerView: UIKit.UIView?) -> Swift.Bool
 }
 @objc public protocol WIGameDelegate {
   @objc func onDismiss()
   @objc func onError()
   @objc func onTimeout()
 }
-@objc open class WI3rdBannerAdManager : ObjectiveC.NSObject {
+@objc open class WI3rdBannerAdManager : ObjectiveC.NSObject, WISDK.WILoggable {
   public init(delegate: any WISDK.WI3rdBannerAdDelegate, levelLog: WISDK.WILevelLog = .NODE)
   @objc public func requestAds(requestData: WISDK.WI3rdBannerAdData, containerView: UIKit.UIView?, timeoutInSecond: Foundation.TimeInterval = 10)
   @objc public func destroy()
+  @objc public func destroyPauseBanner()
   @objc deinit
+}
+@objc public enum WI3rdBannerAdBannerType : Swift.Int, Swift.RawRepresentable {
+  case display, overlay
+  public typealias RawValue = Swift.String
+  public var rawValue: WISDK.WI3rdBannerAdBannerType.RawValue {
+    get
+  }
+  public init?(rawValue: WISDK.WI3rdBannerAdBannerType.RawValue)
 }
 @objc public class WIGameWebAction : ObjectiveC.NSObject {
   public enum TypeAction : Swift.String {
@@ -135,6 +147,16 @@ import _SwiftConcurrencyShims
   @objc @_Concurrency.MainActor @preconcurrency public func resume()
   @objc deinit
 }
+public protocol WILoggable {
+}
+extension WISDK.WILoggable {
+  public func log(_ items: Any..., error: (any Swift.Error)? = nil)
+}
+@_hasMissingDesignatedInitializers final public class WILogger {
+  public static let shared: WISDK.WILogger
+  final public let relay: WISDK.WINoRelayObservable<Swift.String>
+  @objc deinit
+}
 @objc public enum WIEnvironment : Swift.Int, Swift.RawRepresentable {
   case SANDBOX, PRODUCTION, VIETTEL_PRODUCTION, WIINVENT_PRODUCTION
   public typealias RawValue = Swift.String
@@ -145,6 +167,7 @@ import _SwiftConcurrencyShims
 }
 @objc public enum WI3rdBannerAdSize : Swift.Int, Swift.RawRepresentable {
   case BANNER, LARGE_BANNER, RECTANGLE
+  case MINI_BANNER, MEDIUM_BANNER, PAUSE_BANNER
   public typealias RawValue = Swift.String
   public var rawValue: WISDK.WI3rdBannerAdSize.RawValue {
     get
@@ -173,7 +196,7 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc public class WI3rdBannerAdData : ObjectiveC.NSObject {
-  @objc public init(accountId: Swift.String? = nil, env: WISDK.WIEnvironment, channelId: Swift.String? = nil, streamId: Swift.String? = nil, transId: Swift.String?, contentType: WISDK.WIContentType, title: Swift.String?, category: Swift.String?, keyword: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, adSize: WISDK.WI3rdBannerAdSize, uid20: Swift.String?, segments: Swift.String?)
+  @objc public init(accountId: Swift.String? = nil, env: WISDK.WIEnvironment, channelId: Swift.String? = nil, streamId: Swift.String? = nil, transId: Swift.String?, contentType: WISDK.WIContentType, title: Swift.String?, category: Swift.String?, keyword: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, adSize: WISDK.WI3rdBannerAdSize, uid20: Swift.String?, segments: Swift.String?, position: Swift.String?, bannerType: WISDK.WI3rdBannerAdBannerType)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers open class WIGameManager : ObjectiveC.NSObject {
@@ -342,6 +365,13 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
+@_hasMissingDesignatedInitializers final public class WINoRelayObservable<Value> {
+  final public func observer(on observer: Swift.AnyObject, observerBlock: @escaping (Value) -> Swift.Void)
+  final public func remove(observer: Swift.AnyObject)
+  @objc deinit
+}
+extension WISDK.WI3rdBannerAdBannerType : Swift.Equatable {}
+extension WISDK.WI3rdBannerAdBannerType : Swift.Hashable {}
 extension WISDK.WIGameWebAction.TypeAction : Swift.Equatable {}
 extension WISDK.WIGameWebAction.TypeAction : Swift.Hashable {}
 extension WISDK.WIGameWebAction.TypeAction : Swift.RawRepresentable {}
