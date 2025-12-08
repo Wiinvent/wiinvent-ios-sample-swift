@@ -2,7 +2,7 @@ import UIKit
 import WISDK
 import AVFoundation
 
-final class WI3rdBannerSampleViewController: UIViewController, StoryboardInstantiable, WILoggable {
+final class WI3rdBannerSamplePlayerViewController: UIViewController, StoryboardInstantiable, WILoggable {
     // MARK: - IBOutlet
     @IBOutlet weak var largeAdView: UIView!
     @IBOutlet weak var largeAdViewCSHeight: NSLayoutConstraint!
@@ -16,16 +16,9 @@ final class WI3rdBannerSampleViewController: UIViewController, StoryboardInstant
     @IBOutlet weak var pauseButton: UIButton!
     @IBOutlet weak var overlayAdView: UIView!
     @IBOutlet weak var overlayAdViewCSHeight: NSLayoutConstraint!
-    
-    @IBOutlet weak var logContainerView: UIView!
-    
+        
     // MARK: - Variable
     private var bannerAdManager: WI3rdBannerAdManager?
-    
-    var kTestingChannelId = "998989";
-    var kTestingStreamId = "999999";
-    //var kTestingPositionId = "homepage1";
-    var kTestingPositionId = ""; // pause_banner
     
     private lazy var isPlaying = false {
         didSet {
@@ -75,10 +68,6 @@ final class WI3rdBannerSampleViewController: UIViewController, StoryboardInstant
         bannerAdManager?.destroy()
     }
     
-    @IBAction func onLogPressed(_ sender: UIButton) {
-        logContainerView.isHidden = false
-    }
-    
     @IBAction func onRequestLargePressed(_ sender: UIButton) {
         largeRequestButton.isHidden = true
         loadBannerLarge()
@@ -97,10 +86,11 @@ final class WI3rdBannerSampleViewController: UIViewController, StoryboardInstant
     private func loadBannerLarge() {
         bannerAdManager?.requestAds(
             requestData: .init(
+                position: "",
                 accountId: String(14),
                 env: .SANDBOX,
-                channelId: kTestingChannelId,
-                streamId: kTestingStreamId,
+                channelId: "",
+                streamId: "",
                 transId: "1111",
                 contentType: WIContentType.FILM,
                 title: "Highlights Áo vs Thổ Nhĩ Kỳ | Giao Hữu Quốc Tế 2024",
@@ -111,8 +101,6 @@ final class WI3rdBannerSampleViewController: UIViewController, StoryboardInstant
                 adSize: .LARGE_BANNER,
                 uid20: "",
                 segments: "123,123,123",
-                //position: kTestingPositionId,
-                position: "homepage1",
                 bannerType: .display
             ),
             containerView: largeAdView,
@@ -123,10 +111,11 @@ final class WI3rdBannerSampleViewController: UIViewController, StoryboardInstant
     private func loadBannerMedium() {
         bannerAdManager?.requestAds(
             requestData: .init(
+                position: "",
                 accountId: String(14),
                 env: .SANDBOX,
-                channelId: kTestingChannelId,
-                streamId: kTestingStreamId,
+                channelId: "",
+                streamId: "",
                 transId: "1111",
                 contentType: WIContentType.FILM,
                 title: "Highlights Áo vs Thổ Nhĩ Kỳ | Giao Hữu Quốc Tế 2024",
@@ -137,8 +126,6 @@ final class WI3rdBannerSampleViewController: UIViewController, StoryboardInstant
                 adSize: .MEDIUM_BANNER,
                 uid20: "",
                 segments: "123,123,123",
-                //position: kTestingPositionId,
-                position: "subpage1",
                 bannerType: .display
             ),
             containerView: mediumAdView,
@@ -149,10 +136,11 @@ final class WI3rdBannerSampleViewController: UIViewController, StoryboardInstant
     private func loadBannerAdOverlay() {
         bannerAdManager?.requestAds(
             requestData: .init(
+                position: "",
                 accountId: String(14),
                 env: .SANDBOX,
-                channelId: kTestingChannelId,
-                streamId: kTestingStreamId,
+                channelId: "",
+                streamId: "",
                 transId: "1111",
                 contentType: WIContentType.FILM,
                 title: "Highlights Áo vs Thổ Nhĩ Kỳ | Giao Hữu Quốc Tế 2024",
@@ -163,8 +151,6 @@ final class WI3rdBannerSampleViewController: UIViewController, StoryboardInstant
                 adSize: .PAUSE_BANNER,
                 uid20: "",
                 segments: "123,123,123",
-                //position: kTestingPositionId,
-                position: "",
                 bannerType: .overlay
             ),
             containerView: overlayAdView,
@@ -174,7 +160,7 @@ final class WI3rdBannerSampleViewController: UIViewController, StoryboardInstant
 }
 
 // MARK: - Player
-extension WI3rdBannerSampleViewController {
+extension WI3rdBannerSamplePlayerViewController {
     private func setupPlayer() {
         let url = URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")!
         let player = AVPlayer(url: url)
@@ -184,7 +170,7 @@ extension WI3rdBannerSampleViewController {
 }
 
 // MARK: - WI3rdBannerAdDelegate
-extension WI3rdBannerSampleViewController: WI3rdBannerAdDelegate {
+extension WI3rdBannerSamplePlayerViewController: WI3rdBannerAdDelegate {
     func wi3rdBannerAdManager(_ manager: WI3rdBannerAdManager, hasNoAdsAt containerView: UIView?) {
         print(#function)
     }

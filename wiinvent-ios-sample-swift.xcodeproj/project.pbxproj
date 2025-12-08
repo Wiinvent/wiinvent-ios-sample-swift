@@ -24,11 +24,19 @@
 		DC5656D72A87E83000A4AC00 /* Tv360SkipAdsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5656D62A87E83000A4AC00 /* Tv360SkipAdsButton.swift */; };
 		DCDDE16729D499B100A8CFE3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDDE16629D499B100A8CFE3 /* DetailView.swift */; };
 		DCFB8F762BD12F9E001E367C /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFB8F752BD12F9E001E367C /* StoryboardInstantiable.swift */; };
-		E79EC7AB2ED837A700B4540C /* WI3rdBannerSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79EC7A92ED837A700B4540C /* WI3rdBannerSampleViewController.swift */; };
-		E79EC7AC2ED837A700B4540C /* WI3rdBannerSampleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79EC7AA2ED837A700B4540C /* WI3rdBannerSampleViewController.storyboard */; };
 		E79EC7AE2ED837F600B4540C /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79EC7AD2ED837F600B4540C /* AVPlayerView.swift */; };
 		E7DB616B2E0D55420037751B /* BitmovinDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DB616A2E0D55420037751B /* BitmovinDetailView.swift */; };
 		E7DB616C2E0D55420037751B /* BitmovinDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7DB61692E0D55420037751B /* BitmovinDetailView.xib */; };
+		F59D6D4E2EE6D8DF001BA724 /* WI3rdBannerSamplePlayerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59D6D452EE6D8DF001BA724 /* WI3rdBannerSamplePlayerViewController.storyboard */; };
+		F59D6D4F2EE6D8DF001BA724 /* WI3rdBannerSampleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59D6D3F2EE6D8DF001BA724 /* WI3rdBannerSampleViewController.storyboard */; };
+		F59D6D512EE6D8DF001BA724 /* BannerSampleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59D6D4B2EE6D8DF001BA724 /* BannerSampleViewController.storyboard */; };
+		F59D6D522EE6D8DF001BA724 /* WI3rdBannerSampleCollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59D6D3C2EE6D8DF001BA724 /* WI3rdBannerSampleCollectionViewController.storyboard */; };
+		F59D6D532EE6D8DF001BA724 /* WI3rdBannerSampleTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59D6D482EE6D8DF001BA724 /* WI3rdBannerSampleTableViewController.storyboard */; };
+		F59D6D542EE6D8DF001BA724 /* WI3rdBannerSampleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59D6D3D2EE6D8DF001BA724 /* WI3rdBannerSampleCollectionViewController.swift */; };
+		F59D6D552EE6D8DF001BA724 /* BannerSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59D6D4C2EE6D8DF001BA724 /* BannerSampleViewController.swift */; };
+		F59D6D572EE6D8DF001BA724 /* WI3rdBannerSamplePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59D6D462EE6D8DF001BA724 /* WI3rdBannerSamplePlayerViewController.swift */; };
+		F59D6D582EE6D8DF001BA724 /* WI3rdBannerSampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59D6D492EE6D8DF001BA724 /* WI3rdBannerSampleTableViewController.swift */; };
+		F59D6D592EE6D8DF001BA724 /* WI3rdBannerSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59D6D402EE6D8DF001BA724 /* WI3rdBannerSampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,11 +85,19 @@
 		DC5656D62A87E83000A4AC00 /* Tv360SkipAdsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tv360SkipAdsButton.swift; sourceTree = "<group>"; };
 		DCDDE16629D499B100A8CFE3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		DCFB8F752BD12F9E001E367C /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
-		E79EC7A92ED837A700B4540C /* WI3rdBannerSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WI3rdBannerSampleViewController.swift; sourceTree = "<group>"; };
-		E79EC7AA2ED837A700B4540C /* WI3rdBannerSampleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WI3rdBannerSampleViewController.storyboard; sourceTree = "<group>"; };
 		E79EC7AD2ED837F600B4540C /* AVPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
 		E7DB61692E0D55420037751B /* BitmovinDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BitmovinDetailView.xib; sourceTree = "<group>"; };
 		E7DB616A2E0D55420037751B /* BitmovinDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitmovinDetailView.swift; sourceTree = "<group>"; };
+		F59D6D3C2EE6D8DF001BA724 /* WI3rdBannerSampleCollectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WI3rdBannerSampleCollectionViewController.storyboard; sourceTree = "<group>"; };
+		F59D6D3D2EE6D8DF001BA724 /* WI3rdBannerSampleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WI3rdBannerSampleCollectionViewController.swift; sourceTree = "<group>"; };
+		F59D6D3F2EE6D8DF001BA724 /* WI3rdBannerSampleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WI3rdBannerSampleViewController.storyboard; sourceTree = "<group>"; };
+		F59D6D402EE6D8DF001BA724 /* WI3rdBannerSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WI3rdBannerSampleViewController.swift; sourceTree = "<group>"; };
+		F59D6D452EE6D8DF001BA724 /* WI3rdBannerSamplePlayerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WI3rdBannerSamplePlayerViewController.storyboard; sourceTree = "<group>"; };
+		F59D6D462EE6D8DF001BA724 /* WI3rdBannerSamplePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WI3rdBannerSamplePlayerViewController.swift; sourceTree = "<group>"; };
+		F59D6D482EE6D8DF001BA724 /* WI3rdBannerSampleTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WI3rdBannerSampleTableViewController.storyboard; sourceTree = "<group>"; };
+		F59D6D492EE6D8DF001BA724 /* WI3rdBannerSampleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WI3rdBannerSampleTableViewController.swift; sourceTree = "<group>"; };
+		F59D6D4B2EE6D8DF001BA724 /* BannerSampleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BannerSampleViewController.storyboard; sourceTree = "<group>"; };
+		F59D6D4C2EE6D8DF001BA724 /* BannerSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerSampleViewController.swift; sourceTree = "<group>"; };
 		FCD896ACF7DF0CFFFE81EBF0 /* Pods-wiinvent-ios-sample-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wiinvent-ios-sample-swift.debug.xcconfig"; path = "Target Support Files/Pods-wiinvent-ios-sample-swift/Pods-wiinvent-ios-sample-swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,10 +235,58 @@
 		E79EC7A82ED837A100B4540C /* banner */ = {
 			isa = PBXGroup;
 			children = (
-				E79EC7A92ED837A700B4540C /* WI3rdBannerSampleViewController.swift */,
-				E79EC7AA2ED837A700B4540C /* WI3rdBannerSampleViewController.storyboard */,
+				F59D6D4D2EE6D8DF001BA724 /* WI3rdBannerSample */,
 			);
 			path = banner;
+			sourceTree = "<group>";
+		};
+		F59D6D3E2EE6D8DF001BA724 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				F59D6D3C2EE6D8DF001BA724 /* WI3rdBannerSampleCollectionViewController.storyboard */,
+				F59D6D3D2EE6D8DF001BA724 /* WI3rdBannerSampleCollectionViewController.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		F59D6D412EE6D8DF001BA724 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F59D6D3F2EE6D8DF001BA724 /* WI3rdBannerSampleViewController.storyboard */,
+				F59D6D402EE6D8DF001BA724 /* WI3rdBannerSampleViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F59D6D472EE6D8DF001BA724 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				F59D6D452EE6D8DF001BA724 /* WI3rdBannerSamplePlayerViewController.storyboard */,
+				F59D6D462EE6D8DF001BA724 /* WI3rdBannerSamplePlayerViewController.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		F59D6D4A2EE6D8DF001BA724 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				F59D6D482EE6D8DF001BA724 /* WI3rdBannerSampleTableViewController.storyboard */,
+				F59D6D492EE6D8DF001BA724 /* WI3rdBannerSampleTableViewController.swift */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		F59D6D4D2EE6D8DF001BA724 /* WI3rdBannerSample */ = {
+			isa = PBXGroup;
+			children = (
+				F59D6D3E2EE6D8DF001BA724 /* Collection */,
+				F59D6D412EE6D8DF001BA724 /* Home */,
+				F59D6D472EE6D8DF001BA724 /* Player */,
+				F59D6D4A2EE6D8DF001BA724 /* Table */,
+				F59D6D4B2EE6D8DF001BA724 /* BannerSampleViewController.storyboard */,
+				F59D6D4C2EE6D8DF001BA724 /* BannerSampleViewController.swift */,
+			);
+			path = WI3rdBannerSample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,9 +399,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB614FC92459B7190037BE40 /* Podfile in Resources */,
-				E79EC7AC2ED837A700B4540C /* WI3rdBannerSampleViewController.storyboard in Resources */,
 				E7DB616C2E0D55420037751B /* BitmovinDetailView.xib in Resources */,
 				DB614FA3245966FE0037BE40 /* LaunchScreen.storyboard in Resources */,
+				F59D6D4E2EE6D8DF001BA724 /* WI3rdBannerSamplePlayerViewController.storyboard in Resources */,
+				F59D6D4F2EE6D8DF001BA724 /* WI3rdBannerSampleViewController.storyboard in Resources */,
+				F59D6D512EE6D8DF001BA724 /* BannerSampleViewController.storyboard in Resources */,
+				F59D6D522EE6D8DF001BA724 /* WI3rdBannerSampleCollectionViewController.storyboard in Resources */,
+				F59D6D532EE6D8DF001BA724 /* WI3rdBannerSampleTableViewController.storyboard in Resources */,
 				DB614FA0245966FE0037BE40 /* Assets.xcassets in Resources */,
 				DC44A40829C46F1600610DC3 /* DetailView.xib in Resources */,
 				DB614FC82459B7190037BE40 /* Pods in Resources */,
@@ -370,9 +438,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-wiinvent-ios-sample-swift/Pods-wiinvent-ios-sample-swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-wiinvent-ios-sample-swift/Pods-wiinvent-ios-sample-swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -409,9 +481,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -473,9 +549,13 @@
 				DB614F97245966FC0037BE40 /* AppDelegate.swift in Sources */,
 				DC5656D72A87E83000A4AC00 /* Tv360SkipAdsButton.swift in Sources */,
 				E79EC7AE2ED837F600B4540C /* AVPlayerView.swift in Sources */,
-				E79EC7AB2ED837A700B4540C /* WI3rdBannerSampleViewController.swift in Sources */,
 				DCDDE16729D499B100A8CFE3 /* DetailView.swift in Sources */,
 				E7DB616B2E0D55420037751B /* BitmovinDetailView.swift in Sources */,
+				F59D6D542EE6D8DF001BA724 /* WI3rdBannerSampleCollectionViewController.swift in Sources */,
+				F59D6D552EE6D8DF001BA724 /* BannerSampleViewController.swift in Sources */,
+				F59D6D572EE6D8DF001BA724 /* WI3rdBannerSamplePlayerViewController.swift in Sources */,
+				F59D6D582EE6D8DF001BA724 /* WI3rdBannerSampleTableViewController.swift in Sources */,
+				F59D6D592EE6D8DF001BA724 /* WI3rdBannerSampleViewController.swift in Sources */,
 				DCFB8F762BD12F9E001E367C /* StoryboardInstantiable.swift in Sources */,
 				DB614F99245966FC0037BE40 /* SceneDelegate.swift in Sources */,
 			);
