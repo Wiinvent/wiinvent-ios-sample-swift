@@ -438,13 +438,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-wiinvent-ios-sample-swift/Pods-wiinvent-ios-sample-swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-wiinvent-ios-sample-swift/Pods-wiinvent-ios-sample-swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -481,13 +477,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests/Pods-wiinvent-ios-sample-swift-wiinvent-ios-sample-swiftUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
