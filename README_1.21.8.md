@@ -10,11 +10,16 @@ pod 'WISDK', '1.21.8'
 #### 2. Hướng dẫn cập nhật
 #### 2.1 Tích hợp quảng cáo display dùng cho trang chủ, chi tiết (dùng cho tableview, collection)
 
+  // Register table
+  WI3rdBannerReusableManager.registerCell(for: collectionView)
+  
+  //collection view cells
+  WI3rdBannerReusableManager.registerCell(for: tableView)
+  
 ```java
  private func loadAd() {
-  
   // Khơi tạo các tham số 
-  let bannerLarge = WI3rdBannerAdData(
+  let ad1 = WI3rdBannerAdData(
       position: "subpage1",
       accountId: String(14),
       env: .SANDBOX,
@@ -57,6 +62,10 @@ pod 'WISDK', '1.21.8'
 }
 ```
 
+  //Clean up khi reload ad hoặc khi deinit viewcontroller
+  adManager.cleanUp()
+  
+
 Code mẫu full WI3rdBannerSampleCollectionViewController
 
 #### 2.2 Tích hợp quảng cáo overlays (dùng cho quảng cáo pause player)
@@ -94,6 +103,9 @@ Code mẫu full WI3rdBannerSampleCollectionViewController
         )
     }
 ```
+
+//Clean up khi reload ad hoặc khi deinit viewcontroller
+bannerAdManager?.destroy()
 
 Code mẫu full WI3rdBannerSamplePlayerViewController
 

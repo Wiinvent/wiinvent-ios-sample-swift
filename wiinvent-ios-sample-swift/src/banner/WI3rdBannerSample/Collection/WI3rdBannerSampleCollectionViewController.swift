@@ -69,7 +69,7 @@ extension WI3rdBannerSampleCollectionViewController {
     }
     
     private func loadAd() {
-        let bannerLarge = WI3rdBannerAdData(
+        let ad1 = WI3rdBannerAdData(
             position: "subpage1",
             accountId: String(14),
             env: .SANDBOX,
@@ -89,7 +89,7 @@ extension WI3rdBannerSampleCollectionViewController {
             padding: .zero
         )
         
-        let bannerMedium = WI3rdBannerAdData(
+        let ad2 = WI3rdBannerAdData(
             position: "subpage2",
             accountId: String(14),
             env: .SANDBOX,
@@ -110,7 +110,7 @@ extension WI3rdBannerSampleCollectionViewController {
         )
         
         let adManager = WI3rdBannerReusableManager()
-        adManager.request(ads: [bannerLarge, bannerMedium]) { [weak self] pids in
+        adManager.request(ads: [ad1, ad2]) { [weak self] pids in
             var indexPaths: [IndexPath] = []
             for pid in pids {
                 switch pid {
