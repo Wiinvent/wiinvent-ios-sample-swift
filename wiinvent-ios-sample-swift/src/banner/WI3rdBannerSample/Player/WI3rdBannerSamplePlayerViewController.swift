@@ -98,10 +98,9 @@ final class WI3rdBannerSamplePlayerViewController: UIViewController, StoryboardI
                 keyword: "keyword1,keyword2",
                 age: 30,
                 gender: WIGender.MALE,
-                adSize: .LARGE_BANNER,
+                adSize: .HOMEPAGE_BANNER,
                 uid20: "",
-                segments: "123,123,123",
-                bannerType: .display
+                segments: "123,123,123"
             ),
             containerView: largeAdView,
             timeoutInSecond: 10
@@ -123,10 +122,9 @@ final class WI3rdBannerSamplePlayerViewController: UIViewController, StoryboardI
                 keyword: "keyword1,keyword2",
                 age: 30,
                 gender: WIGender.MALE,
-                adSize: .MEDIUM_BANNER,
+                adSize: .SUBPAGE_BANNER,
                 uid20: "",
-                segments: "123,123,123",
-                bannerType: .display
+                segments: "123,123,123"
             ),
             containerView: mediumAdView,
             timeoutInSecond: 10
@@ -150,8 +148,7 @@ final class WI3rdBannerSamplePlayerViewController: UIViewController, StoryboardI
                 gender: WIGender.MALE,
                 adSize: .PAUSE_BANNER,
                 uid20: "",
-                segments: "123,123,123",
-                bannerType: .overlay
+                segments: "123,123,123"
             ),
             containerView: overlayAdView,
             timeoutInSecond: 10
@@ -176,12 +173,14 @@ extension WI3rdBannerSamplePlayerViewController: WI3rdBannerAdDelegate {
     }
     
     func wi3rdBannerAdManager(_ manager: WI3rdBannerAdManager, at containerView: UIView?, changeRatio ratio: CGFloat) {
-        let height = view.bounds.width / ratio
         if containerView == largeAdView {
+            let height = largeAdView.bounds.width / ratio
             largeAdViewCSHeight.constant = height
         } else if containerView == mediumAdView {
+            let height = mediumAdView.bounds.width / ratio
             mediumAdViewCSHeight.constant = height
         } else if containerView == overlayAdView {
+            let height = overlayAdView.bounds.width / ratio
             overlayAdViewCSHeight.constant = height
         }
     }

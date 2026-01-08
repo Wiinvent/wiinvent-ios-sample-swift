@@ -69,7 +69,7 @@ extension WI3rdBannerSampleTableViewController {
     
     private func loadAd() {
         let ad1 = WI3rdBannerAdData(
-            position: "subpage1",
+            position: "HOME_1",
             accountId: String(14),
             env: .SANDBOX,
             channelId: "",
@@ -81,15 +81,14 @@ extension WI3rdBannerSampleTableViewController {
             keyword: "keyword1,keyword2",
             age: 30,
             gender: WIGender.MALE,
-            adSize: .MEDIUM_BANNER,
+            adSize: .HOMEPAGE_BANNER,
             uid20: "",
             segments: "123,123,123",
-            bannerType: .display,
             padding: .init(top: 0, left: 12, bottom: 0, right: 12)
         )
         
         let ad2 = WI3rdBannerAdData(
-            position: "subpage2",
+            position: "HOME_2",
             accountId: String(14),
             env: .SANDBOX,
             channelId: "",
@@ -101,10 +100,9 @@ extension WI3rdBannerSampleTableViewController {
             keyword: "keyword1,keyword2",
             age: 30,
             gender: WIGender.MALE,
-            adSize: .MEDIUM_BANNER,
+            adSize: .HOMEPAGE_BANNER,
             uid20: "",
             segments: "123,123,123",
-            bannerType: .display,
             padding: .init(top: 12, left: 12, bottom: 0, right: 12)
         )
         
@@ -113,10 +111,10 @@ extension WI3rdBannerSampleTableViewController {
             var indexPaths: [IndexPath] = []
             for pid in pids {
                 switch pid {
-                case "subpage1":
+                case "HOME_1":
                     self?.items.insert(.bannerAd(pid), at: 0)
                     indexPaths.append(.init(row: 0, section: 0))
-                case "subpage2":
+                case "HOME_2":
                     self?.items.insert(.bannerAd(pid), at: 2)
                     indexPaths.append(.init(row: 2, section: 0))
                 default:

@@ -70,7 +70,7 @@ extension WI3rdBannerSampleCollectionViewController {
     
     private func loadAd() {
         let ad1 = WI3rdBannerAdData(
-            position: "subpage1",
+            position: "DETAIL_FILM",
             accountId: String(14),
             env: .SANDBOX,
             channelId: "",
@@ -82,15 +82,14 @@ extension WI3rdBannerSampleCollectionViewController {
             keyword: "keyword1,keyword2",
             age: 30,
             gender: WIGender.MALE,
-            adSize: .MEDIUM_BANNER,
+            adSize: .SUBPAGE_BANNER,
             uid20: "",
             segments: "123,123,123",
-            bannerType: .display,
             padding: .zero
         )
         
         let ad2 = WI3rdBannerAdData(
-            position: "subpage2",
+            position: "DETAIL_VOD",
             accountId: String(14),
             env: .SANDBOX,
             channelId: "",
@@ -102,10 +101,9 @@ extension WI3rdBannerSampleCollectionViewController {
             keyword: "keyword1,keyword2",
             age: 30,
             gender: WIGender.MALE,
-            adSize: .MEDIUM_BANNER,
+            adSize: .SUBPAGE_BANNER,
             uid20: "",
             segments: "123,123,123",
-            bannerType: .display,
             padding: .zero
         )
         
@@ -114,10 +112,10 @@ extension WI3rdBannerSampleCollectionViewController {
             var indexPaths: [IndexPath] = []
             for pid in pids {
                 switch pid {
-                case "subpage1":
+                case "DETAIL_FILM":
                     self?.items.insert(.bannerAd(pid), at: 0)
                     indexPaths.append(.init(row: 0, section: 0))
-                case "subpage2":
+                case "DETAIL_VOD":
                     self?.items.insert(.bannerAd(pid), at: 4)
                     indexPaths.append(.init(row: 4, section: 0))
                 default:
