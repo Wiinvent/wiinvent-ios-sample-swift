@@ -1,5 +1,3 @@
-# Report Ad — Hướng dẫn tích hợp
-
 ### Version 1.21.11
 Change log: WISDK hỗ trợ tính năng hiển thị quảng cáo welcome dạng dọc **Report Ad** cho phép người dùng báo cáo quảng cáo không phù hợp. Tính năng này đã được tích hợp sẵn trong SDK cho các định dạng:
 
