@@ -1,64 +1,68 @@
-# Report Ad — Huong dan tich hop
+# Report Ad — Hướng dẫn tích hợp
 
-## Tong quan
-
-Tu phien ban v1.21.11, WISDK ho tro tinh nang **Report Ad** cho phep nguoi dung bao cao quang cao khong phu hop. Tinh nang nay da duoc tich hop san trong SDK cho cac dinh dang:
+### Version 1.21.11
+Change log: WISDK hỗ trợ tính năng hiển thị quảng cáo welcome dạng dọc **Report Ad** cho phép người dùng báo cáo quảng cáo không phù hợp. Tính năng này đã được tích hợp sẵn trong SDK cho các định dạng:
 
 - **Banner Ad** (Image & WebView)
 - **In-Stream Ad** (AVPlayer & Bitmovin)
 - **Welcome Ad**
 
-**Report button va bottom sheet duoc SDK tu dong xu ly.** Ung dung khong can them code de hien report button.
+**Report button và bottom sheet được SDK tự động xử lý.** Ứng dụng không cần thêm code để hiện report button.
 
-Tuy nhien, voi **In-Stream Ad**, ung dung can implement them 2 delegate method moi de skip button pause/resume dung khi nguoi dung dang bao cao.
+Tuy nhiên, với **In-Stream Ad**, ứng dụng cần implement thêm 2 delegate method mới để skip button pause/resume đúng khi người dùng đang báo cáo.
+
+#### 1. SDK
+```gralde
+pod 'WISDK', '1.21.11'
+```
 
 ---
 
-## Thay doi cho In-Stream Ad
+## Thay đổi cho In-Stream Ad
 
-### Implement delegate methods moi
+### Implement delegate methods mới
 
-`WIAdsInStreamLoaderDelegate` co them 2 optional method:
+`WIAdsInStreamLoaderDelegate` có thêm 2 optional method:
 
 ```swift
 @objc optional func wiPauseSkipButton()
 @objc optional func wiResumeSkipButton()
 ```
 
-Ung dung **nen** implement 2 method nay de skip button countdown dung lai khi nguoi dung mo report, va tiep tuc dem khi dong.
+Ứng dụng **nên** implement 2 method này để skip button countdown dừng lại khi người dùng mở report, và tiếp tục đếm khi đóng.
 
-**Vi du:**
+**Ví dụ:**
 
 ```swift
 // Trong class conform WIAdsInStreamLoaderDelegate
 func wiPauseSkipButton() {
-    skipButton?.pause()   // Tam dung countdown cua skip button
+    skipButton?.pause()   // Tạm dừng countdown của skip button
 }
 
 func wiResumeSkipButton() {
-    skipButton?.resume()  // Tiep tuc countdown cua skip button
+    skipButton?.resume()  // Tiếp tục countdown của skip button
 }
 ```
 
-> **Luu y:** 2 method nay la `optional`. Neu khong implement, report van hoat dong binh thuong nhung skip button se tiep tuc dem nguoc trong khi bottom sheet dang hien.
+> **Lưu ý:** 2 method này là `optional`. Nếu không implement, report vẫn hoạt động bình thường nhưng skip button sẽ tiếp tục đếm ngược trong khi bottom sheet đang hiện.
 
 ---
 
-## Thay doi cho Banner Ad
+## Thay đổi cho Banner Ad
 
-**Khong can thay doi gi.** Report button tu dong hien sau khi ad load thanh cong.
-
----
-
-## Thay doi cho Welcome Ad
-
-**Khong can thay doi gi.** Report button tu dong hien khi welcome ad hien thi. Button tu dong bi xoa khi goi `WIWelcomeAdManager.shared().remove()`.
+**Không cần thay đổi gì.** Report button tự động hiện sau khi ad load thành công.
 
 ---
 
-## Checklist tich hop
+## Thay đổi cho Welcome Ad
 
-- [ ] Cap nhat WISDK len phien ban moi nhat (>= v1.21.11)
-- [ ] **(In-Stream)** Implement `wiPauseSkipButton()` va `wiResumeSkipButton()` trong delegate
-- [ ] Build va kiem tra report button hien tren moi dinh dang quang cao
-- [ ] Kiem tra bottom sheet hoat dong: chon ly do, gui, toast xac nhan
+**Không cần thay đổi gì.** Report button tự động hiện khi welcome ad hiển thị. Button tự động bị xóa khi gọi `WIWelcomeAdManager.shared().remove()`.
+
+---
+
+## Checklist tích hợp
+
+- [ ] Cập nhật WISDK lên phiên bản mới nhất (>= v1.21.11)
+- [ ] **(In-Stream)** Implement `wiPauseSkipButton()` và `wiResumeSkipButton()` trong delegate
+- [ ] Build và kiểm tra report button hiện trên mọi định dạng quảng cáo
+- [ ] Kiểm tra bottom sheet hoạt động: chọn lý do, gửi, toast xác nhận
