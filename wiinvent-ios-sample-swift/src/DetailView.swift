@@ -315,6 +315,14 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
         skipButton?.hide()
     }
     
+    func wiPauseSkipButton() {
+        skipButton?.pause()
+    }
+
+    func wiResumeSkipButton() {
+        skipButton?.resume()
+    }
+    
     public func mediaProgress(mediaTime: TimeInterval, totalTime: TimeInterval) {
         print("============>WI mediaProgress mediaTime: \(mediaTime) - totalTime: \(totalTime) : \(totalTime - mediaTime)")
     }
