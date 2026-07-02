@@ -115,7 +115,8 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
                 keyword: "keyword1,keyword2", //từ khoá nếu có | để "" nếu ko có
                 age: 0, // tuổi , nếu không có thì để 0
                 gender: WIGender.NONE, //giới tính nếu không có thì set NONE
-                uid20: "", // unified id 2.0, nếu không có thì set ""
+                userId: "u3001", // định danh người dùng (uid), nếu không có thì set ""
+                userImpressionLimit: 30, // giới hạn số lần hiển thị (uil)
                 segments: "123,123,123" //cac segment id cach nhau = dau ,
             )
             

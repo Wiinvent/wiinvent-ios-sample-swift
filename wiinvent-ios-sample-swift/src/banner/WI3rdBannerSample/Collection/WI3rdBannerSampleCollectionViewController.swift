@@ -83,7 +83,8 @@ extension WI3rdBannerSampleCollectionViewController {
             age: 30,
             gender: WIGender.MALE,
             adSize: .SUBPAGE_BANNER,
-            uid20: "",
+            userId: "u3001",
+            userImpressionLimit: 30,
             segments: "123,123,123",
             padding: .zero
         )
@@ -102,7 +103,8 @@ extension WI3rdBannerSampleCollectionViewController {
             age: 30,
             gender: WIGender.MALE,
             adSize: .SUBPAGE_BANNER,
-            uid20: "",
+            userId: "u3001",
+            userImpressionLimit: 30,
             segments: "123,123,123",
             padding: .zero
         )

@@ -97,7 +97,7 @@ class BitmovinDetailView: UIView, NibInstantiatable {
 //            keyword: "",
 //            age: 0,
 //            gender: WIGender.NONE,
-//            uid20: "", segments: "abc,123,123"
+//            userId: "u3001", userImpressionLimit: 30, segments: "abc,123,123"
 //        )
 //        
 //        //            add friendly Obstruction View

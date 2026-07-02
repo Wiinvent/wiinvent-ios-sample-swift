@@ -99,7 +99,8 @@ final class WI3rdBannerSamplePlayerViewController: UIViewController, StoryboardI
                 age: 30,
                 gender: WIGender.MALE,
                 adSize: .HOMEPAGE_BANNER,
-                uid20: "",
+                userId: "u3001",
+                userImpressionLimit: 30,
                 segments: "123,123,123"
             ),
             containerView: largeAdView,
@@ -123,7 +124,8 @@ final class WI3rdBannerSamplePlayerViewController: UIViewController, StoryboardI
                 age: 30,
                 gender: WIGender.MALE,
                 adSize: .SUBPAGE_BANNER,
-                uid20: "",
+                userId: "u3001",
+                userImpressionLimit: 30,
                 segments: "123,123,123"
             ),
             containerView: mediumAdView,
@@ -147,7 +149,8 @@ final class WI3rdBannerSamplePlayerViewController: UIViewController, StoryboardI
                 age: 30,
                 gender: WIGender.MALE,
                 adSize: .PAUSE_BANNER,
-                uid20: "",
+                userId: "u3001",
+                userImpressionLimit: 30,
                 segments: "123,123,123"
             ),
             containerView: overlayAdView,

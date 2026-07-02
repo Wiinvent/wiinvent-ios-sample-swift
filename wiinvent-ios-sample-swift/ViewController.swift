@@ -97,7 +97,8 @@ class ViewController: UIViewController {
                                      transId: "123123123", //mã giao dịch tạo từ server đối tác - client liên hệ server để biết thêm thông tin
                                      age: 0, // tuổi , nếu không có thì để 0
                                      gender: WIGender.NONE, //giới tính nếu không có thì set NONE
-                                     uid20: "", // unified id 2.0, nếu không có thì set ""
+                                     userId: "u3001", // định danh người dùng (uid), nếu không có thì set ""
+                                     userImpressionLimit: 30, // giới hạn số lần hiển thị (uil)
                                      domainUrl: "", // config banner đọc từ phía server đối tác
                                      env: WIEnvironment.SANDBOX, //Moi truong PRODUCTION | SANDBOX, giong instream
                                      segments: "123,123,123") //cac segment id cach nhau = dau ,
