@@ -90,6 +90,6 @@ let adData = WIWelcomeAdData(
 
 ## Checklist tích hợp
 
-- [ ] Cập nhật WISDK lên phiên bản mới nhất (>= v1.21.14)
+- [ ] Cập nhật WISDK lên phiên bản mới nhất (>= v1.21.15)
 - [ ] Bổ sung tham số `adPendingTimes` cho mọi init của `WIAdsRequestData`, `WI3rdBannerAdData`, `WIWelcomeAdData`
 - [ ] Build và kiểm tra request gửi lên backend có chứa `apt`
