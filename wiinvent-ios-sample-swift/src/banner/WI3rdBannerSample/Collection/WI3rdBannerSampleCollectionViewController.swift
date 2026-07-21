@@ -85,6 +85,7 @@ extension WI3rdBannerSampleCollectionViewController {
             adSize: .SUBPAGE_BANNER,
             userId: "u3001",
             userImpressionLimit: 30,
+            adPendingTimes: 3,
             segments: "123,123,123",
             padding: .zero
         )
@@ -105,6 +106,7 @@ extension WI3rdBannerSampleCollectionViewController {
             adSize: .SUBPAGE_BANNER,
             userId: "u3001",
             userImpressionLimit: 30,
+            adPendingTimes: 3,
             segments: "123,123,123",
             padding: .zero
         )

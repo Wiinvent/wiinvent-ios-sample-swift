@@ -117,6 +117,7 @@ class DetailView: UIView, NibInstantiatable, WIAdsInStreamLoaderDelegate, UIGest
                 gender: WIGender.NONE, //giới tính nếu không có thì set NONE
                 userId: "u3001", // định danh người dùng (uid), nếu không có thì set ""
                 userImpressionLimit: 30, // giới hạn số lần hiển thị (uil)
+                adPendingTimes: 3, // số lần chờ hiển thị quảng cáo (apt)
                 segments: "123,123,123" //cac segment id cach nhau = dau ,
             )
             
