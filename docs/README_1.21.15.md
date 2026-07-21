@@ -1,4 +1,4 @@
-### Version 1.21.14
+### Version 1.21.15
 Change log: WISDK bổ sung 1 tham số mới khi request quảng cáo. Tham số này được gửi lên backend cho tất cả các định dạng:
 
 - **Banner Ad** (`WI3rdBannerAdData`)
