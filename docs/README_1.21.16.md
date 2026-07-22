@@ -1,4 +1,8 @@
+<<<<<<< HEAD:docs/README_1.21.16.md
 ### Version 1.21.16
+=======
+### Version 1.21.15
+>>>>>>> e5d542c3fa2901da73047c4e48999641eb233fc8:docs/README_1.21.15.md
 Change log: WISDK bổ sung 1 tham số mới khi request quảng cáo. Tham số này được gửi lên backend cho tất cả các định dạng:
 
 - **Banner Ad** (`WI3rdBannerAdData`)
@@ -92,6 +96,11 @@ let adData = WIWelcomeAdData(
 
 ## Checklist tích hợp
 
+<<<<<<< HEAD:docs/README_1.21.16.md
 - [ ] Cập nhật WISDK lên phiên bản mới nhất (>= v1.21.16)
 - [ ] Bổ sung tham số `adPendingTime` cho mọi init của `WIAdsRequestData`, `WI3rdBannerAdData`, `WIWelcomeAdData`
+=======
+- [ ] Cập nhật WISDK lên phiên bản mới nhất (>= v1.21.15)
+- [ ] Bổ sung tham số `adPendingTimes` cho mọi init của `WIAdsRequestData`, `WI3rdBannerAdData`, `WIWelcomeAdData`
+>>>>>>> e5d542c3fa2901da73047c4e48999641eb233fc8:docs/README_1.21.15.md
 - [ ] Build và kiểm tra request gửi lên backend có chứa `apt`
