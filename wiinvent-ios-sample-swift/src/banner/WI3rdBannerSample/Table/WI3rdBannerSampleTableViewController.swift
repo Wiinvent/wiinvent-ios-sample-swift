@@ -84,7 +84,7 @@ extension WI3rdBannerSampleTableViewController {
             adSize: .HOMEPAGE_BANNER,
             userId: "u3001",
             userImpressionLimit: 30,
-            adPendingTimes: 3,
+            adPendingTime: 30,
             segments: "123,123,123",
             padding: .init(top: 0, left: 12, bottom: 0, right: 12)
         )
@@ -105,7 +105,7 @@ extension WI3rdBannerSampleTableViewController {
             adSize: .HOMEPAGE_BANNER,
             userId: "u3001",
             userImpressionLimit: 30,
-            adPendingTimes: 3,
+            adPendingTime: 30,
             segments: "123,123,123",
             padding: .init(top: 12, left: 12, bottom: 0, right: 12)
         )

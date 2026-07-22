@@ -7,9 +7,11 @@ Change log: WISDK bổ sung 1 tham số mới khi request quảng cáo. Tham s�
 
 | Tham số | Kiểu | Query gửi lên backend | Ý nghĩa |
 |---|---|---|---|
-| `adPendingTimes` | `Int` | `apt` | Số lần chờ hiển thị quảng cáo |
+| `userId` | `String` | `uid` | ID người dùng |
+| `userImpressionLimit` | `Int` | `uil` | Giới hạn số lần hiển thị quảng cáo theo user trong ngày |
+| `adPendingTime` | `Int` | `apt` | Thời gian chờ xuất hiện giữa 2 lần quảng cáo, đơn vị giây |
 
-> **Breaking change:** `adPendingTimes` là tham số **bắt buộc**, không có giá trị mặc định. Mọi nơi khởi tạo `WIAdsRequestData`, `WI3rdBannerAdData`, `WIWelcomeAdData` (cả 2 init) đều phải bổ sung, nếu không sẽ lỗi biên dịch.
+> **Breaking change:** `adPendingTime` là tham số **bắt buộc**, không có giá trị mặc định. Mọi nơi khởi tạo `WIAdsRequestData`, `WI3rdBannerAdData`, `WIWelcomeAdData` (cả 2 init) đều phải bổ sung, nếu không sẽ lỗi biên dịch.
 
 #### 1. SDK
 ```gradle
@@ -20,7 +22,7 @@ pod 'WISDK', '1.21.14'
 
 ## Thay đổi cho In-Stream Ad
 
-`WIAdsRequestData` thêm `adPendingTimes` ngay sau `userImpressionLimit`:
+`WIAdsRequestData` thêm `adPendingTime` ngay sau `userImpressionLimit`:
 
 ```swift
 let requestData = WIAdsRequestData(
@@ -35,7 +37,7 @@ let requestData = WIAdsRequestData(
     gender: WIGender.NONE,
     userId: "m10001",
     userImpressionLimit: 30,
-    adPendingTimes: 3,          // MỚI
+    adPendingTime: 30,          // MỚI
     segments: "abc,123,123"
 )
 ```
@@ -44,7 +46,7 @@ let requestData = WIAdsRequestData(
 
 ## Thay đổi cho Banner Ad
 
-`WI3rdBannerAdData` thêm `adPendingTimes` ngay sau `userImpressionLimit`:
+`WI3rdBannerAdData` thêm `adPendingTime` ngay sau `userImpressionLimit`:
 
 ```swift
 let adData = WI3rdBannerAdData(
@@ -60,7 +62,7 @@ let adData = WI3rdBannerAdData(
     adSize: .HOMEPAGE_BANNER,
     userId: "m10001",
     userImpressionLimit: 30,
-    adPendingTimes: 3,          // MỚI
+    adPendingTime: 30,          // MỚI
     segments: "123,123,123"
 )
 ```
@@ -69,7 +71,7 @@ let adData = WI3rdBannerAdData(
 
 ## Thay đổi cho Welcome Ad
 
-`WIWelcomeAdData` thêm `adPendingTimes` ngay sau `userImpressionLimit` (cả 2 init đều đổi):
+`WIWelcomeAdData` thêm `adPendingTime` ngay sau `userImpressionLimit` (cả 2 init đều đổi):
 
 ```swift
 let adData = WIWelcomeAdData(
@@ -79,7 +81,7 @@ let adData = WIWelcomeAdData(
     gender: WIGender.NONE,
     userId: "m10001",
     userImpressionLimit: 30,
-    adPendingTimes: 3,          // MỚI
+    adPendingTime: 30,          // MỚI
     domainUrl: "",
     env: WIEnvironment.SANDBOX,
     segments: "123,123,123,123"
@@ -91,5 +93,5 @@ let adData = WIWelcomeAdData(
 ## Checklist tích hợp
 
 - [ ] Cập nhật WISDK lên phiên bản mới nhất (>= v1.21.14)
-- [ ] Bổ sung tham số `adPendingTimes` cho mọi init của `WIAdsRequestData`, `WI3rdBannerAdData`, `WIWelcomeAdData`
+- [ ] Bổ sung tham số `adPendingTime` cho mọi init của `WIAdsRequestData`, `WI3rdBannerAdData`, `WIWelcomeAdData`
 - [ ] Build và kiểm tra request gửi lên backend có chứa `apt`

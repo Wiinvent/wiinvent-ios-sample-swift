@@ -101,7 +101,7 @@ final class WI3rdBannerSamplePlayerViewController: UIViewController, StoryboardI
                 adSize: .HOMEPAGE_BANNER,
                 userId: "u3001",
                 userImpressionLimit: 30,
-                adPendingTimes: 3,
+                adPendingTime: 30,
                 segments: "123,123,123"
             ),
             containerView: largeAdView,
@@ -127,7 +127,7 @@ final class WI3rdBannerSamplePlayerViewController: UIViewController, StoryboardI
                 adSize: .SUBPAGE_BANNER,
                 userId: "u3001",
                 userImpressionLimit: 30,
-                adPendingTimes: 3,
+                adPendingTime: 30,
                 segments: "123,123,123"
             ),
             containerView: mediumAdView,
@@ -153,7 +153,7 @@ final class WI3rdBannerSamplePlayerViewController: UIViewController, StoryboardI
                 adSize: .PAUSE_BANNER,
                 userId: "u3001",
                 userImpressionLimit: 30,
-                adPendingTimes: 3,
+                adPendingTime: 30,
                 segments: "123,123,123"
             ),
             containerView: overlayAdView,
