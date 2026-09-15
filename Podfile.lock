@@ -1,12 +1,12 @@
 PODS:
   - GoogleAds-IMA-iOS-SDK (3.18.4)
   - TokenGenerator (1.0)
-  - WISDK (1.21.16):
+  - WISDK (1.21.18):
     - GoogleAds-IMA-iOS-SDK (= 3.18.4)
     - TokenGenerator
 
 DEPENDENCIES:
-  - WISDK (= 1.21.16)
+  - WISDK (= 1.21.18)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -17,8 +17,8 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   GoogleAds-IMA-iOS-SDK: b01284e3bf3d64ba948de6692ffda531452c3713
   TokenGenerator: 1209719fb570221b14ac0a5031f8d275a64c7d42
-  WISDK: c6b351a592276af287f93f0634e3dc1322959b22
+  WISDK: 90485165bf3acdcdd69a97fe8ba6e83bfa8b3e61
 
-PODFILE CHECKSUM: a47298b1aa24035aea9f608b67887d98e79b44ea
+PODFILE CHECKSUM: 75948e0fef7c2a27f0d1b6ae43b77a2882f4c829
 
 COCOAPODS: 1.16.2
