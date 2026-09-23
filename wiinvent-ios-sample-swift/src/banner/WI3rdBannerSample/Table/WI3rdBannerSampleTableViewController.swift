@@ -69,7 +69,7 @@ extension WI3rdBannerSampleTableViewController {
     
     private func loadAd() {
         let ad1 = WI3rdBannerAdData(
-            position: "HOME_1",
+            position: "PID_TEST",
             accountId: String(14),
             env: .SANDBOX,
             channelId: "",
@@ -90,7 +90,7 @@ extension WI3rdBannerSampleTableViewController {
         )
         
         let ad2 = WI3rdBannerAdData(
-            position: "HOME_2",
+            position: "HOME_3",
             accountId: String(14),
             env: .SANDBOX,
             channelId: "",
@@ -115,10 +115,10 @@ extension WI3rdBannerSampleTableViewController {
             var indexPaths: [IndexPath] = []
             for pid in pids {
                 switch pid {
-                case "HOME_1":
+                case "PID_TEST":
                     self?.items.insert(.bannerAd(pid), at: 0)
                     indexPaths.append(.init(row: 0, section: 0))
-                case "HOME_2":
+                case "HOME_3":
                     self?.items.insert(.bannerAd(pid), at: 2)
                     indexPaths.append(.init(row: 2, section: 0))
                 default:

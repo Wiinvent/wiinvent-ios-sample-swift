@@ -71,7 +71,7 @@ extension WI3rdBannerSampleCollectionViewController {
     private func loadAd() {
         let ad1 = WI3rdBannerAdData(
             position: "DETAIL_FILM",
-            accountId: String(14),
+            accountId: String(4),
             env: .SANDBOX,
             channelId: "",
             streamId: "",
